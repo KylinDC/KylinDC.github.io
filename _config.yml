@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://kylindc.github.io
+permalink: post/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -103,6 +103,11 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# abbrlink config
+abbrlink:
+  alg: crc16 # 算法：crc16(default) and crc32
+  rep: dec # 进制：dec(default) and hex
 
 # mmedia player config
 mmedia:
