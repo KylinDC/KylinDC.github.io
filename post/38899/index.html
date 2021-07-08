@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Serializable 序列化总结Serializable 序列化特点private static final long serialVersionUID &#x3D; 1L：用来保证能够相互序列化与反序列化 静态变量不会被序列化，因为序列化保存的是对象的状态，而静态变量属于类的状态，因此序列化并不保存静态变量。 父类的序列化一个子类实现了 Serializable 接口，它的父类都没有实现 Serial">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java中的序列化使用总结">
+<meta property="og:url" content="https://kylindc.github.io/post/38899/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Serializable 序列化总结Serializable 序列化特点private static final long serialVersionUID &#x3D; 1L：用来保证能够相互序列化与反序列化 静态变量不会被序列化，因为序列化保存的是对象的状态，而静态变量属于类的状态，因此序列化并不保存静态变量。 父类的序列化一个子类实现了 Serializable 接口，它的父类都没有实现 Serial">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-02-25T03:28:48.000Z">
+<meta property="article:modified_time" content="2019-02-26T01:16:33.000Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Java中的序列化使用总结</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" "Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post " href="/post/23197/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post " href="/post/60082/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/post/38899/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/38899/&text=Java中的序列化使用总结"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/38899/&title=Java中的序列化使用总结"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/38899/&is_video=false&description=Java中的序列化使用总结"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Java中的序列化使用总结&body=Check out this article: https://kylindc.github.io/post/38899/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/38899/&title=Java中的序列化使用总结"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/38899/&title=Java中的序列化使用总结"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/38899/&title=Java中的序列化使用总结"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/38899/&title=Java中的序列化使用总结"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/38899/&name=Java中的序列化使用总结&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/38899/&t=Java中的序列化使用总结"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Serializable-%E5%BA%8F%E5%88%97%E5%8C%96%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text">Serializable 序列化总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Serializable-%E5%BA%8F%E5%88%97%E5%8C%96%E7%89%B9%E7%82%B9"><span class="toc-number">1.1.</span> <span class="toc-text">Serializable 序列化特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%88%B6%E7%B1%BB%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-number">1.2.</span> <span class="toc-text">父类的序列化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Transient-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.3.</span> <span class="toc-text">Transient 关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-number">1.4.</span> <span class="toc-text">自定义序列化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E4%B8%80%E5%AF%B9%E8%B1%A1%E5%A4%9A%E6%AC%A1%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-number">1.5.</span> <span class="toc-text">同一对象多次序列化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Externalizable-%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">Externalizable 序列化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Externalizable-%E5%BA%8F%E5%88%97%E5%8C%96%E6%BA%90%E7%A0%81"><span class="toc-number">2.1.</span> <span class="toc-text">Externalizable 序列化源码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Externalizable-%E5%BA%8F%E5%88%97%E5%8C%96%E7%89%B9%E7%82%B9"><span class="toc-number">2.2.</span> <span class="toc-text">Externalizable 序列化特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Externalizable-%E4%B8%BE%E4%BE%8B"><span class="toc-number">2.3.</span> <span class="toc-text">Externalizable 举例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Serializable-%E5%92%8C-Externalizable-%E5%BA%8F%E5%88%97%E5%8C%96%E7%9A%84%E4%B8%8D%E5%90%8C"><span class="toc-number">3.</span> <span class="toc-text">Serializable 和 Externalizable 序列化的不同</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">4.</span> <span class="toc-text">参考</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Java中的序列化使用总结
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">John Doe</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-02-25T03:28:48.000Z" itemprop="datePublished">2019-02-25</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="Serializable-序列化总结"><a href="#Serializable-序列化总结" class="headerlink" title="Serializable 序列化总结"></a>Serializable 序列化总结</h2><h3 id="Serializable-序列化特点"><a href="#Serializable-序列化特点" class="headerlink" title="Serializable 序列化特点"></a>Serializable 序列化特点</h3><p><code>private static final long serialVersionUID = 1L</code>：用来保证能够相互序列化与反序列化</p>
+<p>静态变量不会被序列化，因为序列化保存的是<strong>对象的状态</strong>，而静态变量属于类的状态，因此<strong>序列化并不保存静态变量</strong>。</p>
+<h3 id="父类的序列化"><a href="#父类的序列化" class="headerlink" title="父类的序列化"></a>父类的序列化</h3><p>一个子类实现了 Serializable 接口，它的父类都没有实现 Serializable 接口，序列化该子类对象，然后反序列化后输出父类定义的某变量的数值，该变量数值与序列化时的数值不同。要想将父类对象也序列化，就需要让父类也实现 Serializable 接口。</p>
+<h3 id="Transient-关键字"><a href="#Transient-关键字" class="headerlink" title="Transient 关键字"></a>Transient 关键字</h3><p>Transient 关键字的作用是控制变量的序列化，在变量声明前加上该关键字，可以阻止该变量被序列化到文件中，在被反序列化后，transient 变量的值被设为初始值，如 int 型的是 0，对象型的是 null。</p>
+<h3 id="自定义序列化"><a href="#自定义序列化" class="headerlink" title="自定义序列化"></a>自定义序列化</h3><p>在序列化过程中，虚拟机会试图调用对象类里的 writeObject() 和 readObject() 方法，进行用户自定义的序列化和反序列化，如果没有这样的方法，则默认调用是 ObjectOutputStream 的 defaultWriteObject 方法以及 ObjectInputStream 的 defaultReadObject 方法。用户自定义的 writeObject 和 readObject 方法可以允许用户控制序列化的过程，比如可以在序列化的过程中动态改变序列化的数值。</p>
+<h3 id="同一对象多次序列化"><a href="#同一对象多次序列化" class="headerlink" title="同一对象多次序列化"></a>同一对象多次序列化</h3><p>第一次序列化写入对象以后，第二次再试图写的时候，虚拟机根据引用关系知道已经有一个相同对象已经写入文件，因此只保存第二次写的引用，所以读取时，都是第一次保存的对象。</p>
+<h2 id="Externalizable-序列化"><a href="#Externalizable-序列化" class="headerlink" title="Externalizable 序列化"></a>Externalizable 序列化</h2><h3 id="Externalizable-序列化源码"><a href="#Externalizable-序列化源码" class="headerlink" title="Externalizable 序列化源码"></a>Externalizable 序列化源码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> java.io;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.ObjectOutput;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectInput;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Externalizable</span> <span class="keyword">extends</span> <span class="title">java</span>.<span class="title">io</span>.<span class="title">Serializable</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">writeExternal</span><span class="params">(ObjectOutput out)</span> <span class="keyword">throws</span> IOException</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">readExternal</span><span class="params">(ObjectInput in)</span> <span class="keyword">throws</span> IOException, ClassNotFoundException</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Externalizable-序列化特点"><a href="#Externalizable-序列化特点" class="headerlink" title="Externalizable 序列化特点"></a>Externalizable 序列化特点</h3><p>Externalizable，使用该接口之后，之前基于 Serializable 接口的序列化机制就将失效。Externalizable 的序列化机制优先级要高于 Serializable 。</p>
+<p>实现 Externalizable 接口后，序列化的细节即<br><code>writeExternal()</code>和<code>readExternal()</code>需要由开发人员自己实现。</p>
+<p>实现 Externalizable 接口后，属性字段使用 transient 和不使用没有任何区别。</p>
+<p>使用 Externalizable 进行序列化时，必须要有默认的构造方法，通过反射先创建出该类的实例，然后再把解析后的属性值，通过反射赋值</p>
+<h3 id="Externalizable-举例"><a href="#Externalizable-举例" class="headerlink" title="Externalizable 举例"></a>Externalizable 举例</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.*;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> <span class="keyword">implements</span> <span class="title">Serializable</span>, <span class="title">Externalizable</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = <span class="number">1l</span>;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">writeExternal</span><span class="params">(ObjectOutput out)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        out.writeObject(<span class="keyword">this</span>.name);</span><br><span class="line">        out.writeObject(<span class="keyword">this</span>.age);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">readExternal</span><span class="params">(ObjectInput in)</span> <span class="keyword">throws</span> IOException, ClassNotFoundException </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = (String) in.readObject();</span><br><span class="line">        <span class="keyword">this</span>.age = (Integer) in.readObject();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Person person = <span class="keyword">new</span> Person();</span><br><span class="line">        person.setName(<span class="string">&quot;li&quot;</span>);</span><br><span class="line">        person.setAge(<span class="number">19</span>);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            ObjectOutputStream objectOutputStream =</span><br><span class="line">                    <span class="keyword">new</span> ObjectOutputStream(<span class="keyword">new</span> FileOutputStream(<span class="keyword">new</span> File(<span class="string">&quot;./li.txt&quot;</span>)));</span><br><span class="line">            objectOutputStream.writeObject(person);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            ObjectInputStream objectInputStream =</span><br><span class="line">                    <span class="keyword">new</span> ObjectInputStream(<span class="keyword">new</span> FileInputStream(<span class="keyword">new</span> File(<span class="string">&quot;./li.txt&quot;</span>)));</span><br><span class="line">            Person person1 = (Person) objectInputStream.readObject();</span><br><span class="line">            System.out.println(person1.getAge());</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException | ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Serializable-和-Externalizable-序列化的不同"><a href="#Serializable-和-Externalizable-序列化的不同" class="headerlink" title="Serializable 和 Externalizable 序列化的不同"></a>Serializable 和 Externalizable 序列化的不同</h2><ul>
+<li>Serializable 是标识接口，实现该接口，无需重写任何方法；Externalizable 接口继承于 Serializable，实现该接口，需要重写 readExternal 和 writeExternal 方法</li>
+<li>Serializable 提供了两种方式进行对象的序列化<ul>
+<li>采用默认序列化方式，将非 transatient 和非 static 的属性进行序列化</li>
+<li>自定义编写 readObject() 和 writeObject() 完成部分属性的序列化</li>
+</ul>
+</li>
+<li>Externalizable 接口的实现方式一定要有<strong>默认的无参构造函数</strong>，而 Serializable 接口实现，其采用反射机制完成内容恢复，没有一定要有无参构造函数的限制</li>
+<li>采用 Externalizable 无需产生序列化 ID（serialVersionUID），而 Serializable 接口则需要</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://www.ibm.com/developerworks/cn/java/j-lo-serial/index.html">Java 序列化的高级认识</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/woshimrf/p/java-serialize.html">Java 对象的序列化和反序列化源码阅读</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/411e18ceaa55">Java 序列化之 Externalizable</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/chenfei0801/archive/2013/04/05/3001149.html">JAVA 对象序列化（一）——Serializable</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/chenfei0801/archive/2013/04/06/3002146.html">JAVA 对象序列化（二）——Externalizable</a><br><a target="_blank" rel="noopener" href="https://my.oschina.net/wangmengjun/blog/1588096">Serializable 和 Externalizable 浅析</a></p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Serializable-%E5%BA%8F%E5%88%97%E5%8C%96%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text">Serializable 序列化总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Serializable-%E5%BA%8F%E5%88%97%E5%8C%96%E7%89%B9%E7%82%B9"><span class="toc-number">1.1.</span> <span class="toc-text">Serializable 序列化特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%88%B6%E7%B1%BB%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-number">1.2.</span> <span class="toc-text">父类的序列化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Transient-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.3.</span> <span class="toc-text">Transient 关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-number">1.4.</span> <span class="toc-text">自定义序列化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E4%B8%80%E5%AF%B9%E8%B1%A1%E5%A4%9A%E6%AC%A1%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-number">1.5.</span> <span class="toc-text">同一对象多次序列化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Externalizable-%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">Externalizable 序列化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Externalizable-%E5%BA%8F%E5%88%97%E5%8C%96%E6%BA%90%E7%A0%81"><span class="toc-number">2.1.</span> <span class="toc-text">Externalizable 序列化源码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Externalizable-%E5%BA%8F%E5%88%97%E5%8C%96%E7%89%B9%E7%82%B9"><span class="toc-number">2.2.</span> <span class="toc-text">Externalizable 序列化特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Externalizable-%E4%B8%BE%E4%BE%8B"><span class="toc-number">2.3.</span> <span class="toc-text">Externalizable 举例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Serializable-%E5%92%8C-Externalizable-%E5%BA%8F%E5%88%97%E5%8C%96%E7%9A%84%E4%B8%8D%E5%90%8C"><span class="toc-number">3.</span> <span class="toc-text">Serializable 和 Externalizable 序列化的不同</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">4.</span> <span class="toc-text">参考</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/post/38899/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/38899/&text=Java中的序列化使用总结"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/38899/&title=Java中的序列化使用总结"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/38899/&is_video=false&description=Java中的序列化使用总结"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Java中的序列化使用总结&body=Check out this article: https://kylindc.github.io/post/38899/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/38899/&title=Java中的序列化使用总结"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/38899/&title=Java中的序列化使用总结"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/38899/&title=Java中的序列化使用总结"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/38899/&title=Java中的序列化使用总结"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/38899/&name=Java中的序列化使用总结&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/38899/&t=Java中的序列化使用总结"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2021
+    John Doe
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>

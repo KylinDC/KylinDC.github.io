@@ -1,981 +1,310 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="https://kylindc.github.io/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Hexo</title>
+    <!-- styles -->
+    
 <link rel="stylesheet" href="/css/style.css">
 
-  
+    <!-- persian styles -->
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
 <meta name="generator" content="Hexo 5.4.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+<body class="max-width mx-auto px3 ltr">
+    
+    <div class="content index py4">
+        
+          <header id="header">
+  <a href="/">
+  
+    
+      <div id="logo" style="background-image: url(/images/logo.png);"></div>
+    
+  
+    <div id="title">
+      <h1>Hexo</h1>
+    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+       
+        <li><a href="/">Home</a></li>
+       
+        <li><a href="/about/">About</a></li>
+       
+        <li><a href="/archives/">Writing</a></li>
+       
+        <li><a href="/projects_url">Projects</a></li>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
+    </ul>
   </div>
 </header>
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-Java-8的变化之行为参数化" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/12/07/Java-8%E7%9A%84%E5%8F%98%E5%8C%96%E4%B9%8B%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96/" class="article-date">
-  <time class="dt-published" datetime="2019-12-07T06:34:26.000Z" itemprop="datePublished">2019-12-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
+        <section id="about">
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/12/07/Java-8%E7%9A%84%E5%8F%98%E5%8C%96%E4%B9%8B%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96/">Java 8的变化之行为参数化——Lambda表达式</a>
-    </h1>
   
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="什么是行为参数化"><a href="#什么是行为参数化" class="headerlink" title="什么是行为参数化"></a>什么是行为参数化</h2><p>假设现在有两个需求，分别是打印如下所示的加法表和乘法表：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1 + 1 = 2</span><br><span class="line">1 + 2 = 3	2 + 2 = 4</span><br><span class="line">1 + 3 = 4	2 + 3 = 5	3 + 3 = 6</span><br><span class="line">1 + 4 = 5	2 + 4 = 6	3 + 4 = 7	4 + 4 = 8</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line">----------------------------</span><br><span class="line"></span><br><span class="line">1 * 1 = 1</span><br><span class="line">1 * 2 = 2	2 * 2 = 4</span><br><span class="line">1 * 3 = 3	2 * 3 = 6	3 * 3 = 9</span><br><span class="line">1 * 4 = 4	2 * 4 = 8	3 * 4 = 12	4 * 4 = 16</span><br><span class="line">......</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>在这两个运算表中，需要展示的格式是一样的，不同的地方有两点：</p>
-<ul>
-<li>运算符</li>
-<li>运算逻辑</li>
-</ul>
-<p>如果只使用一个方法来生成这样两个运算表格，则需要将运算符和运算逻辑都作为参数传递这个方法。其中运算符可以视为一个字符串，是一种几乎所有编程语言都内置原生支持的一种类型。但是运算逻辑则不同，只有将函数视为头等公民的编程语言才能将行为即函数作为实参进行传递。</p>
-<h4 id="函数作为头等公民"><a href="#函数作为头等公民" class="headerlink" title="函数作为头等公民"></a>函数作为头等公民</h4><p>在一些程序语言中，函数视为头等公民，这意味着，函数可以作为别的函数的参数、函数的返回值，赋值给变量或存储在数据结构中。使用函数作为实参和返回值的函数被称为高阶函数。更多可以信息可以参考<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A4%B4%E7%AD%89%E5%87%BD%E6%95%B0">头等函数-维基百科</a>。</p>
-<p>JavaScript是一种内置将函数视为头等公民的语言，如果用JavaScript来实现上述打印加法表和乘法表的需求，只需要将乘法与加法定义为变量再作为实参传递给生成表的函数就行了，完整代码如下所示：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> multiplication = <span class="function">(<span class="params">a, b</span>) =&gt;</span> a * b;</span><br><span class="line"><span class="keyword">const</span> addition = <span class="function">(<span class="params">a, b</span>) =&gt;</span> a + b;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> generateOperationTable = <span class="function">(<span class="params">limit, operationSymbol, operation</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt;= limit; i++) &#123;</span><br><span class="line">        <span class="keyword">let</span> lineResult = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">1</span>; j &lt;= i; j++) &#123;</span><br><span class="line">            lineResult += <span class="string">`<span class="subst">$&#123;j&#125;</span> <span class="subst">$&#123;operationSymbol&#125;</span> <span class="subst">$&#123;i&#125;</span> = <span class="subst">$&#123;operation(i, j)&#125;</span>\t`</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        result += lineResult + <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> multiplicationTable = generateOperationTable(<span class="number">9</span>, <span class="string">&#x27;*&#x27;</span>, multiplication);</span><br><span class="line"><span class="keyword">const</span> additionTable = generateOperationTable(<span class="number">9</span>, <span class="string">&#x27;+&#x27;</span>, addition);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(multiplicationTable);</span><br><span class="line"><span class="built_in">console</span>.log(additionTable);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>行为参数化，就是一个方法接受多个不同的行为作为参数，并且在内部使用它们，完成不同的行为。</p>
-<h2 id="为什么要进行行为参数化"><a href="#为什么要进行行为参数化" class="headerlink" title="为什么要进行行为参数化"></a>为什么要进行行为参数化</h2><p>从上面的例子中可以看出，将行为即函数视为一个普通变量后，可以提高抽象能力，<br>减少重复代码，使代码的表达能力更强，也更易于理解。</p>
-<p>以下对比将展现更多行为参数在Java中体现出来的好处。</p>
-<h2 id="Java-8中如何实现行为参数化"><a href="#Java-8中如何实现行为参数化" class="headerlink" title="Java 8中如何实现行为参数化"></a>Java 8中如何实现行为参数化</h2><h3 id="Java-8之前的Java如何将行为传递给方法"><a href="#Java-8之前的Java如何将行为传递给方法" class="headerlink" title="Java 8之前的Java如何将行为传递给方法"></a>Java 8之前的Java如何将行为传递给方法</h3><p>Java是一门<strong>面向对象</strong>的、<strong>静态类型</strong>语言，所以在将行为传递给一个方法前，这个行为必定有着特定的类型，而且为一个实例。于是有以下不同的方式来实现效果。</p>
-<h4 id="通过实现不同的接口"><a href="#通过实现不同的接口" class="headerlink" title="通过实现不同的接口"></a>通过实现不同的接口</h4><p>在生成运算表的方法中，可以同时传入加法与乘法两种运算操作，所以这两种操作必须为同一类型。于是有了<code>Arithmetic</code>接口：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Arithmetic</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>通过对<code>Arithmetic</code>接口的不同实现，可以将加法与乘法两种行为包裹在不同的类中：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Addition</span> <span class="keyword">implements</span> <span class="title">Arithmetic</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Multiplication</span> <span class="keyword">implements</span> <span class="title">Arithmetic</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a * b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>在生成操作表的方法中，即可以传入不同<code>Arithmetic</code>类型的实例来实现将行为传递进方法内部。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printOperationTableByImplInterface</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String additionTable = genOperationTable(<span class="number">9</span>, <span class="string">&quot;+&quot;</span>, <span class="keyword">new</span> Addition());</span><br><span class="line">    String multiplicationTable = genOperationTable(<span class="number">9</span>, <span class="string">&quot;+&quot;</span>, <span class="keyword">new</span> Multiplication());</span><br><span class="line"></span><br><span class="line">    System.out.print(additionTable);</span><br><span class="line">    System.out.print(multiplicationTable);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>这是生成运算表的方法本身：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">genOperationTable</span><span class="params">(</span></span></span><br><span class="line"><span class="params"><span class="function">            <span class="keyword">int</span> limit, String operationSymbol, Arithmetic operation)</span> </span>&#123;</span><br><span class="line">    StringBuilder result = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= limit; i++) &#123;</span><br><span class="line">        String rowResult = <span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= i; j++) &#123;</span><br><span class="line">            <span class="keyword">int</span> answer = operation.calculate(i, j);</span><br><span class="line">            rowResult += String.format(<span class="string">&quot;%d %s %d = %d\t&quot;</span>, j, operationSymbol, i, answer);</span><br><span class="line">        &#125;</span><br><span class="line">        result.append(rowResult).append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result.toString();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="通过匿名内部类"><a href="#通过匿名内部类" class="headerlink" title="通过匿名内部类"></a>通过匿名内部类</h4><p>上述方式中，需要实现声明一个类，然后再实例化。但是在Java中，可以通过匿名内部类来同时声明和实例化一个类，可以稍微简化一下代码：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printOperationTableByInnerClass</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String additionTable =</span><br><span class="line">            genOperationTable(</span><br><span class="line">                    <span class="number">9</span>,</span><br><span class="line">                    <span class="string">&quot;+&quot;</span>,</span><br><span class="line">                    <span class="keyword">new</span> Arithmetic() &#123;</span><br><span class="line">                        <span class="meta">@Override</span></span><br><span class="line">                        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">                            <span class="keyword">return</span> a + b;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;);</span><br><span class="line"></span><br><span class="line">    String multiplicationTable =</span><br><span class="line">            genOperationTable(</span><br><span class="line">                    <span class="number">9</span>,</span><br><span class="line">                    <span class="string">&quot;+&quot;</span>,</span><br><span class="line">                    <span class="keyword">new</span> Arithmetic() &#123;</span><br><span class="line">                        <span class="meta">@Override</span></span><br><span class="line">                        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">                            <span class="keyword">return</span> a * b;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;);</span><br><span class="line"></span><br><span class="line">    System.out.print(additionTable);</span><br><span class="line">    System.out.print(multiplicationTable);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="Java-8的实现方式"><a href="#Java-8的实现方式" class="headerlink" title="Java 8的实现方式"></a>Java 8的实现方式</h3><p>Java 8中引入Lambda表达式（匿名函数），其可以看作是单纯的一个行为，只需将其传递给方法体，则可直接实现行为参数化。相比于Java 8之前的Java版本，使用Lambda表达式可以极大程度地精简代码。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printOperationTableByLambda</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String additionTable = genOperationTable(<span class="number">9</span>, <span class="string">&quot;+&quot;</span>, (a, b) -&gt; a + b);</span><br><span class="line">    String multiplicationTable = genOperationTable(<span class="number">9</span>, <span class="string">&quot;+&quot;</span>, (a, b) -&gt; a * b);</span><br><span class="line"></span><br><span class="line">    System.out.print(additionTable);</span><br><span class="line">    System.out.print(multiplicationTable);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="什么是Lambda表达式"><a href="#什么是Lambda表达式" class="headerlink" title="什么是Lambda表达式"></a>什么是Lambda表达式</h2><p>Lambda表达式是匿名函数的一种表现形式，具有以下几个特点：</p>
-<ul>
-<li>匿名：可以不像普通方法一样具有一个明确的名称</li>
-<li>函数：不像普通方法一样属于某个特定的类，但是和方法类似，其也具有参数列表、函数主体、返回类型，还有可能抛出特定的异常。</li>
-<li>传递：可以像参数一样传递给方法或者是储存在变量中</li>
-</ul>
-<h4 id="Lambda表达式的语法"><a href="#Lambda表达式的语法" class="headerlink" title="Lambda表达式的语法"></a>Lambda表达式的语法</h4><p>一个普通的Lambda表达式应当包括：</p>
-<ul>
-<li>参数列表：<ul>
-<li>用<code>()</code>包裹起来</li>
-<li>可以不显示指定参数的类型</li>
-<li>只有一个参数时可以省略<code>()</code></li>
-</ul>
-</li>
-<li>箭头：<code>-&gt;</code>，将参数列表和函数主体相分割开来</li>
-<li>函数主体：<ul>
-<li>函数主体只有一句时可以省略显式的<code>return</code>语句，默认将会运算后的值作为返回值</li>
-<li>函数主体有多句时，需要使用<code>&#123;&#125;</code>将函数主体包裹起来，且显式的指定<code>return</code>语句</li>
-</ul>
-</li>
-</ul>
-<p>Lambda表达式并没有破坏Java原有设计，Java 8同样还是一门<strong>面向对象</strong>的、<strong>静态类型</strong>语言。实际上，Lambda表达式以内联的形式为一种称为<strong>函数式接口</strong>的特殊接口中的<strong>抽象方法</strong>提供了实现，并且将整个表达式作为该函数式接口的一个<strong>具体实现</strong>的<strong>实例</strong>。</p>
-<p>Lambda表达式可以被赋给一个变量，或者传递给一个接受函数式接口作为参数的方法中，当然Lambda表达式的签名需要和函数式接口的抽象方法一样。</p>
-<h2 id="函数式接口"><a href="#函数式接口" class="headerlink" title="函数式接口"></a>函数式接口</h2><p>函数式接口是一种只定义了<strong>一个抽象方法</strong>的特殊接口。像上述的<code>Arithmetic</code>接口，就是一个函数式接口。</p>
-<p>在函数式接口上可以使用<code>@FunctionalInterface</code>注解来显式表明此接口为一个函数式接口，如果加了注解但却不满足函数式接口的定义，编译器将会返回一个错误。</p>
-<p>值得注意的是，在Java 8中，接口可以拥有默认方法，即实现类没有实现该方法时，将会有默认的实现。即在Java 8中，接口可以有完整的方法体。即便接口有多个默认方法，只要其只有一个抽象方法，其仍然为函数式接口。</p>
-<h3 id="常见的内置函数式接口"><a href="#常见的内置函数式接口" class="headerlink" title="常见的内置函数式接口"></a>常见的内置函数式接口</h3><p>以下表格总结了常见的Java 8中内置的函数式接口：</p>
-<table>
-<thead>
-<tr>
-<th>函数式接口</th>
-<th>函数描述符</th>
-<th>抽象方法名称</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Predicate<T></td>
-<td>T -&gt; boolean</td>
-<td>test</td>
-</tr>
-<tr>
-<td>Consumer<T></td>
-<td>T -&gt; void</td>
-<td>accept</td>
-</tr>
-<tr>
-<td>Supplier<T></td>
-<td>() -&gt; T</td>
-<td>get</td>
-</tr>
-<tr>
-<td>Function&lt;T, R&gt;</td>
-<td>T -&gt; R</td>
-<td>apply</td>
-</tr>
-<tr>
-<td>UnaryOperator<T></td>
-<td>T -&gt; T</td>
-<td>apply</td>
-</tr>
-<tr>
-<td>BinaryOperator<T></td>
-<td>(T,T) -&gt; T</td>
-<td>apply</td>
-</tr>
-<tr>
-<td>BiPredicate&lt;L, R&gt;</td>
-<td>(L, R) -&gt; boolean</td>
-<td>test</td>
-</tr>
-<tr>
-<td>BiConsumer&lt;T, U&gt;</td>
-<td>() -&gt; void</td>
-<td>accept</td>
-</tr>
-<tr>
-<td>BiFunction&lt;T, U, R&gt;</td>
-<td>(T,U) -&gt; R</td>
-<td>apply</td>
-</tr>
-</tbody></table>
-<p>函数描述符描述了这些函数式接口实例的签名，使用这些函数式接口的实例需要使用其对应的抽象方法。</p>
-<p>例如：</p>
-<ul>
-<li><code>Predicate&lt;String&gt; isLongThanFive = s -&gt; s.length() &gt; 5;</code></li>
-<li><code>isLongerThanFice.test(sampleString)</code></li>
-<li><code>Consumer&lt;String&gt; print = (String s) -&gt; System.out.println(s);</code></li>
-<li><code>print.accept(sampleString)</code></li>
-<li><code>BiFunction&lt;Integer, Integer, Integer&gt; sum = (Integer a, Integer b) -&gt; a + b;</code></li>
-<li><code>sum.apply(a, b)</code></li>
-</ul>
-<p>由于Lambda表达式还是遵循了Java原有的设计思想，所以内置的函数式接口还是有一些局限性，比如无法使用两个以上的参数作为Lambda表达式的入参，此时可以使用自定义函数式接口，或者使用第三方的包。</p>
-<h4 id="原始类型特化"><a href="#原始类型特化" class="headerlink" title="原始类型特化"></a>原始类型特化</h4><p>内置函数式接口中的泛型只能绑定到引用类型上，但是在使用时经常会使用基本类型，此时Java内部会自动进行装箱和拆箱操作，将基本类型与对应的引用类型进行相互转换。但拆装箱操作也会带来额外的性能消耗，所以Java 8还内置了一些原始类型特化的函数式接口来在输入与输出的时候避免拆装箱操作。</p>
-<p>一般来说，针对输入类型为基本类型的函数式接口的名称前都要加上对应的基本类型前缀，如<code>IntPredicate</code>、<code>DoubleConsumer</code>、<code>Function</code>接口还有针对输出参数类型的变种：<code>ToIntFunction&lt;T&gt;</code>、<code>IntToDoubleFunction</code>等等。</p>
-<p>例如：</p>
-<ul>
-<li><code>IntPredicate isLargeThanFive = i -&gt; i &gt; 5;</code></li>
-</ul>
-<h2 id="Lambda表达式的类型"><a href="#Lambda表达式的类型" class="headerlink" title="Lambda表达式的类型"></a>Lambda表达式的类型</h2><h3 id="Lambda表达式的类型检查"><a href="#Lambda表达式的类型检查" class="headerlink" title="Lambda表达式的类型检查"></a>Lambda表达式的类型检查</h3><p>Lambda表达式的<strong>实际类型</strong>是从使用Lambda表达式的上下文中所推断出来的。上下文（比如，接受它传递的方法的参数，或接受它的值的全局变量）中Lambda表达式需要的类型被称为<strong>目标类型</strong>。</p>
-<p>可以从赋值的上下文、方法调用的上下文（参数和返回值）以及类型转换的上下文中获得Lambda表达式的目标类型。</p>
-<p>只要Lambda表达式的参数类型能够符合目标类型中抽象方法的参数定义，也就是方法签名能够兼容，那么此类型检查就能通过，该Lambda表达式也就能应用于此上下文中。</p>
-<p>有了目标类型的概念，同一个Lambda表达式就可以与不同的函数式接口相联系起来，同一个Lambda表达式可以用于多个不同的函数式接口中的上下文中，即使这些函数式接口并没有<code>is</code>或<code>like</code>等关系。</p>
-<p>所以上例中加法和乘法的Lambda表达式既可以是一个<code>Arithmetic</code>类型，也可以是一个<code>BiFunction</code>类型，实际类型需要根据上下文而定。</p>
-<h4 id="特殊的void兼容规则"><a href="#特殊的void兼容规则" class="headerlink" title="特殊的void兼容规则"></a>特殊的<code>void</code>兼容规则</h4><p>如果Lambda表达式的主体是一个语句，在参数列表兼容的前提下，即便其有特定的返回值，其也和返回<code>void</code>的函数描述符兼容。</p>
-<p>例如，List添加元素后会返回一个布尔值，但是其也可以被<code>Consumer</code>类型的函数式接口所接受。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; strings = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">Predicate&lt;String&gt; adder = s -&gt; strings.add(s);</span><br><span class="line">Consumer&lt;String&gt; anotherAdder = s -&gt; strings.add(s);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="推断Lambda表达式参数的类型"><a href="#推断Lambda表达式参数的类型" class="headerlink" title="推断Lambda表达式参数的类型"></a>推断Lambda表达式参数的类型</h3><p>Java编译器能够从上下文（目标类型）中推断出用什么函数式接口来配合Lambda表达式，所以其也能推断出Lambda表达式的参数类型，可以在Lambda表达式语法中省略参数类型标注。</p>
-<h3 id="Lambda表达式使用局部变量"><a href="#Lambda表达式使用局部变量" class="headerlink" title="Lambda表达式使用局部变量"></a>Lambda表达式使用局部变量</h3><p>Lambda表达式可以在主体中使用类中的静态变量和实例变量，但是使用方法内的局部变量时，该局部变量必须显示的声明为<code>final</code>类型，或者事实上为<code>final</code>类型（声明后没有被重新赋值）。</p>
-<h2 id="组合Lambda表达式"><a href="#组合Lambda表达式" class="headerlink" title="组合Lambda表达式"></a>组合Lambda表达式</h2><p>可以将多个简单的Lambda表达式组合成复杂的表达式，比如可以将多个<code>Predicate</code>的结果进行布尔运算，组合成一个更大的<code>Predicate</code>。</p>
-<p>函数式接口中的默认方法为这种组合提供了实现。</p>
-<h3 id="Comparator组合Lambda表达式"><a href="#Comparator组合Lambda表达式" class="headerlink" title="Comparator组合Lambda表达式"></a><code>Comparator</code>组合Lambda表达式</h3><ul>
-<li><code>.reversed()</code>：逆序</li>
-<li><code>.thenComparing()</code>：第一个比较参数相同时，继续进行比较</li>
-</ul>
-<h3 id="Predicate组合Lambda表达式"><a href="#Predicate组合Lambda表达式" class="headerlink" title="Predicate组合Lambda表达式"></a><code>Predicate</code>组合Lambda表达式</h3><ul>
-<li><code>.negate()</code>：非</li>
-<li><code>.and()</code>：与</li>
-<li><code>.or()</code>：或</li>
-</ul>
-<h3 id="Function组合Lambda表达式"><a href="#Function组合Lambda表达式" class="headerlink" title="Function组合Lambda表达式"></a><code>Function</code>组合Lambda表达式</h3><ul>
-<li><code>.andThen()</code>：返回一个函数，先执行一个函数，再将结果应用另一个函数</li>
-<li><code>.compose()</code>：返回一个函数，先执行另一个函数，再将结果应用此函数</li>
-</ul>
-<p>例如:<code>h = f.andThen(g)</code> == <code>g(f(x))</code>，而<code>h = f.compose(g)</code> == <code>f(g(x))</code></p>
-<h2 id="方法引用"><a href="#方法引用" class="headerlink" title="方法引用"></a>方法引用</h2><p>使用方法引用可以将现有方法像Lambda表达式一样进行传递，使得代码更自然和易读。</p>
-<h3 id="方法引用的语法"><a href="#方法引用的语法" class="headerlink" title="方法引用的语法"></a>方法引用的语法</h3><p>目标引用放在<code>::</code>之前，方法的名称放在后面。例如<code>Integer::sum</code>，就是调用了<code>Integer</code>类中的静态方法<code>sum</code>。</p>
-<h3 id="方法引用类型"><a href="#方法引用类型" class="headerlink" title="方法引用类型"></a>方法引用类型</h3><ul>
-<li>静态方法引用：例如<code>Integer::parseInt</code>、<code>Consumer&lt;String&gt; print = System.out::println;</code></li>
-<li>使用类型实例本身的实例方法引用：例如获得某个<code>String</code>类型实例的长度，<code>String::length</code></li>
-<li>使用其他类型实例的实例方法引用：例如调用一个已经存在的外部对象中的方法，<code>expr::instanceMethod</code></li>
-<li>构造函数引用：与静态方法引用类似，使用<code>ClassName::new</code>来使用构造函数引用，如果构造函数参数个数超过两个，可以使用指定义的函数式接口来作为构造函数引用的类型</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2019/12/07/Java-8%E7%9A%84%E5%8F%98%E5%8C%96%E4%B9%8B%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96/" data-id="ckqv0k24g0009vvbq3gwo9nxj" data-title="Java 8的变化之行为参数化——Lambda表达式" class="article-share-link">Share</a>
+    <p>
+      Find me on
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-VPS系统重装后要做的事" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/06/08/VPS%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/" class="article-date">
-  <time class="dt-published" datetime="2019-06-08T05:58:36.000Z" itemprop="datePublished">2019-06-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/06/08/VPS%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/">VPS系统重装后要做的事</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="BBR-加速脚本"><a href="#BBR-加速脚本" class="headerlink" title="BBR 加速脚本"></a>BBR 加速脚本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate <span class="string">&quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot;</span> &amp;&amp; chmod +x tcp.sh &amp;&amp; ./tcp.sh</span><br></pre></td></tr></table></figure>
-
-<h2 id="设置-Python3-为默认版本"><a href="#设置-Python3-为默认版本" class="headerlink" title="设置 Python3 为默认版本"></a>设置 Python3 为默认版本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install /usr/bin/python python /usr/bin/python2 1</span><br><span class="line">update-alternatives --install /usr/bin/python python /usr/bin/python3 2</span><br></pre></td></tr></table></figure>
-
-<h2 id="扩大搬瓦工的-Swap-空间"><a href="#扩大搬瓦工的-Swap-空间" class="headerlink" title="扩大搬瓦工的 Swap 空间"></a>扩大搬瓦工的 Swap 空间</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 定位到根目录</span></span><br><span class="line"><span class="built_in">cd</span> ~/..</span><br><span class="line"></span><br><span class="line"><span class="comment">## 删除原有的Swap空间</span></span><br><span class="line">rm swap</span><br><span class="line">rm swapfile</span><br><span class="line"></span><br><span class="line"><span class="comment">## 创建并格式化新的Swap空间</span></span><br><span class="line">dd <span class="keyword">if</span>=/dev/zero of=/swapfile bs=1M count=1024</span><br><span class="line">mkswap /swapfile</span><br><span class="line"></span><br><span class="line"><span class="comment">## 启动新的Swap空间</span></span><br><span class="line">swapon /swapfile</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装-Pi-hole"><a href="#安装-Pi-hole" class="headerlink" title="安装 Pi-hole"></a>安装 Pi-hole</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://install.pi-hole.net | bash</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="安装V2Ray一键脚本"><a href="#安装V2Ray一键脚本" class="headerlink" title="安装V2Ray一键脚本"></a>安装V2Ray一键脚本</h2><p>bash &lt;(curl -s -L <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/233boy/v2ray/master/install.sh">https://raw.githubusercontent.com/233boy/v2ray/master/install.sh</a>)</p>
-<p>选择websocket+TSL</p>
-<p>要是脚本失效了 github上还有备份（切换分支即可见）</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/">如何在 Ubuntu 20.04 上设置或者修改时区</a>138831041</li>
-<li><a target="_blank" rel="noopener" href="https://github.com/mack-a/v2ray-agent">v2ray-agent</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2019/06/08/VPS%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/" data-id="ckqv0k24y0018vvbq3hli2o4o" data-title="VPS系统重装后要做的事" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-MySQL规范" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/05/11/MySQL%E8%A7%84%E8%8C%83/" class="article-date">
-  <time class="dt-published" datetime="2019-05-11T13:02:24.000Z" itemprop="datePublished">2019-05-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          <a class="icon" target="_blank" rel="noopener" href="http://github.com/probberechts/cactus-dark" aria-label="github">
+            <i class="fab fa-github"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/05/11/MySQL%E8%A7%84%E8%8C%83/">MySQL规范</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="通用规范"><a href="#通用规范" class="headerlink" title="通用规范"></a>通用规范</h2><ul>
-<li>灵活使用缩进和空格增强可读性</li>
-<li>尽量使用标准的 SQL 函数而不是特定的实现以增强可移植性</li>
-<li>必要时加入注释，行注释以<code>--</code>开头，块注释以<code>/*·····*/</code>标记</li>
-<li>尽量使用 BETWEEN 而不是多个 AND 语句</li>
-<li>尽量使用 IN()而不是多个 OR 语句</li>
-</ul>
-<h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><ul>
-<li>SQL 大小写不敏感</li>
-<li>关键词推荐大写</li>
-<li>库、表、字段名称推荐全小写，用下划线即<code>_</code>分隔开</li>
-<li>列名尽量为单数</li>
-<li>表主键统一命名为 id，类型统一为 char(32)</li>
-<li>表外键建议命名为<code>主表名_字段名</code></li>
-<li>布尔型字段命名加前缀<code>is</code></li>
-<li>表示日期时间的字段，都要有后缀，如果只精确到天则以<code>date</code>为后缀，如果要精确到时分秒那就用<code>time</code>作后缀</li>
-<li>表应当尽量与列避免同名</li>
-<li>使用有意义的后缀名，比如：_id、_status、_total、_num、_name、_seq、_date、_tally、_size、_addr</li>
-</ul>
-<h2 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h2><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/7e60dbd59138">数据库设计中的命名规范</a><br><a target="_blank" rel="noopener" href="https://www.sqlstyle.guide/zh/">SQL 样式指南 · SQL Style Guide</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2019/05/11/MySQL%E8%A7%84%E8%8C%83/" data-id="ckqv0k24v0013vvbqgwmsgj5i" data-title="MySQL规范" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-MySQL中的事物" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/05/10/MySQL%E4%B8%AD%E7%9A%84%E4%BA%8B%E7%89%A9/" class="article-date">
-  <time class="dt-published" datetime="2019-05-10T02:22:10.000Z" itemprop="datePublished">2019-05-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/05/10/MySQL%E4%B8%AD%E7%9A%84%E4%BA%8B%E7%89%A9/">MySQL中的事务</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="事务的概念"><a href="#事务的概念" class="headerlink" title="事务的概念"></a>事务的概念</h2><p>数据库事务是指单个逻辑工作单元执行的一系列操作，要么完全执行要么完全不执行。</p>
-<h3 id="事务的-ACID-四个特性"><a href="#事务的-ACID-四个特性" class="headerlink" title="事务的 ACID 四个特性"></a>事务的 ACID 四个特性</h3><ul>
-<li>原子性：事务包含的操作要么全部成功，要么全部失败，不会存在部分成功。</li>
-<li>一致性：事务执行前后数据库都会处于一致的状态，即没有破坏数据库的完整性约束。</li>
-<li>隔离性：数据库进行事务并发操作时，多个事务之间相互隔离，不会有所干扰。</li>
-<li>持久性：事务一旦被提交之后，将会对数据库中的数据产生永久性的影响，即使数据库出现故障也不会丢失。</li>
-</ul>
-<h2 id="事务的操作命令"><a href="#事务的操作命令" class="headerlink" title="事务的操作命令"></a>事务的操作命令</h2><ul>
-<li>BEGIN/START TRANSACTION：开启一个事务</li>
-<li>COMMIT/COMMIT WORK：提交事务，使得对数据库的修改成为永久性的</li>
-<li>ROLLBACK/ROLLBACK WORK：恢复到上个 COMMIT 或保存点的状态</li>
-<li>SAVEPOINT savepoint_name：设置保存点，保存点将在事务处理完成（执行一条 ROLLBACK 或 COMMIT）后自动释放</li>
-<li>RELEASE SAVEPOINT savepoint_name：删除特定的保存点</li>
-<li>ROLLBACK TO savepoint_name：回滚到特定的保存点</li>
-<li>SET TRANSACTION：用来设置事务的隔离级别</li>
-</ul>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/bcc614524024">理解事务 - MySQL 事务处理机制</a></li>
-<li><a target="_blank" rel="noopener" href="https://draveness.me/mysql-transaction">『浅入深出』MySQL 中事务的实现</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.runoob.com/mysql/mysql-transaction.html">菜鸟学院 - MySQL 事务</a></li>
-<li><a target="_blank" rel="noopener" href="https://wiki.jikexueyuan.com/project/sql/transactions.html">极客学院 - SQL 事务</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2019/05/10/MySQL%E4%B8%AD%E7%9A%84%E4%BA%8B%E7%89%A9/" data-id="ckqv0k24u0012vvbq2wrv47rl" data-title="MySQL中的事务" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-SQL索引介绍" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/05/09/SQL%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/" class="article-date">
-  <time class="dt-published" datetime="2019-05-09T14:48:30.000Z" itemprop="datePublished">2019-05-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          <a class="icon" target="_blank" rel="noopener" href="/" aria-label="twitter">
+            <i class="fab fa-twitter"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/05/09/SQL%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/">SQL索引介绍</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>索引（Index）是一种帮助 MySQL 高效获取数据的数据结构。</p>
-<h2 id="索引类型"><a href="#索引类型" class="headerlink" title="索引类型"></a>索引类型</h2><ul>
-<li>普通索引：最基本的索引类型，没有唯一性的限制</li>
-<li>UNIQUE 索引：唯一索引，被索引的字段不能出现重复</li>
-<li>PRIMARY KEY 索引：主键索引，是唯一索引的一种，但每张表中只能出现一个主键索引</li>
-</ul>
-<h2 id="编辑索引"><a href="#编辑索引" class="headerlink" title="编辑索引"></a>编辑索引</h2><h3 id="创建索引"><a href="#创建索引" class="headerlink" title="创建索引"></a>创建索引</h3><ol>
-<li><p>创建表时创建索引：</p>
-<ul>
-<li>INDEX <a href="column_name(length)">index_name</a></li>
-<li>UNIQUE <a href="column_name(length)">index_name</a></li>
-<li>PRIMARY KEY (column_name(length))</li>
-</ul>
-</li>
-<li><p>ALTER TABLE 修改表来创建索引：</p>
-<ul>
-<li>ALTER TABLE table_name ADD INDEX index_name (column_list)</li>
-<li>ALTER TABLE table_name ADD UNIQUE (column_list)</li>
-<li>ALTER TABLE table_name ADD PRIMARY KEY (column_list)</li>
-</ul>
-</li>
-<li><p>直接创建索引，此方法不可创建主键索引</p>
-<ul>
-<li>CREATE INDEX index_name ON table_name (column_list)</li>
-<li>CREATE UNIQUE INDEX index_name ON table_name (column_list)</li>
-</ul>
-</li>
-</ol>
-<h3 id="删除索引"><a href="#删除索引" class="headerlink" title="删除索引"></a>删除索引</h3><p>可利用 ALTER TABLE 或 DROP INDEX 语句来删除索引</p>
-<ul>
-<li>DROP INDEX index_name ON talbe_name</li>
-<li>ALTER TABLE table_name DROP INDEX index_name</li>
-<li>ALTER TABLE table_name DROP PRIMARY KEY</li>
-</ul>
-<h3 id="查看索引"><a href="#查看索引" class="headerlink" title="查看索引"></a>查看索引</h3><ul>
-<li>SHOW INDEX FROM table_names</li>
-<li>SHOW KEYS FROM table_name</li>
-</ul>
-<h2 id="选择索引时注意事项"><a href="#选择索引时注意事项" class="headerlink" title="选择索引时注意事项"></a>选择索引时注意事项</h2><ol>
-<li>较频繁的作为查询条件的字段应该创建索引以增加查询性能</li>
-<li>唯一性太差的字段不适合单独创建索引，即使频繁作为查询条件<blockquote>
-<p>唯一性指不重复的索引值与表记录数的比值，唯一性差则选择的效率低</p>
-</blockquote>
-</li>
-<li>更新非常频繁的字段不适合创建索引<blockquote>
-<p>更新字段时同时还会更新索引，如果字段更新过于频繁，将会带来过多的额外性能和空间消耗</p>
-</blockquote>
-</li>
-<li>不会出现在 WHERE 子句中的字段不该创建索引</li>
-</ol>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000003072424">MYSQL-索引</a></li>
-<li><a target="_blank" rel="noopener" href="http://book.51cto.com/art/200906/132452.htm">索引的利弊与如何判定，是否需要索引</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2019/05/09/SQL%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/" data-id="ckqv0k24w0016vvbq037l4iin" data-title="SQL索引介绍" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-SQL中的子查询、联结查询和组合查询" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/05/09/SQL%E4%B8%AD%E7%9A%84%E5%AD%90%E6%9F%A5%E8%AF%A2%E3%80%81%E8%81%94%E7%BB%93%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2/" class="article-date">
-  <time class="dt-published" datetime="2019-05-09T04:53:35.000Z" itemprop="datePublished">2019-05-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/05/09/SQL%E4%B8%AD%E7%9A%84%E5%AD%90%E6%9F%A5%E8%AF%A2%E3%80%81%E8%81%94%E7%BB%93%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2/">SQL中的子查询、联结查询和组合查询</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h2><p>子查询即嵌套在其他查询中的查询。一般有两种用法，一种是在<code>WHERE</code>字句中使用其来限定范围，达到过滤的效果，一般可与<code>IN</code>搭配使用。另一种用法作为计算字段使用子查询，即在<code>SELECT</code>语句中使用子查询，将子查询的结果作为一列的结果。如下例所示：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">AVG</span>(score) <span class="keyword">AS</span> average_score,</span><br><span class="line">       (<span class="keyword">SELECT</span> <span class="built_in">AVG</span>(score)</span><br><span class="line">        <span class="keyword">FROM</span> score</span><br><span class="line">                 <span class="keyword">INNER</span> <span class="keyword">JOIN</span> subject <span class="keyword">ON</span> score.subject_id <span class="operator">=</span> subject.id</span><br><span class="line">        <span class="keyword">WHERE</span> subject.subject <span class="operator">=</span> &quot;语文&quot;) <span class="keyword">AS</span> average_chinese_score</span><br><span class="line"><span class="keyword">FROM</span> score;</span><br></pre></td></tr></table></figure>
-
-<p>子查询的缺点在于过多的子查询将会影响性能，而且将导致代码可读性不佳。</p>
-<h2 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h2><p>联合查询通常用于需要查看的数据来自多张表，使用<code>JOIN</code>语句将多张表连接起来，使用<code>ON</code>语句将两张表中相关联的列连接起来。</p>
-<p>常用的联合查询包括内连接和外连接。内连接也被称为等值连接，只有同时存在两张表中的记录才会被保留。外连接中两张的表的记录都会被保留，能匹配上的则正确匹配，不能匹配上的将会被设置成<code>NULL</code>。外连接分为左连接和右连接，左连接中<code>JOIN</code>语句左边的表中的记录将会被保留，右连接则反之。</p>
-<h2 id="组合查询"><a href="#组合查询" class="headerlink" title="组合查询"></a>组合查询</h2><p>组合查询通常用来将两个或者两个以上具有相同结构的列、表达式或者聚集函数的查询结果组合到一起，默认会排除重复值。使用关键词<code>UNION</code>。只能在最后使用一次<code>ORDER BY</code>语句对结果进行排序。</p>
-<p>可以认为，组合查询是将查询结果在行方向上进行拼接，而联合查询是将不同的表在列方向上进行拼接后再进行查询。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2019/05/09/SQL%E4%B8%AD%E7%9A%84%E5%AD%90%E6%9F%A5%E8%AF%A2%E3%80%81%E8%81%94%E7%BB%93%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2/" data-id="ckqv0k24v0014vvbqeerh6sx6" data-title="SQL中的子查询、联结查询和组合查询" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-SQL中的文本处理函数和时间处理函数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/05/05/SQL%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0%E5%92%8C%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0/" class="article-date">
-  <time class="dt-published" datetime="2019-05-05T08:55:00.000Z" itemprop="datePublished">2019-05-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          <a class="icon" target="_blank" rel="noopener" href="/" aria-label="facebook">
+            <i class="fab fa-facebook"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/05/05/SQL%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0%E5%92%8C%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0/">SQL中的字符串处理函数和时间处理函数</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="SQL-中字符串处理函数"><a href="#SQL-中字符串处理函数" class="headerlink" title="SQL 中字符串处理函数"></a>SQL 中字符串处理函数</h2><h3 id="字符串裁剪"><a href="#字符串裁剪" class="headerlink" title="字符串裁剪"></a>字符串裁剪</h3><ul>
-<li>LEFT(str,len)：返回最左边的 len 个长的字符</li>
-<li>RIGHT(str,len)：返回最左边的 len 个长的字符</li>
-<li>LTRIM(str)：裁剪字符串左边的空格</li>
-<li>RTRIM(str)：裁剪字符串右边的空格</li>
-<li>TRIM(str)：裁剪字符串两边的空格</li>
-<li>SUBSTRING(str,pos,len)/SUBSTR(str,pos,len)/SUBSTRING(str FROM pos FOR len)：在 str 中，从 pos 位置截取出 len 长的字符串</li>
-</ul>
-<h3 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h3><ul>
-<li>CONCAT(str1,str2,…)：拼接多个字符串</li>
-<li>CONCAT_WS(separator,str1,str2,…)：用分隔符拼接多个字符串</li>
-</ul>
-<h3 id="字符串转换"><a href="#字符串转换" class="headerlink" title="字符串转换"></a>字符串转换</h3><ul>
-<li>LOWER(str)：将字符串转换为全小写</li>
-<li>UPPER(str)：将字符串转换为全大写</li>
-<li>REVERSE(str)：将字符串翻转</li>
-</ul>
-<h3 id="获取字符串属性"><a href="#获取字符串属性" class="headerlink" title="获取字符串属性"></a>获取字符串属性</h3><ul>
-<li>LENGTH(str)：获取字符串长度</li>
-</ul>
-<h2 id="SQL-中时间处理函数"><a href="#SQL-中时间处理函数" class="headerlink" title="SQL 中时间处理函数"></a>SQL 中时间处理函数</h2><h3 id="获取当前时间"><a href="#获取当前时间" class="headerlink" title="获取当前时间"></a>获取当前时间</h3><ul>
-<li>NOW():获取当前日期和时间</li>
-<li>CURDATE():获取当前日期</li>
-<li>CURTIME():获取当前时间</li>
-</ul>
-<h3 id="提取时间"><a href="#提取时间" class="headerlink" title="提取时间"></a>提取时间</h3><ul>
-<li><p>DAY(date)/DAYOFYEAR(date):提取出日期格式的日期数</p>
-</li>
-<li><p>DAYNAME(date)：提取出日期格式中的星期几</p>
-</li>
-<li><p>DAYOFYEAR(date)：提取出日期格式在一年中的天数</p>
-</li>
-<li><p>EXTRACT(unit FROM date)：按照指定格式提取出时间</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql<span class="operator">&gt;</span> <span class="keyword">SELECT</span> <span class="built_in">EXTRACT</span>(YEAR_MONTH <span class="keyword">FROM</span> <span class="string">&#x27;2019-07-02 01:02:03&#x27;</span>);</span><br><span class="line">      <span class="operator">-</span><span class="operator">&gt;</span> <span class="number">201907</span></span><br></pre></td></tr></table></figure></li>
-<li><p>HOUR(date): 提取出小时数</p>
-</li>
-<li><p>TIME(expr)：提取出时间</p>
-</li>
-</ul>
-<h3 id="编辑时间"><a href="#编辑时间" class="headerlink" title="编辑时间"></a>编辑时间</h3><ul>
-<li>DATE_ADD(date,INTERVAL expr unit)：在日期上增加一段时间</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> DATE_SUB(<span class="string">&#x27;2018-05-01&#x27;</span>,<span class="type">INTERVAL</span> <span class="number">1</span> <span class="keyword">YEAR</span>)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>DATE_SUB(date,INTERVAL expr unit)：在日期上减去一段时间</li>
-<li>DATEDIFF(expr1,expr2)：expr1-expr2 的值，只有日期部分被计算</li>
-<li>TIMEDIFF(expr1,expr2)</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2019/05/05/SQL%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0%E5%92%8C%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0/" data-id="ckqv0k24w0015vvbq56rz67f2" data-title="SQL中的字符串处理函数和时间处理函数" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-MySQL中的JSON-Data-Type" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/05/05/MySQL%E4%B8%AD%E7%9A%84JSON-Data-Type/" class="article-date">
-  <time class="dt-published" datetime="2019-05-05T06:50:00.000Z" itemprop="datePublished">2019-05-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/05/05/MySQL%E4%B8%AD%E7%9A%84JSON-Data-Type/">MySQL中的JSON Data Type</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="CHAR-与-VARCHAR-的区别"><a href="#CHAR-与-VARCHAR-的区别" class="headerlink" title="CHAR 与 VARCHAR 的区别"></a>CHAR 与 VARCHAR 的区别</h2><h3 id="长度上"><a href="#长度上" class="headerlink" title="长度上"></a>长度上</h3><ul>
-<li>CHAR 类型使用固定长度进行存储，范围为 0~255，多余长度空间会被以空格补齐，检索是尾部空格会被去除</li>
-<li>VARCHAR 类型保存可变的长度字符串，范围为 0~65535，除了实际的长度外，还有一个或两个额外的字节来标识字符串长度，</li>
-</ul>
-<h3 id="应用上"><a href="#应用上" class="headerlink" title="应用上"></a>应用上</h3><ul>
-<li>CHAR 经常用于保存长度相对固定的值，比如 IP 地址或者 MD5 之类的数据。</li>
-<li>VARCHAR 用来保存保存长短不一的列</li>
-</ul>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a target="_blank" rel="noopener" href="http://seanlook.com/2016/04/28/mysql-char-varchar-set/">MySQL 字符数据类型 char 与 varchar 的区别</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/85ada7b1dbab">MySQL 深入剖析 char varchar 类型，有了 VARCHAR，为什么还要有 CHAR？</a></p>
-<h2 id="MySQL-中的-JSON-Data-Type"><a href="#MySQL-中的-JSON-Data-Type" class="headerlink" title="MySQL 中的 JSON Data Type"></a>MySQL 中的 JSON Data Type</h2><h3 id="能够储存为的-JSON-值的格式"><a href="#能够储存为的-JSON-值的格式" class="headerlink" title="能够储存为的 JSON 值的格式"></a>能够储存为的 JSON 值的格式</h3><ul>
-<li>JSON 数组：被 <code>[]</code> 框住，由逗号分隔的值的列表；</li>
-<li>JSON 对象：被<code>&#123;&#125;</code>框住，由逗号分隔的键值对的列表，键的类型必须为字符串。</li>
-</ul>
-<p>能够储存的类型包括字符串，数字，时间，布尔值。同时，两种类型的还可以嵌套，比如：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">99</span>, &#123;<span class="attr">&quot;id&quot;</span>: <span class="string">&quot;HK500&quot;</span>, <span class="attr">&quot;cost&quot;</span>: <span class="number">75.99</span>&#125;, [<span class="string">&quot;hot&quot;</span>, <span class="string">&quot;cold&quot;</span>]]</span><br><span class="line">&#123;<span class="attr">&quot;k1&quot;</span>: <span class="string">&quot;value&quot;</span>, <span class="attr">&quot;k2&quot;</span>: [<span class="number">10</span>, <span class="number">20</span>]&#125;</span><br></pre></td></tr></table></figure>
-
-<p>可以使用 JSON_OBJECT，JSON_ARRAY 来生成 JSON 格式的数据。</p>
-<h2 id="JSON-值的查询"><a href="#JSON-值的查询" class="headerlink" title="JSON 值的查询"></a>JSON 值的查询</h2><p>使用<code>JSON_EXTRACT</code>函数来查询 JSON，第一个参数为要查询的值，第二个参数中使用前导$字符代替要查询的值。JSON_EXTRACT 函数还有别名 -&gt;。</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> JSON_EXTRACT(<span class="string">&#x27;&#123;&quot;id&quot;: 14, &quot;name&quot;: &quot;Aztalan&quot;&#125;&#x27;</span>, <span class="string">&#x27;$.name&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<h2 id="JSON-值的索引"><a href="#JSON-值的索引" class="headerlink" title="JSON 值的索引"></a>JSON 值的索引</h2><ul>
-<li>JSON 数组：使用<code>[]</code>与序号下标的组合，<code>last</code>代表最后一个值的索引位置</li>
-<li>JSON 对象：使用<code>.</code>操作符</li>
-</ul>
-<h2 id="JSON-值的修改"><a href="#JSON-值的修改" class="headerlink" title="JSON 值的修改"></a>JSON 值的修改</h2><ul>
-<li>JSON_INSERT 函数只会把属性添加到对象中，前提是需要添加的属性在对象中还不存在。</li>
-<li>JSON_REPLACE 函数只会更新对象中已经存在的属性。</li>
-<li>JSON_SET 函数在属性存在时对属性进行更新，否则就将属性添加到对象中。</li>
-</ul>
-<h2 id="JSON-值的删除"><a href="#JSON-值的删除" class="headerlink" title="JSON 值的删除"></a>JSON 值的删除</h2><p>JSON_REMOVE 函数指定在输出某个 JSON 属性</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2019/05/05/MySQL%E4%B8%AD%E7%9A%84JSON-Data-Type/" data-id="ckqv0k24s0010vvbq9hmdbttu" data-title="MySQL中的JSON Data Type" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Java中的Lambda表达式" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/03/03/Java%E4%B8%AD%E7%9A%84Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="article-date">
-  <time class="dt-published" datetime="2019-03-03T09:03:34.000Z" itemprop="datePublished">2019-03-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          <a class="icon" target="_blank" rel="noopener" href="/" aria-label="linkedin">
+            <i class="fab fa-linkedin"></i><!--
+      ---></a><!--
+    ---><!--
+    ---> and 
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/03/03/Java%E4%B8%AD%E7%9A%84Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/">Java中的Lambda表达式</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="Lambda-表达式的意义"><a href="#Lambda-表达式的意义" class="headerlink" title="Lambda 表达式的意义"></a>Lambda 表达式的意义</h2><p>Lambda 表达式为 Java 添加了缺失的函数式编程特点，使我们能将函数当做一等公民看待。使其独立存在，你可以将其赋值给一个变量，或将他们当做参数传给其他函数。不过，在 Java 中，Lambda 表达式是对象，他们必须依附于一类特别的对象类型——函数式接口(functional interface)。</p>
-<h2 id="Lambda-表达式特征"><a href="#Lambda-表达式特征" class="headerlink" title="Lambda 表达式特征"></a>Lambda 表达式特征</h2><p>Lambda 表达式没有声明的方法，也即没有访问修饰符、返回值声明以及名字。</p>
-<h2 id="Lambda-表达式的结构"><a href="#Lambda-表达式的结构" class="headerlink" title="Lambda 表达式的结构"></a>Lambda 表达式的结构</h2><ul>
-<li>一个 Lambda 表达式可以有零个或多个参数</li>
-<li>参数的类型既可以明确声明，也可以根据上下文来推断。例如：<code>(int a)</code>与<code>(a)</code>效果相同</li>
-<li>所有参数需包含在圆括号内，参数之间用逗号相隔。例如：<code>(a, b)</code> 或 <code>(int a, int b)</code> 或 <code>(String a, int b, float c)</code></li>
-<li>空圆括号代表参数集为空。例如：<code>() -&gt; 42</code></li>
-<li>当只有一个参数，且其类型可推导时，圆括号（）可省略。例如：<code>a -&gt; return a*a</code></li>
-<li>Lambda 表达式的主体可包含零条或多条语句</li>
-<li>如果 Lambda 表达式的主体只有一条语句，花括号{}可省略，<code>return</code>关键字也可以省略，匿名函数的返回类型与该主体表达式一致</li>
-<li>如果 Lambda 表达式的主体包含一条以上语句，则表达式必须包含在花括号{}中（形成代码块）。匿名函数的返回类型与代码块的返回类型一致，若没有返回则为空</li>
-</ul>
-<h2 id="Lambda-表达式举例"><a href="#Lambda-表达式举例" class="headerlink" title="Lambda 表达式举例"></a>Lambda 表达式举例</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 不需要参数,返回值为 5</span></span><br><span class="line">()  -&gt;  <span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 接收一个参数(数字类型),返回其2倍的值</span></span><br><span class="line">x -&gt;  <span class="number">2</span>  * x</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. 接受2个参数(数字),并返回他们的差值</span></span><br><span class="line">(x, y)  -&gt; x – y</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4. 接收2个int型整数,返回他们的和</span></span><br><span class="line">(<span class="keyword">int</span> x,  <span class="keyword">int</span> y)  -&gt; x + y</span><br><span class="line"></span><br><span class="line"><span class="comment">// 5. 接受一个 string 对象,并在控制台打印,不返回任何值(看起来像是返回void)</span></span><br><span class="line">(String s)  -&gt;  System.out.print(s)</span><br></pre></td></tr></table></figure>
-
-<h2 id="Lambada-表达式的作用域"><a href="#Lambada-表达式的作用域" class="headerlink" title="Lambada 表达式的作用域"></a>Lambada 表达式的作用域</h2><h3 id="访问局部变量"><a href="#访问局部变量" class="headerlink" title="访问局部变量"></a>访问局部变量</h3><ul>
-<li>可以直接在 lambda 表达式中访问外层中的<code>final</code>局部变量</li>
-<li>lambda 表达式中访问的外层局部变量时必须不可被后面的代码修改（即隐性的具有 final 的语义），Lambda 表达式中也不能修改</li>
-<li>在 Lambda 表达式当中被引用的变量的值不可以被更改。</li>
-<li>在 Lambda 表达式当中不允许声明一个与局部变量同名的参数或者局部变量。</li>
-</ul>
-<h3 id="访问对象字段与静态变量"><a href="#访问对象字段与静态变量" class="headerlink" title="访问对象字段与静态变量"></a>访问对象字段与静态变量</h3><ul>
-<li>和局部变量不同的是，Lambda 内部对于实例的字段（即：成员变量）以及静态变量是即可读又可写。</li>
-<li>不能访问接口的默认方法</li>
-</ul>
-<h3 id="Lambda-表达式中的-this"><a href="#Lambda-表达式中的-this" class="headerlink" title="Lambda 表达式中的 this"></a>Lambda 表达式中的 this</h3><ul>
-<li>Lambda 表达式中使用 this 会引用创建该 Lambda 表达式的方法的 this 参数。</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2019/03/03/Java%E4%B8%AD%E7%9A%84Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/" data-id="ckqv0k24m000kvvbq428f4fah" data-title="Java中的Lambda表达式" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Java中枚举和类的异同" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/02/28/Java%E4%B8%AD%E6%9E%9A%E4%B8%BE%E5%92%8C%E7%B1%BB%E7%9A%84%E5%BC%82%E5%90%8C/" class="article-date">
-  <time class="dt-published" datetime="2019-02-28T06:33:39.000Z" itemprop="datePublished">2019-02-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
+          <a class="icon" target="_blank" rel="noopener" href="mailto:name@email.com" aria-label="mail">
+            <i class="fas fa-envelope"></i><!--
+      ---></a>
+        <!--
+    --->.
+        
+      
+    </p>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/02/28/Java%E4%B8%AD%E6%9E%9A%E4%B8%BE%E5%92%8C%E7%B1%BB%E7%9A%84%E5%BC%82%E5%90%8C/">Java中枚举和类的异同</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="不同点"><a href="#不同点" class="headerlink" title="不同点"></a>不同点</h2><ul>
-<li>枚举类是一组相关数据的组合</li>
-<li>枚举类默认继承了 java.lang.Enum 类，而不是继承 Object 类，不能继承其他类</li>
-<li>非抽象枚举类默认使用<code>final</code>修饰，不能存在子类</li>
-<li>枚举类的构造器只能使用<code>private</code>修饰</li>
-<li>枚举类的所有实例必须在枚举类的第一行显式列出，否则这个枚举类永远不能产生实例，列出的实例，系统会自动添加 public static final 修饰</li>
-<li>枚举类默认带有<code>values()</code>方法，该方法可以很方便的遍历所有的枚举值</li>
-<li>常量值地址唯一,可以用==直接对比,性能会有提高</li>
-</ul>
-<h2 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h2><ul>
-<li>均可以实现接口</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2019/02/28/Java%E4%B8%AD%E6%9E%9A%E4%B8%BE%E5%92%8C%E7%B1%BB%E7%9A%84%E5%BC%82%E5%90%8C/" data-id="ckqv0k24l000ivvbq11xg4j2b" data-title="Java中枚举和类的异同" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-  </nav>
-
 </section>
+
+<section id="writing">
+  <span class="h1"><a href="/archives/">Writing</a></span>
+  
+  <ul class="post-list">
+    
+    
+      
+    
+    
+      <li class="post-item">
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PPT/" rel="tag">PPT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%A6/" rel="tag">书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BD%9C%E7%94%BB/" rel="tag">作画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8A%A8%E7%94%BB/" rel="tag">动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%97%E4%BD%93/" rel="tag">字体</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%BF/" rel="tag">政</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82/" rel="tag">杂</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BE%BD%E6%AF%9B%E7%90%83/" rel="tag">羽毛球</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%BE%E8%AE%A1/" rel="tag">设计</a></li></ul>
+    <div class="meta">
+      
+        
+          <time datetime="2019-12-07T06:34:26.000Z" itemprop="datePublished">2019-12-07</time>
+        
+      
     </div>
-  </div>
 
 
-  
+        <span>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 16.67px;">Hexo</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/PPT/" style="font-size: 10px;">PPT</a> <a href="/tags/%E4%B9%A6/" style="font-size: 16.67px;">书</a> <a href="/tags/%E4%BD%9C%E7%94%BB/" style="font-size: 20px;">作画</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 20px;">动画</a> <a href="/tags/%E5%AD%97%E4%BD%93/" style="font-size: 13.33px;">字体</a> <a href="/tags/%E6%94%BF/" style="font-size: 10px;">政</a> <a href="/tags/%E6%9D%82/" style="font-size: 16.67px;">杂</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a> <a href="/tags/%E7%BE%BD%E6%AF%9B%E7%90%83/" style="font-size: 10px;">羽毛球</a> <a href="/tags/%E8%AE%BE%E8%AE%A1/" style="font-size: 13.33px;">设计</a>
+        <a class="" href="/post/6340/">Java 8的变化之行为参数化——Lambda表达式</a>
+    
+
+
+</span>
+      </li>
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2019-06-08T05:58:36.000Z" itemprop="datePublished">2019-06-08</time>
+        
+      
     </div>
-  </div>
 
-  
+
+        <span>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a></li></ul>
+        <a class="" href="/post/27311/">VPS系统重装后要做的事</a>
+    
+
+
+</span>
+      </li>
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2019-05-11T13:02:24.000Z" itemprop="datePublished">2019-05-11</time>
+        
+      
     </div>
-  </div>
 
 
-  
+        <span>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
+        <a class="" href="/post/37646/">MySQL规范</a>
+    
+
+
+</span>
+      </li>
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2019-05-10T02:22:10.000Z" itemprop="datePublished">2019-05-10</time>
+        
+      
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/post/21282/">MySQL中的事务</a>
+    
+
+
+</span>
+      </li>
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2019-05-09T14:48:30.000Z" itemprop="datePublished">2019-05-09</time>
+        
+      
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/post/10973/">SQL索引介绍</a>
+    
+
+
+</span>
+      </li>
+    
+  </ul>
+  
+</section>
+
+
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2021
+    John Doe
+  </div>
+  <div class="footer-right">
+    <nav>
       <ul>
-        
-          <li>
-            <a href="/2019/12/07/Java-8%E7%9A%84%E5%8F%98%E5%8C%96%E4%B9%8B%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96/">Java 8的变化之行为参数化——Lambda表达式</a>
-          </li>
-        
-          <li>
-            <a href="/2019/06/08/VPS%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/">VPS系统重装后要做的事</a>
-          </li>
-        
-          <li>
-            <a href="/2019/05/11/MySQL%E8%A7%84%E8%8C%83/">MySQL规范</a>
-          </li>
-        
-          <li>
-            <a href="/2019/05/10/MySQL%E4%B8%AD%E7%9A%84%E4%BA%8B%E7%89%A9/">MySQL中的事务</a>
-          </li>
-        
-          <li>
-            <a href="/2019/05/09/SQL%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/">SQL索引介绍</a>
-          </li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
         
       </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
+    </nav>
   </div>
 </footer>
 
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
+    <!-- styles -->
 
 
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
 
 
 
 
-<script src="/js/script.js"></script>
+<!-- clipboard -->
 
 
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
 
 
-
-  </div>
 </body>
 </html>

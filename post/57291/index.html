@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="异常（Exception）与错误（Error）的区别与联系 Error 类与 Exception 类都是继承于 Throwable 类。 Error 类一般是指与虚拟机相关的问题，如系统崩溃，虚拟机错误，内存空间不足，方法调用栈溢出等等。对于这类错误，Java 编译器不去检查他们，对于这类错误导致的程序中断，仅靠程序本身无法恢复和预防。 Exception 类表示程序可以处理的异常，可以捕获且可能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java中的异常与错误">
+<meta property="og:url" content="https://kylindc.github.io/post/57291/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="异常（Exception）与错误（Error）的区别与联系 Error 类与 Exception 类都是继承于 Throwable 类。 Error 类一般是指与虚拟机相关的问题，如系统崩溃，虚拟机错误，内存空间不足，方法调用栈溢出等等。对于这类错误，Java 编译器不去检查他们，对于这类错误导致的程序中断，仅靠程序本身无法恢复和预防。 Exception 类表示程序可以处理的异常，可以捕获且可能">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-01-24T10:53:45.000Z">
+<meta property="article:modified_time" content="2019-01-24T11:56:10.000Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Java中的异常与错误</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" "Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post " href="/post/43519/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post " href="/post/46716/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/post/57291/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/57291/&text=Java中的异常与错误"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/57291/&title=Java中的异常与错误"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/57291/&is_video=false&description=Java中的异常与错误"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Java中的异常与错误&body=Check out this article: https://kylindc.github.io/post/57291/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/57291/&title=Java中的异常与错误"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/57291/&title=Java中的异常与错误"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/57291/&title=Java中的异常与错误"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/57291/&title=Java中的异常与错误"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/57291/&name=Java中的异常与错误&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/57291/&t=Java中的异常与错误"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%EF%BC%88Exception%EF%BC%89%E4%B8%8E%E9%94%99%E8%AF%AF%EF%BC%88Error%EF%BC%89%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB"><span class="toc-number">1.</span> <span class="toc-text">异常（Exception）与错误（Error）的区别与联系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8%EF%BC%88RuntimeException%EF%BC%89%E4%B8%8E%E5%8F%97%E6%A3%80%E6%9F%A5%E5%9E%8B%E5%BC%82%E5%B8%B8%EF%BC%88Checked-Exception%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">运行时异常（RuntimeException）与受检查型异常（Checked Exception）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">异常处理方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#try-catch-finally-return-%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F"><span class="toc-number">3.1.</span> <span class="toc-text">try-catch-finally-return 执行顺序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8%E7%A7%8D%E7%B1%BB"><span class="toc-number">4.</span> <span class="toc-text">常见异常种类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8"><span class="toc-number">4.1.</span> <span class="toc-text">运行时异常</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%97%E6%A3%80%E6%9F%A5%E5%9E%8B%E5%BC%82%E5%B8%B8"><span class="toc-number">4.2.</span> <span class="toc-text">受检查型异常</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">5.</span> <span class="toc-text">参考资料</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Java中的异常与错误
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">John Doe</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-01-24T10:53:45.000Z" itemprop="datePublished">2019-01-24</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="异常（Exception）与错误（Error）的区别与联系"><a href="#异常（Exception）与错误（Error）的区别与联系" class="headerlink" title="异常（Exception）与错误（Error）的区别与联系"></a>异常（Exception）与错误（Error）的区别与联系</h2><ul>
+<li>Error 类与 Exception 类都是继承于 Throwable 类。</li>
+<li>Error 类一般是指与虚拟机相关的问题，如系统崩溃，虚拟机错误，内存空间不足，方法调用栈溢出等等。对于这类错误，Java 编译器不去检查他们，对于这类错误导致的程序中断，仅靠程序本身无法恢复和预防。</li>
+<li>Exception 类表示程序可以处理的异常，可以捕获且可能恢复。遇到这类异常，应该尽可能去处理异常，使程序恢复运行，而不应该随意终止异常。</li>
+</ul>
+<h2 id="运行时异常（RuntimeException）与受检查型异常（Checked-Exception）"><a href="#运行时异常（RuntimeException）与受检查型异常（Checked-Exception）" class="headerlink" title="运行时异常（RuntimeException）与受检查型异常（Checked Exception）"></a>运行时异常（RuntimeException）与受检查型异常（Checked Exception）</h2><ul>
+<li><p>运行时异常：其特点是 Java 编译器不去检查它，当程序中可能出现这类异常时，即使没有用 try……catch 捕获，也没有用 throws 抛出，还是会编译通过，但运行时会就终止，如除数为零的 ArithmeticException、错误的类型转换、数组越界访问和试图访问空指针等。处理 RuntimeException 的原则是：如果出现 RuntimeException，那么一定是程序的逻辑出了问题，应该及时修改程序。</p>
+</li>
+<li><p>受检查型异常：这类异常如果没有 try……catch 也没有 throws 抛出，编译是通不过的。这类异常一般是外部错误，例如文件找不到、试图从文件尾后读取数据等，这并不是程序本身的错误，而是在应用环境中出现的外部错误。</p>
+</li>
+</ul>
+<h2 id="异常处理方式"><a href="#异常处理方式" class="headerlink" title="异常处理方式"></a>异常处理方式</h2><ul>
+<li>使用 try..catch..finally 语句进行捕获处理</li>
+<li>在产生异常的方法声明后面写上 throws 某一个 Exception 类型</li>
+</ul>
+<h3 id="try-catch-finally-return-执行顺序"><a href="#try-catch-finally-return-执行顺序" class="headerlink" title="try-catch-finally-return 执行顺序"></a>try-catch-finally-return 执行顺序</h3><ul>
+<li>不管是否有异常产生，finally 块中代码都会执行</li>
+<li>当 try 和 catch 中有 return 语句时，finally 块仍然会执行</li>
+<li>finally 是在 return 后面的表达式运算后执行的，所以函数返回值是在 finally 执行前确定的。无论 finally 中的代码怎么样，返回的值都不会改变，仍然是之前 return 语句中保存的值</li>
+<li>finally 中最好不要包含 return，否则程序会提前退出，返回值不是 try 或 catch 中保存的返回值</li>
+</ul>
+<h2 id="常见异常种类"><a href="#常见异常种类" class="headerlink" title="常见异常种类"></a>常见异常种类</h2><h3 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h3><ul>
+<li><code>java.lang.ArithmeticException</code>：算术条件异常。譬如：整数除零</li>
+<li><code>java.lang.ArrayStoreException</code>：将错误的类型储存到对象数组里，例如：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object x[] = <span class="keyword">new</span> String[<span class="number">3</span>];</span><br><span class="line">x[<span class="number">0</span>] = <span class="keyword">new</span> Integer(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>java.lang.ClassCastException</code>：强制类型转换异常，例如：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object x = <span class="keyword">new</span> Integer(<span class="number">0</span>);</span><br><span class="line">System.out.println((String)x);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>java.lang.IndexOutOfBoundsException</code>：索引越界</li>
+<li><code>java.lang.NullPointerException</code>：空指针异常，常见对象没有实例化便引用</li>
+</ul>
+<h3 id="受检查型异常"><a href="#受检查型异常" class="headerlink" title="受检查型异常"></a>受检查型异常</h3><ul>
+<li><code>java.lang.ClassNotFoundException</code>：无法找到对应的类</li>
+<li><code>java.lang.NoSuchMetodException</code>：无法找到对应的方法</li>
+<li><code>java.io.IOException</code>：输入输出异常</li>
+</ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/goodlixueyong/article/details/47122487">谈一谈 Java 中的 Error 和 Exception</a></p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%EF%BC%88Exception%EF%BC%89%E4%B8%8E%E9%94%99%E8%AF%AF%EF%BC%88Error%EF%BC%89%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB"><span class="toc-number">1.</span> <span class="toc-text">异常（Exception）与错误（Error）的区别与联系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8%EF%BC%88RuntimeException%EF%BC%89%E4%B8%8E%E5%8F%97%E6%A3%80%E6%9F%A5%E5%9E%8B%E5%BC%82%E5%B8%B8%EF%BC%88Checked-Exception%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">运行时异常（RuntimeException）与受检查型异常（Checked Exception）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">异常处理方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#try-catch-finally-return-%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F"><span class="toc-number">3.1.</span> <span class="toc-text">try-catch-finally-return 执行顺序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8%E7%A7%8D%E7%B1%BB"><span class="toc-number">4.</span> <span class="toc-text">常见异常种类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8"><span class="toc-number">4.1.</span> <span class="toc-text">运行时异常</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%97%E6%A3%80%E6%9F%A5%E5%9E%8B%E5%BC%82%E5%B8%B8"><span class="toc-number">4.2.</span> <span class="toc-text">受检查型异常</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">5.</span> <span class="toc-text">参考资料</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/post/57291/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/57291/&text=Java中的异常与错误"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/57291/&title=Java中的异常与错误"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/57291/&is_video=false&description=Java中的异常与错误"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Java中的异常与错误&body=Check out this article: https://kylindc.github.io/post/57291/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/57291/&title=Java中的异常与错误"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/57291/&title=Java中的异常与错误"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/57291/&title=Java中的异常与错误"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/57291/&title=Java中的异常与错误"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/57291/&name=Java中的异常与错误&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/57291/&t=Java中的异常与错误"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2021
+    John Doe
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
