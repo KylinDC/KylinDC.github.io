@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Archives | Hexo</title>
+  <title>SQL中的子查询、联结查询和组合查询 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="子查询子查询即嵌套在其他查询中的查询。一般有两种用法，一种是在WHERE字句中使用其来限定范围，达到过滤的效果，一般可与IN搭配使用。另一种用法作为计算字段使用子查询，即在SELECT语句中使用子查询，将子查询的结果作为一列的结果。如下例所示： 123456SELECT AVG(score) AS average_score,       (SELECT AVG(score)        FRO">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQL中的子查询、联结查询和组合查询">
+<meta property="og:url" content="http://example.com/2019/05/09/SQL%E4%B8%AD%E7%9A%84%E5%AD%90%E6%9F%A5%E8%AF%A2%E3%80%81%E8%81%94%E7%BB%93%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="子查询子查询即嵌套在其他查询中的查询。一般有两种用法，一种是在WHERE字句中使用其来限定范围，达到过滤的效果，一般可与IN搭配使用。另一种用法作为计算字段使用子查询，即在SELECT语句中使用子查询，将子查询的结果作为一列的结果。如下例所示： 123456SELECT AVG(score) AS average_score,       (SELECT AVG(score)        FRO">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-05-09T04:53:35.000Z">
+<meta property="article:modified_time" content="2019-05-08T11:58:58.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,216 +73,70 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/12/07/Java-8%E7%9A%84%E5%8F%98%E5%8C%96%E4%B9%8B%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-12-07T06:34:26.000Z" itemprop="datePublished">Dec 7</time>
+        <section id="main"><article id="post-SQL中的子查询、联结查询和组合查询" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2019/05/09/SQL%E4%B8%AD%E7%9A%84%E5%AD%90%E6%9F%A5%E8%AF%A2%E3%80%81%E8%81%94%E7%BB%93%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2/" class="article-date">
+  <time class="dt-published" datetime="2019-05-09T04:53:35.000Z" itemprop="datePublished">2019-05-09</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/07/Java-8%E7%9A%84%E5%8F%98%E5%8C%96%E4%B9%8B%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96/">Java 8的变化之行为参数化——Lambda表达式</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      SQL中的子查询、联结查询和组合查询
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/06/08/VPS%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-06-08T05:58:36.000Z" itemprop="datePublished">Jun 8</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/08/VPS%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/">VPS系统重装后要做的事</a>
-    </h1>
-  
+        <h2 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h2><p>子查询即嵌套在其他查询中的查询。一般有两种用法，一种是在<code>WHERE</code>字句中使用其来限定范围，达到过滤的效果，一般可与<code>IN</code>搭配使用。另一种用法作为计算字段使用子查询，即在<code>SELECT</code>语句中使用子查询，将子查询的结果作为一列的结果。如下例所示：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">AVG</span>(score) <span class="keyword">AS</span> average_score,</span><br><span class="line">       (<span class="keyword">SELECT</span> <span class="built_in">AVG</span>(score)</span><br><span class="line">        <span class="keyword">FROM</span> score</span><br><span class="line">                 <span class="keyword">INNER</span> <span class="keyword">JOIN</span> subject <span class="keyword">ON</span> score.subject_id <span class="operator">=</span> subject.id</span><br><span class="line">        <span class="keyword">WHERE</span> subject.subject <span class="operator">=</span> &quot;语文&quot;) <span class="keyword">AS</span> average_chinese_score</span><br><span class="line"><span class="keyword">FROM</span> score;</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/11/MySQL%E8%A7%84%E8%8C%83/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-11T13:02:24.000Z" itemprop="datePublished">May 11</time>
-</a>
+<p>子查询的缺点在于过多的子查询将会影响性能，而且将导致代码可读性不佳。</p>
+<h2 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h2><p>联合查询通常用于需要查看的数据来自多张表，使用<code>JOIN</code>语句将多张表连接起来，使用<code>ON</code>语句将两张表中相关联的列连接起来。</p>
+<p>常用的联合查询包括内连接和外连接。内连接也被称为等值连接，只有同时存在两张表中的记录才会被保留。外连接中两张的表的记录都会被保留，能匹配上的则正确匹配，不能匹配上的将会被设置成<code>NULL</code>。外连接分为左连接和右连接，左连接中<code>JOIN</code>语句左边的表中的记录将会被保留，右连接则反之。</p>
+<h2 id="组合查询"><a href="#组合查询" class="headerlink" title="组合查询"></a>组合查询</h2><p>组合查询通常用来将两个或者两个以上具有相同结构的列、表达式或者聚集函数的查询结果组合到一起，默认会排除重复值。使用关键词<code>UNION</code>。只能在最后使用一次<code>ORDER BY</code>语句对结果进行排序。</p>
+<p>可以认为，组合查询是将查询结果在行方向上进行拼接，而联合查询是将不同的表在列方向上进行拼接后再进行查询。</p>
+
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/11/MySQL%E8%A7%84%E8%8C%83/">MySQL规范</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/10/MySQL%E4%B8%AD%E7%9A%84%E4%BA%8B%E7%89%A9/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-10T02:22:10.000Z" itemprop="datePublished">May 10</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2019/05/09/SQL%E4%B8%AD%E7%9A%84%E5%AD%90%E6%9F%A5%E8%AF%A2%E3%80%81%E8%81%94%E7%BB%93%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2/" data-id="ckqv0k24v0014vvbqeerh6sx6" data-title="SQL中的子查询、联结查询和组合查询" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/10/MySQL%E4%B8%AD%E7%9A%84%E4%BA%8B%E7%89%A9/">MySQL中的事务</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/09/SQL%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-09T14:48:30.000Z" itemprop="datePublished">May 9</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/09/SQL%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/">SQL索引介绍</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/09/SQL%E4%B8%AD%E7%9A%84%E5%AD%90%E6%9F%A5%E8%AF%A2%E3%80%81%E8%81%94%E7%BB%93%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-09T04:53:35.000Z" itemprop="datePublished">May 9</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/09/SQL%E4%B8%AD%E7%9A%84%E5%AD%90%E6%9F%A5%E8%AF%A2%E3%80%81%E8%81%94%E7%BB%93%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2/">SQL中的子查询、联结查询和组合查询</a>
-    </h1>
-  
-
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/09/SQL%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          SQL索引介绍
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/05/SQL%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0%E5%92%8C%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">SQL中的字符串处理函数和时间处理函数</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/05/SQL%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0%E5%92%8C%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-05T08:55:00.000Z" itemprop="datePublished">May 5</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/05/SQL%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0%E5%92%8C%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0/">SQL中的字符串处理函数和时间处理函数</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/05/MySQL%E4%B8%AD%E7%9A%84JSON-Data-Type/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-05T06:50:00.000Z" itemprop="datePublished">May 5</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/05/MySQL%E4%B8%AD%E7%9A%84JSON-Data-Type/">MySQL中的JSON Data Type</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/03/03/Java%E4%B8%AD%E7%9A%84Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-03-03T09:03:34.000Z" itemprop="datePublished">Mar 3</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/03/Java%E4%B8%AD%E7%9A%84Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/">Java中的Lambda表达式</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/02/28/Java%E4%B8%AD%E6%9E%9A%E4%B8%BE%E5%92%8C%E7%B1%BB%E7%9A%84%E5%BC%82%E5%90%8C/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-02-28T06:33:39.000Z" itemprop="datePublished">Feb 28</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/28/Java%E4%B8%AD%E6%9E%9A%E4%B8%BE%E5%92%8C%E7%B1%BB%E7%9A%84%E5%BC%82%E5%90%8C/">Java中枚举和类的异同</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-  </nav>
 
 </section>
         

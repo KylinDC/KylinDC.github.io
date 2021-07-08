@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Archives | Hexo</title>
+  <title>JavaScript基本数据类型 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="Number常规类型JS 中不区分int和float，无论是整数还是小数，其类型均为Number，在程序内部，Number类型的实质是一个 64 位的浮点数，因此 JavaScript 所能表示的数值范围为±1.7976931348623157e+308，其最小所能表示的小数为±5e-324，这两个边界值可以分别通过访问 Number 对象的 MAX_VALUE 属性和 MIN_VALUE 属性来">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript基本数据类型">
+<meta property="og:url" content="http://example.com/2018/11/20/JavaScript%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Number常规类型JS 中不区分int和float，无论是整数还是小数，其类型均为Number，在程序内部，Number类型的实质是一个 64 位的浮点数，因此 JavaScript 所能表示的数值范围为±1.7976931348623157e+308，其最小所能表示的小数为±5e-324，这两个边界值可以分别通过访问 Number 对象的 MAX_VALUE 属性和 MIN_VALUE 属性来">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-11-20T11:54:52.000Z">
+<meta property="article:modified_time" content="2018-11-20T16:39:23.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,216 +73,75 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/12/07/Java-8%E7%9A%84%E5%8F%98%E5%8C%96%E4%B9%8B%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-12-07T06:34:26.000Z" itemprop="datePublished">Dec 7</time>
+        <section id="main"><article id="post-JavaScript基本数据类型" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/11/20/JavaScript%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="article-date">
+  <time class="dt-published" datetime="2018-11-20T11:54:52.000Z" itemprop="datePublished">2018-11-20</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/07/Java-8%E7%9A%84%E5%8F%98%E5%8C%96%E4%B9%8B%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96/">Java 8的变化之行为参数化——Lambda表达式</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      JavaScript基本数据类型
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/06/08/VPS%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-06-08T05:58:36.000Z" itemprop="datePublished">Jun 8</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/08/VPS%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/">VPS系统重装后要做的事</a>
-    </h1>
-  
+        <h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2><h3 id="常规类型"><a href="#常规类型" class="headerlink" title="常规类型"></a>常规类型</h3><p>JS 中不区分<code>int</code>和<code>float</code>，无论是整数还是小数，其类型均为<code>Number</code>，在程序内部，<code>Number</code>类型的实质是一个 64 位的浮点数，因此 JavaScript 所能表示的数值范围为<code>±1.7976931348623157e+308</code>，其最小所能表示的小数为<code>±5e-324</code>，这两个边界值可以分别通过访问 Number 对象的 MAX_VALUE 属性和 MIN_VALUE 属性来获取。</p>
+<p>参考：<a target="_blank" rel="noopener" href="http://blog.shaochuancs.com/javascript-number-range/">JavaScript 实验：数值范围</a></p>
+<h3 id="特殊类型"><a href="#特殊类型" class="headerlink" title="特殊类型"></a>特殊类型</h3><ul>
+<li><code>Infinity</code>：正无穷</li>
+<li><code>-Infinity</code>：负无穷</li>
+<li><code>NaN</code>：非数值</li>
+</ul>
+<h2 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h2><p>字符串类型用来表示文本数据，使用单引号或双引号来包裹起来表明此为字符串。</p>
+<p>字符串一旦创建就不能再次修改，但是可以基于对原始字符串的操作来创建新的字符串。</p>
+<h2 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h2><p>布尔类型的值只有两种：<code>true</code>和<code>false</code>。</p>
+<p>null、undefined 在条件判断是都为<code>false</code>，其他值都为<code>true</code>，包括 0、-0、false、NaN、、或者空字符串（””）。</p>
+<h3 id="布尔类型比较"><a href="#布尔类型比较" class="headerlink" title="布尔类型比较"></a>布尔类型比较</h3><h2 id="Null-类型"><a href="#Null-类型" class="headerlink" title="Null 类型"></a>Null 类型</h2><p><code>null</code>是缺少的标识，指示变量未指向任何对象，可以将<code>null</code>理解为尚未创建的对象。注意使用<code>typeof null</code>时会返回<code>object</code>，这属于历时遗留因素。</p>
+<h2 id="Undefined-类型"><a href="#Undefined-类型" class="headerlink" title="Undefined 类型"></a>Undefined 类型</h2><p>一个没有被赋值的变量的类型是 undefined。如果方法或者是语句中操作的变量没有被赋值，则会返回 undefined。</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/11/MySQL%E8%A7%84%E8%8C%83/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-11T13:02:24.000Z" itemprop="datePublished">May 11</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/11/MySQL%E8%A7%84%E8%8C%83/">MySQL规范</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/10/MySQL%E4%B8%AD%E7%9A%84%E4%BA%8B%E7%89%A9/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-10T02:22:10.000Z" itemprop="datePublished">May 10</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/11/20/JavaScript%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" data-id="ckqv0k24j000dvvbq702hft1v" data-title="JavaScript基本数据类型" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/10/MySQL%E4%B8%AD%E7%9A%84%E4%BA%8B%E7%89%A9/">MySQL中的事务</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/09/SQL%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-09T14:48:30.000Z" itemprop="datePublished">May 9</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/09/SQL%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/">SQL索引介绍</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/09/SQL%E4%B8%AD%E7%9A%84%E5%AD%90%E6%9F%A5%E8%AF%A2%E3%80%81%E8%81%94%E7%BB%93%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-09T04:53:35.000Z" itemprop="datePublished">May 9</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/09/SQL%E4%B8%AD%E7%9A%84%E5%AD%90%E6%9F%A5%E8%AF%A2%E3%80%81%E8%81%94%E7%BB%93%E6%9F%A5%E8%AF%A2%E5%92%8C%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2/">SQL中的子查询、联结查询和组合查询</a>
-    </h1>
-  
-
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/11/21/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Git学习笔记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/11/05/%E5%A6%82%E4%BD%95%E6%8F%90%E9%97%AE%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">《如何提问》阅读笔记</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/05/SQL%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0%E5%92%8C%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-05T08:55:00.000Z" itemprop="datePublished">May 5</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/05/SQL%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0%E5%92%8C%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0/">SQL中的字符串处理函数和时间处理函数</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/05/MySQL%E4%B8%AD%E7%9A%84JSON-Data-Type/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-05-05T06:50:00.000Z" itemprop="datePublished">May 5</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/05/MySQL%E4%B8%AD%E7%9A%84JSON-Data-Type/">MySQL中的JSON Data Type</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/03/03/Java%E4%B8%AD%E7%9A%84Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-03-03T09:03:34.000Z" itemprop="datePublished">Mar 3</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/03/Java%E4%B8%AD%E7%9A%84Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/">Java中的Lambda表达式</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/02/28/Java%E4%B8%AD%E6%9E%9A%E4%B8%BE%E5%92%8C%E7%B1%BB%E7%9A%84%E5%BC%82%E5%90%8C/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-02-28T06:33:39.000Z" itemprop="datePublished">Feb 28</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/28/Java%E4%B8%AD%E6%9E%9A%E4%B8%BE%E5%92%8C%E7%B1%BB%E7%9A%84%E5%BC%82%E5%90%8C/">Java中枚举和类的异同</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-  </nav>
 
 </section>
         

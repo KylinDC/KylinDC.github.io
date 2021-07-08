@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/4/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Markdown基本语法总结" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/11/05/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/" class="article-date">
+  <time class="dt-published" datetime="2018-11-05T08:34:09.000Z" itemprop="datePublished">2018-11-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/11/05/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/">Markdown基本语法总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="微小的建议"><a href="#微小的建议" class="headerlink" title="微小的建议"></a>微小的建议</h2><ul>
+<li>标题、列表等标记符与正文文字之间应该有一个空格来分隔开</li>
+<li>不要吝啬使用回车，不同内容的文字块用回车来区分开来保证可读性，也能确保不同的Markdown解析器能正确解析，多余的回车也会被Markdown解析器自动忽略</li>
+<li>不同平台上的Markdown软件有着不同Markdown解析器，它们对基本的Markdown语法都有着很好的支持，但是作为产品特色也会对一些特殊的功能做一些私有的支持如流程图，可以事先查看不同的Markdown软件的说明</li>
+</ul>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>用<code>#</code>来标记标题，从一到六共六级标题，<code>#</code>数越多，标题层级越低</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>用<code>-</code>或<code>*</code>来标记，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- a</span><br><span class="line">- b</span><br><span class="line">* c</span><br><span class="line">* d</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>a</li>
+<li>b</li>
+</ul>
+<ul>
+<li>c</li>
+<li>d</li>
+</ul>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>用<code>1.</code>、<code>2.</code>等 数字+. 的样式来表示，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. a</span><br><span class="line">2. b</span><br><span class="line">3. c</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+</ol>
+<h3 id="多级列表"><a href="#多级列表" class="headerlink" title="多级列表"></a>多级列表</h3><p>用缩进来表示层级关系，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- a</span><br><span class="line">    - b</span><br><span class="line">        - c </span><br><span class="line">            1. d </span><br></pre></td></tr></table></figure>
+<ul>
+<li>a<ul>
+<li>b<ul>
+<li>c <ol>
+<li>d </li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h2><h3 id="插入超链接"><a href="#插入超链接" class="headerlink" title="插入超链接"></a>插入超链接</h3><p>用<code>[显示文字](链接)</code>来表示，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我的博客地址是：[Upside Down](https://kylindc.github.io/)</span><br></pre></td></tr></table></figure>
+
+<p>我的博客地址是：<a target="_blank" rel="noopener" href="https://kylindc.github.io/">Upside Down</a></p>
+<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p>用<code>![](链接)</code>来表示，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](http://www.spoon-tamago.com/wp-content/uploads/2017/01/winter-2017-snowfall-kyoto-6.jpg)</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://www.spoon-tamago.com/wp-content/uploads/2017/01/winter-2017-snowfall-kyoto-6.jpg"></p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>用<code>&gt;</code>来表示，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 京都各个寺院的庭园，是日本人对艺术认识的最明确的宣言。因为，不论这庭园的结构，还是最具代表的桂离宫赏月台的景观，以及赏花亭对后面深山幽谷的模仿，都是极端的人工化对自然的巧妙的摹写，其中包藏着背叛自然的企图。自然与艺术作品之间，有着媚俗的隐秘的叛逆之心。艺术作品对自然的谋叛，犹如卖笑女子精神的不贞，阴柔而深切的虚伪，多以媚态的形式，装出一幅力图依偎自然而原封不动摹写自然的样子。 --三岛由纪夫《禁色》</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>京都各个寺院的庭园，是日本人对艺术认识的最明确的宣言。因为，不论这庭园的结构，还是最具代表的桂离宫赏月台的景观，以及赏花亭对后面深山幽谷的模仿，都是极端的人工化对自然的巧妙的摹写，其中包藏着背叛自然的企图。自然与艺术作品之间，有着媚俗的隐秘的叛逆之心。艺术作品对自然的谋叛，犹如卖笑女子精神的不贞，阴柔而深切的虚伪，多以媚态的形式，装出一幅力图依偎自然而原封不动摹写自然的样子。 –三岛由纪夫《禁色》</p>
+</blockquote>
+<h2 id="粗体和斜体"><a href="#粗体和斜体" class="headerlink" title="粗体和斜体"></a>粗体和斜体</h2><p>用<code>*文字*</code>标记斜体，用<code>**文字**</code>标记粗体</p>
+<h2 id="代码引用"><a href="#代码引用" class="headerlink" title="代码引用"></a>代码引用</h2><h3 id="文内应用"><a href="#文内应用" class="headerlink" title="文内应用"></a>文内应用</h3><p>用<code>要标记的代码</code>来标记，如：<br><code>console.log(Hello, World!)</code></p>
+<h3 id="代码块引用"><a href="#代码块引用" class="headerlink" title="代码块引用"></a>代码块引用</h3><p>用三个`来标记，如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="string">&#x27;Hello, &#x27;</span></span><br><span class="line">b = <span class="string">&#x27;World!&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(a + b)</span><br></pre></td></tr></table></figure>
+
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>用<code>|</code>表示表哥竖线，用<code>---</code>表示表格标题行，用<code>:</code>位置来表示对齐方式，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 学号  | 姓名  | 英语成绩 |</span><br><span class="line">| :---- | :---: | -------: |</span><br><span class="line">| 12345 | 张三  | 85       |</span><br><span class="line">| 23456 | 李四  | 88       |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">学号</th>
+<th align="center">姓名</th>
+<th align="right">英语成绩</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">12345</td>
+<td align="center">张三</td>
+<td align="right">85</td>
+</tr>
+<tr>
+<td align="left">23456</td>
+<td align="center">李四</td>
+<td align="right">88</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/11/05/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/" data-id="ckqv0k24u0011vvbq6mcggal7" data-title="Markdown基本语法总结" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-羽毛球学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/01/25/%E7%BE%BD%E6%AF%9B%E7%90%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2018-01-25T04:31:26.000Z" itemprop="datePublished">2018-01-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/01/25/%E7%BE%BD%E6%AF%9B%E7%90%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">羽毛球学习笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="步伐"><a href="#步伐" class="headerlink" title="步伐"></a>步伐</h2><h3 id="前场步伐"><a href="#前场步伐" class="headerlink" title="前场步伐"></a>前场步伐</h3><blockquote>
+<p>主要参考<a target="_blank" rel="noopener" href="https://www.bilibili.com/av18614026/">月兔丨羽毛球 网前步伐剖析 怎么上网最适合你？</a></p>
+</blockquote>
+<ul>
+<li>正手上网步法<ul>
+<li>并步：两只脚都要发力去蹬</li>
+<li>交叉跨步：左脚先动</li>
+<li>后交叉：</li>
+<li>垫步：左脚迈出去够不到，左脚再垫一步</li>
+</ul>
+</li>
+<li>反手上网步伐<ul>
+<li>跨步：左脚先动，上前跨一小步，右脚再上前一大步</li>
+<li>并步：右脚直接并步上网</li>
+</ul>
+</li>
+<li>步法回动：右脚在前</li>
+<li>正反手步法衔接：最后一步变成下一个步法的启动</li>
+</ul>
+<h2 id="杀球"><a href="#杀球" class="headerlink" title="杀球"></a>杀球</h2><ul>
+<li>握拍：球拍从虎口对齐握法转动10°左右，以便排面正对击球</li>
+</ul>
+<h2 id="双打"><a href="#双打" class="headerlink" title="双打"></a>双打</h2><blockquote>
+<p>主要参考<a target="_blank" rel="noopener" href="https://www.bilibili.com/av12742547">李在福的双打教学视频</a></p>
+</blockquote>
+<h3 id="发球"><a href="#发球" class="headerlink" title="发球"></a>发球</h3><h4 id="反手发网前小球"><a href="#反手发网前小球" class="headerlink" title="反手发网前小球"></a>反手发网前小球</h4><ul>
+<li>持球手同边脚在前</li>
+<li>食指和拇指捏住一根羽毛</li>
+<li><strong>球头指向膝盖，大约45°</strong>，球头垂直地面容易过高，反之则容易下网</li>
+<li>手腕挥拍，而不是手臂</li>
+<li>整个身体向上，显示出自己的自信</li>
+<li><strong>80%发中场球，发边线球时在击球时改变拍面</strong></li>
+</ul>
+<h4 id="发球后处理"><a href="#发球后处理" class="headerlink" title="发球后处理"></a>发球后处理</h4><ul>
+<li>用启动步方式回到中场位置，<strong>双脚同时落地</strong></li>
+<li>发完球后，不要躲在网下，直起背，宽阔视野，<strong>举起拍子</strong>主动寻找拦截和扑网的机会，负责整个网前球</li>
+</ul>
+<h4 id="正手发远球"><a href="#正手发远球" class="headerlink" title="正手发远球"></a>正手发远球</h4><ul>
+<li>发球后回退变成平行站位，侧身站，身体面向球的位置，而不是跟网面平行；球拍指向球的位置，不要太接近于反手，不利于正手接球</li>
+<li>发球后站位：发球人后退，队友上前，防守站位；发球人可稍靠前一些，队友稍站后一些，尽量与球的位置形成等腰三角形</li>
+</ul>
+<h3 id="网前扑球"><a href="#网前扑球" class="headerlink" title="网前扑球"></a>网前扑球</h3><h4 id="发球方网前扑球"><a href="#发球方网前扑球" class="headerlink" title="发球方网前扑球"></a>发球方网前扑球</h4><ul>
+<li>击球时不要向后引拍，可以提前拉后一点，然后击球时用寸劲，急促发力，点杀</li>
+</ul>
+<h4 id="接球方网前扑球"><a href="#接球方网前扑球" class="headerlink" title="接球方网前扑球"></a>接球方网前扑球</h4><ul>
+<li>接球准备时，左脚在前，侧身站位</li>
+<li>对方发球时，双脚启动步，注意判断对方球路</li>
+<li>右脚上前扑球</li>
+<li>回到中场，双脚并排站位</li>
+<li>若本身站位比较靠前，则直接扑球，不需要右脚上前</li>
+</ul>
+<h3 id="双打站位"><a href="#双打站位" class="headerlink" title="双打站位"></a>双打站位</h3><ul>
+<li>轮换站位，两人始终运动方向相反</li>
+<li>及时补位</li>
+</ul>
+<h3 id="接杀对墙练习"><a href="#接杀对墙练习" class="headerlink" title="接杀对墙练习"></a>接杀对墙练习</h3><ul>
+<li>容易忽视的三点：步法；球拍的位置；姿势</li>
+<li>步法：时刻准备好启动步</li>
+<li>球拍位置：稍微远离身体一些</li>
+<li>姿势：降低重心；将身体作为一个整体</li>
+<li>正反手交叉练习</li>
+<li>直线斜线交叉练习  </li>
+</ul>
+<h3 id="双打防守技巧"><a href="#双打防守技巧" class="headerlink" title="双打防守技巧"></a>双打防守技巧</h3><ul>
+<li>尽量使用反手回球</li>
+</ul>
+<h2 id="杀球-1"><a href="#杀球-1" class="headerlink" title="杀球"></a>杀球</h2><blockquote>
+<p>主要参考<a target="_blank" rel="noopener" href="https://www.bilibili.com/av15707185/">李矛 教你如何杀球! 万恶之源 手肘慢!</a></p>
+</blockquote>
+<ul>
+<li>可从前场杀球开始练习，熟练后慢慢往后场靠</li>
+<li>不要抡（过渡向后引拍），而要挤（寸劲发力，短促发力）</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/01/25/%E7%BE%BD%E6%AF%9B%E7%90%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="ckqv0k25i002qvvbqhrkv3jzo" data-title="羽毛球学习笔记" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BE%BD%E6%AF%9B%E7%90%83/" rel="tag">羽毛球</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-SS-被封后的备用招数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/10/10/SS-%E8%A2%AB%E5%B0%81%E5%90%8E%E7%9A%84%E5%A4%87%E7%94%A8%E6%8B%9B%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2017-10-10T09:01:40.000Z" itemprop="datePublished">2017-10-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2017/10/10/SS-%E8%A2%AB%E5%B0%81%E5%90%8E%E7%9A%84%E5%A4%87%E7%94%A8%E6%8B%9B%E6%95%B0/">plan B</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="客户端选择及下载"><a href="#客户端选择及下载" class="headerlink" title="客户端选择及下载"></a>客户端选择及下载</h2><h3 id="Windows-客户端"><a href="#Windows-客户端" class="headerlink" title="Windows 客户端"></a>Windows 客户端</h3><p><a target="_blank" rel="noopener" href="https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases">ShadowsocksR</a></p>
+<h3 id="Android-客户端"><a href="#Android-客户端" class="headerlink" title="Android 客户端"></a>Android 客户端</h3><p><a target="_blank" rel="noopener" href="https://github.com/shadowsocksrr/shadowsocksr-android/releases">ShadowsocksR-Android</a></p>
+<h3 id="iOS-客户端"><a href="#iOS-客户端" class="headerlink" title="iOS 客户端"></a>iOS 客户端</h3><p>国区：ShadowProxy(随时有下架的风险)<br>美区：Shadowrocket、Wingy、Potatso Lite 等等</p>
+<h3 id="MacOS-客户端"><a href="#MacOS-客户端" class="headerlink" title="MacOS 客户端"></a>MacOS 客户端</h3><p><a target="_blank" rel="noopener" href="https://github.com/qinyuhang/ShadowsocksX-NG-R/releases">ShadowsocksX-NG-R</a><br><a target="_blank" rel="noopener" href="https://github.com/yichengchen/clashX/releases">clashX</a></p>
+<h2 id="ShadowsocksR"><a href="#ShadowsocksR" class="headerlink" title="ShadowsocksR"></a>ShadowsocksR</h2><p>SSR IP 地址那一栏主要分为两种，一个是域名，一个是纯 IP 地址，其实后台都是同一个，用域名做地址的好处是后台换了的话，大家也不用修改什么，缺点大概就是要一年换一次，因为域名续费太贵了。</p>
+<p>下面是用域名做地址的服务器（推荐使用这个）</p>
+<p><img src="xyz-443.png"></p>
+<p>下面是直接用 IP 做地址的服务器</p>
+<p><img src="GIA-3824.png"></p>
+<h2 id="Shadowsocks"><a href="#Shadowsocks" class="headerlink" title="Shadowsocks"></a>Shadowsocks</h2><p>这个是直接用 IP 做地址的服务器的 SS，因为有些客户端不支持 SSR，可以使用这个</p>
+<p><img src="GIA-5555.png"></p>
+<p>还可以到<a target="_blank" rel="noopener" href="https://free-ss.site/">免费上网账号</a>找临时号使用，但是这个站本身也是被墙了的，可以发邮件到客服邮箱 ss at rohankdd dot com 自动获取免翻镜像站</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2017/10/10/SS-%E8%A2%AB%E5%B0%81%E5%90%8E%E7%9A%84%E5%A4%87%E7%94%A8%E6%8B%9B%E6%95%B0/" data-id="ckqv0k24x0017vvbq6bis8fcp" data-title="plan B" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9D%82/" rel="tag">杂</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-点亮你的 PPT 封面" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/09/01/%E7%82%B9%E4%BA%AE%E4%BD%A0%E7%9A%84%20PPT%20%E5%B0%81%E9%9D%A2/" class="article-date">
+  <time class="dt-published" datetime="2017-09-01T09:37:10.000Z" itemprop="datePublished">2017-09-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2017/09/01/%E7%82%B9%E4%BA%AE%E4%BD%A0%E7%9A%84%20PPT%20%E5%B0%81%E9%9D%A2/">点亮你的 PPT 封面</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>这个本来是我上个学期上英语课所做的 presentation。本来主题都是自定介绍一些自身相关领域论文的学术报告，但当时老师突然说找几个人来做一下与 PPT 制作相关主题的 presentation，然后我就自告奋勇选择了 PPT 封面制作的主题。考虑到主要的介绍领域还是学术类的 PPT ，所以还是选择了 4:3 作为 PPT 页面的比例，同时也尽量使用系统自带的字体（以微软雅黑和 Arial 为主）。不过也做了几张比较「浮夸」的封面，并不适合严肃场合，只是为了好玩。</p>
+</blockquote>
+<h2 id="内容介绍"><a href="#内容介绍" class="headerlink" title="内容介绍"></a>内容介绍</h2><p>快是一年前做的东西了，很多都不记得了。</p>
+<p>大概介绍了一下：</p>
+<ul>
+<li>全图型封面</li>
+<li>上下布局的半图型封面</li>
+<li>左右布局的半图型封面</li>
+<li>斜切式半图封面</li>
+<li>利用形状做的封面</li>
+</ul>
+<h2 id="PPT-在线展示"><a href="#PPT-在线展示" class="headerlink" title="PPT 在线展示"></a>PPT 在线展示</h2><iframe src="https://onedrive.live.com/embed?cid=35D50D4F86295DC0&resid=35D50D4F86295DC0%2111777&authkey=APlKlDYqFD47Rt8&em=2" width=100% height='360' frameborder="0" scrolling="no"></iframe>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2017/09/01/%E7%82%B9%E4%BA%AE%E4%BD%A0%E7%9A%84%20PPT%20%E5%B0%81%E9%9D%A2/" data-id="ckqv0k25d0022vvbqacf3bbpx" data-title="点亮你的 PPT 封面" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PPT/" rel="tag">PPT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%BE%E8%AE%A1/" rel="tag">设计</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-关于《西文排版》" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/08/28/%E5%85%B3%E4%BA%8E%E3%80%8A%E8%A5%BF%E6%96%87%E6%8E%92%E7%89%88%E3%80%8B/" class="article-date">
+  <time class="dt-published" datetime="2017-08-28T11:23:48.000Z" itemprop="datePublished">2017-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2017/08/28/%E5%85%B3%E4%BA%8E%E3%80%8A%E8%A5%BF%E6%96%87%E6%8E%92%E7%89%88%E3%80%8B/">关于《西文排版》</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>本文是看了<a target="_blank" rel="noopener" href="https://book.douban.com/subject/26834548/">《西文排版：排版的基础和规范》</a>之后做的一些笔记，把自己觉得新奇的点记了下来做一些笔记，也加上了一些特殊样式在 PS 和 Word 中的实现。</p>
+</blockquote>
+<h2 id="小型大写字母"><a href="#小型大写字母" class="headerlink" title="小型大写字母"></a>小型大写字母</h2><blockquote>
+<p>小型大写字母（英语：small capitals，简称 small caps）是西文字体设计中的一种字符形式。这些字母的形状（字形）和大写字母相同但尺寸较小。一般来说，小型大写字母的高度等于一个 x 字 高，和大部分的小写字母一样；只有在极个别字体中，小型大写字母的高度会比 x 字 高略高一些。[^1]</p>
+</blockquote>
+<h3 id="小型大写字母的用途"><a href="#小型大写字母的用途" class="headerlink" title="小型大写字母的用途"></a>小型大写字母的用途</h3><p>维基百科上给出了一些常用的用途，不过不必拘泥于此，在商标、标题、名片上的人名、公司名都可以尝试试一试。小型大写字母的字距要拉大一些，可以提升美感，显得更加优雅一些。</p>
+<p>用小型大写字母字母来显示公司名字：</p>
+<p><img src="small-caps.jpg"></p>
+<h4 id="在人名上的应用"><a href="#在人名上的应用" class="headerlink" title="在人名上的应用"></a>在人名上的应用</h4><p>和西方不一样，中国人和日本人的姓名都是姓在前，名在后。但是用英文表示名字的时候，到底是根据自己的习惯来姓在前，还是按照英语的习惯名在前，可能都没有一个确定的说法，很容易引起误会（尤其是日本人用复姓居多，使用罗马音拼出来更加分不清）。这个时候可以用小型大写字母来表示姓，这样就不会产生歧义。例如：</p>
+<p><span lang='ja'><ruby><rb>福沢</rb><rp>（</rp><rt>ふくざわ</rt><rp>）</rp></ruby><span lang='ja'><ruby><rb>諭吉</rb><rp>（</rp><rt>ゆきち</rt><rp>）</rp></ruby>的英文名字即为：<span style="font-variant: small-caps;">Fukuzawa</span> Yukichi</p>
+<p>这样就很容易看出是姓在前而名在后。</p>
+<h4 id="生活上的其他语法"><a href="#生活上的其他语法" class="headerlink" title="生活上的其他语法"></a>生活上的其他语法</h4><p>了解了「小型大写字母」这个概念之后发现生活中经常出现这种用法。</p>
+<p>比如我贴的墙壁贴纸：</p>
+<p><img src="small-caps-wallpaper.jpg"></p>
+<p>比如美剧《硅谷》第四季中某集中用小型大写字母写人名来表示强调，而且这也是在手写中的应用例子：</p>
+<p><img src="small-caps-tvs.jpg"></p>
+<h3 id="小型大写字母的实现"><a href="#小型大写字母的实现" class="headerlink" title="小型大写字母的实现"></a>小型大写字母的实现</h3><h4 id="在网页上的实现"><a href="#在网页上的实现" class="headerlink" title="在网页上的实现"></a>在网页上的实现</h4><p>使用以下语法即、可在网页上实现：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;font-variant: small-caps;&quot;</span>&gt;</span>Fukuzawa<span class="tag">&lt;/<span class="name">span</span>&gt;</span> Yukichi</span><br></pre></td></tr></table></figure>
+
+<p>实现效果如下：</p>
+<p><span style="font-variant: small-caps;">Fukuzawa</span> Yukichi</p>
+<h4 id="在-PS-里的实现"><a href="#在-PS-里的实现" class="headerlink" title="在 PS 里的实现"></a>在 PS 里的实现</h4><p>在 PS 中只要在字体面板选择字符样式第一排第四个即可。</p>
+<p><img src="small-caps-ps.jpg"></p>
+<h4 id="在-Word-中的实现"><a href="#在-Word-中的实现" class="headerlink" title="在 Word 中的实现"></a>在 Word 中的实现</h4><p>Word 中只要在字体面板字体选项卡中勾选上「小型大写字母」就好。</p>
+<p><img src="small-caps-word.jpg"></p>
+<h2 id="旧式数字"><a href="#旧式数字" class="headerlink" title="旧式数字"></a>旧式数字</h2><p>旧式数字（Text figures, Oldstyle Figures, 不齐线数字，老式数字）与等高数字（Lining figures， 齐线数字）向对应，指的是中世纪风格的一种数字底部不平行的一种数字风格，常常出现在一些古典的、正式的风格中。</p>
+<h3 id="旧式数字的实现"><a href="#旧式数字的实现" class="headerlink" title="旧式数字的实现"></a>旧式数字的实现</h3><h4 id="在-PS-中的实现"><a href="#在-PS-中的实现" class="headerlink" title="在 PS 中的实现"></a>在 PS 中的实现</h4><p>在 PS 中实现旧式数字有些麻烦，首先要勾选上「文字 - OpenType -旧样式」，再键入数字，这是针对本身带有旧式数字的字型，要是本身不带有旧式数字，也没办法显示出来。还有一种情况就是要是某个字型默认显示的是旧式数字，我暂时还没看到强制使用等高数字的办法。</p>
+<p><img src="old-figure-ps.jpg"></p>
+<h4 id="在-Word-中的实现-1"><a href="#在-Word-中的实现-1" class="headerlink" title="在 Word 中的实现"></a>在 Word 中的实现</h4><p>Word 中只要在字体面板高级选项卡中「OpenType 功能」中「数字样式」中选择「旧样式」就好。</p>
+<p><img src="old-figure-word.jpg"></p>
+<p>更多关于数字的更多样式可以听听<a target="_blank" rel="noopener" href="https://www.typeisbeautiful.com/2017/09/13460/">字谈字畅 056：数，不胜数 (1)</a>。</p>
+<h2 id="字偶间距、字符间距和词间距"><a href="#字偶间距、字符间距和词间距" class="headerlink" title="字偶间距、字符间距和词间距"></a>字偶间距、字符间距和词间距</h2><p>PS 中将光标放到两个字母之间再使用快捷键 <code>Alt + ←/→</code> 可以调节两个字母之间的间距，这个间距被称为字偶间距（Kerning，字偶距），由于不同字母的形状，字母组合之间的距离需要调整来达到完美的组合效果。</p>
+<p>只要留意的话，生活中还是经常可以看到需要调节字偶距的地方，比如我一个经常吃煲仔饭的店子里的装饰：</p>
+<p><img src="Kerning.jpg"></p>
+<p>仔细看的话其中有些字母的间隙还是可以微调的。</p>
+<p>也可以通过到 <a target="_blank" rel="noopener" href="http://type.method.ac/">Kerntype</a> 去尝试感受字偶距的魅力。</p>
+<p>字符简距（Letterspacing, Tracking, Character Spacing, 字距）更加强调的是整行文字中字母之间的间隙。</p>
+<p>词间距（Word Spacing）指的是各个单词之间的距离。</p>
+<p>以上三个概念还是很容易搞混淆的。</p>
+<p>如图在 PS 字符面板中，蓝色线表示的是字偶间距，绿色线表示的是字距。</p>
+<p><img src="kerning-ps"></p>
+<h2 id="「河流」与「街道」"><a href="#「河流」与「街道」" class="headerlink" title="「河流」与「街道」"></a>「河流」与「街道」</h2><p>「河流」与「街道」均指的是排版中出现的，在相邻多行内，由标点符号或西文单词之间的空格所产生的空白区域连成了一条斜线（river）或者竖线（street），这些空白区域会影响阅读，是要在排版过程中要避免的。</p>
+<p>这是我考科目二在考场看到的感谢信中出现的中文排版里的 ‘river’ 现象：</p>
+<p><img src="river.jpg"></p>
+<h2 id="标点悬挂"><a href="#标点悬挂" class="headerlink" title="标点悬挂"></a>标点悬挂</h2><p>标点悬挂指的是由于标点「避头」的原则，若按正常字距处理的话，该标点将会超出该行右对齐的基线，传统办法是将此行进行压缩，即减少字距，使得该标点处在右对齐基线以内。标点悬挂则不处理字距，将该标点继续放置在基线以外。这种做法在日文排版中较常见，中文排版中正在慢慢流行。</p>
+<p>下图为央视所使用的标点悬挂[^2]（效果并不完整，第二行还是有进行压缩）:</p>
+<p><img src="%E6%A0%87%E7%82%B9%E6%82%AC%E6%8C%82-%E5%A4%AE%E8%A7%86.jpg"></p>
+<h3 id="Word-中开启标点悬挂"><a href="#Word-中开启标点悬挂" class="headerlink" title="Word 中开启标点悬挂"></a>Word 中开启标点悬挂</h3><ol>
+<li>段落-中文版式-换行-允许标点溢出边界</li>
+<li>段落-中文版式-字符间距-选项-字符间距控制-不压缩</li>
+</ol>
+<h2 id="行长"><a href="#行长" class="headerlink" title="行长"></a>行长</h2><p>中文排版的优化与纵横对齐</p>
+<p>Type is beautiful 的文章：<a target="_blank" rel="noopener" href="https://www.typeisbeautiful.com/2017/07/12513/">从「行长为字号的整数倍」说起</a></p>
+<p>突然发现「端」客户端就是这样做的</p>
+<h2 id="排版优化"><a href="#排版优化" class="headerlink" title="排版优化"></a>排版优化</h2><ul>
+<li>合理使用旧式数字</li>
+<li>使用意大利斜体来表示强调</li>
+<li>小标题位置不应该在段落正中央</li>
+<li>使用 ‘fi’ ‘ff’ ‘ffi’ 等合字</li>
+<li>区分使用角分符和缩略号</li>
+<li>行首不能有冒号、句号等标点符号</li>
+<li>段首缩进要彻底</li>
+<li>不到 100 的数字还是拼写出来比较好</li>
+<li>括号之前需要一次字距的空格</li>
+<li>区分使用连字符和连接号</li>
+<li>段落最后一行应避免剩下一个单词</li>
+<li>注意孤行控制</li>
+<li>标题应该避免出现在页面较低的位置</li>
+<li>A, I, He 等不影响行长的单词应该放到下一行比较好</li>
+<li>注意段首缩进样式</li>
+</ul>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>[^1]: <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%B0%8F%E5%9E%8B%E5%A4%A7%E5%86%99%E5%AD%97%E6%AF%8D">小型大写字母 - 维基百科</a><br>[^2]: <a target="_blank" rel="noopener" href="https://weibo.com/1408763553/FjKpF3BR2">@文川溪畔东瀛居：央视也会用标点悬挂</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2017/08/28/%E5%85%B3%E4%BA%8E%E3%80%8A%E8%A5%BF%E6%96%87%E6%8E%92%E7%89%88%E3%80%8B/" data-id="ckqv0k258001pvvbq40yfaenz" data-title="关于《西文排版》" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B9%A6/" rel="tag">书</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%97%E4%BD%93/" rel="tag">字体</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%BE%E8%AE%A1/" rel="tag">设计</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-作画学习札记其六：关于动画的一些讨论" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E5%85%AD%EF%BC%9A%E5%85%B3%E4%BA%8E%E5%8A%A8%E7%94%BB%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%A8%E8%AE%BA/" class="article-date">
+  <time class="dt-published" datetime="2017-08-12T14:56:54.000Z" itemprop="datePublished">2017-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E5%85%AD%EF%BC%9A%E5%85%B3%E4%BA%8E%E5%8A%A8%E7%94%BB%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%A8%E8%AE%BA/">作画学习札记其六：关于动画的一些讨论</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>每看到一篇关于介绍作画的文章，都会介绍到关于「金田系」及「宇都宫系」</p>
+<link href='https://www.hanyi.studio/WebFonts/C3DB971E-443B-4D37-887D-530EE441EB6B/201708/css/620581D445F9FE65.css' rel='stylesheet' type='text/css'/>
+<div class="css620581D445F9FE65">汉仪新人文宋</div>
+
+
+
+
+
+
+
+<p>作画与监督的关系</p>
+<p>作画与演出的关系</p>
+<p>作画与分镜的关系</p>
+<p>动画人时间</p>
+<p>黑客帝国动画版</p>
+<h2 id="金田系"><a href="#金田系" class="headerlink" title="金田系"></a>金田系</h2><h2 id="写实系"><a href="#写实系" class="headerlink" title="写实系"></a>写实系</h2><h2 id="Web系"><a href="#Web系" class="headerlink" title="Web系"></a>Web系</h2><h2 id="研究作画的意义"><a href="#研究作画的意义" class="headerlink" title="研究作画的意义"></a>研究作画的意义</h2><h2 id="动画与电影的关系"><a href="#动画与电影的关系" class="headerlink" title="动画与电影的关系"></a>动画与电影的关系</h2><h2 id="作画资源"><a href="#作画资源" class="headerlink" title="作画资源"></a>作画资源</h2><p>sakugabooru</p>
+<p>博客 </p>
+<p>sakugablue</p>
+<p>作画wiki</p>
+<p>aniatama</p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av913002/">作画讲座：日式作画与幕后的动画师们（13版）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av2251266/">日式作画基础解说 完整版</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av12024948/">解新番第二十四期：中村丰到底有多厉害？</a></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E5%85%AD%EF%BC%9A%E5%85%B3%E4%BA%8E%E5%8A%A8%E7%94%BB%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%A8%E8%AE%BA/" data-id="ckqv0k255001hvvbqasygaihq" data-title="作画学习札记其六：关于动画的一些讨论" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-作画学习札记其五：新生力量篇" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E4%BA%94%EF%BC%9A%E6%96%B0%E7%94%9F%E5%8A%9B%E9%87%8F%E7%AF%87/" class="article-date">
+  <time class="dt-published" datetime="2017-08-12T14:39:31.000Z" itemprop="datePublished">2017-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E4%BA%94%EF%BC%9A%E6%96%B0%E7%94%9F%E5%8A%9B%E9%87%8F%E7%AF%87/">作画学习札记其五：新生力量篇</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="黄成希"><a href="#黄成希" class="headerlink" title="黄成希"></a>黄成希</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-kUCvxeYeJiMRKCLK"></div><script> var kUCvxeYeJiMRKCLK_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/ddf8d3ac7ee936d06916433f3f4b2f44.webm\"}}'); kUCvxeYeJiMRKCLK_options.container = document.getElementById("mmedia-kUCvxeYeJiMRKCLK"); const dp_kUCvxeYeJiMRKCLK = new DPlayer(kUCvxeYeJiMRKCLK_options); </script>
+
+<p><a target="_blank" rel="noopener" href="http://www.anitama.cn/series/196/">http://www.anitama.cn/series/196/</a></p>
+<h3 id="梁博雅"><a href="#梁博雅" class="headerlink" title="梁博雅"></a>梁博雅</h3><p>叉烧希（非常想吃叉烧的希）</p>
+<script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-QANwXKlVdVgtrlQV"></div><script> var QANwXKlVdVgtrlQV_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/a80b984519eaa53bb4271b2745b57743.mp4\"}}'); QANwXKlVdVgtrlQV_options.container = document.getElementById("mmedia-QANwXKlVdVgtrlQV"); const dp_QANwXKlVdVgtrlQV = new DPlayer(QANwXKlVdVgtrlQV_options); </script>
+
+<p><a target="_blank" rel="noopener" href="http://www.anitama.cn/series/18/">http://www.anitama.cn/series/18/</a></p>
+<h3 id="Bahi-JD"><a href="#Bahi-JD" class="headerlink" title="Bahi JD"></a>Bahi JD</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-ttOxUfKQsLWQvWsl"></div><script> var ttOxUfKQsLWQvWsl_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/6b7ac6ea617cf94140ffc50e699a7842.mp4\"}}'); ttOxUfKQsLWQvWsl_options.container = document.getElementById("mmedia-ttOxUfKQsLWQvWsl"); const dp_ttOxUfKQsLWQvWsl = new DPlayer(ttOxUfKQsLWQvWsl_options); </script>
+
+<p>来自奥地利的原画师，好像以前只是在网上制作 gif ，最终融入日本主流作画界，本身也是相当励志</p>
+<p>有参与《太空丹迪》、《乒乓》制作</p>
+<p>节选视频出自《银翼杀手：2022大断电》，完整视频移步：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av14840910/">银翼杀手2022（中字）</a>,相当炸裂，作画厨的狂欢</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E4%BA%94%EF%BC%9A%E6%96%B0%E7%94%9F%E5%8A%9B%E9%87%8F%E7%AF%87/" data-id="ckqv0k254001gvvbq08badxrx" data-title="作画学习札记其五：新生力量篇" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BD%9C%E7%94%BB/" rel="tag">作画</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8A%A8%E7%94%BB/" rel="tag">动画</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-作画学习札记其四：中流砥柱篇" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E5%9B%9B%EF%BC%9A%E4%B8%AD%E6%B5%81%E7%A0%A5%E6%9F%B1%E7%AF%87/" class="article-date">
+  <time class="dt-published" datetime="2017-08-12T14:38:58.000Z" itemprop="datePublished">2017-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E5%9B%9B%EF%BC%9A%E4%B8%AD%E6%B5%81%E7%A0%A5%E6%9F%B1%E7%AF%87/">作画学习札记其四：中流砥柱篇</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="Ryo-timo（泽良辅）"><a href="#Ryo-timo（泽良辅）" class="headerlink" title="Ryo-timo（泽良辅）"></a>Ryo-timo（泽良辅）</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-PSPCDIFQNjOueBsD"></div><script> var PSPCDIFQNjOueBsD_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/876f255eb05b9b30283346b9aff92410.webm\"}}'); PSPCDIFQNjOueBsD_options.container = document.getElementById("mmedia-PSPCDIFQNjOueBsD"); const dp_PSPCDIFQNjOueBsD = new DPlayer(PSPCDIFQNjOueBsD_options); </script>
+
+
+
+
+<h3 id="山下清悟"><a href="#山下清悟" class="headerlink" title="山下清悟"></a>山下清悟</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-idvYQEiATQDQPDiZ"></div><script> var idvYQEiATQDQPDiZ_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/4a512f1609658555c083a033a3b9be2e.webm\"}}'); idvYQEiATQDQPDiZ_options.container = document.getElementById("mmedia-idvYQEiATQDQPDiZ"); const dp_idvYQEiATQDQPDiZ = new DPlayer(idvYQEiATQDQPDiZ_options); </script>
+
+
+<h3 id="佐藤雅弘"><a href="#佐藤雅弘" class="headerlink" title="佐藤雅弘"></a>佐藤雅弘</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-YXxtaOdkHshfgLlC"></div><script> var YXxtaOdkHshfgLlC_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/5e9390795e5db8b04f43928911d910bb.mp4\"}}'); YXxtaOdkHshfgLlC_options.container = document.getElementById("mmedia-YXxtaOdkHshfgLlC"); const dp_YXxtaOdkHshfgLlC = new DPlayer(YXxtaOdkHshfgLlC_options); </script>
+
+<p>异邦人  初战  长枪</p>
+<h3 id="向田隆"><a href="#向田隆" class="headerlink" title="向田隆"></a>向田隆</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-AZFNBdkROxFmvBOT"></div><script> var AZFNBdkROxFmvBOT_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/0f09cf9f2a1e8feb87e563b431b81cb2.mp4\"}}'); AZFNBdkROxFmvBOT_options.container = document.getElementById("mmedia-AZFNBdkROxFmvBOT"); const dp_AZFNBdkROxFmvBOT = new DPlayer(AZFNBdkROxFmvBOT_options); </script>
+
+<p>两个向田回旋踢</p>
+<p>格斗棒</p>
+<h3 id="金世俊"><a href="#金世俊" class="headerlink" title="金世俊"></a>金世俊</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-nIruUIzAmDVLIvYK"></div><script> var nIruUIzAmDVLIvYK_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/82acc7da4cd71d4277ac960c950fe83d.mp4\"}}'); nIruUIzAmDVLIvYK_options.container = document.getElementById("mmedia-nIruUIzAmDVLIvYK"); const dp_nIruUIzAmDVLIvYK = new DPlayer(nIruUIzAmDVLIvYK_options); </script>
+
+<p>马戏  高达</p>
+<h3 id="竹内哲也"><a href="#竹内哲也" class="headerlink" title="竹内哲也"></a>竹内哲也</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-ZtaripKOrpfcpIoV"></div><script> var ZtaripKOrpfcpIoV_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/de47143ceef6eb00ae38eff303414ac9.webm\"}}'); ZtaripKOrpfcpIoV_options.container = document.getElementById("mmedia-ZtaripKOrpfcpIoV"); const dp_ZtaripKOrpfcpIoV = new DPlayer(ZtaripKOrpfcpIoV_options); </script>
+
+
+
+<p>片段是zero</p>
+<p>ubw 主力 <del>特技</del>特效作画</p>
+<h3 id="山下宏幸"><a href="#山下宏幸" class="headerlink" title="山下宏幸"></a>山下宏幸</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-SNfCelcfOqdbMHei"></div><script> var SNfCelcfOqdbMHei_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d5b9145b3260fef1751cb985cd5fd19c.mp4\"}}'); SNfCelcfOqdbMHei_options.container = document.getElementById("mmedia-SNfCelcfOqdbMHei"); const dp_SNfCelcfOqdbMHei = new DPlayer(SNfCelcfOqdbMHei_options); </script>
+
+<h3 id="久贝典史"><a href="#久贝典史" class="headerlink" title="久贝典史"></a>久贝典史</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-ZshQNKaHeMSGFlYj"></div><script> var ZshQNKaHeMSGFlYj_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/fc4cc5a1ac06fce16d1a2d5927ee27e5.mp4\"}}'); ZshQNKaHeMSGFlYj_options.container = document.getElementById("mmedia-ZshQNKaHeMSGFlYj"); const dp_ZshQNKaHeMSGFlYj = new DPlayer(ZshQNKaHeMSGFlYj_options); </script>
+
+<p>太空丹迪</p>
+<script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-PkzGyTmnmIRwbbiU"></div><script> var PkzGyTmnmIRwbbiU_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d4d2f2864b9c56845f426c550188081f.mp4\"}}'); PkzGyTmnmIRwbbiU_options.container = document.getElementById("mmedia-PkzGyTmnmIRwbbiU"); const dp_PkzGyTmnmIRwbbiU = new DPlayer(PkzGyTmnmIRwbbiU_options); </script>
+
+<p><a target="_blank" rel="noopener" href="http://www.anitama.cn/article/7d36841e7510af6b">http://www.anitama.cn/article/7d36841e7510af6b</a></p>
+<h3 id="桥本敬史"><a href="#桥本敬史" class="headerlink" title="桥本敬史"></a>桥本敬史</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-FhpAdCgcTFMQpGTN"></div><script> var FhpAdCgcTFMQpGTN_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/c3b5794fa09460cdbce495ed93f0d9e6.mp4\"}}'); FhpAdCgcTFMQpGTN_options.container = document.getElementById("mmedia-FhpAdCgcTFMQpGTN"); const dp_FhpAdCgcTFMQpGTN = new DPlayer(FhpAdCgcTFMQpGTN_options); </script>
+
+<p>爆炸狂魔</p>
+<h3 id="今井有文"><a href="#今井有文" class="headerlink" title="今井有文"></a>今井有文</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-cjVXhJVBvchEZsDY"></div><script> var cjVXhJVBvchEZsDY_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/eb0b59a12d86695f3e3bcce79d98cc30.mp4\"}}'); cjVXhJVBvchEZsDY_options.container = document.getElementById("mmedia-cjVXhJVBvchEZsDY"); const dp_cjVXhJVBvchEZsDY = new DPlayer(cjVXhJVBvchEZsDY_options); </script>
+
+<h3 id="阿部望"><a href="#阿部望" class="headerlink" title="阿部望"></a>阿部望</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-fuEFXdFCozncmDIW"></div><script> var fuEFXdFCozncmDIW_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/f43abc853498ec6fde9e2b2a50bd45c7.webm\"}}'); fuEFXdFCozncmDIW_options.container = document.getElementById("mmedia-fuEFXdFCozncmDIW"); const dp_fuEFXdFCozncmDIW = new DPlayer(fuEFXdFCozncmDIW_options); </script>
+
+
+
+<h3 id="西尾铁也"><a href="#西尾铁也" class="headerlink" title="西尾铁也"></a>西尾铁也</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-fpiJldkugAoSFxtx"></div><script> var fpiJldkugAoSFxtx_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); fpiJldkugAoSFxtx_options.container = document.getElementById("mmedia-fpiJldkugAoSFxtx"); const dp_fpiJldkugAoSFxtx = new DPlayer(fpiJldkugAoSFxtx_options); </script>
+
+<p>火影班</p>
+<h3 id="森本晃司"><a href="#森本晃司" class="headerlink" title="森本晃司"></a>森本晃司</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-iQFHiRHnfjRUMMTW"></div><script> var iQFHiRHnfjRUMMTW_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); iQFHiRHnfjRUMMTW_options.container = document.getElementById("mmedia-iQFHiRHnfjRUMMTW"); const dp_iQFHiRHnfjRUMMTW = new DPlayer(iQFHiRHnfjRUMMTW_options); </script>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E5%9B%9B%EF%BC%9A%E4%B8%AD%E6%B5%81%E7%A0%A5%E6%9F%B1%E7%AF%87/" data-id="ckqv0k255001jvvbqayd0gvze" data-title="作画学习札记其四：中流砥柱篇" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BD%9C%E7%94%BB/" rel="tag">作画</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8A%A8%E7%94%BB/" rel="tag">动画</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-作画学习札记其三：暴强老害篇（2）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E4%B8%89%EF%BC%9A%E6%9A%B4%E5%BC%BA%E8%80%81%E5%AE%B3%E7%AF%87%EF%BC%882%EF%BC%89/" class="article-date">
+  <time class="dt-published" datetime="2017-08-12T14:38:06.000Z" itemprop="datePublished">2017-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E4%B8%89%EF%BC%9A%E6%9A%B4%E5%BC%BA%E8%80%81%E5%AE%B3%E7%AF%87%EF%BC%882%EF%BC%89/">作画学习札记其三：暴强老害篇（2）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="汤浅政明"><a href="#汤浅政明" class="headerlink" title="汤浅政明"></a>汤浅政明</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-KRqNHwQlRRzdeYml"></div><script> var KRqNHwQlRRzdeYml_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/36afeb971bbe9c9dc401b2d68484b2e7.mp4\"}}'); KRqNHwQlRRzdeYml_options.container = document.getElementById("mmedia-KRqNHwQlRRzdeYml"); const dp_KRqNHwQlRRzdeYml = new DPlayer(KRqNHwQlRRzdeYml_options); </script>
+
+<iframe src="https://www.bilibili.com/html/html5player.html?aid=4633569&cid=7517335&as_wide=1" width="100%" height="410" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p>混沌武士  飞叶子一段</p>
+<p>乒乓  最后一集扔拍子一段</p>
+<p>欢迎来到宇宙秀</p>
+<h3 id="吉成曜"><a href="#吉成曜" class="headerlink" title="吉成曜"></a>吉成曜</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-QoSNWbadlQJaDaIX"></div><script> var QoSNWbadlQJaDaIX_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/54bb5cc3153a2298ee359a96c9b49bf9.mp4\"}}'); QoSNWbadlQJaDaIX_options.container = document.getElementById("mmedia-QoSNWbadlQJaDaIX"); const dp_QoSNWbadlQJaDaIX = new DPlayer(QoSNWbadlQJaDaIX_options); </script>
+
+
+<h3 id="龟田祥伦"><a href="#龟田祥伦" class="headerlink" title="龟田祥伦"></a>龟田祥伦</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-qVLdrUYGhizGtpme"></div><script> var qVLdrUYGhizGtpme_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/e0a761d4e6144a1e841cb234ff49b998.webm\"}}'); qVLdrUYGhizGtpme_options.container = document.getElementById("mmedia-qVLdrUYGhizGtpme"); const dp_qVLdrUYGhizGtpme = new DPlayer(qVLdrUYGhizGtpme_options); </script>
+
+
+<h3 id="田中宏纪"><a href="#田中宏纪" class="headerlink" title="田中宏纪"></a>田中宏纪</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-CQJzHYdZbDYIuRfd"></div><script> var CQJzHYdZbDYIuRfd_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/0578b5e7af87cb467bb17204796196b4.webm\"}}'); CQJzHYdZbDYIuRfd_options.container = document.getElementById("mmedia-CQJzHYdZbDYIuRfd"); const dp_CQJzHYdZbDYIuRfd = new DPlayer(CQJzHYdZbDYIuRfd_options); </script>
+
+<h3 id="村木靖"><a href="#村木靖" class="headerlink" title="村木靖"></a>村木靖</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-FdrGGJoQwJQetrns"></div><script> var FdrGGJoQwJQetrns_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/7c4bf130d906df0c80b768318b53ef10.webm\"}}'); FdrGGJoQwJQetrns_options.container = document.getElementById("mmedia-FdrGGJoQwJQetrns"); const dp_FdrGGJoQwJQetrns = new DPlayer(FdrGGJoQwJQetrns_options); </script>
+
+<p>马戏</p>
+<h3 id="后藤雅巳"><a href="#后藤雅巳" class="headerlink" title="后藤雅巳"></a>后藤雅巳</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-MSnySTezdTQGxjav"></div><script> var MSnySTezdTQGxjav_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/7a8875b2742961419b1895f5dc8bfb55.mp4\"}}'); MSnySTezdTQGxjav_options.container = document.getElementById("mmedia-MSnySTezdTQGxjav"); const dp_MSnySTezdTQGxjav = new DPlayer(MSnySTezdTQGxjav_options); </script>
+
+<p>星际牛仔</p>
+<h3 id="吉成钢"><a href="#吉成钢" class="headerlink" title="吉成钢"></a>吉成钢</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-qISvHfFpavkeEWNa"></div><script> var qISvHfFpavkeEWNa_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/e9e56f444fb1a6d299db53205e740244.webm\"}}'); qISvHfFpavkeEWNa_options.container = document.getElementById("mmedia-qISvHfFpavkeEWNa"); const dp_qISvHfFpavkeEWNa = new DPlayer(qISvHfFpavkeEWNa_options); </script>
+
+
+<h3 id="矶光雄"><a href="#矶光雄" class="headerlink" title="矶光雄"></a>矶光雄</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-eLeSsNbJNpZjEHvS"></div><script> var eLeSsNbJNpZjEHvS_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/39cd74db8d52543043d7244928341715.webm\"}}'); eLeSsNbJNpZjEHvS_options.container = document.getElementById("mmedia-eLeSsNbJNpZjEHvS"); const dp_eLeSsNbJNpZjEHvS = new DPlayer(eLeSsNbJNpZjEHvS_options); </script>
+
+<h3 id="中泽一登"><a href="#中泽一登" class="headerlink" title="中泽一登"></a>中泽一登</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E4%B8%89%EF%BC%9A%E6%9A%B4%E5%BC%BA%E8%80%81%E5%AE%B3%E7%AF%87%EF%BC%882%EF%BC%89/" data-id="ckqv0k252001cvvbq4g917lb2" data-title="作画学习札记其三：暴强老害篇（2）" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BD%9C%E7%94%BB/" rel="tag">作画</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8A%A8%E7%94%BB/" rel="tag">动画</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-作画学习札记其二：暴强老害篇（1）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E4%BA%8C%EF%BC%9A%E6%9A%B4%E5%BC%BA%E8%80%81%E5%AE%B3%E7%AF%87%EF%BC%881%EF%BC%89/" class="article-date">
+  <time class="dt-published" datetime="2017-08-12T14:37:17.000Z" itemprop="datePublished">2017-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E4%BA%8C%EF%BC%9A%E6%9A%B4%E5%BC%BA%E8%80%81%E5%AE%B3%E7%AF%87%EF%BC%881%EF%BC%89/">作画学习札记其二：暴强老害篇（1）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=240 src="//music.163.com/outchain/player?type=0&id=876460941&auto=0&height=430"></iframe>
+
+<h3 id="中村丰"><a href="#中村丰" class="headerlink" title="中村丰"></a>中村丰</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-VrcPalyEOmbZkAvb"></div><script> var VrcPalyEOmbZkAvb_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d2285022e82f02675f6db07a62fecd79.mp4\"}}'); VrcPalyEOmbZkAvb_options.container = document.getElementById("mmedia-VrcPalyEOmbZkAvb"); const dp_VrcPalyEOmbZkAvb = new DPlayer(VrcPalyEOmbZkAvb_options); </script>
+
+<p>这里是中村丰在《灵能百分百》中的一段。下坠过程中特写镜头切远景后镜头极速后拉升，帅到爆炸。接近地面时一连串升格镜头蓄力，黑白闪，高速运动下变形的脸的大特写，坠地后再用全景的「中村方块」和远景的黑白闪来体现坠地的重量感以及绝对的力量差距。</p>
+<p>中村有名的片段非常多，包括《星际牛仔：天国之扉》车厢内打斗一段、《异邦人：无皇刃谭》最后结尾无名VS黄毛一段（这段简直就是教科书般的存在了，我每看一个介绍作画的视频都会提到它）。还有一个片段，中村丰仅用了 3 张（1/8秒）就表现出人物从远景越过镜头，简直就是快到爆炸。<a target="_blank" rel="noopener" href="http://weibo.com/lmnbht" title="nbht的新浪微博">@nbht</a> 专门做过<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av12024948/" title="解新番第二十四期：中村丰到底有多厉害？">一期视频</a>来介绍了中村丰的各种厉害之处，指明了吹「国宝」的正确方向。</p>
+<h3 id="大平晋也"><a href="#大平晋也" class="headerlink" title="大平晋也"></a>大平晋也</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-gvAGQfVKjmcPQfUb"></div><script> var gvAGQfVKjmcPQfUb_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/cff08e0868e00b236ce6cbe5c8a8f378.webm\"}}'); gvAGQfVKjmcPQfUb_options.container = document.getElementById("mmedia-gvAGQfVKjmcPQfUb"); const dp_gvAGQfVKjmcPQfUb = new DPlayer(gvAGQfVKjmcPQfUb_options); </script>
+
+<p>这一段是《黑客帝国动画版：少年故事》里的一段，在取出滑板之前都是由桥本晋治画的。</p>
+<p>参与宫崎骏</p>
+<h3 id="今石洋之"><a href="#今石洋之" class="headerlink" title="今石洋之"></a>今石洋之</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-ATyEovMaotqRZUfW"></div><script> var ATyEovMaotqRZUfW_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/5aae2659d1a508718462c6b1655484aa.mp4\"}}'); ATyEovMaotqRZUfW_options.container = document.getElementById("mmedia-ATyEovMaotqRZUfW"); const dp_ATyEovMaotqRZUfW = new DPlayer(ATyEovMaotqRZUfW_options); </script>
+
+<h3 id="松本宪生"><a href="#松本宪生" class="headerlink" title="松本宪生"></a>松本宪生</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-kcOxkGnYgimJrtTe"></div><script> var kcOxkGnYgimJrtTe_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/573d9b41bb6c9e6ea017e173ed447443.mp4\"}}'); kcOxkGnYgimJrtTe_options.container = document.getElementById("mmedia-kcOxkGnYgimJrtTe"); const dp_kcOxkGnYgimJrtTe = new DPlayer(kcOxkGnYgimJrtTe_options); </script>
+
+<h3 id="桥本晋治"><a href="#桥本晋治" class="headerlink" title="桥本晋治"></a>桥本晋治</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-kUSnMoTRBeJihhVB"></div><script> var kUSnMoTRBeJihhVB_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/581cec3856380d0b3029bff88ffd647c.mp4\"}}'); kUSnMoTRBeJihhVB_options.container = document.getElementById("mmedia-kUSnMoTRBeJihhVB"); const dp_kUSnMoTRBeJihhVB = new DPlayer(kUSnMoTRBeJihhVB_options); </script>
+
+<p>这一段同样出自《黑客帝国动画版：少年故事》，桥本晋治也是这一集的导演，除了上面提到的那一卡，应该有</p>
+<h3 id="安藤真裕"><a href="#安藤真裕" class="headerlink" title="安藤真裕"></a>安藤真裕</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-grdnympmKuviXpHD"></div><script> var grdnympmKuviXpHD_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/876ba72aa5f1d6d2ced5219cff4e4581.mp4\"}}'); grdnympmKuviXpHD_options.container = document.getElementById("mmedia-grdnympmKuviXpHD"); const dp_grdnympmKuviXpHD = new DPlayer(grdnympmKuviXpHD_options); </script>
+
+<h3 id="小池健"><a href="#小池健" class="headerlink" title="小池健"></a>小池健</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-OvMjJqjMCVsVERvG"></div><script> var OvMjJqjMCVsVERvG_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/bb34c6a137ec697e9194f211d89f543f.mp4\"}}'); OvMjJqjMCVsVERvG_options.container = document.getElementById("mmedia-OvMjJqjMCVsVERvG"); const dp_OvMjJqjMCVsVERvG = new DPlayer(OvMjJqjMCVsVERvG_options); </script>
+
+<p>世界纪录</p>
+<h3 id="井上俊之"><a href="#井上俊之" class="headerlink" title="井上俊之"></a>井上俊之</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-bvcRkRWwevaLrWYF"></div><script> var bvcRkRWwevaLrWYF_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/4e4914d820817b1918f4eb7002af830f.mp4\"}}'); bvcRkRWwevaLrWYF_options.container = document.getElementById("mmedia-bvcRkRWwevaLrWYF"); const dp_bvcRkRWwevaLrWYF = new DPlayer(bvcRkRWwevaLrWYF_options); </script>
+
+
+
+<h3 id="冲浦启之"><a href="#冲浦启之" class="headerlink" title="冲浦启之"></a>冲浦启之</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-ZHpLARLEYHJlJrkN"></div><script> var ZHpLARLEYHJlJrkN_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/f09c51631f656c50bb7222ced4b4f2b5.webm\"}}'); ZHpLARLEYHJlJrkN_options.container = document.getElementById("mmedia-ZHpLARLEYHJlJrkN"); const dp_ZHpLARLEYHJlJrkN = new DPlayer(ZHpLARLEYHJlJrkN_options); </script>
+
+
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2017/08/12/%E4%BD%9C%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0%E5%85%B6%E4%BA%8C%EF%BC%9A%E6%9A%B4%E5%BC%BA%E8%80%81%E5%AE%B3%E7%AF%87%EF%BC%881%EF%BC%89/" data-id="ckqv0k254001fvvbqewu91cfv" data-title="作画学习札记其二：暴强老害篇（1）" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BD%9C%E7%94%BB/" rel="tag">作画</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8A%A8%E7%94%BB/" rel="tag">动画</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PPT/" rel="tag">PPT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%A6/" rel="tag">书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BD%9C%E7%94%BB/" rel="tag">作画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8A%A8%E7%94%BB/" rel="tag">动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%97%E4%BD%93/" rel="tag">字体</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%BF/" rel="tag">政</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82/" rel="tag">杂</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BE%BD%E6%AF%9B%E7%90%83/" rel="tag">羽毛球</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%BE%E8%AE%A1/" rel="tag">设计</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 16.67px;">Hexo</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/PPT/" style="font-size: 10px;">PPT</a> <a href="/tags/%E4%B9%A6/" style="font-size: 16.67px;">书</a> <a href="/tags/%E4%BD%9C%E7%94%BB/" style="font-size: 20px;">作画</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 20px;">动画</a> <a href="/tags/%E5%AD%97%E4%BD%93/" style="font-size: 13.33px;">字体</a> <a href="/tags/%E6%94%BF/" style="font-size: 10px;">政</a> <a href="/tags/%E6%9D%82/" style="font-size: 16.67px;">杂</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a> <a href="/tags/%E7%BE%BD%E6%AF%9B%E7%90%83/" style="font-size: 10px;">羽毛球</a> <a href="/tags/%E8%AE%BE%E8%AE%A1/" style="font-size: 13.33px;">设计</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/07/Java-8%E7%9A%84%E5%8F%98%E5%8C%96%E4%B9%8B%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96/">Java 8的变化之行为参数化——Lambda表达式</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/08/VPS%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/">VPS系统重装后要做的事</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/11/MySQL%E8%A7%84%E8%8C%83/">MySQL规范</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/10/MySQL%E4%B8%AD%E7%9A%84%E4%BA%8B%E7%89%A9/">MySQL中的事务</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/09/SQL%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/">SQL索引介绍</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
