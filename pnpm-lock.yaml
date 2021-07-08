@@ -11,6 +11,7 @@ specifiers:
   hexo-renderer-marked: ^4.0.0
   hexo-renderer-stylus: ^2.0.0
   hexo-server: ^2.0.0
+  hexo-tag-mmedia: ^1.1.7
   hexo-theme-landscape: ^0.0.3
   husky: ^7.0.1
   lint-staged: ^11.0.0
@@ -27,6 +28,7 @@ dependencies:
   hexo-renderer-marked: 4.0.0
   hexo-renderer-stylus: 2.0.1
   hexo-server: 2.0.0
+  hexo-tag-mmedia: registry.npmjs.org/hexo-tag-mmedia/1.1.7
   hexo-theme-landscape: 0.0.3
 
 devDependencies:
@@ -1658,10 +1660,202 @@ packages:
     dev: true
 
   /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    resolution: { integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8= }
     dev: false
 
   /yaml/1.10.2:
-    resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
-    engines: {node: '>= 6'}
+    resolution: { integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg== }
+    engines: { node: '>= 6' }
     dev: true
+
+  registry.npmjs.org/ansi-styles/4.3.0:
+    resolution: { integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz }
+    name: ansi-styles
+    version: 4.3.0
+    engines: { node: '>=8' }
+    dependencies:
+      color-convert: registry.npmjs.org/color-convert/2.0.1
+    dev: false
+
+  registry.npmjs.org/any-promise/1.3.0:
+    resolution: { integrity: sha1-q8av7tzqUugJzcA3au0845Y10X8=, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/any-promise/-/any-promise-1.3.0.tgz }
+    name: any-promise
+    version: 1.3.0
+    dev: false
+
+  registry.npmjs.org/chalk/4.1.1:
+    resolution: { integrity: sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/chalk/-/chalk-4.1.1.tgz }
+    name: chalk
+    version: 4.1.1
+    engines: { node: '>=10' }
+    dependencies:
+      ansi-styles: registry.npmjs.org/ansi-styles/4.3.0
+      supports-color: registry.npmjs.org/supports-color/7.2.0
+    dev: false
+
+  registry.npmjs.org/color-convert/2.0.1:
+    resolution: { integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz }
+    name: color-convert
+    version: 2.0.1
+    engines: { node: '>=7.0.0' }
+    dependencies:
+      color-name: registry.npmjs.org/color-name/1.1.4
+    dev: false
+
+  registry.npmjs.org/color-name/1.1.4:
+    resolution: { integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz }
+    name: color-name
+    version: 1.1.4
+    dev: false
+
+  registry.npmjs.org/copy-to/2.0.1:
+    resolution: { integrity: sha1-JoD7uAaKSNCGVrYJgJK9r8kG9KU=, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/copy-to/-/copy-to-2.0.1.tgz }
+    name: copy-to
+    version: 2.0.1
+    dev: false
+
+  registry.npmjs.org/deepmerge/4.2.2:
+    resolution: { integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/deepmerge/-/deepmerge-4.2.2.tgz }
+    name: deepmerge
+    version: 4.2.2
+    engines: { node: '>=0.10.0' }
+    dev: false
+
+  registry.npmjs.org/escape-html/1.0.3:
+    resolution: { integrity: sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz }
+    name: escape-html
+    version: 1.0.3
+    dev: false
+
+  registry.npmjs.org/extend-shallow/2.0.1:
+    resolution: { integrity: sha1-Ua99YUrZqfYQ6huvu5idaxxWiQ8=, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/extend-shallow/-/extend-shallow-2.0.1.tgz }
+    name: extend-shallow
+    version: 2.0.1
+    engines: { node: '>=0.10.0' }
+    dependencies:
+      is-extendable: registry.npmjs.org/is-extendable/0.1.1
+    dev: false
+
+  registry.npmjs.org/has-flag/4.0.0:
+    resolution: { integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz }
+    name: has-flag
+    version: 4.0.0
+    engines: { node: '>=8' }
+    dev: false
+
+  registry.npmjs.org/hexo-log/2.0.0:
+    resolution: { integrity: sha512-U7zdDae74pXcyhQEyNmpJdq3UI6zWKxQ7/zLoMr/d3CBRdIfB5yO8DWqKUnewfibYv0gODyTWUIhxQDWuwloow==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/hexo-log/-/hexo-log-2.0.0.tgz }
+    name: hexo-log
+    version: 2.0.0
+    engines: { node: '>=10.13.0' }
+    dependencies:
+      chalk: registry.npmjs.org/chalk/4.1.1
+    dev: false
+
+  registry.npmjs.org/hexo-tag-mmedia/1.1.7:
+    resolution: { integrity: sha512-k5xiqDo6ELsxkf/7AsnU6XX+xjML1dW2lO4PmUR22nux27wSD85rJjcnsbIrfjzpK66MJ09xZ98l26L4KxU2pQ==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/hexo-tag-mmedia/-/hexo-tag-mmedia-1.1.7.tgz }
+    name: hexo-tag-mmedia
+    version: 1.1.7
+    dependencies:
+      deepmerge: registry.npmjs.org/deepmerge/4.2.2
+      hexo-log: registry.npmjs.org/hexo-log/2.0.0
+      json5: registry.npmjs.org/json5/2.2.0
+      utility: registry.npmjs.org/utility/1.17.0
+    dev: false
+
+  registry.npmjs.org/is-extendable/0.1.1:
+    resolution: { integrity: sha1-YrEQ4omkcUGOPsNqYX1HLjAd/Ik=, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz }
+    name: is-extendable
+    version: 0.1.1
+    engines: { node: '>=0.10.0' }
+    dev: false
+
+  registry.npmjs.org/json5/2.2.0:
+    resolution: { integrity: sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/json5/-/json5-2.2.0.tgz }
+    name: json5
+    version: 2.2.0
+    engines: { node: '>=6' }
+    hasBin: true
+    dependencies:
+      minimist: registry.npmjs.org/minimist/1.2.5
+    dev: false
+
+  registry.npmjs.org/minimist/1.2.5:
+    resolution: { integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/minimist/-/minimist-1.2.5.tgz }
+    name: minimist
+    version: 1.2.5
+    dev: false
+
+  registry.npmjs.org/mkdirp/0.5.5:
+    resolution: { integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.5.tgz }
+    name: mkdirp
+    version: 0.5.5
+    hasBin: true
+    dependencies:
+      minimist: registry.npmjs.org/minimist/1.2.5
+    dev: false
+
+  registry.npmjs.org/mz/2.7.0:
+    resolution: { integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/mz/-/mz-2.7.0.tgz }
+    name: mz
+    version: 2.7.0
+    dependencies:
+      any-promise: registry.npmjs.org/any-promise/1.3.0
+      object-assign: registry.npmjs.org/object-assign/4.1.1
+      thenify-all: registry.npmjs.org/thenify-all/1.6.0
+    dev: false
+
+  registry.npmjs.org/object-assign/4.1.1:
+    resolution: { integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz }
+    name: object-assign
+    version: 4.1.1
+    engines: { node: '>=0.10.0' }
+    dev: false
+
+  registry.npmjs.org/supports-color/7.2.0:
+    resolution: { integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz }
+    name: supports-color
+    version: 7.2.0
+    engines: { node: '>=8' }
+    dependencies:
+      has-flag: registry.npmjs.org/has-flag/4.0.0
+    dev: false
+
+  registry.npmjs.org/thenify-all/1.6.0:
+    resolution: { integrity: sha1-GhkY1ALY/D+Y+/I02wvMjMEOlyY=, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/thenify-all/-/thenify-all-1.6.0.tgz }
+    name: thenify-all
+    version: 1.6.0
+    engines: { node: '>=0.8' }
+    dependencies:
+      thenify: registry.npmjs.org/thenify/3.3.1
+    dev: false
+
+  registry.npmjs.org/thenify/3.3.1:
+    resolution: { integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/thenify/-/thenify-3.3.1.tgz }
+    name: thenify
+    version: 3.3.1
+    dependencies:
+      any-promise: registry.npmjs.org/any-promise/1.3.0
+    dev: false
+
+  registry.npmjs.org/unescape/1.0.1:
+    resolution: { integrity: sha512-O0+af1Gs50lyH1nUu3ZyYS1cRh01Q/kUKatTOkSs7jukXE6/NebucDVxyiDsA9AQ4JC1V1jUH9EO8JX2nMDgGQ==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/unescape/-/unescape-1.0.1.tgz }
+    name: unescape
+    version: 1.0.1
+    engines: { node: '>=0.10.0' }
+    dependencies:
+      extend-shallow: registry.npmjs.org/extend-shallow/2.0.1
+    dev: false
+
+  registry.npmjs.org/utility/1.17.0:
+    resolution: { integrity: sha512-KdVkF9An/0239BJ4+dqOa7NPrPIOeQE9AGfx0XS16O9DBiHNHRJMoeU5nL6pRGAkgJOqdOu8R4gBRcXnAocJKw==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/utility/-/utility-1.17.0.tgz }
+    name: utility
+    version: 1.17.0
+    engines: { node: '>= 0.12.0' }
+    dependencies:
+      copy-to: registry.npmjs.org/copy-to/2.0.1
+      escape-html: registry.npmjs.org/escape-html/1.0.3
+      mkdirp: registry.npmjs.org/mkdirp/0.5.5
+      mz: registry.npmjs.org/mz/2.7.0
+      unescape: registry.npmjs.org/unescape/1.0.1
+    dev: false
