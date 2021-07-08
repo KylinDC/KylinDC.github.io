@@ -110,6 +110,11 @@ abbrlink:
   alg: crc16 # 算法：crc16(default) and crc32
   rep: dec # 进制：dec(default) and hex
 
+# Security
+##
+encrypt:
+  enable: true
+
 # mmedia player config
 mmedia:
   audio:
