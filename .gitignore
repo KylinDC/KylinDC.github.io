@@ -1,6 +1,7 @@
 .idea
 public
 node_modules
+db.json
 
 .vscode/*
 !.vscode/settings.json
