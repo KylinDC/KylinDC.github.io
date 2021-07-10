@@ -130,7 +130,7 @@ marked:
   mangle: true
   sanitizeUrl: false
   headerIds: true
-  lazyload: false
+  lazyload: true
   prependRoot: true
   postAsset: true
   external_link:
