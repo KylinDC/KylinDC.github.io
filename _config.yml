@@ -158,6 +158,13 @@ feed:
   autodiscovery: true
   template:
 
+sitemap:
+  path: sitemap.xml
+  template:
+  rel: false
+  tags: true
+  categories: true
+
 # mmedia player config
 mmedia:
   audio:
