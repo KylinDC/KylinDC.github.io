@@ -9,13 +9,13 @@
     <atom:link href="https://kylindc.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 10 Jul 2021 16:57:15 GMT</pubDate>
+    <pubDate>Sat, 10 Jul 2021 17:02:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>Java 8 的变化之行为参数化——Lambda 表达式</title>
-      <link>https://kylindc.github.io/post/6340/</link>
-      <guid>https://kylindc.github.io/post/6340/</guid>
+      <link>https://kylindc.github.io/posts/6340/</link>
+      <guid>https://kylindc.github.io/posts/6340/</guid>
       <pubDate>Sat, 07 Dec 2019 14:34:26 GMT</pubDate>
       
         
@@ -38,14 +38,14 @@
       <category domain="https://kylindc.github.io/tags/%E7%BC%96%E7%A8%8B/">编程</category>
       
       
-      <comments>https://kylindc.github.io/post/6340/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/6340/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>VPS 系统重装后要做的事</title>
-      <link>https://kylindc.github.io/post/27311/</link>
-      <guid>https://kylindc.github.io/post/27311/</guid>
+      <link>https://kylindc.github.io/posts/27311/</link>
+      <guid>https://kylindc.github.io/posts/27311/</guid>
       <pubDate>Sat, 08 Jun 2019 13:58:36 GMT</pubDate>
       
         
@@ -63,14 +63,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/27311/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/27311/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>MySQL 规范</title>
-      <link>https://kylindc.github.io/post/37646/</link>
-      <guid>https://kylindc.github.io/post/37646/</guid>
+      <link>https://kylindc.github.io/posts/37646/</link>
+      <guid>https://kylindc.github.io/posts/37646/</guid>
       <pubDate>Sat, 11 May 2019 21:02:24 GMT</pubDate>
       
         
@@ -90,14 +90,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/37646/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/37646/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>MySQL 中的事务</title>
-      <link>https://kylindc.github.io/post/21282/</link>
-      <guid>https://kylindc.github.io/post/21282/</guid>
+      <link>https://kylindc.github.io/posts/21282/</link>
+      <guid>https://kylindc.github.io/posts/21282/</guid>
       <pubDate>Fri, 10 May 2019 10:22:10 GMT</pubDate>
       
         
@@ -116,14 +116,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/21282/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/21282/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>SQL 索引介绍</title>
-      <link>https://kylindc.github.io/post/10973/</link>
-      <guid>https://kylindc.github.io/post/10973/</guid>
+      <link>https://kylindc.github.io/posts/10973/</link>
+      <guid>https://kylindc.github.io/posts/10973/</guid>
       <pubDate>Thu, 09 May 2019 22:48:30 GMT</pubDate>
       
         
@@ -142,14 +142,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/10973/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/10973/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>SQL 中的子查询、联结查询和组合查询</title>
-      <link>https://kylindc.github.io/post/29495/</link>
-      <guid>https://kylindc.github.io/post/29495/</guid>
+      <link>https://kylindc.github.io/posts/29495/</link>
+      <guid>https://kylindc.github.io/posts/29495/</guid>
       <pubDate>Thu, 09 May 2019 12:53:35 GMT</pubDate>
       
         
@@ -167,14 +167,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/29495/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/29495/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>SQL 中的字符串处理函数和时间处理函数</title>
-      <link>https://kylindc.github.io/post/54670/</link>
-      <guid>https://kylindc.github.io/post/54670/</guid>
+      <link>https://kylindc.github.io/posts/54670/</link>
+      <guid>https://kylindc.github.io/posts/54670/</guid>
       <pubDate>Sun, 05 May 2019 16:55:00 GMT</pubDate>
       
         
@@ -192,14 +192,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/54670/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/54670/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>MySQL 中的 JSON Data Type</title>
-      <link>https://kylindc.github.io/post/48363/</link>
-      <guid>https://kylindc.github.io/post/48363/</guid>
+      <link>https://kylindc.github.io/posts/48363/</link>
+      <guid>https://kylindc.github.io/posts/48363/</guid>
       <pubDate>Sun, 05 May 2019 14:50:00 GMT</pubDate>
       
         
@@ -217,14 +217,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/48363/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/48363/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 中的 Lambda 表达式</title>
-      <link>https://kylindc.github.io/post/40701/</link>
-      <guid>https://kylindc.github.io/post/40701/</guid>
+      <link>https://kylindc.github.io/posts/40701/</link>
+      <guid>https://kylindc.github.io/posts/40701/</guid>
       <pubDate>Sun, 03 Mar 2019 17:03:34 GMT</pubDate>
       
         
@@ -242,14 +242,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/40701/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/40701/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 中枚举和类的异同</title>
-      <link>https://kylindc.github.io/post/23197/</link>
-      <guid>https://kylindc.github.io/post/23197/</guid>
+      <link>https://kylindc.github.io/posts/23197/</link>
+      <guid>https://kylindc.github.io/posts/23197/</guid>
       <pubDate>Thu, 28 Feb 2019 14:33:39 GMT</pubDate>
       
         
@@ -269,14 +269,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/23197/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/23197/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 中的序列化使用总结</title>
-      <link>https://kylindc.github.io/post/38899/</link>
-      <guid>https://kylindc.github.io/post/38899/</guid>
+      <link>https://kylindc.github.io/posts/38899/</link>
+      <guid>https://kylindc.github.io/posts/38899/</guid>
       <pubDate>Mon, 25 Feb 2019 11:28:48 GMT</pubDate>
       
         
@@ -294,14 +294,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/38899/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/38899/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 泛型总结</title>
-      <link>https://kylindc.github.io/post/60082/</link>
-      <guid>https://kylindc.github.io/post/60082/</guid>
+      <link>https://kylindc.github.io/posts/60082/</link>
+      <guid>https://kylindc.github.io/posts/60082/</guid>
       <pubDate>Sat, 23 Feb 2019 18:47:15 GMT</pubDate>
       
         
@@ -319,14 +319,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/60082/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/60082/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 中的 TreeMap</title>
-      <link>https://kylindc.github.io/post/59929/</link>
-      <guid>https://kylindc.github.io/post/59929/</guid>
+      <link>https://kylindc.github.io/posts/59929/</link>
+      <guid>https://kylindc.github.io/posts/59929/</guid>
       <pubDate>Sat, 23 Feb 2019 09:43:42 GMT</pubDate>
       
         
@@ -344,14 +344,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/59929/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/59929/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java LinkedList 用法总结</title>
-      <link>https://kylindc.github.io/post/3868/</link>
-      <guid>https://kylindc.github.io/post/3868/</guid>
+      <link>https://kylindc.github.io/posts/3868/</link>
+      <guid>https://kylindc.github.io/posts/3868/</guid>
       <pubDate>Thu, 21 Feb 2019 20:42:51 GMT</pubDate>
       
         
@@ -369,14 +369,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/3868/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/3868/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 中的 Object 类、String 类和数组的常用方法</title>
-      <link>https://kylindc.github.io/post/16025/</link>
-      <guid>https://kylindc.github.io/post/16025/</guid>
+      <link>https://kylindc.github.io/posts/16025/</link>
+      <guid>https://kylindc.github.io/posts/16025/</guid>
       <pubDate>Sun, 17 Feb 2019 16:56:57 GMT</pubDate>
       
         
@@ -394,14 +394,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/16025/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/16025/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 中的类型转换和自动拆装箱</title>
-      <link>https://kylindc.github.io/post/46251/</link>
-      <guid>https://kylindc.github.io/post/46251/</guid>
+      <link>https://kylindc.github.io/posts/46251/</link>
+      <guid>https://kylindc.github.io/posts/46251/</guid>
       <pubDate>Sat, 16 Feb 2019 20:48:06 GMT</pubDate>
       
         
@@ -419,14 +419,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/46251/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/46251/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 访问控制修饰符</title>
-      <link>https://kylindc.github.io/post/45281/</link>
-      <guid>https://kylindc.github.io/post/45281/</guid>
+      <link>https://kylindc.github.io/posts/45281/</link>
+      <guid>https://kylindc.github.io/posts/45281/</guid>
       <pubDate>Fri, 15 Feb 2019 15:51:38 GMT</pubDate>
       
         
@@ -445,14 +445,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/45281/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/45281/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 中的类、抽象类和借口之间的异同</title>
-      <link>https://kylindc.github.io/post/43519/</link>
-      <guid>https://kylindc.github.io/post/43519/</guid>
+      <link>https://kylindc.github.io/posts/43519/</link>
+      <guid>https://kylindc.github.io/posts/43519/</guid>
       <pubDate>Tue, 29 Jan 2019 19:41:22 GMT</pubDate>
       
         
@@ -470,14 +470,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/43519/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/43519/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 中的异常与错误</title>
-      <link>https://kylindc.github.io/post/57291/</link>
-      <guid>https://kylindc.github.io/post/57291/</guid>
+      <link>https://kylindc.github.io/posts/57291/</link>
+      <guid>https://kylindc.github.io/posts/57291/</guid>
       <pubDate>Thu, 24 Jan 2019 18:53:45 GMT</pubDate>
       
         
@@ -495,14 +495,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/57291/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/57291/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>初识单一职责原则</title>
-      <link>https://kylindc.github.io/post/46716/</link>
-      <guid>https://kylindc.github.io/post/46716/</guid>
+      <link>https://kylindc.github.io/posts/46716/</link>
+      <guid>https://kylindc.github.io/posts/46716/</guid>
       <pubDate>Sat, 19 Jan 2019 23:32:38 GMT</pubDate>
       
         
@@ -520,14 +520,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/46716/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/46716/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>IntelliJ IDEA 初探</title>
-      <link>https://kylindc.github.io/post/37516/</link>
-      <guid>https://kylindc.github.io/post/37516/</guid>
+      <link>https://kylindc.github.io/posts/37516/</link>
+      <guid>https://kylindc.github.io/posts/37516/</guid>
       <pubDate>Sat, 19 Jan 2019 21:39:28 GMT</pubDate>
       
         
@@ -540,19 +540,19 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="使用 -IntelliJ-IDEA- 创建 -HelloWorld- 项目"><a href="# 使用 -IntelliJ-IDEA- 创建 -HelloWorld- 项目" class="headerlink" title="使用 IntelliJ IDEA 创建 HelloWorld 项目"></a>使用 IntelliJ IDEA 创建 HelloWorld 项目</h2><ol><li>新建一个项目，选择好 SDK</li></ol><p><img src="/post/37516/1.png" loading="lazy"></p><ol start="2"><li>选择项目模版，本项目不用选择</li></ol><p><img src="/post/37516/2.png" loading="lazy"></p><ol start="3"><li>选择项目名称以及项目路径</li></ol><p><img src="/post/37516/3.png" loading="lazy"></p><ol start="4"><li>在 src 文件夹下面新建名为 <code>HelloWorld</code> 的类</li></ol><p><img src="/post/37516/4.png" loading="lazy"></p><ol start="5"><li>写入代码</li></ol><p><img src="/post/37516/5.png" loading="lazy"></p><ol start="6"><li>使用快捷键 <code>Shift+Alt+F10</code> 即可运行代码，即可以在控制台中看到输出</li></ol><p><img src="/post/37516/6.png" loading="lazy"></p><ol start="7"><li>使用快捷键 <code>Ctrl+F8</code> 即可在当前行添加断点</li></ol><p><img src="/post/37516/7.png" loading="lazy"></p><h2 id="推荐插件"><a href="# 推荐插件" class="headerlink" title="推荐插件"></a>推荐插件</h2><ul><li>Key Promoter：会提示当前操作的快捷键</li><li>Save Action：可以设置保存前的操作，如格式化代码</li></ul><h2 id="常用快捷键"><a href="# 常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><ul><li><code>Ctrl+Alt+s</code>：打开设置</li><li><code>Shift+F10</code>：运行项目</li><li><code>Shift+F9</code>：编译项目</li></ul><p>更多快捷键可参考：<a href="https://segmentfault.com/a/1190000011544042">IntelliJ IDEA 常用快捷键整理</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="使用 -IntelliJ-IDEA- 创建 -HelloWorld- 项目"><a href="# 使用 -IntelliJ-IDEA- 创建 -HelloWorld- 项目" class="headerlink" title="使用 IntelliJ IDEA 创建 HelloWorld 项目"></a>使用 IntelliJ IDEA 创建 HelloWorld 项目</h2><ol><li>新建一个项目，选择好 SDK</li></ol><p><img src="/posts/37516/1.png" loading="lazy"></p><ol start="2"><li>选择项目模版，本项目不用选择</li></ol><p><img src="/posts/37516/2.png" loading="lazy"></p><ol start="3"><li>选择项目名称以及项目路径</li></ol><p><img src="/posts/37516/3.png" loading="lazy"></p><ol start="4"><li>在 src 文件夹下面新建名为 <code>HelloWorld</code> 的类</li></ol><p><img src="/posts/37516/4.png" loading="lazy"></p><ol start="5"><li>写入代码</li></ol><p><img src="/posts/37516/5.png" loading="lazy"></p><ol start="6"><li>使用快捷键 <code>Shift+Alt+F10</code> 即可运行代码，即可以在控制台中看到输出</li></ol><p><img src="/posts/37516/6.png" loading="lazy"></p><ol start="7"><li>使用快捷键 <code>Ctrl+F8</code> 即可在当前行添加断点</li></ol><p><img src="/posts/37516/7.png" loading="lazy"></p><h2 id="推荐插件"><a href="# 推荐插件" class="headerlink" title="推荐插件"></a>推荐插件</h2><ul><li>Key Promoter：会提示当前操作的快捷键</li><li>Save Action：可以设置保存前的操作，如格式化代码</li></ul><h2 id="常用快捷键"><a href="# 常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><ul><li><code>Ctrl+Alt+s</code>：打开设置</li><li><code>Shift+F10</code>：运行项目</li><li><code>Shift+F9</code>：编译项目</li></ul><p>更多快捷键可参考：<a href="https://segmentfault.com/a/1190000011544042">IntelliJ IDEA 常用快捷键整理</a></p>]]></content:encoded>
       
       
       
       
-      <comments>https://kylindc.github.io/post/37516/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/37516/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>JVM、JRE 与 JDK</title>
-      <link>https://kylindc.github.io/post/36121/</link>
-      <guid>https://kylindc.github.io/post/36121/</guid>
+      <link>https://kylindc.github.io/posts/36121/</link>
+      <guid>https://kylindc.github.io/posts/36121/</guid>
       <pubDate>Sat, 19 Jan 2019 16:09:18 GMT</pubDate>
       
         
@@ -565,19 +565,19 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="JVM-Java-Virtual-Machine-Java- 虚拟机"><a href="#JVM-Java-Virtual-Machine-Java- 虚拟机" class="headerlink" title="JVM(Java Virtual Machine)Java 虚拟机"></a>JVM(Java Virtual Machine)Java 虚拟机</h2><p>JVM 是整个 java 实现跨平台的最核心的部分，所有的 java 程序会首先被编译为.class 的目标字节码，这种目标字节码文件在虚拟机上执行时，把字节码解释成具体平台上的机器指令执行，因此 Java 可以稳定安全的实现跨平台。</p><h2 id="JRE-Java-Runtime-Environment-Java- 运行环境"><a href="#JRE-Java-Runtime-Environment-Java- 运行环境" class="headerlink" title="JRE(Java Runtime Environment) Java 运行环境"></a>JRE(Java Runtime Environment) Java 运行环境</h2><p>JRE 包含了 JVM 与 java 基础类库，是使用 java 语言编写的程序运行所需要的软件环境，提供给想运行 java 程序的用户使用的。</p><h2 id="JDK-Java-Development-Kit-Java- 开发工具包"><a href="#JDK-Java-Development-Kit-Java- 开发工具包" class="headerlink" title="JDK(Java Development Kit) Java 开发工具包"></a>JDK(Java Development Kit) Java 开发工具包 </h2><p> 是提供给开发人员开发 java 程序所需的开发工具包。JDK 包含了 JRE，同时还包含了编译 java 源码的编译器 javac 和打包器等工具，还包含了很多 java 程序调试和分析的工具：jconsole，jvisualvm 等工具软件，以及编写 java 程序所需的文档和 demo 例子程序。</p><p><img src="/post/36121/java.jpg" loading="lazy"></p><p>我们开发的实际流程是：我们利用 JDK（调用 JAVA API）开发了属于我们自己的 JAVA 程序后，通过 JDK 中的编译程序（javac）将我们的文本 .java 文件编译成 JAVA 字节码，在 JRE 上运行这些 JAVA 字节码，JVM 解析这些字节码，映射到 CPU 指令集或 OS 的系统调用。</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="JVM-Java-Virtual-Machine-Java- 虚拟机"><a href="#JVM-Java-Virtual-Machine-Java- 虚拟机" class="headerlink" title="JVM(Java Virtual Machine)Java 虚拟机"></a>JVM(Java Virtual Machine)Java 虚拟机</h2><p>JVM 是整个 java 实现跨平台的最核心的部分，所有的 java 程序会首先被编译为.class 的目标字节码，这种目标字节码文件在虚拟机上执行时，把字节码解释成具体平台上的机器指令执行，因此 Java 可以稳定安全的实现跨平台。</p><h2 id="JRE-Java-Runtime-Environment-Java- 运行环境"><a href="#JRE-Java-Runtime-Environment-Java- 运行环境" class="headerlink" title="JRE(Java Runtime Environment) Java 运行环境"></a>JRE(Java Runtime Environment) Java 运行环境</h2><p>JRE 包含了 JVM 与 java 基础类库，是使用 java 语言编写的程序运行所需要的软件环境，提供给想运行 java 程序的用户使用的。</p><h2 id="JDK-Java-Development-Kit-Java- 开发工具包"><a href="#JDK-Java-Development-Kit-Java- 开发工具包" class="headerlink" title="JDK(Java Development Kit) Java 开发工具包"></a>JDK(Java Development Kit) Java 开发工具包 </h2><p> 是提供给开发人员开发 java 程序所需的开发工具包。JDK 包含了 JRE，同时还包含了编译 java 源码的编译器 javac 和打包器等工具，还包含了很多 java 程序调试和分析的工具：jconsole，jvisualvm 等工具软件，以及编写 java 程序所需的文档和 demo 例子程序。</p><p><img src="/posts/36121/java.jpg" loading="lazy"></p><p>我们开发的实际流程是：我们利用 JDK（调用 JAVA API）开发了属于我们自己的 JAVA 程序后，通过 JDK 中的编译程序（javac）将我们的文本 .java 文件编译成 JAVA 字节码，在 JRE 上运行这些 JAVA 字节码，JVM 解析这些字节码，映射到 CPU 指令集或 OS 的系统调用。</p>]]></content:encoded>
       
       
       
       
-      <comments>https://kylindc.github.io/post/36121/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/36121/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>原生 JavaScript 常用的本地浏览器存储方法总结</title>
-      <link>https://kylindc.github.io/post/31128/</link>
-      <guid>https://kylindc.github.io/post/31128/</guid>
+      <link>https://kylindc.github.io/posts/31128/</link>
+      <guid>https://kylindc.github.io/posts/31128/</guid>
       <pubDate>Thu, 06 Dec 2018 15:51:24 GMT</pubDate>
       
         
@@ -595,14 +595,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/31128/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/31128/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>JSON 总结</title>
-      <link>https://kylindc.github.io/post/58769/</link>
-      <guid>https://kylindc.github.io/post/58769/</guid>
+      <link>https://kylindc.github.io/posts/58769/</link>
+      <guid>https://kylindc.github.io/posts/58769/</guid>
       <pubDate>Mon, 03 Dec 2018 23:25:28 GMT</pubDate>
       
         
@@ -620,14 +620,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/58769/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/58769/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>JavaScript 对象基础总结</title>
-      <link>https://kylindc.github.io/post/63313/</link>
-      <guid>https://kylindc.github.io/post/63313/</guid>
+      <link>https://kylindc.github.io/posts/63313/</link>
+      <guid>https://kylindc.github.io/posts/63313/</guid>
       <pubDate>Mon, 03 Dec 2018 09:30:32 GMT</pubDate>
       
         
@@ -647,14 +647,14 @@
       <category domain="https://kylindc.github.io/tags/JavaScript/">JavaScript</category>
       
       
-      <comments>https://kylindc.github.io/post/63313/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/63313/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>JavaScript 学习笔记</title>
-      <link>https://kylindc.github.io/post/20244/</link>
-      <guid>https://kylindc.github.io/post/20244/</guid>
+      <link>https://kylindc.github.io/posts/20244/</link>
+      <guid>https://kylindc.github.io/posts/20244/</guid>
       <pubDate>Thu, 22 Nov 2018 12:40:58 GMT</pubDate>
       
         
@@ -672,14 +672,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/20244/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/20244/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>SublimeText3 学习笔记</title>
-      <link>https://kylindc.github.io/post/12102/</link>
-      <guid>https://kylindc.github.io/post/12102/</guid>
+      <link>https://kylindc.github.io/posts/12102/</link>
+      <guid>https://kylindc.github.io/posts/12102/</guid>
       <pubDate>Wed, 21 Nov 2018 22:31:34 GMT</pubDate>
       
         
@@ -698,14 +698,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/12102/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/12102/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Git 学习笔记</title>
-      <link>https://kylindc.github.io/post/8520/</link>
-      <guid>https://kylindc.github.io/post/8520/</guid>
+      <link>https://kylindc.github.io/posts/8520/</link>
+      <guid>https://kylindc.github.io/posts/8520/</guid>
       <pubDate>Wed, 21 Nov 2018 22:05:27 GMT</pubDate>
       
         
@@ -723,14 +723,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/8520/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/8520/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>JavaScript 基本数据类型</title>
-      <link>https://kylindc.github.io/post/438/</link>
-      <guid>https://kylindc.github.io/post/438/</guid>
+      <link>https://kylindc.github.io/posts/438/</link>
+      <guid>https://kylindc.github.io/posts/438/</guid>
       <pubDate>Tue, 20 Nov 2018 19:54:52 GMT</pubDate>
       
         
@@ -748,14 +748,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/438/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/438/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>《如何提问》阅读笔记</title>
-      <link>https://kylindc.github.io/post/13677/</link>
-      <guid>https://kylindc.github.io/post/13677/</guid>
+      <link>https://kylindc.github.io/posts/13677/</link>
+      <guid>https://kylindc.github.io/posts/13677/</guid>
       <pubDate>Mon, 05 Nov 2018 22:40:49 GMT</pubDate>
       
         
@@ -774,14 +774,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/13677/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/13677/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Markdown 基本语法总结</title>
-      <link>https://kylindc.github.io/post/39979/</link>
-      <guid>https://kylindc.github.io/post/39979/</guid>
+      <link>https://kylindc.github.io/posts/39979/</link>
+      <guid>https://kylindc.github.io/posts/39979/</guid>
       <pubDate>Mon, 05 Nov 2018 16:34:09 GMT</pubDate>
       
         
@@ -799,14 +799,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/39979/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/39979/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>羽毛球学习笔记</title>
-      <link>https://kylindc.github.io/post/18448/</link>
-      <guid>https://kylindc.github.io/post/18448/</guid>
+      <link>https://kylindc.github.io/posts/18448/</link>
+      <guid>https://kylindc.github.io/posts/18448/</guid>
       <pubDate>Thu, 25 Jan 2018 12:31:26 GMT</pubDate>
       
         
@@ -826,35 +826,35 @@
       <category domain="https://kylindc.github.io/tags/%E7%BE%BD%E6%AF%9B%E7%90%83/">羽毛球</category>
       
       
-      <comments>https://kylindc.github.io/post/18448/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/18448/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>plan B</title>
-      <link>https://kylindc.github.io/post/51724/</link>
-      <guid>https://kylindc.github.io/post/51724/</guid>
+      <link>https://kylindc.github.io/posts/51724/</link>
+      <guid>https://kylindc.github.io/posts/51724/</guid>
       <pubDate>Tue, 10 Oct 2017 17:01:40 GMT</pubDate>
       
       <description>关于 plan B</description>
       
       
       
-      <content:encoded><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="bd20bb32d3aa758174aa597391502efab00cbb21d746019ff8f78fce61f1e9f6">bd28881041fb6adfb462536c90483544212bb6bea6677a27e9969b14cd5c8f862013aa33a398348ddf15777a2ecab65c3323b3043120ef09713ce5508a298ee98eeb1737c2c0afbfa8907932ab986e566d3b06e3189c2a73547ce3b4c3e84fb5e2d2a09e8ccf3143350b0ae15356caf039010e9af3b49b8ef5df0655ca1b177ce804928e829ecdbabf2732b1198d25a358c07f28fb9e541adc7e0eb486de91dc3017ccc0cc1d818b44ca6244d1decaaedae4406c7ceef5a9cb601d99c1b4494fcf4f882cc49d793fd23a244cf3c9e300b0082702c62420beb3b60213ba211477c866aaf774b9d17e390ecd0f700146cce09cf36cb3be9263e7aace2773be809dd7eab482bf00d4586db519f0abf3de86a625346df04c88609f531e15e3a5fd8886904b9bb4a643ac53d61855d4b9200c83c359f4ac28f9e4e81c94d3929d829d2ab39657b0e8abc65a3fa3928b89c14c0a502370915e7e1f4365f69c3ef5931451d4e649b6f4803b50044bde719123858c829bfa84a2e7eb9fe79e59dbcefb25fea59865e35d1aafe5811263176fd9cbe40c647f9a107cf1c45739e059ab19f53a6358bd5c539179aa6b6b56ca33cc7b66256715428980797bf193c8ab12e5f20fcfd0d86ef4a0f11022495cb3679fee7b9db4d79c184106a1a576c2e645a54405bfbdef0da711111421ed9e294f03948921a4fa591f8b5d98dd88979200049a52f435f99d5a37009ae7203a49c70f60798b62ef708edcef5ce0fa580297b4e068f94417299efd05fface0de07d57460559bcfa9e2d8196503cb87353d48f4a6b68229d93e4bb23ed0a5d58c766e5657cd993dd0b9128f20ceff04cc544a2b8278427b6c3f535d3f0930cd460efdfb1f971a3d2965483836e4e2580f5c363bfaa7f2d2e1b5daed6c66fbfbe2ee8f6fabcc30ed9c204937ef9e9a5177fc085e1607adbb46405152b108bbc5215de645d2c403fad9940b0db4a749d673c6e15fdca49715aa3ceb3f2f482caf432922064a10ee69542a12277b509663eea96b0bd561e6203a7d4501897763cd4a5f63aabe4b70d882674250a722a82ff5cb6db1d5018b6aafa8a18bff35098a6293bb1960a75319711087e65e72816aa795d27f2c3b215c48c7fa5ba4fdee07b0f0e3d8583b750daed4f890d6e2142486d4c0da5c03ad22a6e0fc875247517b64aa444ae369124456aeaa6a84bf31bd549e40eb79beb355c71c98457226ff5e84dd544445427e62e663b61b8d1ae25cd40ec117e3a5d414679fd66523b91334a8c1fd00ee459a481a18582d35dbc58f4f051efcc01c7d5f60fcb17e10057c27bc49907366539e496232c8b30020ef7f7ec10a6f9e0579ac14a1b9ed53bfabb2534a5c3ea282987eeba1598d145c140f42957f8f313322af5f2e64b4b31fd447d366d97cbc9dadba6104c14567a66f5c3cf7d8d8eae607256343f0af48bd023d355e13361aaf83317d3050ea27aeab1c8d203bda51c047b6981c646276ce415188fc7665ad142c6932780516d4d520378e40b69e39db2a2069d1e948d67e6b752e59f817ba181d6a9a266a19f0ed6e2588c2590320fb6ead2da6d4797227c0c24d942cfb96e132a28e30ae4b0e32dfb68c4246e38cd1241c91cc57c17a081f27df265c4b8e23993d324a0e3ca6e1666a63c3733e202b5c0f7394a3060e5ff1ae97ae15ac0495f99c69bf28648c935f102dd26dacce16d4205bd24b5d9876aa2e6019e08b6b541e16229881a34ed1c02e71251e358550ca191a819660af3c5e5a7061e3f776cee71cde49024d8a0e7e1f022bbbb6e9aafd3a763716a8074e72e899c52857cc02efac2ca1dfaa22a94c966d117318dbefe3505955dd19698d3c1723558db9be97cfbfbbede6ffe5ee5f430d68155b6a24f028bbc3d069fe22cbe122fdc5137971c0854a91b3d33e9558808bead93139baa6bda8497fa897b3d074a507fbfd9e729dac98e3637b12a23d2e405688889bb61d6f9a77ac28904e2972bd61b1d3c3388206305d3fe50f08aec71c77097f562cc33d0402d7d00d74371e6123c5f2817847e2f4762413c6cda50e99d95d1773cb05e6b3f27259e1bb4b05e173f4f322c30749e118662616e6c96f0b48d40548d857d5cf964d8fff7e1dd8b1806865d165311a0c78b80cbacb7b65402252cb8ae5c9ce7a44cfcf311989b422e5e595b44c561894ae65b81e4c69829e4b870d40dfe65fef6177ea1fd70cce9fbc348f1e8fc04c3511ab1053695d73ddb9623d4e0351f3938991eb9b3d875c8f5bbfa53e8fade500d8617f536abc14028426e79f2eb408455c892a7ba2898aae5e0fef7ba478f0d4b8a35167f52bfd299307fbfdfd329cca4016f4f6129326e952722048e12e554fca4ac1b8102452c9d5be63a2c52e64cda893278558c35a33ccce58c9ef4afb29649cf19a2864b85e51b4685d47eb8ee43f8eab99a3b0be9a922f0b88c5525cf97bd36b3d7361fd7504d71b8c0b3a37c2683bc41524e460b6a3febcdfd986bac9c66dc128976a416c0fe2e3efa6349314d0f0e9b6bc29956aa55aec4c42f8a76d29f7bcfc4cdf102d8e6af7b5a9ae5c1aab8bb2530134c84acf98edc121e307e2ecf2098582514e5c67ea8c1205e11def56c83bbe227a204adbb0629ce84fb497ce242ff7eeb1a06bb15826badae1a2f389912b02ff061557666e72f3f2b4c5ec0e2b60baa91a8e9d23fdfe787f17eaaee19e96cd699bb9b77b414a3273e0fe1a5e1e4a76e9e74b6a263e26e1b58141f55dbfd4ac57fff66dce78ba9be97ccd24d34e2f027da37cc1664acabf9233da8447f59b1e4d65564c915f3ffe402c3fe99797b39613628c6f10c721af8232acead63e063b3419643af0b7d53792051f26491a671428c00ee23a0eab485f88ff25768142aef47c9309dcfa613188fc68de5840714cfa98d69849478e04b3dfc32ddf5547dca3d8ec0c1cc4454951052280c86d5584694eed3327c5330bc8e94d2bb882678408cc55aca5de0445e67237d644e90359916f0c7038844e06c0ae50d13bfbf2e4052b0839f413571bef2e05573c747fe4041992a66db4ebeca0b6319ddb33b09dcb39d6a38322baacb6808b9e77d360f7a022898dfb78915ef9550d5e698bd4f568ee84e68ceb61e4c43a44fe54e3ef53246b6cc01359f25a81cd4628f7a3dfdb283938942cfdebd3bdf192c39a0052d97ae3760707837fdce2fe903e072386dd9c97c3b84319e283</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">以前连接的密码, a 开头</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content:encoded>
+      <content:encoded><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="9a5b0092ef512204cad6f26b722b0ba4726ba6f9dffa5815de5ee0ad728a312b">bd28881041fb6adfb462536c90483544212bb6bea6677a27e9969b14cd5c8f862013aa33a398348ddf15777a2ecab65c3323b3043120ef09713ce5508a298ee98eeb1737c2c0afbfa8907932ab986e566d3b06e3189c2a73547ce3b4c3e84fb5e2d2a09e8ccf3143350b0ae15356caf039010e9af3b49b8ef5df0655ca1b177ce804928e829ecdbabf2732b1198d25a358c07f28fb9e541adc7e0eb486de91dc3017ccc0cc1d818b44ca6244d1decaaedae4406c7ceef5a9cb601d99c1b4494fcf4f882cc49d793fd23a244cf3c9e300b0082702c62420beb3b60213ba211477c866aaf774b9d17e390ecd0f700146cce09cf36cb3be9263e7aace2773be809dd7eab482bf00d4586db519f0abf3de86a625346df04c88609f531e15e3a5fd8886904b9bb4a643ac53d61855d4b9200c83c359f4ac28f9e4e81c94d3929d829d2ab39657b0e8abc65a3fa3928b89c14c0a502370915e7e1f4365f69c3ef5931451d4e649b6f4803b50044bde719123858c829bfa84a2e7eb9fe79e59dbcefb25fea59865e35d1aafe5811263176fd9cbe40c647f9a107cf1c45739e059ab19f53a6358bd5c539179aa6b6b56ca33cc7b66256715428980797bf193c8ab12e5f20fcfd0d86ef4a0f11022495cb3679fee7b9db4d79c184106a1a576c2e645a54405bfbdef0da711111421ed9e294f03948921a4fa591f8b5d98dd88979200049a52f435f99d5a37009ae7203a49c70f60798b62ef708edcef5ce0fa580297b4e068f94417299efd05fface0de07d57460559bcfa9e2d8196503cb87353d48f4a6b68229d93e4bb23ed0a5d58c766e5657cd993dd0b9128f20ceff04cc544a2b8278427b6c3f535d3f0930cd460efdfb1f971a3d2965483836e4e2580f5c363bfaa7f2d2e1b5daed6c66fbfbe2ee8f6fabcc30ed9c204937ef9e9a5177fc085e1607adbb46405152b108bbc5215de645d2c403fad9940b0db4a749d673c6e15fdca49715aa3ceb3f2f482caf432922064a10ee69542a12277b509663eea96b0bd561e6203a7d4501897763cd4a5f63aabe4b70d882674250a722a82ff5cb6db1d5018b6aafa8a18bff35098a6293bb1960a75319711087e65e72816aa795d27f2c3b215c48c7fa5ba4fdee07b0f0e3d8583b750daed4f890d6e2142486d4c0da5c03ad22a6e0fc875247517b64aa444ae369124456aeaa6a84bf31bd549e40eb79beb355c71c98457226ff5e84dd544445427e62e663b61b8d1ae25cd40ec117e3a5d414679fd66523b91334a8c1fd00ee459a481a18582d35dbc58f4f051efcc01c7d5f60fcb17e10057c27bc49907366539e496232c8b30020ef7f7ec10a6f9e0579ac14a1b9ed53bfabb2534a5c3ea282987eeba1598d145c140f42957f8f313322af5f2e64b4b31fd447d366d97cbc9dadba6104c14567a66f5c3cf7d8d8eae607256343f0af48bd023d355e13361aaf83317d3050ea27aeab1c8d203bda51c047b6981c646276ce415188fc7665ad142c6932780516d4d520378e40b69e39db2a2069d1e948d67e6b752e59f817ba181d6a9a266a19f0ed6e2588c2590320fb6ead2da6d4797227c0c24d942cfb96e132a28e30ae4b0e32dfb68c4246e38cd1241c91cc57c17a081f27df265c4b8e23993d324a0e3ca6e1666a63c3733e202b5c0f7394a3060e5ff1ae97ae15ac0495f99c69bf28648c935f102dd26dacce16d4205bd24b5d9876aa2e6019e08b6b541e16229881a34ed1c02e71251e358550ca191a819660af3c5e5a7061e3f776cee71cde49024d8a0e7e1f022bbbb6e9aafd3a763716a8074e72e899c52857cc02efac2ca1dfaa22a94c966d117318dbefe3505955dd19698d3c1723558db9be97cfbfbbede6ffe5ee5f430d68155b6a24f028bbc3d069fe22cbe122fdc5137971c0854a91b3d33e9558808bead93139baa6bda8497fa897b3d074a507fbfd9e729dac98e3637b12a23d2e405688889bb61d6f9a77ac28904e2972bd61b1d3c3388206305d3fe50f08aec71c77097f562cc33d0402d7d00d74371e6123c5f2817847e2f4762413c6cda50e99d95d1773cb05e6b3f27259e1bb4b05e173f4f322c30749e118662616e6c96f0b48d40548d857d5cf964d8fff7e1dd8b1806865d165311a0c78b80cbacb7b65402252cb8ae5c9ce7a44cfcf311989b422e5e595b44c561894ae65b81e4c69829e4b870d40dfe65fef6177ea1fd70cce9fbc348f1e8fc04c3511ab1053695d73ddb9623d4e0351f3938991eb9b3d875c8f5bbfa53e7e39006e9b6acfbf33051aac1638d64debb2d0b5f26e0316f9b55096af4c23f35c595a0d801cdfd9ea8a5accc6a1970dd6bbd46724baad4a0e49447eeea85918a6dd278eb07a85edb4cabff5883cefb4a2c6852df8785b10d409f48090bcca5e2a4cf2cf031bdd94472b94a2ee8eeb06154316c0834816ebcac2b8724ee91ef7e506de9abde619efb218cd69ed60b73ec882b7d35004f186679c3a278449b2956ebb0e43da72a245483e4dd428c08a0a6ee56cc80ac4fc78963780b51c6231301f3a7b9a0007fe1005d9109f9c3c45a7e5259dcd1923f9718c59a1c58b88c85e427b3cc56db86a986ca4ca63acf0df28eb21cf8c76af0860d15203d41d2f86461255623992cdf1c5a5a462d68420e9481314094b0f8f9fb22aaa863c4c25886a0c9904a3fbe15ee9b43023706eab25b35cd22efb052a267766d801aa7ce208c7c21102a11b6e63ff58cbd4d8e1dd9b36b32880a42ea6372a1af4c48d3bc52258072801d914f500987f1ea8df4258b7fc4d0a072cc881e397dcb0fffa393a5fd6d1af97bb3838771f03d0ca9de8668ca2e22474ad195b13d9a18215161d43b822c1a2859368596b2a38b0751384913a81ae894f6aa7c4168ddcfc7760d484cf1b71640ccba0c615e947dfd43fcdf0a7fe0cdf02f0a181ddc58d46e112aa8f3fadd4480a3fc33424493b85a291026298da986cf0e83b1d6490a84e07021358262df22f84b7a5079156547e0d996fc488f39ed18006a06c0101bb4f75853a1b9fdf652f1e590da434439c83687c243b3c1ef8b182f822fb3e6f35b0668f49bb56d80756a516770a504f70fff9b706b76756f139fda154cc33169a815d400bc28841a10cd50aa31d3d2b919c1ba4750e85fc7aa0305643bd0e8cbbf12fcd197716bb8b11d5560055c2f17d07c6bea1aeb2be2dfbcb0d4ed5961f8a1f665788af29e7</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">以前连接的密码, a 开头</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content:encoded>
       
       
       
       <category domain="https://kylindc.github.io/tags/%E6%9D%82/">杂</category>
       
       
-      <comments>https://kylindc.github.io/post/51724/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/51724/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>点亮你的 PPT 封面</title>
-      <link>https://kylindc.github.io/post/37763/</link>
-      <guid>https://kylindc.github.io/post/37763/</guid>
+      <link>https://kylindc.github.io/posts/37763/</link>
+      <guid>https://kylindc.github.io/posts/37763/</guid>
       <pubDate>Fri, 01 Sep 2017 17:37:10 GMT</pubDate>
       
         
@@ -877,14 +877,14 @@
       <category domain="https://kylindc.github.io/tags/PPT/">PPT</category>
       
       
-      <comments>https://kylindc.github.io/post/37763/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/37763/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>关于《西文排版》</title>
-      <link>https://kylindc.github.io/post/42892/</link>
-      <guid>https://kylindc.github.io/post/42892/</guid>
+      <link>https://kylindc.github.io/posts/42892/</link>
+      <guid>https://kylindc.github.io/posts/42892/</guid>
       <pubDate>Mon, 28 Aug 2017 19:23:48 GMT</pubDate>
       
         
@@ -898,7 +898,7 @@
       
       
       
-      <content:encoded><![CDATA[<blockquote><p>本文是看了 <a href="https://book.douban.com/subject/26834548/">《西文排版：排版的基础和规范》</a> 之后做的一些笔记，把自己觉得新奇的点记了下来做一些笔记，也加上了一些特殊样式在 PS 和 Word 中的实现。</p></blockquote><h2 id="小型大写字母"><a href="# 小型大写字母" class="headerlink" title="小型大写字母"></a>小型大写字母</h2><blockquote><p>小型大写字母（英语：small capitals，简称 small caps）是西文字体设计中的一种字符形式。这些字母的形状（字形）和大写字母相同但尺寸较小。一般来说，小型大写字母的高度等于一个 x 字 高，和大部分的小写字母一样；只有在极个别字体中，小型大写字母的高度会比 x 字 高略高一些。[^1]</p></blockquote><h3 id="小型大写字母的用途"><a href="# 小型大写字母的用途" class="headerlink" title="小型大写字母的用途"></a>小型大写字母的用途 </h3><p> 维基百科上给出了一些常用的用途，不过不必拘泥于此，在商标、标题、名片上的人名、公司名都可以尝试试一试。小型大写字母的字距要拉大一些，可以提升美感，显得更加优雅一些。</p><p>用小型大写字母字母来显示公司名字：</p><p><img src="/post/42892/small-caps.jpg" loading="lazy"></p><h4 id="在人名上的应用"><a href="# 在人名上的应用" class="headerlink" title="在人名上的应用"></a>在人名上的应用 </h4><p> 和西方不一样，中国人和日本人的姓名都是姓在前，名在后。但是用英文表示名字的时候，到底是根据自己的习惯来姓在前，还是按照英语的习惯名在前，可能都没有一个确定的说法，很容易引起误会（尤其是日本人用复姓居多，使用罗马音拼出来更加分不清）。这个时候可以用小型大写字母来表示姓，这样就不会产生歧义。例如：</p><p><span lang='ja'><ruby><rb>福沢 </rb><rp>（</rp><rt> ふくざわ </rt><rp>）</rp></ruby><span lang='ja'><ruby><rb> 諭吉 </rb><rp>（</rp><rt> ゆきち </rt><rp>）</rp></ruby> 的英文名字即为：<span style="font-variant: small-caps;">Fukuzawa</span> Yukichi</p><p>这样就很容易看出是姓在前而名在后。</p><h4 id="生活上的其他语法"><a href="# 生活上的其他语法" class="headerlink" title="生活上的其他语法"></a>生活上的其他语法 </h4><p> 了解了「小型大写字母」这个概念之后发现生活中经常出现这种用法。</p><p>比如我贴的墙壁贴纸：</p><p><img src="/post/42892/small-caps-wallpaper.jpg" loading="lazy"></p><p>比如美剧《硅谷》第四季中某集中用小型大写字母写人名来表示强调，而且这也是在手写中的应用例子：</p><p><img src="/post/42892/small-caps-tvs.jpg" loading="lazy"></p><h3 id="小型大写字母的实现"><a href="# 小型大写字母的实现" class="headerlink" title="小型大写字母的实现"></a>小型大写字母的实现 </h3><h4 id="在网页上的实现"><a href="# 在网页上的实现" class="headerlink" title="在网页上的实现"></a> 在网页上的实现 </h4><p> 使用以下语法即、可在网页上实现：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;font-variant: small-caps;&quot;</span>&gt;</span>Fukuzawa<span class="tag">&lt;/<span class="name">span</span>&gt;</span> Yukichi</span><br></pre></td></tr></table></figure><p>实现效果如下：</p><p><span style="font-variant: small-caps;">Fukuzawa</span> Yukichi</p><h4 id="在 -PS- 里的实现"><a href="# 在 -PS- 里的实现" class="headerlink" title="在 PS 里的实现"></a>在 PS 里的实现 </h4><p> 在 PS 中只要在字体面板选择字符样式第一排第四个即可。</p><p><img src="/post/42892/small-caps-ps.jpg" loading="lazy"></p><h4 id="在 -Word- 中的实现"><a href="# 在 -Word- 中的实现" class="headerlink" title="在 Word 中的实现"></a>在 Word 中的实现</h4><p>Word 中只要在字体面板字体选项卡中勾选上「小型大写字母」就好。</p><p><img src="/post/42892/small-caps-word.jpg" loading="lazy"></p><h2 id="旧式数字"><a href="# 旧式数字" class="headerlink" title="旧式数字"></a>旧式数字 </h2><p> 旧式数字（Text figures, Oldstyle Figures, 不齐线数字，老式数字）与等高数字（Lining figures， 齐线数字）向对应，指的是中世纪风格的一种数字底部不平行的一种数字风格，常常出现在一些古典的、正式的风格中。</p><h3 id="旧式数字的实现"><a href="# 旧式数字的实现" class="headerlink" title="旧式数字的实现"></a>旧式数字的实现 </h3><h4 id="在 -PS- 中的实现"><a href="# 在 -PS- 中的实现" class="headerlink" title="在 PS 中的实现"></a> 在 PS 中的实现 </h4><p> 在 PS 中实现旧式数字有些麻烦，首先要勾选上「文字 - OpenType - 旧样式」，再键入数字，这是针对本身带有旧式数字的字型，要是本身不带有旧式数字，也没办法显示出来。还有一种情况就是要是某个字型默认显示的是旧式数字，我暂时还没看到强制使用等高数字的办法。</p><p><img src="/post/42892/old-figure-ps.jpg" loading="lazy"></p><h4 id="在 -Word- 中的实现 -1"><a href="# 在 -Word- 中的实现 -1" class="headerlink" title="在 Word 中的实现"></a>在 Word 中的实现</h4><p>Word 中只要在字体面板高级选项卡中「OpenType 功能」中「数字样式」中选择「旧样式」就好。</p><p><img src="/post/42892/old-figure-word.jpg" loading="lazy"></p><p>更多关于数字的更多样式可以听听 <a href="https://www.typeisbeautiful.com/2017/09/13460/"> 字谈字畅 056：数，不胜数 (1)</a>。</p><h2 id="字偶间距、字符间距和词间距"><a href="# 字偶间距、字符间距和词间距" class="headerlink" title="字偶间距、字符间距和词间距"></a>字偶间距、字符间距和词间距</h2><p>PS 中将光标放到两个字母之间再使用快捷键 <code>Alt + ←/→</code> 可以调节两个字母之间的间距，这个间距被称为字偶间距（Kerning，字偶距），由于不同字母的形状，字母组合之间的距离需要调整来达到完美的组合效果。</p><p>只要留意的话，生活中还是经常可以看到需要调节字偶距的地方，比如我一个经常吃煲仔饭的店子里的装饰：</p><p><img src="/post/42892/Kerning.jpg" loading="lazy"></p><p>仔细看的话其中有些字母的间隙还是可以微调的。</p><p>也可以通过到 <a href="http://type.method.ac/">Kerntype</a> 去尝试感受字偶距的魅力。</p><p>字符简距（Letterspacing, Tracking, Character Spacing, 字距）更加强调的是整行文字中字母之间的间隙。</p><p>词间距（Word Spacing）指的是各个单词之间的距离。</p><p>以上三个概念还是很容易搞混淆的。</p><p>如图在 PS 字符面板中，蓝色线表示的是字偶间距，绿色线表示的是字距。</p><p><img src="/kerning-ps" loading="lazy"></p><h2 id="「河流」与「街道」"><a href="#「河流」与「街道」" class="headerlink" title="「河流」与「街道」"></a>「河流」与「街道」</h2><p>「河流」与「街道」均指的是排版中出现的，在相邻多行内，由标点符号或西文单词之间的空格所产生的空白区域连成了一条斜线（river）或者竖线（street），这些空白区域会影响阅读，是要在排版过程中要避免的。</p><p>这是我考科目二在考场看到的感谢信中出现的中文排版里的 ‘river’ 现象：</p><p><img src="/post/42892/river.jpg" loading="lazy"></p><h2 id="标点悬挂"><a href="# 标点悬挂" class="headerlink" title="标点悬挂"></a>标点悬挂 </h2><p> 标点悬挂指的是由于标点「避头」的原则，若按正常字距处理的话，该标点将会超出该行右对齐的基线，传统办法是将此行进行压缩，即减少字距，使得该标点处在右对齐基线以内。标点悬挂则不处理字距，将该标点继续放置在基线以外。这种做法在日文排版中较常见，中文排版中正在慢慢流行。</p><p>下图为央视所使用的标点悬挂[^2]（效果并不完整，第二行还是有进行压缩）:</p><p><img src="/post/42892/%E6%A0%87%E7%82%B9%E6%82%AC%E6%8C%82-%E5%A4%AE%E8%A7%86.jpg" loading="lazy"></p><h3 id="Word- 中开启标点悬挂"><a href="#Word- 中开启标点悬挂" class="headerlink" title="Word 中开启标点悬挂"></a>Word 中开启标点悬挂</h3><ol><li>段落 - 中文版式 - 换行 - 允许标点溢出边界</li><li>段落 - 中文版式 - 字符间距 - 选项 - 字符间距控制 - 不压缩</li></ol><h2 id="行长"><a href="# 行长" class="headerlink" title="行长"></a>行长 </h2><p> 中文排版的优化与纵横对齐</p><p>Type is beautiful 的文章：<a href="https://www.typeisbeautiful.com/2017/07/12513/">从「行长为字号的整数倍」说起</a></p><p>突然发现「端」客户端就是这样做的</p><h2 id="排版优化"><a href="# 排版优化" class="headerlink" title="排版优化"></a>排版优化</h2><ul><li>合理使用旧式数字</li><li>使用意大利斜体来表示强调</li><li>小标题位置不应该在段落正中央</li><li>使用 ‘fi’ ‘ff’ ‘ffi’ 等合字</li><li>区分使用角分符和缩略号</li><li>行首不能有冒号、句号等标点符号</li><li>段首缩进要彻底</li><li>不到 100 的数字还是拼写出来比较好</li><li>括号之前需要一次字距的空格</li><li>区分使用连字符和连接号</li><li>段落最后一行应避免剩下一个单词</li><li>注意孤行控制</li><li>标题应该避免出现在页面较低的位置</li><li>A, I, He 等不影响行长的单词应该放到下一行比较好</li><li>注意段首缩进样式</li></ul><h2 id="引用"><a href="# 引用" class="headerlink" title="引用"></a>引用 </h2><p>[^1]: <a href="https://zh.wikipedia.org/wiki/%E5%B0%8F%E5%9E%8B%E5%A4%A7%E5%86%99%E5%AD%97%E6%AF%8D"> 小型大写字母 - 维基百科</a><br>[^2]: <a href="https://weibo.com/1408763553/FjKpF3BR2">@文川溪畔东瀛居：央视也会用标点悬挂</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>本文是看了 <a href="https://book.douban.com/subject/26834548/">《西文排版：排版的基础和规范》</a> 之后做的一些笔记，把自己觉得新奇的点记了下来做一些笔记，也加上了一些特殊样式在 PS 和 Word 中的实现。</p></blockquote><h2 id="小型大写字母"><a href="# 小型大写字母" class="headerlink" title="小型大写字母"></a>小型大写字母</h2><blockquote><p>小型大写字母（英语：small capitals，简称 small caps）是西文字体设计中的一种字符形式。这些字母的形状（字形）和大写字母相同但尺寸较小。一般来说，小型大写字母的高度等于一个 x 字 高，和大部分的小写字母一样；只有在极个别字体中，小型大写字母的高度会比 x 字 高略高一些。[^1]</p></blockquote><h3 id="小型大写字母的用途"><a href="# 小型大写字母的用途" class="headerlink" title="小型大写字母的用途"></a>小型大写字母的用途 </h3><p> 维基百科上给出了一些常用的用途，不过不必拘泥于此，在商标、标题、名片上的人名、公司名都可以尝试试一试。小型大写字母的字距要拉大一些，可以提升美感，显得更加优雅一些。</p><p>用小型大写字母字母来显示公司名字：</p><p><img src="/posts/42892/small-caps.jpg" loading="lazy"></p><h4 id="在人名上的应用"><a href="# 在人名上的应用" class="headerlink" title="在人名上的应用"></a>在人名上的应用 </h4><p> 和西方不一样，中国人和日本人的姓名都是姓在前，名在后。但是用英文表示名字的时候，到底是根据自己的习惯来姓在前，还是按照英语的习惯名在前，可能都没有一个确定的说法，很容易引起误会（尤其是日本人用复姓居多，使用罗马音拼出来更加分不清）。这个时候可以用小型大写字母来表示姓，这样就不会产生歧义。例如：</p><p><span lang='ja'><ruby><rb>福沢 </rb><rp>（</rp><rt> ふくざわ </rt><rp>）</rp></ruby><span lang='ja'><ruby><rb> 諭吉 </rb><rp>（</rp><rt> ゆきち </rt><rp>）</rp></ruby> 的英文名字即为：<span style="font-variant: small-caps;">Fukuzawa</span> Yukichi</p><p>这样就很容易看出是姓在前而名在后。</p><h4 id="生活上的其他语法"><a href="# 生活上的其他语法" class="headerlink" title="生活上的其他语法"></a>生活上的其他语法 </h4><p> 了解了「小型大写字母」这个概念之后发现生活中经常出现这种用法。</p><p>比如我贴的墙壁贴纸：</p><p><img src="/posts/42892/small-caps-wallpaper.jpg" loading="lazy"></p><p>比如美剧《硅谷》第四季中某集中用小型大写字母写人名来表示强调，而且这也是在手写中的应用例子：</p><p><img src="/posts/42892/small-caps-tvs.jpg" loading="lazy"></p><h3 id="小型大写字母的实现"><a href="# 小型大写字母的实现" class="headerlink" title="小型大写字母的实现"></a>小型大写字母的实现 </h3><h4 id="在网页上的实现"><a href="# 在网页上的实现" class="headerlink" title="在网页上的实现"></a> 在网页上的实现 </h4><p> 使用以下语法即、可在网页上实现：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;font-variant: small-caps;&quot;</span>&gt;</span>Fukuzawa<span class="tag">&lt;/<span class="name">span</span>&gt;</span> Yukichi</span><br></pre></td></tr></table></figure><p>实现效果如下：</p><p><span style="font-variant: small-caps;">Fukuzawa</span> Yukichi</p><h4 id="在 -PS- 里的实现"><a href="# 在 -PS- 里的实现" class="headerlink" title="在 PS 里的实现"></a>在 PS 里的实现 </h4><p> 在 PS 中只要在字体面板选择字符样式第一排第四个即可。</p><p><img src="/posts/42892/small-caps-ps.jpg" loading="lazy"></p><h4 id="在 -Word- 中的实现"><a href="# 在 -Word- 中的实现" class="headerlink" title="在 Word 中的实现"></a>在 Word 中的实现</h4><p>Word 中只要在字体面板字体选项卡中勾选上「小型大写字母」就好。</p><p><img src="/posts/42892/small-caps-word.jpg" loading="lazy"></p><h2 id="旧式数字"><a href="# 旧式数字" class="headerlink" title="旧式数字"></a>旧式数字 </h2><p> 旧式数字（Text figures, Oldstyle Figures, 不齐线数字，老式数字）与等高数字（Lining figures， 齐线数字）向对应，指的是中世纪风格的一种数字底部不平行的一种数字风格，常常出现在一些古典的、正式的风格中。</p><h3 id="旧式数字的实现"><a href="# 旧式数字的实现" class="headerlink" title="旧式数字的实现"></a>旧式数字的实现 </h3><h4 id="在 -PS- 中的实现"><a href="# 在 -PS- 中的实现" class="headerlink" title="在 PS 中的实现"></a> 在 PS 中的实现 </h4><p> 在 PS 中实现旧式数字有些麻烦，首先要勾选上「文字 - OpenType - 旧样式」，再键入数字，这是针对本身带有旧式数字的字型，要是本身不带有旧式数字，也没办法显示出来。还有一种情况就是要是某个字型默认显示的是旧式数字，我暂时还没看到强制使用等高数字的办法。</p><p><img src="/posts/42892/old-figure-ps.jpg" loading="lazy"></p><h4 id="在 -Word- 中的实现 -1"><a href="# 在 -Word- 中的实现 -1" class="headerlink" title="在 Word 中的实现"></a>在 Word 中的实现</h4><p>Word 中只要在字体面板高级选项卡中「OpenType 功能」中「数字样式」中选择「旧样式」就好。</p><p><img src="/posts/42892/old-figure-word.jpg" loading="lazy"></p><p>更多关于数字的更多样式可以听听 <a href="https://www.typeisbeautiful.com/2017/09/13460/"> 字谈字畅 056：数，不胜数 (1)</a>。</p><h2 id="字偶间距、字符间距和词间距"><a href="# 字偶间距、字符间距和词间距" class="headerlink" title="字偶间距、字符间距和词间距"></a>字偶间距、字符间距和词间距</h2><p>PS 中将光标放到两个字母之间再使用快捷键 <code>Alt + ←/→</code> 可以调节两个字母之间的间距，这个间距被称为字偶间距（Kerning，字偶距），由于不同字母的形状，字母组合之间的距离需要调整来达到完美的组合效果。</p><p>只要留意的话，生活中还是经常可以看到需要调节字偶距的地方，比如我一个经常吃煲仔饭的店子里的装饰：</p><p><img src="/posts/42892/Kerning.jpg" loading="lazy"></p><p>仔细看的话其中有些字母的间隙还是可以微调的。</p><p>也可以通过到 <a href="http://type.method.ac/">Kerntype</a> 去尝试感受字偶距的魅力。</p><p>字符简距（Letterspacing, Tracking, Character Spacing, 字距）更加强调的是整行文字中字母之间的间隙。</p><p>词间距（Word Spacing）指的是各个单词之间的距离。</p><p>以上三个概念还是很容易搞混淆的。</p><p>如图在 PS 字符面板中，蓝色线表示的是字偶间距，绿色线表示的是字距。</p><p><img src="/kerning-ps" loading="lazy"></p><h2 id="「河流」与「街道」"><a href="#「河流」与「街道」" class="headerlink" title="「河流」与「街道」"></a>「河流」与「街道」</h2><p>「河流」与「街道」均指的是排版中出现的，在相邻多行内，由标点符号或西文单词之间的空格所产生的空白区域连成了一条斜线（river）或者竖线（street），这些空白区域会影响阅读，是要在排版过程中要避免的。</p><p>这是我考科目二在考场看到的感谢信中出现的中文排版里的 ‘river’ 现象：</p><p><img src="/posts/42892/river.jpg" loading="lazy"></p><h2 id="标点悬挂"><a href="# 标点悬挂" class="headerlink" title="标点悬挂"></a>标点悬挂 </h2><p> 标点悬挂指的是由于标点「避头」的原则，若按正常字距处理的话，该标点将会超出该行右对齐的基线，传统办法是将此行进行压缩，即减少字距，使得该标点处在右对齐基线以内。标点悬挂则不处理字距，将该标点继续放置在基线以外。这种做法在日文排版中较常见，中文排版中正在慢慢流行。</p><p>下图为央视所使用的标点悬挂[^2]（效果并不完整，第二行还是有进行压缩）:</p><p><img src="/posts/42892/%E6%A0%87%E7%82%B9%E6%82%AC%E6%8C%82-%E5%A4%AE%E8%A7%86.jpg" loading="lazy"></p><h3 id="Word- 中开启标点悬挂"><a href="#Word- 中开启标点悬挂" class="headerlink" title="Word 中开启标点悬挂"></a>Word 中开启标点悬挂</h3><ol><li>段落 - 中文版式 - 换行 - 允许标点溢出边界</li><li>段落 - 中文版式 - 字符间距 - 选项 - 字符间距控制 - 不压缩</li></ol><h2 id="行长"><a href="# 行长" class="headerlink" title="行长"></a>行长 </h2><p> 中文排版的优化与纵横对齐</p><p>Type is beautiful 的文章：<a href="https://www.typeisbeautiful.com/2017/07/12513/">从「行长为字号的整数倍」说起</a></p><p>突然发现「端」客户端就是这样做的</p><h2 id="排版优化"><a href="# 排版优化" class="headerlink" title="排版优化"></a>排版优化</h2><ul><li>合理使用旧式数字</li><li>使用意大利斜体来表示强调</li><li>小标题位置不应该在段落正中央</li><li>使用 ‘fi’ ‘ff’ ‘ffi’ 等合字</li><li>区分使用角分符和缩略号</li><li>行首不能有冒号、句号等标点符号</li><li>段首缩进要彻底</li><li>不到 100 的数字还是拼写出来比较好</li><li>括号之前需要一次字距的空格</li><li>区分使用连字符和连接号</li><li>段落最后一行应避免剩下一个单词</li><li>注意孤行控制</li><li>标题应该避免出现在页面较低的位置</li><li>A, I, He 等不影响行长的单词应该放到下一行比较好</li><li>注意段首缩进样式</li></ul><h2 id="引用"><a href="# 引用" class="headerlink" title="引用"></a>引用 </h2><p>[^1]: <a href="https://zh.wikipedia.org/wiki/%E5%B0%8F%E5%9E%8B%E5%A4%A7%E5%86%99%E5%AD%97%E6%AF%8D"> 小型大写字母 - 维基百科</a><br>[^2]: <a href="https://weibo.com/1408763553/FjKpF3BR2">@文川溪畔东瀛居：央视也会用标点悬挂</a></p>]]></content:encoded>
       
       
       
@@ -909,14 +909,14 @@
       <category domain="https://kylindc.github.io/tags/%E8%AE%BE%E8%AE%A1/">设计</category>
       
       
-      <comments>https://kylindc.github.io/post/42892/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/42892/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>作画学习札记其六：关于动画的一些讨论</title>
-      <link>https://kylindc.github.io/post/63201/</link>
-      <guid>https://kylindc.github.io/post/63201/</guid>
+      <link>https://kylindc.github.io/posts/63201/</link>
+      <guid>https://kylindc.github.io/posts/63201/</guid>
       <pubDate>Sat, 12 Aug 2017 22:56:54 GMT</pubDate>
       
         
@@ -935,14 +935,14 @@
       
       
       
-      <comments>https://kylindc.github.io/post/63201/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/63201/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>作画学习札记其五：新生力量篇</title>
-      <link>https://kylindc.github.io/post/46471/</link>
-      <guid>https://kylindc.github.io/post/46471/</guid>
+      <link>https://kylindc.github.io/posts/46471/</link>
+      <guid>https://kylindc.github.io/posts/46471/</guid>
       <pubDate>Sat, 12 Aug 2017 22:39:31 GMT</pubDate>
       
         
@@ -955,7 +955,7 @@
       
       
       
-      <content:encoded><![CDATA[<h3 id="黄成希"><a href="# 黄成希" class="headerlink" title="黄成希"></a>黄成希</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-EMMiFuTuevhjMUcL"></div><script> var EMMiFuTuevhjMUcL_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/ddf8d3ac7ee936d06916433f3f4b2f44.webm\"}}'); EMMiFuTuevhjMUcL_options.container = document.getElementById("mmedia-EMMiFuTuevhjMUcL"); const dp_EMMiFuTuevhjMUcL = new DPlayer(EMMiFuTuevhjMUcL_options); </script><p><a href="http://www.anitama.cn/series/196/">http://www.anitama.cn/series/196/</a></p><h3 id="梁博雅"><a href="# 梁博雅" class="headerlink" title="梁博雅"></a>梁博雅 </h3><p> 叉烧希（非常想吃叉烧的希）</p><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-sxuMpoiGBKIvJJVj"></div><script> var sxuMpoiGBKIvJJVj_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/a80b984519eaa53bb4271b2745b57743.mp4\"}}'); sxuMpoiGBKIvJJVj_options.container = document.getElementById("mmedia-sxuMpoiGBKIvJJVj"); const dp_sxuMpoiGBKIvJJVj = new DPlayer(sxuMpoiGBKIvJJVj_options); </script><p><a href="http://www.anitama.cn/series/18/">http://www.anitama.cn/series/18/</a></p><h3 id="Bahi-JD"><a href="#Bahi-JD" class="headerlink" title="Bahi JD"></a>Bahi JD</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-IntAprZXCOLNqkWE"></div><script> var IntAprZXCOLNqkWE_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/6b7ac6ea617cf94140ffc50e699a7842.mp4\"}}'); IntAprZXCOLNqkWE_options.container = document.getElementById("mmedia-IntAprZXCOLNqkWE"); const dp_IntAprZXCOLNqkWE = new DPlayer(IntAprZXCOLNqkWE_options); </script><p>来自奥地利的原画师，好像以前只是在网上制作 gif ，最终融入日本主流作画界，本身也是相当励志</p><p>有参与《太空丹迪》、《乒乓》制作</p><p>节选视频出自《银翼杀手：2022 大断电》，完整视频移步：<a href="https://www.bilibili.com/video/av14840910/">银翼杀手 2022（中字）</a>, 相当炸裂，作画厨的狂欢</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="黄成希"><a href="# 黄成希" class="headerlink" title="黄成希"></a>黄成希</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-fKFrNELrAZQKfDhI"></div><script> var fKFrNELrAZQKfDhI_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/ddf8d3ac7ee936d06916433f3f4b2f44.webm\"}}'); fKFrNELrAZQKfDhI_options.container = document.getElementById("mmedia-fKFrNELrAZQKfDhI"); const dp_fKFrNELrAZQKfDhI = new DPlayer(fKFrNELrAZQKfDhI_options); </script><p><a href="http://www.anitama.cn/series/196/">http://www.anitama.cn/series/196/</a></p><h3 id="梁博雅"><a href="# 梁博雅" class="headerlink" title="梁博雅"></a>梁博雅 </h3><p> 叉烧希（非常想吃叉烧的希）</p><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-tGqEEBFmOEHkQahF"></div><script> var tGqEEBFmOEHkQahF_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/a80b984519eaa53bb4271b2745b57743.mp4\"}}'); tGqEEBFmOEHkQahF_options.container = document.getElementById("mmedia-tGqEEBFmOEHkQahF"); const dp_tGqEEBFmOEHkQahF = new DPlayer(tGqEEBFmOEHkQahF_options); </script><p><a href="http://www.anitama.cn/series/18/">http://www.anitama.cn/series/18/</a></p><h3 id="Bahi-JD"><a href="#Bahi-JD" class="headerlink" title="Bahi JD"></a>Bahi JD</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-mgYUfItQHVyRQtAW"></div><script> var mgYUfItQHVyRQtAW_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/6b7ac6ea617cf94140ffc50e699a7842.mp4\"}}'); mgYUfItQHVyRQtAW_options.container = document.getElementById("mmedia-mgYUfItQHVyRQtAW"); const dp_mgYUfItQHVyRQtAW = new DPlayer(mgYUfItQHVyRQtAW_options); </script><p>来自奥地利的原画师，好像以前只是在网上制作 gif ，最终融入日本主流作画界，本身也是相当励志</p><p>有参与《太空丹迪》、《乒乓》制作</p><p>节选视频出自《银翼杀手：2022 大断电》，完整视频移步：<a href="https://www.bilibili.com/video/av14840910/">银翼杀手 2022（中字）</a>, 相当炸裂，作画厨的狂欢</p>]]></content:encoded>
       
       
       
@@ -964,14 +964,14 @@
       <category domain="https://kylindc.github.io/tags/%E4%BD%9C%E7%94%BB/">作画</category>
       
       
-      <comments>https://kylindc.github.io/post/46471/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/46471/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>作画学习札记其四：中流砥柱篇</title>
-      <link>https://kylindc.github.io/post/31648/</link>
-      <guid>https://kylindc.github.io/post/31648/</guid>
+      <link>https://kylindc.github.io/posts/31648/</link>
+      <guid>https://kylindc.github.io/posts/31648/</guid>
       <pubDate>Sat, 12 Aug 2017 22:38:58 GMT</pubDate>
       
         
@@ -984,7 +984,7 @@
       
       
       
-      <content:encoded><![CDATA[<h3 id="Ryo-timo（泽良辅）"><a href="#Ryo-timo（泽良辅）" class="headerlink" title="Ryo-timo（泽良辅）"></a>Ryo-timo（泽良辅）</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-UsXlQqZSfRwNJcII"></div><script> var UsXlQqZSfRwNJcII_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/876f255eb05b9b30283346b9aff92410.webm\"}}'); UsXlQqZSfRwNJcII_options.container = document.getElementById("mmedia-UsXlQqZSfRwNJcII"); const dp_UsXlQqZSfRwNJcII = new DPlayer(UsXlQqZSfRwNJcII_options); </script><h3 id="山下清悟"><a href="# 山下清悟" class="headerlink" title="山下清悟"></a>山下清悟</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-VJwuxHIYUFihJxIK"></div><script> var VJwuxHIYUFihJxIK_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/4a512f1609658555c083a033a3b9be2e.webm\"}}'); VJwuxHIYUFihJxIK_options.container = document.getElementById("mmedia-VJwuxHIYUFihJxIK"); const dp_VJwuxHIYUFihJxIK = new DPlayer(VJwuxHIYUFihJxIK_options); </script><h3 id="佐藤雅弘"><a href="# 佐藤雅弘" class="headerlink" title="佐藤雅弘"></a>佐藤雅弘</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-RDbBJimWWyuotbAf"></div><script> var RDbBJimWWyuotbAf_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/5e9390795e5db8b04f43928911d910bb.mp4\"}}'); RDbBJimWWyuotbAf_options.container = document.getElementById("mmedia-RDbBJimWWyuotbAf"); const dp_RDbBJimWWyuotbAf = new DPlayer(RDbBJimWWyuotbAf_options); </script><p>异邦人  初战  长枪</p><h3 id="向田隆"><a href="# 向田隆" class="headerlink" title="向田隆"></a>向田隆</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-iAKkJxdPysYLZnwS"></div><script> var iAKkJxdPysYLZnwS_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/0f09cf9f2a1e8feb87e563b431b81cb2.mp4\"}}'); iAKkJxdPysYLZnwS_options.container = document.getElementById("mmedia-iAKkJxdPysYLZnwS"); const dp_iAKkJxdPysYLZnwS = new DPlayer(iAKkJxdPysYLZnwS_options); </script><p>两个向田回旋踢</p><p>格斗棒</p><h3 id="金世俊"><a href="# 金世俊" class="headerlink" title="金世俊"></a>金世俊</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-PQvJOTzddAHqZNJc"></div><script> var PQvJOTzddAHqZNJc_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/82acc7da4cd71d4277ac960c950fe83d.mp4\"}}'); PQvJOTzddAHqZNJc_options.container = document.getElementById("mmedia-PQvJOTzddAHqZNJc"); const dp_PQvJOTzddAHqZNJc = new DPlayer(PQvJOTzddAHqZNJc_options); </script><p>马戏  高达</p><h3 id="竹内哲也"><a href="# 竹内哲也" class="headerlink" title="竹内哲也"></a>竹内哲也</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-qTKvCVjrfHcGaxRX"></div><script> var qTKvCVjrfHcGaxRX_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/de47143ceef6eb00ae38eff303414ac9.webm\"}}'); qTKvCVjrfHcGaxRX_options.container = document.getElementById("mmedia-qTKvCVjrfHcGaxRX"); const dp_qTKvCVjrfHcGaxRX = new DPlayer(qTKvCVjrfHcGaxRX_options); </script><p>片段是 zero</p><p>ubw 主力 <del>特技 </del> 特效作画</p><h3 id="山下宏幸"><a href="# 山下宏幸" class="headerlink" title="山下宏幸"></a>山下宏幸</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-QSZKrcVDeHdjzRkL"></div><script> var QSZKrcVDeHdjzRkL_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d5b9145b3260fef1751cb985cd5fd19c.mp4\"}}'); QSZKrcVDeHdjzRkL_options.container = document.getElementById("mmedia-QSZKrcVDeHdjzRkL"); const dp_QSZKrcVDeHdjzRkL = new DPlayer(QSZKrcVDeHdjzRkL_options); </script><h3 id="久贝典史"><a href="# 久贝典史" class="headerlink" title="久贝典史"></a>久贝典史</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-GEpagXSziTRzBDZj"></div><script> var GEpagXSziTRzBDZj_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/fc4cc5a1ac06fce16d1a2d5927ee27e5.mp4\"}}'); GEpagXSziTRzBDZj_options.container = document.getElementById("mmedia-GEpagXSziTRzBDZj"); const dp_GEpagXSziTRzBDZj = new DPlayer(GEpagXSziTRzBDZj_options); </script><p>太空丹迪</p><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-mDbWdoShyeoFuBYy"></div><script> var mDbWdoShyeoFuBYy_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d4d2f2864b9c56845f426c550188081f.mp4\"}}'); mDbWdoShyeoFuBYy_options.container = document.getElementById("mmedia-mDbWdoShyeoFuBYy"); const dp_mDbWdoShyeoFuBYy = new DPlayer(mDbWdoShyeoFuBYy_options); </script><p><a href="http://www.anitama.cn/article/7d36841e7510af6b">http://www.anitama.cn/article/7d36841e7510af6b</a></p><h3 id="桥本敬史"><a href="# 桥本敬史" class="headerlink" title="桥本敬史"></a>桥本敬史</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-qePxrbMPgdASXYzh"></div><script> var qePxrbMPgdASXYzh_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/c3b5794fa09460cdbce495ed93f0d9e6.mp4\"}}'); qePxrbMPgdASXYzh_options.container = document.getElementById("mmedia-qePxrbMPgdASXYzh"); const dp_qePxrbMPgdASXYzh = new DPlayer(qePxrbMPgdASXYzh_options); </script><p>爆炸狂魔</p><h3 id="今井有文"><a href="# 今井有文" class="headerlink" title="今井有文"></a>今井有文</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-wFXMKuoaHqtYVGqv"></div><script> var wFXMKuoaHqtYVGqv_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/eb0b59a12d86695f3e3bcce79d98cc30.mp4\"}}'); wFXMKuoaHqtYVGqv_options.container = document.getElementById("mmedia-wFXMKuoaHqtYVGqv"); const dp_wFXMKuoaHqtYVGqv = new DPlayer(wFXMKuoaHqtYVGqv_options); </script><h3 id="阿部望"><a href="# 阿部望" class="headerlink" title="阿部望"></a>阿部望</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-IFFOKEbvotCfeTXz"></div><script> var IFFOKEbvotCfeTXz_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/f43abc853498ec6fde9e2b2a50bd45c7.webm\"}}'); IFFOKEbvotCfeTXz_options.container = document.getElementById("mmedia-IFFOKEbvotCfeTXz"); const dp_IFFOKEbvotCfeTXz = new DPlayer(IFFOKEbvotCfeTXz_options); </script><h3 id="西尾铁也"><a href="# 西尾铁也" class="headerlink" title="西尾铁也"></a>西尾铁也</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-ymgKzrXkVtDNEGSW"></div><script> var ymgKzrXkVtDNEGSW_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); ymgKzrXkVtDNEGSW_options.container = document.getElementById("mmedia-ymgKzrXkVtDNEGSW"); const dp_ymgKzrXkVtDNEGSW = new DPlayer(ymgKzrXkVtDNEGSW_options); </script><p>火影班</p><h3 id="森本晃司"><a href="# 森本晃司" class="headerlink" title="森本晃司"></a>森本晃司</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-zvvxfPRNdZTEgNcj"></div><script> var zvvxfPRNdZTEgNcj_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); zvvxfPRNdZTEgNcj_options.container = document.getElementById("mmedia-zvvxfPRNdZTEgNcj"); const dp_zvvxfPRNdZTEgNcj = new DPlayer(zvvxfPRNdZTEgNcj_options); </script>]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="Ryo-timo（泽良辅）"><a href="#Ryo-timo（泽良辅）" class="headerlink" title="Ryo-timo（泽良辅）"></a>Ryo-timo（泽良辅）</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-ISrtUqEVakWYigzh"></div><script> var ISrtUqEVakWYigzh_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/876f255eb05b9b30283346b9aff92410.webm\"}}'); ISrtUqEVakWYigzh_options.container = document.getElementById("mmedia-ISrtUqEVakWYigzh"); const dp_ISrtUqEVakWYigzh = new DPlayer(ISrtUqEVakWYigzh_options); </script><h3 id="山下清悟"><a href="# 山下清悟" class="headerlink" title="山下清悟"></a>山下清悟</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-DBcigzlHBTPNUsaO"></div><script> var DBcigzlHBTPNUsaO_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/4a512f1609658555c083a033a3b9be2e.webm\"}}'); DBcigzlHBTPNUsaO_options.container = document.getElementById("mmedia-DBcigzlHBTPNUsaO"); const dp_DBcigzlHBTPNUsaO = new DPlayer(DBcigzlHBTPNUsaO_options); </script><h3 id="佐藤雅弘"><a href="# 佐藤雅弘" class="headerlink" title="佐藤雅弘"></a>佐藤雅弘</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-FfQSeKhFwnUBPnJI"></div><script> var FfQSeKhFwnUBPnJI_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/5e9390795e5db8b04f43928911d910bb.mp4\"}}'); FfQSeKhFwnUBPnJI_options.container = document.getElementById("mmedia-FfQSeKhFwnUBPnJI"); const dp_FfQSeKhFwnUBPnJI = new DPlayer(FfQSeKhFwnUBPnJI_options); </script><p>异邦人  初战  长枪</p><h3 id="向田隆"><a href="# 向田隆" class="headerlink" title="向田隆"></a>向田隆</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-FMFhDgruMwQhNDSe"></div><script> var FMFhDgruMwQhNDSe_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/0f09cf9f2a1e8feb87e563b431b81cb2.mp4\"}}'); FMFhDgruMwQhNDSe_options.container = document.getElementById("mmedia-FMFhDgruMwQhNDSe"); const dp_FMFhDgruMwQhNDSe = new DPlayer(FMFhDgruMwQhNDSe_options); </script><p>两个向田回旋踢</p><p>格斗棒</p><h3 id="金世俊"><a href="# 金世俊" class="headerlink" title="金世俊"></a>金世俊</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-liakmGHWNhgpPJEN"></div><script> var liakmGHWNhgpPJEN_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/82acc7da4cd71d4277ac960c950fe83d.mp4\"}}'); liakmGHWNhgpPJEN_options.container = document.getElementById("mmedia-liakmGHWNhgpPJEN"); const dp_liakmGHWNhgpPJEN = new DPlayer(liakmGHWNhgpPJEN_options); </script><p>马戏  高达</p><h3 id="竹内哲也"><a href="# 竹内哲也" class="headerlink" title="竹内哲也"></a>竹内哲也</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-djjMAMOekmPxYUjr"></div><script> var djjMAMOekmPxYUjr_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/de47143ceef6eb00ae38eff303414ac9.webm\"}}'); djjMAMOekmPxYUjr_options.container = document.getElementById("mmedia-djjMAMOekmPxYUjr"); const dp_djjMAMOekmPxYUjr = new DPlayer(djjMAMOekmPxYUjr_options); </script><p>片段是 zero</p><p>ubw 主力 <del>特技 </del> 特效作画</p><h3 id="山下宏幸"><a href="# 山下宏幸" class="headerlink" title="山下宏幸"></a>山下宏幸</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-AGzIbgjfjBTTGaOY"></div><script> var AGzIbgjfjBTTGaOY_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d5b9145b3260fef1751cb985cd5fd19c.mp4\"}}'); AGzIbgjfjBTTGaOY_options.container = document.getElementById("mmedia-AGzIbgjfjBTTGaOY"); const dp_AGzIbgjfjBTTGaOY = new DPlayer(AGzIbgjfjBTTGaOY_options); </script><h3 id="久贝典史"><a href="# 久贝典史" class="headerlink" title="久贝典史"></a>久贝典史</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-imPirGCtgfpZdUyp"></div><script> var imPirGCtgfpZdUyp_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/fc4cc5a1ac06fce16d1a2d5927ee27e5.mp4\"}}'); imPirGCtgfpZdUyp_options.container = document.getElementById("mmedia-imPirGCtgfpZdUyp"); const dp_imPirGCtgfpZdUyp = new DPlayer(imPirGCtgfpZdUyp_options); </script><p>太空丹迪</p><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-zkcFwnMFmxCkWlLF"></div><script> var zkcFwnMFmxCkWlLF_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d4d2f2864b9c56845f426c550188081f.mp4\"}}'); zkcFwnMFmxCkWlLF_options.container = document.getElementById("mmedia-zkcFwnMFmxCkWlLF"); const dp_zkcFwnMFmxCkWlLF = new DPlayer(zkcFwnMFmxCkWlLF_options); </script><p><a href="http://www.anitama.cn/article/7d36841e7510af6b">http://www.anitama.cn/article/7d36841e7510af6b</a></p><h3 id="桥本敬史"><a href="# 桥本敬史" class="headerlink" title="桥本敬史"></a>桥本敬史</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-yqwusIWRfdmerkei"></div><script> var yqwusIWRfdmerkei_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/c3b5794fa09460cdbce495ed93f0d9e6.mp4\"}}'); yqwusIWRfdmerkei_options.container = document.getElementById("mmedia-yqwusIWRfdmerkei"); const dp_yqwusIWRfdmerkei = new DPlayer(yqwusIWRfdmerkei_options); </script><p>爆炸狂魔</p><h3 id="今井有文"><a href="# 今井有文" class="headerlink" title="今井有文"></a>今井有文</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-FAXNDtpOsosdsqRv"></div><script> var FAXNDtpOsosdsqRv_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/eb0b59a12d86695f3e3bcce79d98cc30.mp4\"}}'); FAXNDtpOsosdsqRv_options.container = document.getElementById("mmedia-FAXNDtpOsosdsqRv"); const dp_FAXNDtpOsosdsqRv = new DPlayer(FAXNDtpOsosdsqRv_options); </script><h3 id="阿部望"><a href="# 阿部望" class="headerlink" title="阿部望"></a>阿部望</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-GrLKTMmxNTqmYaOn"></div><script> var GrLKTMmxNTqmYaOn_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/f43abc853498ec6fde9e2b2a50bd45c7.webm\"}}'); GrLKTMmxNTqmYaOn_options.container = document.getElementById("mmedia-GrLKTMmxNTqmYaOn"); const dp_GrLKTMmxNTqmYaOn = new DPlayer(GrLKTMmxNTqmYaOn_options); </script><h3 id="西尾铁也"><a href="# 西尾铁也" class="headerlink" title="西尾铁也"></a>西尾铁也</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-BrsrhZXSiAfWboxP"></div><script> var BrsrhZXSiAfWboxP_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); BrsrhZXSiAfWboxP_options.container = document.getElementById("mmedia-BrsrhZXSiAfWboxP"); const dp_BrsrhZXSiAfWboxP = new DPlayer(BrsrhZXSiAfWboxP_options); </script><p>火影班</p><h3 id="森本晃司"><a href="# 森本晃司" class="headerlink" title="森本晃司"></a>森本晃司</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-SWEuxFtQOzSRTCjU"></div><script> var SWEuxFtQOzSRTCjU_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); SWEuxFtQOzSRTCjU_options.container = document.getElementById("mmedia-SWEuxFtQOzSRTCjU"); const dp_SWEuxFtQOzSRTCjU = new DPlayer(SWEuxFtQOzSRTCjU_options); </script>]]></content:encoded>
       
       
       
@@ -993,14 +993,14 @@
       <category domain="https://kylindc.github.io/tags/%E4%BD%9C%E7%94%BB/">作画</category>
       
       
-      <comments>https://kylindc.github.io/post/31648/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/31648/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>作画学习札记其三：暴强老害篇（2）</title>
-      <link>https://kylindc.github.io/post/56037/</link>
-      <guid>https://kylindc.github.io/post/56037/</guid>
+      <link>https://kylindc.github.io/posts/56037/</link>
+      <guid>https://kylindc.github.io/posts/56037/</guid>
       <pubDate>Sat, 12 Aug 2017 22:38:06 GMT</pubDate>
       
         
@@ -1013,7 +1013,7 @@
       
       
       
-      <content:encoded><![CDATA[<h3 id="汤浅政明"><a href="# 汤浅政明" class="headerlink" title="汤浅政明"></a> 汤浅政明 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-XIykoPeibiBCjatu"></div><script> var XIykoPeibiBCjatu_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/36afeb971bbe9c9dc401b2d68484b2e7.mp4\"}}'); XIykoPeibiBCjatu_options.container = document.getElementById("mmedia-XIykoPeibiBCjatu"); const dp_XIykoPeibiBCjatu = new DPlayer(XIykoPeibiBCjatu_options); </script><iframe src="https://www.bilibili.com/html/html5player.html?aid=4633569&cid=7517335&as_wide=1" width="100%" height="410" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p> 混沌武士  飞叶子一段 </p><p> 乒乓  最后一集扔拍子一段 </p><p> 欢迎来到宇宙秀 </p><h3 id="吉成曜"><a href="# 吉成曜" class="headerlink" title="吉成曜"></a> 吉成曜 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-AcoXkkXMBqdFBTug"></div><script> var AcoXkkXMBqdFBTug_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/54bb5cc3153a2298ee359a96c9b49bf9.mp4\"}}'); AcoXkkXMBqdFBTug_options.container = document.getElementById("mmedia-AcoXkkXMBqdFBTug"); const dp_AcoXkkXMBqdFBTug = new DPlayer(AcoXkkXMBqdFBTug_options); </script><h3 id="龟田祥伦"><a href="# 龟田祥伦" class="headerlink" title="龟田祥伦"></a> 龟田祥伦 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-HUWthiNwIUCFxwdd"></div><script> var HUWthiNwIUCFxwdd_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/e0a761d4e6144a1e841cb234ff49b998.webm\"}}'); HUWthiNwIUCFxwdd_options.container = document.getElementById("mmedia-HUWthiNwIUCFxwdd"); const dp_HUWthiNwIUCFxwdd = new DPlayer(HUWthiNwIUCFxwdd_options); </script><h3 id="田中宏纪"><a href="# 田中宏纪" class="headerlink" title="田中宏纪"></a> 田中宏纪 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-EkxcMbzIWPgGbPvD"></div><script> var EkxcMbzIWPgGbPvD_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/0578b5e7af87cb467bb17204796196b4.webm\"}}'); EkxcMbzIWPgGbPvD_options.container = document.getElementById("mmedia-EkxcMbzIWPgGbPvD"); const dp_EkxcMbzIWPgGbPvD = new DPlayer(EkxcMbzIWPgGbPvD_options); </script><h3 id="村木靖"><a href="# 村木靖" class="headerlink" title="村木靖"></a> 村木靖 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-iQJVzpRRrMyjtyKo"></div><script> var iQJVzpRRrMyjtyKo_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/7c4bf130d906df0c80b768318b53ef10.webm\"}}'); iQJVzpRRrMyjtyKo_options.container = document.getElementById("mmedia-iQJVzpRRrMyjtyKo"); const dp_iQJVzpRRrMyjtyKo = new DPlayer(iQJVzpRRrMyjtyKo_options); </script><p> 马戏 </p><h3 id="后藤雅巳"><a href="# 后藤雅巳" class="headerlink" title="后藤雅巳"></a> 后藤雅巳 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-PLuEglJYGRPssLQb"></div><script> var PLuEglJYGRPssLQb_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/7a8875b2742961419b1895f5dc8bfb55.mp4\"}}'); PLuEglJYGRPssLQb_options.container = document.getElementById("mmedia-PLuEglJYGRPssLQb"); const dp_PLuEglJYGRPssLQb = new DPlayer(PLuEglJYGRPssLQb_options); </script><p> 星际牛仔 </p><h3 id="吉成钢"><a href="# 吉成钢" class="headerlink" title="吉成钢"></a> 吉成钢 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-IMpZkIBWMmyVnRoW"></div><script> var IMpZkIBWMmyVnRoW_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/e9e56f444fb1a6d299db53205e740244.webm\"}}'); IMpZkIBWMmyVnRoW_options.container = document.getElementById("mmedia-IMpZkIBWMmyVnRoW"); const dp_IMpZkIBWMmyVnRoW = new DPlayer(IMpZkIBWMmyVnRoW_options); </script><h3 id="矶光雄"><a href="# 矶光雄" class="headerlink" title="矶光雄"></a> 矶光雄 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-yyfwEYhmmCpghUZz"></div><script> var yyfwEYhmmCpghUZz_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/39cd74db8d52543043d7244928341715.webm\"}}'); yyfwEYhmmCpghUZz_options.container = document.getElementById("mmedia-yyfwEYhmmCpghUZz"); const dp_yyfwEYhmmCpghUZz = new DPlayer(yyfwEYhmmCpghUZz_options); </script><h3 id="中泽一登"><a href="# 中泽一登" class="headerlink" title="中泽一登"></a> 中泽一登 </h3>]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="汤浅政明"><a href="# 汤浅政明" class="headerlink" title="汤浅政明"></a> 汤浅政明 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-HQRhHGmpknYgoTML"></div><script> var HQRhHGmpknYgoTML_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/36afeb971bbe9c9dc401b2d68484b2e7.mp4\"}}'); HQRhHGmpknYgoTML_options.container = document.getElementById("mmedia-HQRhHGmpknYgoTML"); const dp_HQRhHGmpknYgoTML = new DPlayer(HQRhHGmpknYgoTML_options); </script><iframe src="https://www.bilibili.com/html/html5player.html?aid=4633569&cid=7517335&as_wide=1" width="100%" height="410" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p> 混沌武士  飞叶子一段 </p><p> 乒乓  最后一集扔拍子一段 </p><p> 欢迎来到宇宙秀 </p><h3 id="吉成曜"><a href="# 吉成曜" class="headerlink" title="吉成曜"></a> 吉成曜 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-phEhyhGmdQUTRSyS"></div><script> var phEhyhGmdQUTRSyS_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/54bb5cc3153a2298ee359a96c9b49bf9.mp4\"}}'); phEhyhGmdQUTRSyS_options.container = document.getElementById("mmedia-phEhyhGmdQUTRSyS"); const dp_phEhyhGmdQUTRSyS = new DPlayer(phEhyhGmdQUTRSyS_options); </script><h3 id="龟田祥伦"><a href="# 龟田祥伦" class="headerlink" title="龟田祥伦"></a> 龟田祥伦 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-aCcJVqNfqOUkJWCP"></div><script> var aCcJVqNfqOUkJWCP_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/e0a761d4e6144a1e841cb234ff49b998.webm\"}}'); aCcJVqNfqOUkJWCP_options.container = document.getElementById("mmedia-aCcJVqNfqOUkJWCP"); const dp_aCcJVqNfqOUkJWCP = new DPlayer(aCcJVqNfqOUkJWCP_options); </script><h3 id="田中宏纪"><a href="# 田中宏纪" class="headerlink" title="田中宏纪"></a> 田中宏纪 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-sDiYXvhhxocNqhZS"></div><script> var sDiYXvhhxocNqhZS_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/0578b5e7af87cb467bb17204796196b4.webm\"}}'); sDiYXvhhxocNqhZS_options.container = document.getElementById("mmedia-sDiYXvhhxocNqhZS"); const dp_sDiYXvhhxocNqhZS = new DPlayer(sDiYXvhhxocNqhZS_options); </script><h3 id="村木靖"><a href="# 村木靖" class="headerlink" title="村木靖"></a> 村木靖 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-dsjBCEOMAEpMVPST"></div><script> var dsjBCEOMAEpMVPST_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/7c4bf130d906df0c80b768318b53ef10.webm\"}}'); dsjBCEOMAEpMVPST_options.container = document.getElementById("mmedia-dsjBCEOMAEpMVPST"); const dp_dsjBCEOMAEpMVPST = new DPlayer(dsjBCEOMAEpMVPST_options); </script><p> 马戏 </p><h3 id="后藤雅巳"><a href="# 后藤雅巳" class="headerlink" title="后藤雅巳"></a> 后藤雅巳 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-iCXltwSkZxHqnbyp"></div><script> var iCXltwSkZxHqnbyp_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/7a8875b2742961419b1895f5dc8bfb55.mp4\"}}'); iCXltwSkZxHqnbyp_options.container = document.getElementById("mmedia-iCXltwSkZxHqnbyp"); const dp_iCXltwSkZxHqnbyp = new DPlayer(iCXltwSkZxHqnbyp_options); </script><p> 星际牛仔 </p><h3 id="吉成钢"><a href="# 吉成钢" class="headerlink" title="吉成钢"></a> 吉成钢 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-qJPRWfEwyArnkwML"></div><script> var qJPRWfEwyArnkwML_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/e9e56f444fb1a6d299db53205e740244.webm\"}}'); qJPRWfEwyArnkwML_options.container = document.getElementById("mmedia-qJPRWfEwyArnkwML"); const dp_qJPRWfEwyArnkwML = new DPlayer(qJPRWfEwyArnkwML_options); </script><h3 id="矶光雄"><a href="# 矶光雄" class="headerlink" title="矶光雄"></a> 矶光雄 </h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-TEKwokpdScDNiXPt"></div><script> var TEKwokpdScDNiXPt_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/39cd74db8d52543043d7244928341715.webm\"}}'); TEKwokpdScDNiXPt_options.container = document.getElementById("mmedia-TEKwokpdScDNiXPt"); const dp_TEKwokpdScDNiXPt = new DPlayer(TEKwokpdScDNiXPt_options); </script><h3 id="中泽一登"><a href="# 中泽一登" class="headerlink" title="中泽一登"></a> 中泽一登 </h3>]]></content:encoded>
       
       
       
@@ -1022,14 +1022,14 @@
       <category domain="https://kylindc.github.io/tags/%E4%BD%9C%E7%94%BB/">作画</category>
       
       
-      <comments>https://kylindc.github.io/post/56037/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/56037/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>作画学习札记其二：暴强老害篇（1）</title>
-      <link>https://kylindc.github.io/post/6919/</link>
-      <guid>https://kylindc.github.io/post/6919/</guid>
+      <link>https://kylindc.github.io/posts/6919/</link>
+      <guid>https://kylindc.github.io/posts/6919/</guid>
       <pubDate>Sat, 12 Aug 2017 22:37:17 GMT</pubDate>
       
         
@@ -1042,7 +1042,7 @@
       
       
       
-      <content:encoded><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=240 src="//music.163.com/outchain/player?type=0&id=876460941&auto=0&height=430"></iframe><h3 id="中村丰"><a href="# 中村丰" class="headerlink" title="中村丰"></a>中村丰</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-NcreBPjFYvsJVhTp"></div><script> var NcreBPjFYvsJVhTp_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d2285022e82f02675f6db07a62fecd79.mp4\"}}'); NcreBPjFYvsJVhTp_options.container = document.getElementById("mmedia-NcreBPjFYvsJVhTp"); const dp_NcreBPjFYvsJVhTp = new DPlayer(NcreBPjFYvsJVhTp_options); </script><p>这里是中村丰在《灵能百分百》中的一段。下坠过程中特写镜头切远景后镜头极速后拉升，帅到爆炸。接近地面时一连串升格镜头蓄力，黑白闪，高速运动下变形的脸的大特写，坠地后再用全景的「中村方块」和远景的黑白闪来体现坠地的重量感以及绝对的力量差距。</p><p>中村有名的片段非常多，包括《星际牛仔：天国之扉》车厢内打斗一段、《异邦人：无皇刃谭》最后结尾无名 VS 黄毛一段（这段简直就是教科书般的存在了，我每看一个介绍作画的视频都会提到它）。还有一个片段，中村丰仅用了 3 张（1/8 秒）就表现出人物从远景越过镜头，简直就是快到爆炸。<a href="http://weibo.com/lmnbht" title="nbht 的新浪微博">@nbht</a> 专门做过 <a href="https://www.bilibili.com/video/av12024948/" title="解新番第二十四期：中村丰到底有多厉害？"> 一期视频 </a> 来介绍了中村丰的各种厉害之处，指明了吹「国宝」的正确方向。</p><h3 id="大平晋也"><a href="# 大平晋也" class="headerlink" title="大平晋也"></a>大平晋也</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-VQHwhfxKWMlBftPw"></div><script> var VQHwhfxKWMlBftPw_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/cff08e0868e00b236ce6cbe5c8a8f378.webm\"}}'); VQHwhfxKWMlBftPw_options.container = document.getElementById("mmedia-VQHwhfxKWMlBftPw"); const dp_VQHwhfxKWMlBftPw = new DPlayer(VQHwhfxKWMlBftPw_options); </script><p>这一段是《黑客帝国动画版：少年故事》里的一段，在取出滑板之前都是由桥本晋治画的。</p><p>参与宫崎骏</p><h3 id="今石洋之"><a href="# 今石洋之" class="headerlink" title="今石洋之"></a>今石洋之</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-tkyqAsyISugBaVSS"></div><script> var tkyqAsyISugBaVSS_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/5aae2659d1a508718462c6b1655484aa.mp4\"}}'); tkyqAsyISugBaVSS_options.container = document.getElementById("mmedia-tkyqAsyISugBaVSS"); const dp_tkyqAsyISugBaVSS = new DPlayer(tkyqAsyISugBaVSS_options); </script><h3 id="松本宪生"><a href="# 松本宪生" class="headerlink" title="松本宪生"></a>松本宪生</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-RmouNdDXIHlfLbav"></div><script> var RmouNdDXIHlfLbav_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/573d9b41bb6c9e6ea017e173ed447443.mp4\"}}'); RmouNdDXIHlfLbav_options.container = document.getElementById("mmedia-RmouNdDXIHlfLbav"); const dp_RmouNdDXIHlfLbav = new DPlayer(RmouNdDXIHlfLbav_options); </script><h3 id="桥本晋治"><a href="# 桥本晋治" class="headerlink" title="桥本晋治"></a>桥本晋治</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-lSSNCifdBftZkLes"></div><script> var lSSNCifdBftZkLes_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/581cec3856380d0b3029bff88ffd647c.mp4\"}}'); lSSNCifdBftZkLes_options.container = document.getElementById("mmedia-lSSNCifdBftZkLes"); const dp_lSSNCifdBftZkLes = new DPlayer(lSSNCifdBftZkLes_options); </script><p>这一段同样出自《黑客帝国动画版：少年故事》，桥本晋治也是这一集的导演，除了上面提到的那一卡，应该有</p><h3 id="安藤真裕"><a href="# 安藤真裕" class="headerlink" title="安藤真裕"></a>安藤真裕</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-hdpLngKtmxtsmsUF"></div><script> var hdpLngKtmxtsmsUF_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/876ba72aa5f1d6d2ced5219cff4e4581.mp4\"}}'); hdpLngKtmxtsmsUF_options.container = document.getElementById("mmedia-hdpLngKtmxtsmsUF"); const dp_hdpLngKtmxtsmsUF = new DPlayer(hdpLngKtmxtsmsUF_options); </script><h3 id="小池健"><a href="# 小池健" class="headerlink" title="小池健"></a>小池健</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-YnGFQyZqdMWYdHyQ"></div><script> var YnGFQyZqdMWYdHyQ_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/bb34c6a137ec697e9194f211d89f543f.mp4\"}}'); YnGFQyZqdMWYdHyQ_options.container = document.getElementById("mmedia-YnGFQyZqdMWYdHyQ"); const dp_YnGFQyZqdMWYdHyQ = new DPlayer(YnGFQyZqdMWYdHyQ_options); </script><p>世界纪录</p><h3 id="井上俊之"><a href="# 井上俊之" class="headerlink" title="井上俊之"></a>井上俊之</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-cFpNSmgbSPNmaiVZ"></div><script> var cFpNSmgbSPNmaiVZ_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/4e4914d820817b1918f4eb7002af830f.mp4\"}}'); cFpNSmgbSPNmaiVZ_options.container = document.getElementById("mmedia-cFpNSmgbSPNmaiVZ"); const dp_cFpNSmgbSPNmaiVZ = new DPlayer(cFpNSmgbSPNmaiVZ_options); </script><h3 id="冲浦启之"><a href="# 冲浦启之" class="headerlink" title="冲浦启之"></a>冲浦启之</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-phdHNzZCpgUVlVfS"></div><script> var phdHNzZCpgUVlVfS_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/f09c51631f656c50bb7222ced4b4f2b5.webm\"}}'); phdHNzZCpgUVlVfS_options.container = document.getElementById("mmedia-phdHNzZCpgUVlVfS"); const dp_phdHNzZCpgUVlVfS = new DPlayer(phdHNzZCpgUVlVfS_options); </script>]]></content:encoded>
+      <content:encoded><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=240 src="//music.163.com/outchain/player?type=0&id=876460941&auto=0&height=430"></iframe><h3 id="中村丰"><a href="# 中村丰" class="headerlink" title="中村丰"></a>中村丰</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-LPYlhdRUIgPIEtsx"></div><script> var LPYlhdRUIgPIEtsx_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d2285022e82f02675f6db07a62fecd79.mp4\"}}'); LPYlhdRUIgPIEtsx_options.container = document.getElementById("mmedia-LPYlhdRUIgPIEtsx"); const dp_LPYlhdRUIgPIEtsx = new DPlayer(LPYlhdRUIgPIEtsx_options); </script><p>这里是中村丰在《灵能百分百》中的一段。下坠过程中特写镜头切远景后镜头极速后拉升，帅到爆炸。接近地面时一连串升格镜头蓄力，黑白闪，高速运动下变形的脸的大特写，坠地后再用全景的「中村方块」和远景的黑白闪来体现坠地的重量感以及绝对的力量差距。</p><p>中村有名的片段非常多，包括《星际牛仔：天国之扉》车厢内打斗一段、《异邦人：无皇刃谭》最后结尾无名 VS 黄毛一段（这段简直就是教科书般的存在了，我每看一个介绍作画的视频都会提到它）。还有一个片段，中村丰仅用了 3 张（1/8 秒）就表现出人物从远景越过镜头，简直就是快到爆炸。<a href="http://weibo.com/lmnbht" title="nbht 的新浪微博">@nbht</a> 专门做过 <a href="https://www.bilibili.com/video/av12024948/" title="解新番第二十四期：中村丰到底有多厉害？"> 一期视频 </a> 来介绍了中村丰的各种厉害之处，指明了吹「国宝」的正确方向。</p><h3 id="大平晋也"><a href="# 大平晋也" class="headerlink" title="大平晋也"></a>大平晋也</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-BORsDjSyiEsnysQM"></div><script> var BORsDjSyiEsnysQM_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/cff08e0868e00b236ce6cbe5c8a8f378.webm\"}}'); BORsDjSyiEsnysQM_options.container = document.getElementById("mmedia-BORsDjSyiEsnysQM"); const dp_BORsDjSyiEsnysQM = new DPlayer(BORsDjSyiEsnysQM_options); </script><p>这一段是《黑客帝国动画版：少年故事》里的一段，在取出滑板之前都是由桥本晋治画的。</p><p>参与宫崎骏</p><h3 id="今石洋之"><a href="# 今石洋之" class="headerlink" title="今石洋之"></a>今石洋之</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-eTIVDNKXNzLGgdCQ"></div><script> var eTIVDNKXNzLGgdCQ_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/5aae2659d1a508718462c6b1655484aa.mp4\"}}'); eTIVDNKXNzLGgdCQ_options.container = document.getElementById("mmedia-eTIVDNKXNzLGgdCQ"); const dp_eTIVDNKXNzLGgdCQ = new DPlayer(eTIVDNKXNzLGgdCQ_options); </script><h3 id="松本宪生"><a href="# 松本宪生" class="headerlink" title="松本宪生"></a>松本宪生</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-BjaWWdnCPjpuBzIp"></div><script> var BjaWWdnCPjpuBzIp_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/573d9b41bb6c9e6ea017e173ed447443.mp4\"}}'); BjaWWdnCPjpuBzIp_options.container = document.getElementById("mmedia-BjaWWdnCPjpuBzIp"); const dp_BjaWWdnCPjpuBzIp = new DPlayer(BjaWWdnCPjpuBzIp_options); </script><h3 id="桥本晋治"><a href="# 桥本晋治" class="headerlink" title="桥本晋治"></a>桥本晋治</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-xoCKIiVZAUspExvV"></div><script> var xoCKIiVZAUspExvV_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/581cec3856380d0b3029bff88ffd647c.mp4\"}}'); xoCKIiVZAUspExvV_options.container = document.getElementById("mmedia-xoCKIiVZAUspExvV"); const dp_xoCKIiVZAUspExvV = new DPlayer(xoCKIiVZAUspExvV_options); </script><p>这一段同样出自《黑客帝国动画版：少年故事》，桥本晋治也是这一集的导演，除了上面提到的那一卡，应该有</p><h3 id="安藤真裕"><a href="# 安藤真裕" class="headerlink" title="安藤真裕"></a>安藤真裕</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-hHNikdICzmpIpuUu"></div><script> var hHNikdICzmpIpuUu_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/876ba72aa5f1d6d2ced5219cff4e4581.mp4\"}}'); hHNikdICzmpIpuUu_options.container = document.getElementById("mmedia-hHNikdICzmpIpuUu"); const dp_hHNikdICzmpIpuUu = new DPlayer(hHNikdICzmpIpuUu_options); </script><h3 id="小池健"><a href="# 小池健" class="headerlink" title="小池健"></a>小池健</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-WOcUdaGCmdeqjCcg"></div><script> var WOcUdaGCmdeqjCcg_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/bb34c6a137ec697e9194f211d89f543f.mp4\"}}'); WOcUdaGCmdeqjCcg_options.container = document.getElementById("mmedia-WOcUdaGCmdeqjCcg"); const dp_WOcUdaGCmdeqjCcg = new DPlayer(WOcUdaGCmdeqjCcg_options); </script><p>世界纪录</p><h3 id="井上俊之"><a href="# 井上俊之" class="headerlink" title="井上俊之"></a>井上俊之</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-iDHFOcPMjiqdCZBw"></div><script> var iDHFOcPMjiqdCZBw_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/4e4914d820817b1918f4eb7002af830f.mp4\"}}'); iDHFOcPMjiqdCZBw_options.container = document.getElementById("mmedia-iDHFOcPMjiqdCZBw"); const dp_iDHFOcPMjiqdCZBw = new DPlayer(iDHFOcPMjiqdCZBw_options); </script><h3 id="冲浦启之"><a href="# 冲浦启之" class="headerlink" title="冲浦启之"></a>冲浦启之</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-iomxGbdHmJgImPuG"></div><script> var iomxGbdHmJgImPuG_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/f09c51631f656c50bb7222ced4b4f2b5.webm\"}}'); iomxGbdHmJgImPuG_options.container = document.getElementById("mmedia-iomxGbdHmJgImPuG"); const dp_iomxGbdHmJgImPuG = new DPlayer(iomxGbdHmJgImPuG_options); </script>]]></content:encoded>
       
       
       
@@ -1051,14 +1051,14 @@
       <category domain="https://kylindc.github.io/tags/%E4%BD%9C%E7%94%BB/">作画</category>
       
       
-      <comments>https://kylindc.github.io/post/6919/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/6919/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>作画学习札记其一：作画基本概念及开山始祖篇</title>
-      <link>https://kylindc.github.io/post/16014/</link>
-      <guid>https://kylindc.github.io/post/16014/</guid>
+      <link>https://kylindc.github.io/posts/16014/</link>
+      <guid>https://kylindc.github.io/posts/16014/</guid>
       <pubDate>Sat, 12 Aug 2017 22:15:54 GMT</pubDate>
       
         
@@ -1072,7 +1072,7 @@
       
       
       
-      <content:encoded><![CDATA[<blockquote><p>本系列是关于马小褂老师翻译的 <a href="https://www.bilibili.com/video/av913002/"> 作画讲座：日式作画与幕后的动画师们（13 版）</a>一些笔记，并且补充上自己所搜集的一些资料，本意是做一下这段时间接触日式作画的一个总结，也可以作为初步了解日式作画及老害原画师的一个索引。无特别强调，后文「动画」一词特指「日本动画」，「作画」一词特指「日式作画」。<br>.<br>开山始祖：指对动画史造成很大影响且现在已经不在作画一线的人。<br>暴强老害：就是一些很强的高手嘛。<br>中流砥柱：就是一些马上就会成为老害的人嘛。<br>新兴力量：就是一些马上就会成为中流砥柱的人嘛。<br>.<br>引用视频巨多，建议在 WI-FI 下观看。由于 B 站外链显示不正常缘故，建议在电脑上阅读；手机建议横屏观看 B 站外链视频。</p></blockquote><h2 id="作画基本概念"><a href="# 作画基本概念" class="headerlink" title="作画基本概念"></a>作画基本概念 </h2><h3 id="什么是作画？"><a href="# 什么是作画？" class="headerlink" title="什么是作画？"></a> 什么是作画？</h3><p>首先澄清一个概念——「帧数」，在 B 站看番的时候看到一些华丽流畅的场面，就会出现很多弹幕——「帧数爆炸」，「经费爆炸」，其实动画是没有什么帧数区别的，基本都是 <strong>24 帧 / 秒</strong>，这个数值是由电视信号参数决定的，不存在「帧数爆炸」一说。没有<strong> 帧数 </strong> 的区别，但是有 <strong> 张数 </strong> 的区别。</p><p>毫无疑问，动画都是由一张张的静止的画面构成的（暂时不考虑 3D 作画），如果某段动画中每秒由 24 张 <strong> 不同 </strong> 的画面组成，那么这段动画被称为 <strong> 一拍一 </strong> 作画，或者称为 <strong>1k</strong> 作画，同样，如果某段动画中每秒由 24/2=12 张 <strong> 不同 </strong> 的画面组成，那么这段动画被称为 <strong> 一拍二 </strong> 作画，或者称为 <strong>2k</strong> 作画。以此类推有 3k，4k 等等。EVA 中第 24 集有一段 64 秒静止画面，所以就是 24*64=1536k 作画（痞子庵：我有特别的省钱技巧）。</p><p>每秒动画中不同画面的数量也被称为「张数」。张数是影响动画是否流畅的一个因素，张数上来了，动画自然也就觉得流畅了。张数是一个因素，原画师的功劳则是另一个因素。</p><h3 id="动画制作流程"><a href="# 动画制作流程" class="headerlink" title="动画制作流程"></a>动画制作流程 </h3><p> 首先简单介绍下动画制作的主要流程：</p><blockquote><p>脚本 -&gt; 分镜 -&gt; Layout -&gt; 原画 -&gt; 原画检查 -&gt; 动画 -&gt; 动画检查 -&gt; 色彩、摄影、特效 -&gt; 本摄</p></blockquote><p><span lang='ja'><ruby>原画 <rp>（</rp><rt> げんが </rt><rp>）</rp></ruby></sapn> 意为「关键帧绘制」，指的是绘制动画中每卡的关键姿势或者关键位置，<span lang='ja'><ruby>動画 <rp>（</rp><rt> どうが </rt><rp>）</rp></ruby></sapn> 意为「中间帧绘制」，动画负责原画之间的流畅运动。其中「中间帧」也被称为 <span lang='ja'><ruby> 中割り <rp>（</rp><rt> なかわり</rt><rp>）</rp></ruby></sapn>。</p><p>原画和动画统称为 <ruby><span lang='ja'> 作画 <rp>（</rp><rt> さくが</rt><rp>）</rp></ruby></sapn>（ Sakuga，这已经成为了一个英文词）。</p><p>由于原画师对动画有很强的控制力以及效果好坏在作画程度主要取决于原画师，所以一般在讨论作画是都指的是原画的好坏。实际情况下讨论「作画」的时候都是在讨论「出色作画」。</p><h3 id="作画基本概念 -1"><a href="# 作画基本概念 -1" class="headerlink" title="作画基本概念"></a>作画基本概念</h3><ul><li><p>张数：动画都是由一张张的静止的画面构成的（暂时不考虑 3D 作画）。动画中不存在「帧数」这个说法，因为绝大多数动画都是 24 帧 / 秒，这是由电视台信号参数决定的。所以也就不存在所谓的「帧数爆炸」。如果某段动画中每秒由 24 张 <strong> 不同 </strong> 的画面组成，那么这段动画被称为 <strong> 一拍一 </strong> 作画，或者称为 <strong>1k</strong> 作画，同样，如果某段动画中每秒由 24/2=12 张 <strong> 不同 </strong> 的画面组成，那么这段动画被称为 <strong> 一拍二 </strong> 作画，或者称为 <strong>2k</strong> 作画。以此类推有 3k，4k 等等。EVA 中第 24 集有一段 64 秒静止画面，所以就是 24*64=1536k 作画（痞子庵：我有特别的省钱技巧）。每秒动画中不同画面的数量就被称为「张数」。</p></li><li><p>造型：指人、物肢体运动的形状。</p></li><li><p>轨道：包括肢体、运动、镜头的轨迹。有些机战番中会画出导弹飞行时划过的痕迹（也被称为「马戏」），这就是轨道的一种。</p></li><li><p>踩点：原画时间间隔（1/24 秒、2/24 秒等等）下运动在轨道上的投影点。</p></li></ul><p>以上只是对作画基本概念的一些简单阐述，由于文字的局限性，这些概念结合视频会更加容易理解，推荐视频 <a href="https://www.bilibili.com/video/av2251266/"> 日式作画基础解说 完整版</a>。</p><h2 id=""><a href="#"class="headerlink"title=""></a></h2><h3 id="宫崎骏"><a href="# 宫崎骏" class="headerlink" title="宫崎骏"></a>宫崎骏 </h3><h3 id="金田伊功"><a href="# 金田伊功" class="headerlink" title="金田伊功"></a> 金田伊功</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-GPwzrLEIzlphLmVk"></div><script> var GPwzrLEIzlphLmVk_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d9e8569dfcfccd3b4a2a463e9e7680a1.mp4\"}}'); GPwzrLEIzlphLmVk_options.container = document.getElementById("mmedia-GPwzrLEIzlphLmVk"); const dp_GPwzrLEIzlphLmVk = new DPlayer(GPwzrLEIzlphLmVk_options); </script><h3 id="中村孝"><a href="# 中村孝" class="headerlink" title="中村孝"></a>中村孝</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-MvodtDoirtLXrbou"></div><script> var MvodtDoirtLXrbou_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/a0e58bf98eac5704f80aa08bf91b2b8a.mp4\"}}'); MvodtDoirtLXrbou_options.container = document.getElementById("mmedia-MvodtDoirtLXrbou"); const dp_MvodtDoirtLXrbou = new DPlayer(MvodtDoirtLXrbou_options); </script><h3 id="宇都宫理"><a href="# 宇都宫理" class="headerlink" title="宇都宫理"></a>宇都宫理</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-wvQJqbZOXCRxlUrU"></div><script> var wvQJqbZOXCRxlUrU_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); wvQJqbZOXCRxlUrU_options.container = document.getElementById("mmedia-wvQJqbZOXCRxlUrU"); const dp_wvQJqbZOXCRxlUrU = new DPlayer(wvQJqbZOXCRxlUrU_options); </script><h3 id="庵野秀明"><a href="# 庵野秀明" class="headerlink" title="庵野秀明"></a>庵野秀明</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-GhKfPuCNyFzTKmIE"></div><script> var GhKfPuCNyFzTKmIE_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); GhKfPuCNyFzTKmIE_options.container = document.getElementById("mmedia-GhKfPuCNyFzTKmIE"); const dp_GhKfPuCNyFzTKmIE = new DPlayer(GhKfPuCNyFzTKmIE_options); </script><h3 id="板野一郎"><a href="# 板野一郎" class="headerlink" title="板野一郎"></a>板野一郎</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-LRlnmtvxhPMitZGV"></div><script> var LRlnmtvxhPMitZGV_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); LRlnmtvxhPMitZGV_options.container = document.getElementById("mmedia-LRlnmtvxhPMitZGV"); const dp_LRlnmtvxhPMitZGV = new DPlayer(LRlnmtvxhPMitZGV_options); </script><h3 id="安藤雅司"><a href="# 安藤雅司" class="headerlink" title="安藤雅司"></a>安藤雅司</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-alYcjEqeqDocnwUL"></div><script> var alYcjEqeqDocnwUL_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/14c8dca734ca530f034fbb91fc71ebad.mp4\"}}'); alYcjEqeqDocnwUL_options.container = document.getElementById("mmedia-alYcjEqeqDocnwUL"); const dp_alYcjEqeqDocnwUL = new DPlayer(alYcjEqeqDocnwUL_options); </script>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>本系列是关于马小褂老师翻译的 <a href="https://www.bilibili.com/video/av913002/"> 作画讲座：日式作画与幕后的动画师们（13 版）</a>一些笔记，并且补充上自己所搜集的一些资料，本意是做一下这段时间接触日式作画的一个总结，也可以作为初步了解日式作画及老害原画师的一个索引。无特别强调，后文「动画」一词特指「日本动画」，「作画」一词特指「日式作画」。<br>.<br>开山始祖：指对动画史造成很大影响且现在已经不在作画一线的人。<br>暴强老害：就是一些很强的高手嘛。<br>中流砥柱：就是一些马上就会成为老害的人嘛。<br>新兴力量：就是一些马上就会成为中流砥柱的人嘛。<br>.<br>引用视频巨多，建议在 WI-FI 下观看。由于 B 站外链显示不正常缘故，建议在电脑上阅读；手机建议横屏观看 B 站外链视频。</p></blockquote><h2 id="作画基本概念"><a href="# 作画基本概念" class="headerlink" title="作画基本概念"></a>作画基本概念 </h2><h3 id="什么是作画？"><a href="# 什么是作画？" class="headerlink" title="什么是作画？"></a> 什么是作画？</h3><p>首先澄清一个概念——「帧数」，在 B 站看番的时候看到一些华丽流畅的场面，就会出现很多弹幕——「帧数爆炸」，「经费爆炸」，其实动画是没有什么帧数区别的，基本都是 <strong>24 帧 / 秒</strong>，这个数值是由电视信号参数决定的，不存在「帧数爆炸」一说。没有<strong> 帧数 </strong> 的区别，但是有 <strong> 张数 </strong> 的区别。</p><p>毫无疑问，动画都是由一张张的静止的画面构成的（暂时不考虑 3D 作画），如果某段动画中每秒由 24 张 <strong> 不同 </strong> 的画面组成，那么这段动画被称为 <strong> 一拍一 </strong> 作画，或者称为 <strong>1k</strong> 作画，同样，如果某段动画中每秒由 24/2=12 张 <strong> 不同 </strong> 的画面组成，那么这段动画被称为 <strong> 一拍二 </strong> 作画，或者称为 <strong>2k</strong> 作画。以此类推有 3k，4k 等等。EVA 中第 24 集有一段 64 秒静止画面，所以就是 24*64=1536k 作画（痞子庵：我有特别的省钱技巧）。</p><p>每秒动画中不同画面的数量也被称为「张数」。张数是影响动画是否流畅的一个因素，张数上来了，动画自然也就觉得流畅了。张数是一个因素，原画师的功劳则是另一个因素。</p><h3 id="动画制作流程"><a href="# 动画制作流程" class="headerlink" title="动画制作流程"></a>动画制作流程 </h3><p> 首先简单介绍下动画制作的主要流程：</p><blockquote><p>脚本 -&gt; 分镜 -&gt; Layout -&gt; 原画 -&gt; 原画检查 -&gt; 动画 -&gt; 动画检查 -&gt; 色彩、摄影、特效 -&gt; 本摄</p></blockquote><p><span lang='ja'><ruby>原画 <rp>（</rp><rt> げんが </rt><rp>）</rp></ruby></sapn> 意为「关键帧绘制」，指的是绘制动画中每卡的关键姿势或者关键位置，<span lang='ja'><ruby>動画 <rp>（</rp><rt> どうが </rt><rp>）</rp></ruby></sapn> 意为「中间帧绘制」，动画负责原画之间的流畅运动。其中「中间帧」也被称为 <span lang='ja'><ruby> 中割り <rp>（</rp><rt> なかわり</rt><rp>）</rp></ruby></sapn>。</p><p>原画和动画统称为 <ruby><span lang='ja'> 作画 <rp>（</rp><rt> さくが</rt><rp>）</rp></ruby></sapn>（ Sakuga，这已经成为了一个英文词）。</p><p>由于原画师对动画有很强的控制力以及效果好坏在作画程度主要取决于原画师，所以一般在讨论作画是都指的是原画的好坏。实际情况下讨论「作画」的时候都是在讨论「出色作画」。</p><h3 id="作画基本概念 -1"><a href="# 作画基本概念 -1" class="headerlink" title="作画基本概念"></a>作画基本概念</h3><ul><li><p>张数：动画都是由一张张的静止的画面构成的（暂时不考虑 3D 作画）。动画中不存在「帧数」这个说法，因为绝大多数动画都是 24 帧 / 秒，这是由电视台信号参数决定的。所以也就不存在所谓的「帧数爆炸」。如果某段动画中每秒由 24 张 <strong> 不同 </strong> 的画面组成，那么这段动画被称为 <strong> 一拍一 </strong> 作画，或者称为 <strong>1k</strong> 作画，同样，如果某段动画中每秒由 24/2=12 张 <strong> 不同 </strong> 的画面组成，那么这段动画被称为 <strong> 一拍二 </strong> 作画，或者称为 <strong>2k</strong> 作画。以此类推有 3k，4k 等等。EVA 中第 24 集有一段 64 秒静止画面，所以就是 24*64=1536k 作画（痞子庵：我有特别的省钱技巧）。每秒动画中不同画面的数量就被称为「张数」。</p></li><li><p>造型：指人、物肢体运动的形状。</p></li><li><p>轨道：包括肢体、运动、镜头的轨迹。有些机战番中会画出导弹飞行时划过的痕迹（也被称为「马戏」），这就是轨道的一种。</p></li><li><p>踩点：原画时间间隔（1/24 秒、2/24 秒等等）下运动在轨道上的投影点。</p></li></ul><p>以上只是对作画基本概念的一些简单阐述，由于文字的局限性，这些概念结合视频会更加容易理解，推荐视频 <a href="https://www.bilibili.com/video/av2251266/"> 日式作画基础解说 完整版</a>。</p><h2 id=""><a href="#"class="headerlink"title=""></a></h2><h3 id="宫崎骏"><a href="# 宫崎骏" class="headerlink" title="宫崎骏"></a>宫崎骏 </h3><h3 id="金田伊功"><a href="# 金田伊功" class="headerlink" title="金田伊功"></a> 金田伊功</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-pAaDAUCDMmPgOVRr"></div><script> var pAaDAUCDMmPgOVRr_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/d9e8569dfcfccd3b4a2a463e9e7680a1.mp4\"}}'); pAaDAUCDMmPgOVRr_options.container = document.getElementById("mmedia-pAaDAUCDMmPgOVRr"); const dp_pAaDAUCDMmPgOVRr = new DPlayer(pAaDAUCDMmPgOVRr_options); </script><h3 id="中村孝"><a href="# 中村孝" class="headerlink" title="中村孝"></a>中村孝</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-YlYlWGMPzKrGoSkZ"></div><script> var YlYlWGMPzKrGoSkZ_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/a0e58bf98eac5704f80aa08bf91b2b8a.mp4\"}}'); YlYlWGMPzKrGoSkZ_options.container = document.getElementById("mmedia-YlYlWGMPzKrGoSkZ"); const dp_YlYlWGMPzKrGoSkZ = new DPlayer(YlYlWGMPzKrGoSkZ_options); </script><h3 id="宇都宫理"><a href="# 宇都宫理" class="headerlink" title="宇都宫理"></a>宇都宫理</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-yELAmqWBUcZtFCwE"></div><script> var yELAmqWBUcZtFCwE_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); yELAmqWBUcZtFCwE_options.container = document.getElementById("mmedia-yELAmqWBUcZtFCwE"); const dp_yELAmqWBUcZtFCwE = new DPlayer(yELAmqWBUcZtFCwE_options); </script><h3 id="庵野秀明"><a href="# 庵野秀明" class="headerlink" title="庵野秀明"></a>庵野秀明</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-wadpZACqJfjTSRuN"></div><script> var wadpZACqJfjTSRuN_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); wadpZACqJfjTSRuN_options.container = document.getElementById("mmedia-wadpZACqJfjTSRuN"); const dp_wadpZACqJfjTSRuN = new DPlayer(wadpZACqJfjTSRuN_options); </script><h3 id="板野一郎"><a href="# 板野一郎" class="headerlink" title="板野一郎"></a>板野一郎</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-nfYloSnujenpVkbG"></div><script> var nfYloSnujenpVkbG_options = JSON.parse('{\"video\":{\"url\":\"\"}}'); nfYloSnujenpVkbG_options.container = document.getElementById("mmedia-nfYloSnujenpVkbG"); const dp_nfYloSnujenpVkbG = new DPlayer(nfYloSnujenpVkbG_options); </script><h3 id="安藤雅司"><a href="# 安藤雅司" class="headerlink" title="安藤雅司"></a>安藤雅司</h3><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-eYlWAfKFYHXFWWGi"></div><script> var eYlWAfKFYHXFWWGi_options = JSON.parse('{\"video\":{\"url\":\"https://sakugabooru.com/data/14c8dca734ca530f034fbb91fc71ebad.mp4\"}}'); eYlWAfKFYHXFWWGi_options.container = document.getElementById("mmedia-eYlWAfKFYHXFWWGi"); const dp_eYlWAfKFYHXFWWGi = new DPlayer(eYlWAfKFYHXFWWGi_options); </script>]]></content:encoded>
       
       
       
@@ -1081,14 +1081,14 @@
       <category domain="https://kylindc.github.io/tags/%E4%BD%9C%E7%94%BB/">作画</category>
       
       
-      <comments>https://kylindc.github.io/post/16014/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/16014/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Hexo 折腾手记其三：多媒体及互联网资源插入博客</title>
-      <link>https://kylindc.github.io/post/53723/</link>
-      <guid>https://kylindc.github.io/post/53723/</guid>
+      <link>https://kylindc.github.io/posts/53723/</link>
+      <guid>https://kylindc.github.io/posts/53723/</guid>
       <pubDate>Sat, 12 Aug 2017 18:08:43 GMT</pubDate>
       
         
@@ -1101,21 +1101,21 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="插入图片"><a href="# 插入图片" class="headerlink" title="插入图片"></a>插入图片 </h2><p> 为了方便文章插图管理，首先在 <code>_config.yml</code> 中将 <code>post_asset_folder</code> 设为 <code>true</code> 后，</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>Hexo 会在以后的新建文章时就会自动在与文章同一文件夹下新建与文章同名的文件夹，将文章的所有插图发在此文件夹里，就使用相对路径引用图片资源了。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](image.jpg)</span><br></pre></td></tr></table></figure><p>不过这只是 Markdown 的引用方式，图片只会在文章中显示而不会在首页中显示，若希望图片在文章和首页中都正常显示，需要使用标签语法。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img example.jpg This is an example image %&#125;</span><br></pre></td></tr></table></figure><p>以上内容参考 Hexo 官方文档<a href="https://hexo.io/zh-cn/docs/asset-folders.html">Hexo 官方文档 - 资源文件夹</a>。</p><h2 id="插入视频"><a href="# 插入视频" class="headerlink" title="插入视频"></a>插入视频 </h2><h3 id="使用 -HTML5-video- 标签插入"><a href="# 使用 -HTML5-video- 标签插入" class="headerlink" title="使用 HTML5 video 标签插入"></a> 使用 HTML5 video 标签插入</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">&quot;example.mp4&quot;</span> <span class="attr">height</span>=<span class="string">498</span> <span class="attr">width</span>=<span class="string">&#x27;100%&#x27;</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure><p>使用效果如下：<br><video src="example.mp4" height=498 width='100%' controls="controls"><br></video></p><p>更多参数设置请参考<a href="http://www.w3school.com.cn/tags/tag_video.asp">W3school-HTML <code>&lt;video&gt;</code> 标签</a>。</p><h3 id="使用 -HTML5-iframe- 标签插入"><a href="# 使用 -HTML5-iframe- 标签插入" class="headerlink" title="使用 HTML5 iframe 标签插入"></a>使用 HTML5 iframe 标签插入</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;example.mp4&quot;</span> <span class="attr">height</span>=<span class="string">360</span> <span class="attr">width</span>=<span class="string">&#x27;100%&#x27;</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果如下：</p><iframe src="example.mp4" height=360 width='100%' frameborder=0 controls="controls" allowfullscreen></iframe><p>更多参数设置请参考<a href="http://www.w3school.com.cn/tags/tag_iframe.asp">W3school-HTML <code>&lt;iframe&gt;</code> 标签</a>。</p><p>注意以上两个标签都可以通过参数 <code>height</code> 和 <code>width</code> 来控制大小。</p><h3 id="通过 -hexo-dplayer- 插件插入视频"><a href="# 通过 -hexo-dplayer- 插件插入视频" class="headerlink" title="通过 hexo-dplayer 插件插入视频"></a>通过 hexo-dplayer 插件插入视频 </h3><p> 首先安装 <a href="https://github.com/NextMoe/hexo-tag-dplayer"><strong>Dplayer</strong></a>插件，通过以下方式使用插件：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mmedia &quot;dplayer&quot; &quot;url=example.mp4&quot; %&#125;</span><br></pre></td></tr></table></figure><p>效果如下：</p><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-teMrbfVQFFLSEbqk"></div><script> var teMrbfVQFFLSEbqk_options = JSON.parse('{\"video\":{\"url\":\"example.mp4\"}}'); teMrbfVQFFLSEbqk_options.container = document.getElementById("mmedia-teMrbfVQFFLSEbqk"); const dp_teMrbfVQFFLSEbqk = new DPlayer(teMrbfVQFFLSEbqk_options); </script><p>这种方式使用起来最快捷、最方便，而且功能也很强大。</p><h3 id="视频格式注意事项"><a href="# 视频格式注意事项" class="headerlink" title="视频格式注意事项"></a>视频格式注意事项 </h3><p> 并非所有的视频格式都被浏览器所支持，以下表格参考<a href="http://www.w3school.com.cn/html5/html_5_video.asp">W3cshool</a>:</p><table><thead><tr><th align="left">格式</th><th align="left">IE</th><th align="left">Firefox</th><th align="left">Opera</th><th align="left">Chrome</th><th align="left">Safari</th></tr></thead><tbody><tr><td align="left">Ogg</td><td align="left">No</td><td align="left">3.5+</td><td align="left">10.5+</td><td align="left">5.0+</td><td align="left">No</td></tr><tr><td align="left">MPEG-4</td><td align="left">9.0+</td><td align="left">No</td><td align="left">No</td><td align="left">5.0+</td><td align="left">3.0+</td></tr><tr><td align="left">WebM</td><td align="left">No</td><td align="left">4.0+</td><td align="left">10.6+</td><td align="left">6.0+</td><td align="left">No</td></tr></tbody></table><p>正是由于格式的限制，所以还是推荐用插入视频网站外链的方式来插入视频，具体见后面的文章。</p><h2 id="插入音频"><a href="# 插入音频" class="headerlink" title="插入音频"></a>插入音频 </h2><h3 id="可以通过 -HTML5- 标签插入"><a href="# 可以通过 -HTML5- 标签插入" class="headerlink" title="可以通过 HTML5 标签插入"></a> 可以通过 HTML5 标签插入</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">&quot;Tune for a Found Harmonium.mp3&quot;</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果如下<br><audio src="Tune for a Found Harmonium.mp3" controls="controls"><br></audio><br>.</p><h3 id="通过 -hexo-aplayer- 插件插入"><a href="# 通过 -hexo-aplayer- 插件插入" class="headerlink" title="通过 hexo-aplayer 插件插入"></a>通过 hexo-aplayer 插件插入 </h3><p> 首先安装 <a href="https://github.com/MoePlayer/hexo-tag-aplayer">Aplayer</a> </p><p>通过以下方式插入音频：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mmedia &quot;aplayer&quot; title author url %&#125;</span><br></pre></td></tr></table></figure><p>使用效果如下：</p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><div id="mmedia-xMFDsKuXADeeyKss"></div><script> var xMFDsKuXADeeyKss_options = JSON.parse('{\"audio\":[{}]}'); xMFDsKuXADeeyKss_options.container = document.getElementById("mmedia-xMFDsKuXADeeyKss"); const ap_xMFDsKuXADeeyKss = new APlayer(xMFDsKuXADeeyKss_options); </script><h3 id="音频的格式限制"><a href="# 音频的格式限制" class="headerlink" title="音频的格式限制"></a>音频的格式限制 </h3><p> 同样，浏览器对音频也有严重的格式限制，具体参考 <a href="http://www.w3school.com.cn/html5/html_5_audio.asp">W3school</a> 如下：</p><table><thead><tr><th align="left">格式</th><th align="center">IE 9</th><th align="center">Firefox 3.5</th><th align="center">Opera 10.5</th><th align="center">Chrome 3.0</th><th align="center">Safari 3.0</th></tr></thead><tbody><tr><td align="left">Ogg Vorbis</td><td align="center"></td><td align="center">√</td><td align="center">√</td><td align="center">√</td><td align="center"></td></tr><tr><td align="left">MP3</td><td align="center">√</td><td align="center"></td><td align="center"></td><td align="center">√</td><td align="center">√</td></tr><tr><td align="left">Wav</td><td align="center"></td><td align="center">√</td><td align="center">√</td><td align="center"></td><td align="center">√</td></tr></tbody></table><p>可见音频插入效果有多糟糕，所以同样还是推荐使用互联网服务吧。</p><h2 id="插入互联网资源"><a href="# 插入互联网资源" class="headerlink" title="插入互联网资源"></a>插入互联网资源 </h2><h3 id="插入 B 站外链"><a href="# 插入 B 站外链" class="headerlink" title="插入 B 站外链"></a> 插入 B 站外链 </h3><p> 使用下面的模版</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;https://www.bilibili.com/html/html5player.html?aid=6128931&amp;cid=12758570&amp;as_wide=1&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;410&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span> <span class="attr">webkitallowfullscreen</span> <span class="attr">mozallowfullscreen</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>注意事项：</p><ol><li>右键你想插入的 B 站视频页面，选择查看网页源代码，然后 <code>Crtl+F</code> 搜索<code>cid</code>，大概在 410 行左右，就可以找到<code>aid</code> 和 <code>cid</code> 两个参数，然后替换进上述模版。</li><li>参数 <code>&amp;as_wide=1</code> 会使视频自动隐藏侧边栏，但会在移动设备上显示不正常，所以视情况取舍加或不加。</li></ol><p>使用效果如下：</p><iframe src="https://www.bilibili.com/html/html5player.html?aid=6128931&cid=12758570&as_wide=1" width="600" height="410" frameborder="0" webkitallowfullscreen='true' mozallowfullscreen='true' allowfullscreen='true' frameborder="0"></iframe><h3 id="插入网易云音乐歌曲或歌单外链"><a href="# 插入网易云音乐歌曲或歌单外链" class="headerlink" title="插入网易云音乐歌曲或歌单外链"></a>插入网易云音乐歌曲或歌单外链 </h3><p> 找到歌单或歌曲播放页面，点击 <code> 生成外链播放器</code>，选择好尺寸后，再把代码粘贴好就行了。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginwidth</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginheight</span>=<span class="string">&quot;0&quot;</span> <span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">&quot;//music.163.com/outchain/player?type=2&amp;id=411315632&amp;auto=0&amp;height=66&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果如下：</p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=411315632&auto=0&height=66"></iframe><h3 id="插入 -YouTube"><a href="# 插入 -YouTube" class="headerlink" title="插入 YouTube"></a>插入 YouTube</h3><p>视频页面 -&gt; 分享视频 -&gt; 嵌入 -&gt; 选择开始时间（可选） -&gt; 复制 -&gt; 粘贴进文档</p><p>复制后的模版如下：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">&quot;560&quot;</span> <span class="attr">height</span>=<span class="string">&quot;315&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://www.youtube.com/embed/NasyGUeNMTs&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>或者参考 Hexo 官方文档，用如下方式也可以：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube video_id %&#125;</span><br></pre></td></tr></table></figure><p><code>video_id</code>就是 YouTube 播放页面地址最后一点奇奇怪怪的字母数字组合。</p><p>两种方式效果都差不多，可能第二种自适应网页的程度会更高一些，因为不用手动调大小。</p><p>效果如下：</p><div class="video-container"><iframe src="https://www.youtube.com/embed/NasyGUeNMTs" frameborder="0" loading="lazy" allowfullscreen></iframe></div><h3 id="插入推文"><a href="# 插入推文" class="headerlink" title="插入推文"></a>插入推文 </h3><h4 id="推特提供的方式"><a href="# 推特提供的方式" class="headerlink" title="推特提供的方式"></a> 推特提供的方式 </h4><p> 要插入的推文 -&gt; 右上角倒三角形 -&gt; 嵌入推文 -&gt; 复制代码 -&gt; 粘贴</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">blockquote</span> <span class="attr">class</span>=<span class="string">&quot;twitter-tweet&quot;</span> <span class="attr">data-lang</span>=<span class="string">&quot;zh-cn&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">p</span> <span class="attr">lang</span>=<span class="string">&quot;und&quot;</span> <span class="attr">dir</span>=<span class="string">&quot;ltr&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://t.co/C6x4eJxbOM&quot;</span>&gt;</span>https://t.co/C6x4eJxbOM<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://t.co/4K0XiH2kX2&quot;</span>&gt;</span>pic.twitter.com/4K0XiH2kX2<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="symbol">&amp;mdash;</span> not Jony Ive (@JonyIveParody) <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://twitter.com/JonyIveParody/status/896027465889587200&quot;</span>&gt;</span>2017 年 8 月 11 日<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;//platform.twitter.com/widgets.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="Hexo-Twitter- 插件方式"><a href="#Hexo-Twitter- 插件方式" class="headerlink" title="Hexo-Twitter 插件方式"></a>Hexo-Twitter 插件方式 </h4><p> 安装插件：<a href="https://github.com/tea3/hexo-tag-twitter">Hexo-Twitter</a><br>按如下方式应用推文</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% twitter tweet-url %&#125;</span><br></pre></td></tr></table></figure><p>两种方式使用效果一致:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% twitter https://twitter.com/JonyIveParody/status/896027465889587200 %&#125;</span><br></pre></td></tr></table></figure><h3 id="插入 -Instagram"><a href="# 插入 -Instagram" class="headerlink" title="插入 Instagram"></a>插入 Instagram</h3><h4 id="使用 -Instagram- 提供的内嵌"><a href="# 使用 -Instagram- 提供的内嵌" class="headerlink" title="使用 Instagram 提供的内嵌"></a>使用 Instagram 提供的内嵌 </h4><p> 要分享的帖子的页面 -&gt; 右下角更多 -&gt; 内嵌 -&gt; 复制嵌入码 -&gt; 粘贴嵌入码</p><h4 id="使用 -Hexo-Instagram- 插件"><a href="# 使用 -Hexo-Instagram- 插件" class="headerlink" title="使用 Hexo-Instagram 插件"></a>使用 Hexo-Instagram 插件 </h4><p> 安装 <a href="https://github.com/tea3/hexo-tag-instagram">Hexo-Instagram 插件</a></p><p>再使用以下方式插入：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% instagram post-url %&#125;</span><br></pre></td></tr></table></figure><p>除了使用要插入的页面的 URL 作为 <code>post-url</code> 之外，还可以使用 URL 中独特的那几个奇奇特特的代码作为<code>post-url</code>。</p><p>两种方式效果都一样，如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% instagram 3LcFY5Niia %&#125;</span><br></pre></td></tr></table></figure><h2 id="总结及注意事项"><a href="# 总结及注意事项" class="headerlink" title="总结及注意事项"></a>总结及注意事项 </h2><p> 总结起来基本就是有两种方法，</p><ol><li>使用网站提供的内嵌方式，一般社交网站都会提供内嵌的的代码</li><li>使用 Hexo 插件</li></ol><p>一般来说使用插件会更加简单直观，在插入之前不妨搜一搜是否有对应的插件，要是没有再考虑社交网站提供的方式。</p><p>比如 Vimeo, SoundCloud 等都是可以引用的。</p><p>还有一个注意事项就是，要是你的博客开启了 <code>Https</code>，而你要插入的内容却不是<code>Https</code> 的，这样情况下，Chrome 会为了安全考虑而不会显示你插入的内容。</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="插入图片"><a href="# 插入图片" class="headerlink" title="插入图片"></a>插入图片 </h2><p> 为了方便文章插图管理，首先在 <code>_config.yml</code> 中将 <code>post_asset_folder</code> 设为 <code>true</code> 后，</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>Hexo 会在以后的新建文章时就会自动在与文章同一文件夹下新建与文章同名的文件夹，将文章的所有插图发在此文件夹里，就使用相对路径引用图片资源了。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](image.jpg)</span><br></pre></td></tr></table></figure><p>不过这只是 Markdown 的引用方式，图片只会在文章中显示而不会在首页中显示，若希望图片在文章和首页中都正常显示，需要使用标签语法。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img example.jpg This is an example image %&#125;</span><br></pre></td></tr></table></figure><p>以上内容参考 Hexo 官方文档<a href="https://hexo.io/zh-cn/docs/asset-folders.html">Hexo 官方文档 - 资源文件夹</a>。</p><h2 id="插入视频"><a href="# 插入视频" class="headerlink" title="插入视频"></a>插入视频 </h2><h3 id="使用 -HTML5-video- 标签插入"><a href="# 使用 -HTML5-video- 标签插入" class="headerlink" title="使用 HTML5 video 标签插入"></a> 使用 HTML5 video 标签插入</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">&quot;example.mp4&quot;</span> <span class="attr">height</span>=<span class="string">498</span> <span class="attr">width</span>=<span class="string">&#x27;100%&#x27;</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure><p>使用效果如下：<br><video src="example.mp4" height=498 width='100%' controls="controls"><br></video></p><p>更多参数设置请参考<a href="http://www.w3school.com.cn/tags/tag_video.asp">W3school-HTML <code>&lt;video&gt;</code> 标签</a>。</p><h3 id="使用 -HTML5-iframe- 标签插入"><a href="# 使用 -HTML5-iframe- 标签插入" class="headerlink" title="使用 HTML5 iframe 标签插入"></a>使用 HTML5 iframe 标签插入</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;example.mp4&quot;</span> <span class="attr">height</span>=<span class="string">360</span> <span class="attr">width</span>=<span class="string">&#x27;100%&#x27;</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果如下：</p><iframe src="example.mp4" height=360 width='100%' frameborder=0 controls="controls" allowfullscreen></iframe><p>更多参数设置请参考<a href="http://www.w3school.com.cn/tags/tag_iframe.asp">W3school-HTML <code>&lt;iframe&gt;</code> 标签</a>。</p><p>注意以上两个标签都可以通过参数 <code>height</code> 和 <code>width</code> 来控制大小。</p><h3 id="通过 -hexo-dplayer- 插件插入视频"><a href="# 通过 -hexo-dplayer- 插件插入视频" class="headerlink" title="通过 hexo-dplayer 插件插入视频"></a>通过 hexo-dplayer 插件插入视频 </h3><p> 首先安装 <a href="https://github.com/NextMoe/hexo-tag-dplayer"><strong>Dplayer</strong></a>插件，通过以下方式使用插件：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mmedia &quot;dplayer&quot; &quot;url=example.mp4&quot; %&#125;</span><br></pre></td></tr></table></figure><p>效果如下：</p><script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-ESguYrQTdfcFHBAv"></div><script> var ESguYrQTdfcFHBAv_options = JSON.parse('{\"video\":{\"url\":\"example.mp4\"}}'); ESguYrQTdfcFHBAv_options.container = document.getElementById("mmedia-ESguYrQTdfcFHBAv"); const dp_ESguYrQTdfcFHBAv = new DPlayer(ESguYrQTdfcFHBAv_options); </script><p>这种方式使用起来最快捷、最方便，而且功能也很强大。</p><h3 id="视频格式注意事项"><a href="# 视频格式注意事项" class="headerlink" title="视频格式注意事项"></a>视频格式注意事项 </h3><p> 并非所有的视频格式都被浏览器所支持，以下表格参考<a href="http://www.w3school.com.cn/html5/html_5_video.asp">W3cshool</a>:</p><table><thead><tr><th align="left">格式</th><th align="left">IE</th><th align="left">Firefox</th><th align="left">Opera</th><th align="left">Chrome</th><th align="left">Safari</th></tr></thead><tbody><tr><td align="left">Ogg</td><td align="left">No</td><td align="left">3.5+</td><td align="left">10.5+</td><td align="left">5.0+</td><td align="left">No</td></tr><tr><td align="left">MPEG-4</td><td align="left">9.0+</td><td align="left">No</td><td align="left">No</td><td align="left">5.0+</td><td align="left">3.0+</td></tr><tr><td align="left">WebM</td><td align="left">No</td><td align="left">4.0+</td><td align="left">10.6+</td><td align="left">6.0+</td><td align="left">No</td></tr></tbody></table><p>正是由于格式的限制，所以还是推荐用插入视频网站外链的方式来插入视频，具体见后面的文章。</p><h2 id="插入音频"><a href="# 插入音频" class="headerlink" title="插入音频"></a>插入音频 </h2><h3 id="可以通过 -HTML5- 标签插入"><a href="# 可以通过 -HTML5- 标签插入" class="headerlink" title="可以通过 HTML5 标签插入"></a> 可以通过 HTML5 标签插入</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">&quot;Tune for a Found Harmonium.mp3&quot;</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果如下<br><audio src="Tune for a Found Harmonium.mp3" controls="controls"><br></audio><br>.</p><h3 id="通过 -hexo-aplayer- 插件插入"><a href="# 通过 -hexo-aplayer- 插件插入" class="headerlink" title="通过 hexo-aplayer 插件插入"></a>通过 hexo-aplayer 插件插入 </h3><p> 首先安装 <a href="https://github.com/MoePlayer/hexo-tag-aplayer">Aplayer</a> </p><p>通过以下方式插入音频：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mmedia &quot;aplayer&quot; title author url %&#125;</span><br></pre></td></tr></table></figure><p>使用效果如下：</p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><div id="mmedia-HSjnvMYzHBTqQxDW"></div><script> var HSjnvMYzHBTqQxDW_options = JSON.parse('{\"audio\":[{}]}'); HSjnvMYzHBTqQxDW_options.container = document.getElementById("mmedia-HSjnvMYzHBTqQxDW"); const ap_HSjnvMYzHBTqQxDW = new APlayer(HSjnvMYzHBTqQxDW_options); </script><h3 id="音频的格式限制"><a href="# 音频的格式限制" class="headerlink" title="音频的格式限制"></a>音频的格式限制 </h3><p> 同样，浏览器对音频也有严重的格式限制，具体参考 <a href="http://www.w3school.com.cn/html5/html_5_audio.asp">W3school</a> 如下：</p><table><thead><tr><th align="left">格式</th><th align="center">IE 9</th><th align="center">Firefox 3.5</th><th align="center">Opera 10.5</th><th align="center">Chrome 3.0</th><th align="center">Safari 3.0</th></tr></thead><tbody><tr><td align="left">Ogg Vorbis</td><td align="center"></td><td align="center">√</td><td align="center">√</td><td align="center">√</td><td align="center"></td></tr><tr><td align="left">MP3</td><td align="center">√</td><td align="center"></td><td align="center"></td><td align="center">√</td><td align="center">√</td></tr><tr><td align="left">Wav</td><td align="center"></td><td align="center">√</td><td align="center">√</td><td align="center"></td><td align="center">√</td></tr></tbody></table><p>可见音频插入效果有多糟糕，所以同样还是推荐使用互联网服务吧。</p><h2 id="插入互联网资源"><a href="# 插入互联网资源" class="headerlink" title="插入互联网资源"></a>插入互联网资源 </h2><h3 id="插入 B 站外链"><a href="# 插入 B 站外链" class="headerlink" title="插入 B 站外链"></a> 插入 B 站外链 </h3><p> 使用下面的模版</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;https://www.bilibili.com/html/html5player.html?aid=6128931&amp;cid=12758570&amp;as_wide=1&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;410&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span> <span class="attr">webkitallowfullscreen</span> <span class="attr">mozallowfullscreen</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>注意事项：</p><ol><li>右键你想插入的 B 站视频页面，选择查看网页源代码，然后 <code>Crtl+F</code> 搜索<code>cid</code>，大概在 410 行左右，就可以找到<code>aid</code> 和 <code>cid</code> 两个参数，然后替换进上述模版。</li><li>参数 <code>&amp;as_wide=1</code> 会使视频自动隐藏侧边栏，但会在移动设备上显示不正常，所以视情况取舍加或不加。</li></ol><p>使用效果如下：</p><iframe src="https://www.bilibili.com/html/html5player.html?aid=6128931&cid=12758570&as_wide=1" width="600" height="410" frameborder="0" webkitallowfullscreen='true' mozallowfullscreen='true' allowfullscreen='true' frameborder="0"></iframe><h3 id="插入网易云音乐歌曲或歌单外链"><a href="# 插入网易云音乐歌曲或歌单外链" class="headerlink" title="插入网易云音乐歌曲或歌单外链"></a>插入网易云音乐歌曲或歌单外链 </h3><p> 找到歌单或歌曲播放页面，点击 <code> 生成外链播放器</code>，选择好尺寸后，再把代码粘贴好就行了。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginwidth</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginheight</span>=<span class="string">&quot;0&quot;</span> <span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">&quot;//music.163.com/outchain/player?type=2&amp;id=411315632&amp;auto=0&amp;height=66&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果如下：</p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=411315632&auto=0&height=66"></iframe><h3 id="插入 -YouTube"><a href="# 插入 -YouTube" class="headerlink" title="插入 YouTube"></a>插入 YouTube</h3><p>视频页面 -&gt; 分享视频 -&gt; 嵌入 -&gt; 选择开始时间（可选） -&gt; 复制 -&gt; 粘贴进文档</p><p>复制后的模版如下：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">&quot;560&quot;</span> <span class="attr">height</span>=<span class="string">&quot;315&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://www.youtube.com/embed/NasyGUeNMTs&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>或者参考 Hexo 官方文档，用如下方式也可以：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube video_id %&#125;</span><br></pre></td></tr></table></figure><p><code>video_id</code>就是 YouTube 播放页面地址最后一点奇奇怪怪的字母数字组合。</p><p>两种方式效果都差不多，可能第二种自适应网页的程度会更高一些，因为不用手动调大小。</p><p>效果如下：</p><div class="video-container"><iframe src="https://www.youtube.com/embed/NasyGUeNMTs" frameborder="0" loading="lazy" allowfullscreen></iframe></div><h3 id="插入推文"><a href="# 插入推文" class="headerlink" title="插入推文"></a>插入推文 </h3><h4 id="推特提供的方式"><a href="# 推特提供的方式" class="headerlink" title="推特提供的方式"></a> 推特提供的方式 </h4><p> 要插入的推文 -&gt; 右上角倒三角形 -&gt; 嵌入推文 -&gt; 复制代码 -&gt; 粘贴</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">blockquote</span> <span class="attr">class</span>=<span class="string">&quot;twitter-tweet&quot;</span> <span class="attr">data-lang</span>=<span class="string">&quot;zh-cn&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">p</span> <span class="attr">lang</span>=<span class="string">&quot;und&quot;</span> <span class="attr">dir</span>=<span class="string">&quot;ltr&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://t.co/C6x4eJxbOM&quot;</span>&gt;</span>https://t.co/C6x4eJxbOM<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://t.co/4K0XiH2kX2&quot;</span>&gt;</span>pic.twitter.com/4K0XiH2kX2<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="symbol">&amp;mdash;</span> not Jony Ive (@JonyIveParody) <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://twitter.com/JonyIveParody/status/896027465889587200&quot;</span>&gt;</span>2017 年 8 月 11 日<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;//platform.twitter.com/widgets.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="Hexo-Twitter- 插件方式"><a href="#Hexo-Twitter- 插件方式" class="headerlink" title="Hexo-Twitter 插件方式"></a>Hexo-Twitter 插件方式 </h4><p> 安装插件：<a href="https://github.com/tea3/hexo-tag-twitter">Hexo-Twitter</a><br>按如下方式应用推文</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% twitter tweet-url %&#125;</span><br></pre></td></tr></table></figure><p>两种方式使用效果一致:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% twitter https://twitter.com/JonyIveParody/status/896027465889587200 %&#125;</span><br></pre></td></tr></table></figure><h3 id="插入 -Instagram"><a href="# 插入 -Instagram" class="headerlink" title="插入 Instagram"></a>插入 Instagram</h3><h4 id="使用 -Instagram- 提供的内嵌"><a href="# 使用 -Instagram- 提供的内嵌" class="headerlink" title="使用 Instagram 提供的内嵌"></a>使用 Instagram 提供的内嵌 </h4><p> 要分享的帖子的页面 -&gt; 右下角更多 -&gt; 内嵌 -&gt; 复制嵌入码 -&gt; 粘贴嵌入码</p><h4 id="使用 -Hexo-Instagram- 插件"><a href="# 使用 -Hexo-Instagram- 插件" class="headerlink" title="使用 Hexo-Instagram 插件"></a>使用 Hexo-Instagram 插件 </h4><p> 安装 <a href="https://github.com/tea3/hexo-tag-instagram">Hexo-Instagram 插件</a></p><p>再使用以下方式插入：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% instagram post-url %&#125;</span><br></pre></td></tr></table></figure><p>除了使用要插入的页面的 URL 作为 <code>post-url</code> 之外，还可以使用 URL 中独特的那几个奇奇特特的代码作为<code>post-url</code>。</p><p>两种方式效果都一样，如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% instagram 3LcFY5Niia %&#125;</span><br></pre></td></tr></table></figure><h2 id="总结及注意事项"><a href="# 总结及注意事项" class="headerlink" title="总结及注意事项"></a>总结及注意事项 </h2><p> 总结起来基本就是有两种方法，</p><ol><li>使用网站提供的内嵌方式，一般社交网站都会提供内嵌的的代码</li><li>使用 Hexo 插件</li></ol><p>一般来说使用插件会更加简单直观，在插入之前不妨搜一搜是否有对应的插件，要是没有再考虑社交网站提供的方式。</p><p>比如 Vimeo, SoundCloud 等都是可以引用的。</p><p>还有一个注意事项就是，要是你的博客开启了 <code>Https</code>，而你要插入的内容却不是<code>Https</code> 的，这样情况下，Chrome 会为了安全考虑而不会显示你插入的内容。</p>]]></content:encoded>
       
       
       
       <category domain="https://kylindc.github.io/tags/Hexo/">Hexo</category>
       
       
-      <comments>https://kylindc.github.io/post/53723/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/53723/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title> Hexo 折腾手记其二：编辑器增强及推荐插件</title>
-      <link>https://kylindc.github.io/post/31930/</link>
-      <guid>https://kylindc.github.io/post/31930/</guid>
+      <link>https://kylindc.github.io/posts/31930/</link>
+      <guid>https://kylindc.github.io/posts/31930/</guid>
       <pubDate>Sat, 12 Aug 2017 18:05:21 GMT</pubDate>
       
         
@@ -1128,21 +1128,21 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="编辑器增强"><a href="# 编辑器增强" class="headerlink" title="编辑器增强"></a>编辑器增强</h2><h3 id="Pull-Quote- 引用"><a href="#Pull-Quote- 引用" class="headerlink" title="Pull Quote 引用"></a>Pull Quote 引用</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pullquote [class] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endpullquote %&#125;</span><br></pre></td></tr></table></figure><p>class 可为 right 或 left。记得去掉中括号。</p><p>效果：</p><blockquote class="pullquote right"><p>张岱（1597 年－1679 年），明末清初散文家，字宗子(呼应其岱，泰山，五岳之宗)，又字石公，号陶庵，别号蝶庵居士，山阴（今浙江绍兴）人。</p></blockquote><p>崇祯五年十二月，余住西湖。大雪三日，湖中人鸟声俱绝。</p><p>是日，更定矣，余拏一小舟，拥毳衣、炉火，独往湖心亭看雪。雾凇沆砀，天与云、与山、与水，上下一白。湖上影子，惟长堤一痕、湖心亭一点，与余舟一芥，舟中人两三粒而已。</p><p>到亭上，有两人铺毡对坐，一童子烧酒，炉正沸。见余大喜，曰：“湖中焉得更有此人！”拉余同饮，余强饮三大白而别。问其姓氏，是金陵人，客此。</p><p>及下船，舟子喃喃曰：“莫说相公痴，更有痴似相公者。</p><h3 id="多形式引用"><a href="# 多形式引用" class="headerlink" title="多形式引用"></a>多形式引用 </h3><p> 更多形式的引用参看官网文档，<a href="https://hexo.io/zh-cn/docs/tag-plugins.html#Pull-Quote">Hexo - 标签插件</a>。</p><p>也可看此处的 <a href="https://probberechts.github.io/cactus-dark/2013/12/25/tag-plugins/"> 效果示范</a>。</p><h3 id="显示拼音或日文假名"><a href="# 显示拼音或日文假名" class="headerlink" title="显示拼音或日文假名"></a>显示拼音或日文假名 </h3><p> 按照这样的模版配置就好。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">lang</span>=<span class="string">&#x27;ja&#x27;</span>&gt;</span><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>作画 <span class="tag">&lt;<span class="name">rp</span>&gt;</span>（<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;<span class="name">rt</span>&gt;</span> さくが<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;<span class="name">rp</span>&gt;</span>）<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span><span class="tag">&lt;/<span class="name">sapn</span>&gt;</span></span><br></pre></td></tr></table></figure><p>显示效果：<span lang='ja'><ruby><rb>作画 </rb><rp>（</rp><rt> さくが</rt><rp>）</rp></ruby></p><p>段落显示效果如下：</p><blockquote><p><span lang='ja'><ruby>暦 <rp>（</rp><rt> こよみ </rt><rp>）</rp></ruby> の上に春は立ちながら厳しい寒さが続いておりますがいかがお過ごしですか？風邪などひいていませんか？<ruby>霜焼 <rp>（</rp><rt> しもや </rt><rp>）</rp></ruby> けなどしていませんか？突然の手紙ごめんなさい。まだまだ寒く長い夜のついでに目を通していただければ <ruby> 幸<rp>（</rp><rt>さいわ </rt><rp>）</rp></ruby> いです。</span><a href="%5B%E6%9C%80%E5%AE%8C%E7%BE%8E%E7%9A%84%E7%A6%BB%E5%A9%9A%E2%80%94%E2%80%94%E5%85%89%E7%94%9F%E7%BB%99%E7%BB%93%E5%A4%8F%E7%9A%84%E4%BF%A1%5D(https://www.bilibili.com/video/av2209482/)">^1</a></p></blockquote><h3 id="插入尾注"><a href="# 插入尾注" class="headerlink" title="插入尾注"></a>插入尾注 </h3><p> 安装 <a href="https://github.com/quentin-chen/hexo-reference">Hexo-Reference</a> 插件，</p><p>使用方式：</p><p><img src="/post/31930/1.jpg" loading="lazy"></p><p>使用效果可见上一段的尾注效果。</p><p>值得注意的是，在尾注里可以使用很多其他 Markdown 的效果，包括超链接，加粗等等。</p><p>还有一点就是这个尾注不能加在小标题上，不然渲染时会报错。</p><h2 id="推荐插件"><a href="# 推荐插件" class="headerlink" title="推荐插件"></a>推荐插件 </h2><p> 这些插件都可以自行选择采用：</p><p>博客加密：<a href="https://github.com/MikeCoder/hexo-blog-encrypt">hexo-blog-encrypt</a></p><p>自动生成 RSS：<a href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a></p><p>网页插入 PDF：<a href="https://github.com/superalsrk/hexo-pdf">hexo-pdf</a></p><p>自动生成站点地图：<a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></p><p>THML, CSS, JS, 图片优化：<a href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier</a></p><p>为文章生成唯一的链接，方便搜索引擎抓取：<a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a>。不过在使用这个插件时，千万不要在 <code>hexo server</code> 下直接更改 Markdown 文件名，不然会导致文件空白。</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="编辑器增强"><a href="# 编辑器增强" class="headerlink" title="编辑器增强"></a>编辑器增强</h2><h3 id="Pull-Quote- 引用"><a href="#Pull-Quote- 引用" class="headerlink" title="Pull Quote 引用"></a>Pull Quote 引用</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pullquote [class] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endpullquote %&#125;</span><br></pre></td></tr></table></figure><p>class 可为 right 或 left。记得去掉中括号。</p><p>效果：</p><blockquote class="pullquote right"><p>张岱（1597 年－1679 年），明末清初散文家，字宗子(呼应其岱，泰山，五岳之宗)，又字石公，号陶庵，别号蝶庵居士，山阴（今浙江绍兴）人。</p></blockquote><p>崇祯五年十二月，余住西湖。大雪三日，湖中人鸟声俱绝。</p><p>是日，更定矣，余拏一小舟，拥毳衣、炉火，独往湖心亭看雪。雾凇沆砀，天与云、与山、与水，上下一白。湖上影子，惟长堤一痕、湖心亭一点，与余舟一芥，舟中人两三粒而已。</p><p>到亭上，有两人铺毡对坐，一童子烧酒，炉正沸。见余大喜，曰：“湖中焉得更有此人！”拉余同饮，余强饮三大白而别。问其姓氏，是金陵人，客此。</p><p>及下船，舟子喃喃曰：“莫说相公痴，更有痴似相公者。</p><h3 id="多形式引用"><a href="# 多形式引用" class="headerlink" title="多形式引用"></a>多形式引用 </h3><p> 更多形式的引用参看官网文档，<a href="https://hexo.io/zh-cn/docs/tag-plugins.html#Pull-Quote">Hexo - 标签插件</a>。</p><p>也可看此处的 <a href="https://probberechts.github.io/cactus-dark/2013/12/25/tag-plugins/"> 效果示范</a>。</p><h3 id="显示拼音或日文假名"><a href="# 显示拼音或日文假名" class="headerlink" title="显示拼音或日文假名"></a>显示拼音或日文假名 </h3><p> 按照这样的模版配置就好。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">lang</span>=<span class="string">&#x27;ja&#x27;</span>&gt;</span><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>作画 <span class="tag">&lt;<span class="name">rp</span>&gt;</span>（<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;<span class="name">rt</span>&gt;</span> さくが<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;<span class="name">rp</span>&gt;</span>）<span class="tag">&lt;/<span class="name">rp</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span><span class="tag">&lt;/<span class="name">sapn</span>&gt;</span></span><br></pre></td></tr></table></figure><p>显示效果：<span lang='ja'><ruby><rb>作画 </rb><rp>（</rp><rt> さくが</rt><rp>）</rp></ruby></p><p>段落显示效果如下：</p><blockquote><p><span lang='ja'><ruby>暦 <rp>（</rp><rt> こよみ </rt><rp>）</rp></ruby> の上に春は立ちながら厳しい寒さが続いておりますがいかがお過ごしですか？風邪などひいていませんか？<ruby>霜焼 <rp>（</rp><rt> しもや </rt><rp>）</rp></ruby> けなどしていませんか？突然の手紙ごめんなさい。まだまだ寒く長い夜のついでに目を通していただければ <ruby> 幸<rp>（</rp><rt>さいわ </rt><rp>）</rp></ruby> いです。</span><a href="%5B%E6%9C%80%E5%AE%8C%E7%BE%8E%E7%9A%84%E7%A6%BB%E5%A9%9A%E2%80%94%E2%80%94%E5%85%89%E7%94%9F%E7%BB%99%E7%BB%93%E5%A4%8F%E7%9A%84%E4%BF%A1%5D(https://www.bilibili.com/video/av2209482/)">^1</a></p></blockquote><h3 id="插入尾注"><a href="# 插入尾注" class="headerlink" title="插入尾注"></a>插入尾注 </h3><p> 安装 <a href="https://github.com/quentin-chen/hexo-reference">Hexo-Reference</a> 插件，</p><p>使用方式：</p><p><img src="/posts/31930/1.jpg" loading="lazy"></p><p>使用效果可见上一段的尾注效果。</p><p>值得注意的是，在尾注里可以使用很多其他 Markdown 的效果，包括超链接，加粗等等。</p><p>还有一点就是这个尾注不能加在小标题上，不然渲染时会报错。</p><h2 id="推荐插件"><a href="# 推荐插件" class="headerlink" title="推荐插件"></a>推荐插件 </h2><p> 这些插件都可以自行选择采用：</p><p>博客加密：<a href="https://github.com/MikeCoder/hexo-blog-encrypt">hexo-blog-encrypt</a></p><p>自动生成 RSS：<a href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a></p><p>网页插入 PDF：<a href="https://github.com/superalsrk/hexo-pdf">hexo-pdf</a></p><p>自动生成站点地图：<a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></p><p>THML, CSS, JS, 图片优化：<a href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier</a></p><p>为文章生成唯一的链接，方便搜索引擎抓取：<a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a>。不过在使用这个插件时，千万不要在 <code>hexo server</code> 下直接更改 Markdown 文件名，不然会导致文件空白。</p>]]></content:encoded>
       
       
       
       <category domain="https://kylindc.github.io/tags/Hexo/">Hexo</category>
       
       
-      <comments>https://kylindc.github.io/post/31930/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/31930/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Hexo 折腾手记其一：使用 Adobe Typekit 云字体 (Web Font)</title>
-      <link>https://kylindc.github.io/post/37189/</link>
-      <guid>https://kylindc.github.io/post/37189/</guid>
+      <link>https://kylindc.github.io/posts/37189/</link>
+      <guid>https://kylindc.github.io/posts/37189/</guid>
       <pubDate>Sat, 12 Aug 2017 18:00:32 GMT</pubDate>
       
         
@@ -1155,7 +1155,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="为什么选择使用云字体（Web-font）？"><a href="# 为什么选择使用云字体（Web-font）？" class="headerlink" title="为什么选择使用云字体（Web font）？"></a>为什么选择使用云字体（Web font）？</h2><p>使用云字体可以保证博客在任何设备上的显示字体的统一性，缺点就是加载会稍微慢一些。由于 Google Font 在大陆地区访问困难，所以可以选择 Adobe Typekit 云字体。免费的 Adobe Typekit 账户可以添加两个字体，每月页面渲染册数 25,000 次，虽然不多，但作为个人博客用户也足够了。</p><h2 id="配置方法及步骤"><a href="# 配置方法及步骤" class="headerlink" title="配置方法及步骤"></a>配置方法及步骤 </h2><p> 注册 Adobe 账户（如果没有的话） -&gt; 登录 <a href="https://typekit.com/">Adobe Typekit</a> -&gt; 选择右上角 Kits </p><p><img src="/post/37189/1.jpg" loading="lazy"></p><p> -&gt; 创建新的 Kit -&gt; 填好 Kit 的名字和你的博客域名（建议将 <code>local</code> 也填上） -&gt; 切换到 Adobe Typekit<a href="https://typekit.com/fonts">字体选择页面</a> -&gt; 分别搜索<code>Source Han Serif Simplified Chinese</code>（思源宋简体）和<code>Source Han Sans Simplified Chinese</code>（思源黑简体） -&gt; 并将两个都添加至之前所新建的 Kit 当中（确认 Character Set 为 Dynamic Subsetting） -&gt; 在右上角 Kits 中选择你新建的 Kit 进入 Kit 编辑页面 -&gt; 在左侧区域选择字重(建议选择一个字体就行，字重不要超过三个)</p><p><img src="/post/37189/2.jpg" alt="字重选择" loading="lazy"></p><p> -&gt; 右下角点<code>Publish</code> -&gt; 右上角点<code>Embed Code</code> -&gt; 复制出现的代码</p><p><img src="/post/37189/3.jpg" alt="复制框选的代码" loading="lazy"></p><p> -&gt; 将其粘贴到 <code> 主题文件夹 \layout\_partial\head.ejs</code>文件中，位置见图</p><p><img src="/post/37189/4.jpg" alt="粘贴的位置" loading="lazy"></p><p> -&gt; 编辑 <code> 主题文件夹 \source\css\_variables.styl</code>文件 -&gt; <code>source-han-serif-sc</code>（思源宋）或者 <code>source-han-sans-simplified-c</code>（思源黑）粘贴在<code>$font-family-body = </code> 后面（就在第一行附近），也可以更改顺序（如果你知道你在做什么） -&gt; 最后再重新编译发布就好了</p><h2 id="关于字体和字重的选择"><a href="# 关于字体和字重的选择" class="headerlink" title="关于字体和字重的选择"></a>关于字体和字重的选择 </h2><p> 关于字体的选择：Adobe Typekit 中能用的、好用的中文字体也就只有思源黑、思源宋这两个了，建议选择思源黑，因为在大多数 Windows 电脑上，宋体的渲染结果都很辣眼睛。</p><p>关于字重的选择：字重选择越多，页面所要加载的文件也就越大，加载速也就越慢，建议不要超过三个，一般包括常规体和粗体就行了。</p><p>本文参考了<a href="http://jr0cket.co.uk/2014/06/hexo-theme-using-ubuntu-google-fonts.html">Hexo Theme - Using Ubuntu Google Fonts</a>.</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="为什么选择使用云字体（Web-font）？"><a href="# 为什么选择使用云字体（Web-font）？" class="headerlink" title="为什么选择使用云字体（Web font）？"></a>为什么选择使用云字体（Web font）？</h2><p>使用云字体可以保证博客在任何设备上的显示字体的统一性，缺点就是加载会稍微慢一些。由于 Google Font 在大陆地区访问困难，所以可以选择 Adobe Typekit 云字体。免费的 Adobe Typekit 账户可以添加两个字体，每月页面渲染册数 25,000 次，虽然不多，但作为个人博客用户也足够了。</p><h2 id="配置方法及步骤"><a href="# 配置方法及步骤" class="headerlink" title="配置方法及步骤"></a>配置方法及步骤 </h2><p> 注册 Adobe 账户（如果没有的话） -&gt; 登录 <a href="https://typekit.com/">Adobe Typekit</a> -&gt; 选择右上角 Kits </p><p><img src="/posts/37189/1.jpg" loading="lazy"></p><p> -&gt; 创建新的 Kit -&gt; 填好 Kit 的名字和你的博客域名（建议将 <code>local</code> 也填上） -&gt; 切换到 Adobe Typekit<a href="https://typekit.com/fonts">字体选择页面</a> -&gt; 分别搜索<code>Source Han Serif Simplified Chinese</code>（思源宋简体）和<code>Source Han Sans Simplified Chinese</code>（思源黑简体） -&gt; 并将两个都添加至之前所新建的 Kit 当中（确认 Character Set 为 Dynamic Subsetting） -&gt; 在右上角 Kits 中选择你新建的 Kit 进入 Kit 编辑页面 -&gt; 在左侧区域选择字重(建议选择一个字体就行，字重不要超过三个)</p><p><img src="/posts/37189/2.jpg" alt="字重选择" loading="lazy"></p><p> -&gt; 右下角点<code>Publish</code> -&gt; 右上角点<code>Embed Code</code> -&gt; 复制出现的代码</p><p><img src="/posts/37189/3.jpg" alt="复制框选的代码" loading="lazy"></p><p> -&gt; 将其粘贴到 <code> 主题文件夹 \layout\_partial\head.ejs</code>文件中，位置见图</p><p><img src="/posts/37189/4.jpg" alt="粘贴的位置" loading="lazy"></p><p> -&gt; 编辑 <code> 主题文件夹 \source\css\_variables.styl</code>文件 -&gt; <code>source-han-serif-sc</code>（思源宋）或者 <code>source-han-sans-simplified-c</code>（思源黑）粘贴在<code>$font-family-body = </code> 后面（就在第一行附近），也可以更改顺序（如果你知道你在做什么） -&gt; 最后再重新编译发布就好了</p><h2 id="关于字体和字重的选择"><a href="# 关于字体和字重的选择" class="headerlink" title="关于字体和字重的选择"></a>关于字体和字重的选择 </h2><p> 关于字体的选择：Adobe Typekit 中能用的、好用的中文字体也就只有思源黑、思源宋这两个了，建议选择思源黑，因为在大多数 Windows 电脑上，宋体的渲染结果都很辣眼睛。</p><p>关于字重的选择：字重选择越多，页面所要加载的文件也就越大，加载速也就越慢，建议不要超过三个，一般包括常规体和粗体就行了。</p><p>本文参考了<a href="http://jr0cket.co.uk/2014/06/hexo-theme-using-ubuntu-google-fonts.html">Hexo Theme - Using Ubuntu Google Fonts</a>.</p>]]></content:encoded>
       
       
       
@@ -1164,14 +1164,14 @@
       <category domain="https://kylindc.github.io/tags/%E5%AD%97%E4%BD%93/">字体</category>
       
       
-      <comments>https://kylindc.github.io/post/37189/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/37189/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>关于白夜行中某些隐藏剧情的推断</title>
-      <link>https://kylindc.github.io/post/37332/</link>
-      <guid>https://kylindc.github.io/post/37332/</guid>
+      <link>https://kylindc.github.io/posts/37332/</link>
+      <guid>https://kylindc.github.io/posts/37332/</guid>
       <pubDate>Wed, 29 Jun 2016 10:14:00 GMT</pubDate>
       
         
@@ -1187,21 +1187,21 @@
       
       
       
-      <content:encoded><![CDATA[<blockquote><p><strong>本文严重剧透以及长难句预警 </strong><br><strong> 内容相当相当粗俗，小孩子还请自觉回避</strong></p></blockquote><p><img src="/post/37332/%E7%99%BD%E5%A4%9C%E8%A1%8C.jpg" loading="lazy"></p><h2 id="亮司不能射精的原因"><a href="# 亮司不能射精的原因" class="headerlink" title="亮司不能射精的原因"></a>亮司不能射精的原因 </h2><p> 一开始我还以为是亮司答应帮助友彦洗脱嫌疑，强行与尸体发生性关系后被恶心到了，留下了心理阴影所以性功能出现障碍，心想这亮司也不是铁板一块啊。后来觉得这个时间点不对，还可以提前。引起我注意的是那晚奈美江（后来成为亮司公司的会计）回去拿手表时亮司做出的疯狂举动：亮司被嘲讽做爱时间短后显得非常暴躁并做出了性暴露狂的行为，这并不能简单的理解为青春期少年对性事的敏感和冲动，亮司一直以来就是一个冷静且缺乏情绪流露的一个人，这次的反应如此之大，只能归因于奈美江无意中碰到了亮司的痛点：亮司不是做爱时间短，而是时间太长（不能射精）。性暴露的行为也可以作为一个佐证，很多暴露狂都因为在性行为上存在一定程度上的心理或者生理障碍而变得性格畸形，急于想证明自己。（看美剧瞎猜的理论）后来再次翻书得到了印证，书中原文：「有本事就让它射啊！」。</p><p>那么在这个时候，亮司焦虑的原因是什么？没意识到自己不能射精的原因？但是在答应帮忙友彦的时候又显得非常有计划，他应该是知道有个人是能让他射精的，当然这个人就是雪穗。我的一个不负责任的猜测是说不定亮司这时候对雪穗是存在抵触甚至反抗情绪，但是为了救友彦，他还是屈服了。当然可能还有其他猜测，我的猜测也算不上是合理。</p><p>这样的话，尸体里面的精液毫无疑问是雪穗帮了忙，后面亮司的情人典子（药剂师）的猜测也呼应了这一点。典子用手的那一次亮司心里想的说不定还是雪穗帮他的那一次，为什么这一次的印象这么深刻呢？亮司与雪穗之间的性行为其实并不频繁？（我自己也觉得这个猜测挺牵强的）</p><p>亮司可能从一开始就存在性功能障碍，心理创伤来自于小时候目睹的暴行，想必是多么的残忍。</p><h2 id="雪穗的第三次「偷走他人的灵魂」"><a href="# 雪穗的第三次「偷走他人的灵魂」" class="headerlink" title="雪穗的第三次「偷走他人的灵魂」"></a>雪穗的第三次「偷走他人的灵魂」</h2><p>「偷走他人的灵魂」这种行为当然指的就是亮司对他人实施性侵犯，然后雪穗做第一个目击者，以共同保守秘密为由，来达到自己的目的。总共有三次，第一次在雪穗初中时，为的是封口；第二次在大学时，为的是嫉妒；第三次的受害者是雪穗第二任丈夫的女儿，为的是获得亲密关系。第三次与前两次最大的不同在于第三次的强奸过程发生了插入过程，而前两次并没有，书中给了足够的暗示（「下腹部残留的闷痛」）来暗示第三次与前两次的不同。为什么第三次要如此的伤害一个不相干的人，（当然前两次也是很大的伤害，但这一次的伤害更无情）从目的和结果来看完全没必要，我能想到的有以下两种解释：</p><ul><li><p>第三次的施暴人并不是亮司，而是另一个更残暴或不受控制的一个人。但我觉得这种解释的可能性极小。</p></li><li><p>雪穗这一次如此残暴的原因是来自她心理的畸变：她已不能再生育。书里给了足够的暗示：雪穗第一任丈夫的第二任妻子已经怀孕。不能生育的原因来自她小时候遭受到的暴行，雪穗也意识到了这一点。处于嫉妒或者纯粹变态，她在知道自己所做的事情可能导致的永久伤害的情况下，还是施加了暴行，怎么讲，这个人已经没法洗白了。</p></li></ul><h2 id="推理的焦点"><a href="# 推理的焦点" class="headerlink" title="推理的焦点"></a>推理的焦点</h2><p>《白夜行》在叙事方式上很反常规，给了足够的配角 POV 描写，唯独缺乏主角的第一视角描写。我们对主角的所有印象都是来自于其他人的视角。事实上，我们对主角知之甚少。随着故事的不断发展，也能猜到凶手是谁，作为一个推理小说，推理的结果已经知道了，完成凶案过程推理的关键要素也到故事的后半部分才浮出水面，似乎没剩下多少推理的乐趣。</p><p>但如果把推理的焦点从犯罪本身转移到人身上，在蛛丝马迹中追随主角的脚步，推导主角所经历的一切以及心境的变化，想想就觉得刺激。不过能够推理的材料也不多，男女主除了在点题环节有过直接的情感表露之外，还有一两次的情绪失控，很难从中窥伺出内心所想。</p><p>其中最难把握的就是男女主角之间的关系了，除了像老警察所说的那样「共生」之外，还有更深层次的关系吗？不要被点题环节的情感流露所迷惑，他俩之间的关系似乎显得残酷的多。究竟这之间经历了怎样的变化？</p><p>值得注意的一点是，我们所有的这些颅内猫鼠游戏的全部材料来源都只是那本书，只是文本，而不是什么客观事实、犯罪现场。所以，文本作者的意图的显得非常重要，我们都是在作者的不断强调和暗示下，追逐着那跳动的影子。想想作者想告诉我们什么，揣摩作者的思路，说不定会有一些发现。</p><p>我只想出了以上两个我觉得有意思的点，搜索后也发现另一个人找到了些其他有意思的地方，请移步 <a href="https://book.douban.com/review/6284211/"> 那些隱去的事情</a>。如果有更多的隐藏剧情或者对本文有任何批评建议，欢迎探讨交流。</p>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p><strong>本文严重剧透以及长难句预警 </strong><br><strong> 内容相当相当粗俗，小孩子还请自觉回避</strong></p></blockquote><p><img src="/posts/37332/%E7%99%BD%E5%A4%9C%E8%A1%8C.jpg" loading="lazy"></p><h2 id="亮司不能射精的原因"><a href="# 亮司不能射精的原因" class="headerlink" title="亮司不能射精的原因"></a>亮司不能射精的原因 </h2><p> 一开始我还以为是亮司答应帮助友彦洗脱嫌疑，强行与尸体发生性关系后被恶心到了，留下了心理阴影所以性功能出现障碍，心想这亮司也不是铁板一块啊。后来觉得这个时间点不对，还可以提前。引起我注意的是那晚奈美江（后来成为亮司公司的会计）回去拿手表时亮司做出的疯狂举动：亮司被嘲讽做爱时间短后显得非常暴躁并做出了性暴露狂的行为，这并不能简单的理解为青春期少年对性事的敏感和冲动，亮司一直以来就是一个冷静且缺乏情绪流露的一个人，这次的反应如此之大，只能归因于奈美江无意中碰到了亮司的痛点：亮司不是做爱时间短，而是时间太长（不能射精）。性暴露的行为也可以作为一个佐证，很多暴露狂都因为在性行为上存在一定程度上的心理或者生理障碍而变得性格畸形，急于想证明自己。（看美剧瞎猜的理论）后来再次翻书得到了印证，书中原文：「有本事就让它射啊！」。</p><p>那么在这个时候，亮司焦虑的原因是什么？没意识到自己不能射精的原因？但是在答应帮忙友彦的时候又显得非常有计划，他应该是知道有个人是能让他射精的，当然这个人就是雪穗。我的一个不负责任的猜测是说不定亮司这时候对雪穗是存在抵触甚至反抗情绪，但是为了救友彦，他还是屈服了。当然可能还有其他猜测，我的猜测也算不上是合理。</p><p>这样的话，尸体里面的精液毫无疑问是雪穗帮了忙，后面亮司的情人典子（药剂师）的猜测也呼应了这一点。典子用手的那一次亮司心里想的说不定还是雪穗帮他的那一次，为什么这一次的印象这么深刻呢？亮司与雪穗之间的性行为其实并不频繁？（我自己也觉得这个猜测挺牵强的）</p><p>亮司可能从一开始就存在性功能障碍，心理创伤来自于小时候目睹的暴行，想必是多么的残忍。</p><h2 id="雪穗的第三次「偷走他人的灵魂」"><a href="# 雪穗的第三次「偷走他人的灵魂」" class="headerlink" title="雪穗的第三次「偷走他人的灵魂」"></a>雪穗的第三次「偷走他人的灵魂」</h2><p>「偷走他人的灵魂」这种行为当然指的就是亮司对他人实施性侵犯，然后雪穗做第一个目击者，以共同保守秘密为由，来达到自己的目的。总共有三次，第一次在雪穗初中时，为的是封口；第二次在大学时，为的是嫉妒；第三次的受害者是雪穗第二任丈夫的女儿，为的是获得亲密关系。第三次与前两次最大的不同在于第三次的强奸过程发生了插入过程，而前两次并没有，书中给了足够的暗示（「下腹部残留的闷痛」）来暗示第三次与前两次的不同。为什么第三次要如此的伤害一个不相干的人，（当然前两次也是很大的伤害，但这一次的伤害更无情）从目的和结果来看完全没必要，我能想到的有以下两种解释：</p><ul><li><p>第三次的施暴人并不是亮司，而是另一个更残暴或不受控制的一个人。但我觉得这种解释的可能性极小。</p></li><li><p>雪穗这一次如此残暴的原因是来自她心理的畸变：她已不能再生育。书里给了足够的暗示：雪穗第一任丈夫的第二任妻子已经怀孕。不能生育的原因来自她小时候遭受到的暴行，雪穗也意识到了这一点。处于嫉妒或者纯粹变态，她在知道自己所做的事情可能导致的永久伤害的情况下，还是施加了暴行，怎么讲，这个人已经没法洗白了。</p></li></ul><h2 id="推理的焦点"><a href="# 推理的焦点" class="headerlink" title="推理的焦点"></a>推理的焦点</h2><p>《白夜行》在叙事方式上很反常规，给了足够的配角 POV 描写，唯独缺乏主角的第一视角描写。我们对主角的所有印象都是来自于其他人的视角。事实上，我们对主角知之甚少。随着故事的不断发展，也能猜到凶手是谁，作为一个推理小说，推理的结果已经知道了，完成凶案过程推理的关键要素也到故事的后半部分才浮出水面，似乎没剩下多少推理的乐趣。</p><p>但如果把推理的焦点从犯罪本身转移到人身上，在蛛丝马迹中追随主角的脚步，推导主角所经历的一切以及心境的变化，想想就觉得刺激。不过能够推理的材料也不多，男女主除了在点题环节有过直接的情感表露之外，还有一两次的情绪失控，很难从中窥伺出内心所想。</p><p>其中最难把握的就是男女主角之间的关系了，除了像老警察所说的那样「共生」之外，还有更深层次的关系吗？不要被点题环节的情感流露所迷惑，他俩之间的关系似乎显得残酷的多。究竟这之间经历了怎样的变化？</p><p>值得注意的一点是，我们所有的这些颅内猫鼠游戏的全部材料来源都只是那本书，只是文本，而不是什么客观事实、犯罪现场。所以，文本作者的意图的显得非常重要，我们都是在作者的不断强调和暗示下，追逐着那跳动的影子。想想作者想告诉我们什么，揣摩作者的思路，说不定会有一些发现。</p><p>我只想出了以上两个我觉得有意思的点，搜索后也发现另一个人找到了些其他有意思的地方，请移步 <a href="https://book.douban.com/review/6284211/"> 那些隱去的事情</a>。如果有更多的隐藏剧情或者对本文有任何批评建议，欢迎探讨交流。</p>]]></content:encoded>
       
       
       
       <category domain="https://kylindc.github.io/tags/%E4%B9%A6/">书</category>
       
       
-      <comments>https://kylindc.github.io/post/37332/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/37332/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>特师文集</title>
-      <link>https://kylindc.github.io/post/54430/</link>
-      <guid>https://kylindc.github.io/post/54430/</guid>
+      <link>https://kylindc.github.io/posts/54430/</link>
+      <guid>https://kylindc.github.io/posts/54430/</guid>
       <pubDate>Tue, 29 Sep 2015 23:48:00 GMT</pubDate>
       
         
@@ -1222,14 +1222,14 @@
       <category domain="https://kylindc.github.io/tags/%E6%9D%82/">杂</category>
       
       
-      <comments>https://kylindc.github.io/post/54430/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/54430/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>关于《蛤蟆的油》</title>
-      <link>https://kylindc.github.io/post/32259/</link>
-      <guid>https://kylindc.github.io/post/32259/</guid>
+      <link>https://kylindc.github.io/posts/32259/</link>
+      <guid>https://kylindc.github.io/posts/32259/</guid>
       <pubDate>Thu, 09 Jul 2015 23:51:00 GMT</pubDate>
       
         
@@ -1250,14 +1250,14 @@
       <category domain="https://kylindc.github.io/tags/%E4%B9%A6/">书</category>
       
       
-      <comments>https://kylindc.github.io/post/32259/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/32259/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>如何评价 IPN 出品的《無次元》节目？</title>
-      <link>https://kylindc.github.io/post/31171/</link>
-      <guid>https://kylindc.github.io/post/31171/</guid>
+      <link>https://kylindc.github.io/posts/31171/</link>
+      <guid>https://kylindc.github.io/posts/31171/</guid>
       <pubDate>Sat, 07 Mar 2015 23:01:00 GMT</pubDate>
       
         
@@ -1273,21 +1273,21 @@
       
       
       
-      <content:encoded><![CDATA[<p>我觉得《無次元》既然是一个有关于声音的，又带有强烈的实验艺术特征的博客，我们不妨把关键词放到「艺术」二字上。</p><p>最近重新看了一遍《谈美》，有一些话让我印象很深。一直在脑海里回响的是这样一句话：</p><blockquote><p>美感经验是直觉的而不是反省的。</p></blockquote><p>或许，我们在欣赏《無次元》的时候应该考虑的就是这样的「直觉经验」。就像欣赏其他的艺术类型一样。</p><p>普通人不懂色彩理论，不懂绘图结构，但是这并不妨碍我们走进美术馆去转一转，或许就能找到那一幅让你驻足良久的画呢？</p><p>普通人不懂诗歌结构，不懂意象的运用，但是击中心灵让人泪流满面的诗比比皆是。</p><p>我想，作为一个具有移情作用的非仿生人，我们是能够共享一些情感的，这些情感正是我们与作品之间交流的桥梁。也是不同艺术形式存在的基础。</p><p>在《無次元》第一期的时候，想想「The People United Will Never Be Defeated!」虽然身隔千里，不过我们还是被那样的热血所感染。</p><p>播客是一种媒介，而《無次元》正在尝试将它作为一个艺术形式。</p><p>所以，不妨用欣赏艺术的眼光去看待《無次元》。</p><p>就像其他艺术类型一样，同一期节目，每个人的感受并非完全一致。就像「她_的时候总要显形 [Playback Unit]」这期节目中，我的感觉很亲切，反复回到了初中毕业后的那个暑假，见到了好多老同学，和他们一起吐槽这个漫长的夏天。而我基友却觉得后背发麻。</p><p>虽然「直觉经验」在欣赏艺术的时候起了很大作用，但艺术欣赏并非完全的没有门槛。只有在接受欣赏艺术的教育之后才能感受到更高级的美感经验。这也是普通听众与《無次元》最大的距离吧。对具有强烈情感倾向的节目很有体会，觉得自己听懂了，对于其他节目就会一头雾水，不知所云。</p><p>这样的「直觉经验」才是最大的湿货吧。</p><p>《無次元》在做艺术尝试的同时还要加上显著的 <b> 实验 </b> 二字，甚至 <b> 实验 </b> 是《無次元》的灵魂。所以《無次元》在形式的表现上会更加多元化，更加非常规。但是关于实验艺术的事情我并不了解，就不多说了。</p><p>一直很喜欢《無次元》，最近不知道为什么好久没更新了，甚为遗憾。</p><p>看到李如一老师给这个问题下的每个回答都点了赞同，这种做法还蛮《無次元》的。其实我也是来想骗个赞的。</p><p>关于艺术一些自己的小看法，很幼稚，还请诸位多多见谅。</p><p>以上。</p><p>知乎回答地址：<a href="http://www.zhihu.com/question/27143033/answer/41848323">http://www.zhihu.com/question/27143033/answer/41848323</a></p><p>2015 年 3 月 13  星期五  凌晨 0：30</p><p>回答被無次元推荐了，简直不能太开心！</p><p><img src="/post/31171/1.jpg" loading="lazy"></p><p>2015 年 3 月 20 星期五 晚上 20：21</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>我觉得《無次元》既然是一个有关于声音的，又带有强烈的实验艺术特征的博客，我们不妨把关键词放到「艺术」二字上。</p><p>最近重新看了一遍《谈美》，有一些话让我印象很深。一直在脑海里回响的是这样一句话：</p><blockquote><p>美感经验是直觉的而不是反省的。</p></blockquote><p>或许，我们在欣赏《無次元》的时候应该考虑的就是这样的「直觉经验」。就像欣赏其他的艺术类型一样。</p><p>普通人不懂色彩理论，不懂绘图结构，但是这并不妨碍我们走进美术馆去转一转，或许就能找到那一幅让你驻足良久的画呢？</p><p>普通人不懂诗歌结构，不懂意象的运用，但是击中心灵让人泪流满面的诗比比皆是。</p><p>我想，作为一个具有移情作用的非仿生人，我们是能够共享一些情感的，这些情感正是我们与作品之间交流的桥梁。也是不同艺术形式存在的基础。</p><p>在《無次元》第一期的时候，想想「The People United Will Never Be Defeated!」虽然身隔千里，不过我们还是被那样的热血所感染。</p><p>播客是一种媒介，而《無次元》正在尝试将它作为一个艺术形式。</p><p>所以，不妨用欣赏艺术的眼光去看待《無次元》。</p><p>就像其他艺术类型一样，同一期节目，每个人的感受并非完全一致。就像「她_的时候总要显形 [Playback Unit]」这期节目中，我的感觉很亲切，反复回到了初中毕业后的那个暑假，见到了好多老同学，和他们一起吐槽这个漫长的夏天。而我基友却觉得后背发麻。</p><p>虽然「直觉经验」在欣赏艺术的时候起了很大作用，但艺术欣赏并非完全的没有门槛。只有在接受欣赏艺术的教育之后才能感受到更高级的美感经验。这也是普通听众与《無次元》最大的距离吧。对具有强烈情感倾向的节目很有体会，觉得自己听懂了，对于其他节目就会一头雾水，不知所云。</p><p>这样的「直觉经验」才是最大的湿货吧。</p><p>《無次元》在做艺术尝试的同时还要加上显著的 <b> 实验 </b> 二字，甚至 <b> 实验 </b> 是《無次元》的灵魂。所以《無次元》在形式的表现上会更加多元化，更加非常规。但是关于实验艺术的事情我并不了解，就不多说了。</p><p>一直很喜欢《無次元》，最近不知道为什么好久没更新了，甚为遗憾。</p><p>看到李如一老师给这个问题下的每个回答都点了赞同，这种做法还蛮《無次元》的。其实我也是来想骗个赞的。</p><p>关于艺术一些自己的小看法，很幼稚，还请诸位多多见谅。</p><p>以上。</p><p>知乎回答地址：<a href="http://www.zhihu.com/question/27143033/answer/41848323">http://www.zhihu.com/question/27143033/answer/41848323</a></p><p>2015 年 3 月 13  星期五  凌晨 0：30</p><p>回答被無次元推荐了，简直不能太开心！</p><p><img src="/posts/31171/1.jpg" loading="lazy"></p><p>2015 年 3 月 20 星期五 晚上 20：21</p>]]></content:encoded>
       
       
       
       <category domain="https://kylindc.github.io/tags/%E6%9D%82/">杂</category>
       
       
-      <comments>https://kylindc.github.io/post/31171/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/31171/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>关于《柯 P 新政》</title>
-      <link>https://kylindc.github.io/post/11378/</link>
-      <guid>https://kylindc.github.io/post/11378/</guid>
+      <link>https://kylindc.github.io/posts/11378/</link>
+      <guid>https://kylindc.github.io/posts/11378/</guid>
       <pubDate>Wed, 07 Jan 2015 00:45:00 GMT</pubDate>
       
         
@@ -1308,7 +1308,7 @@
       <category domain="https://kylindc.github.io/tags/%E6%94%BF/">政</category>
       
       
-      <comments>https://kylindc.github.io/post/11378/#disqus_thread</comments>
+      <comments>https://kylindc.github.io/posts/11378/#disqus_thread</comments>
       
     </item>
     
