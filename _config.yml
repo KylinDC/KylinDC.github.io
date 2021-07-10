@@ -167,6 +167,16 @@ sitemap:
 
 robotstxt:
   useragent: '*'
+  disallow:
+    - /js/
+    - /css/
+    - /fonts/
+    - /search.json
+    - /rss2.xml
+    - /atom.xml
+  allow:
+    - /
+    - /archives/
   sitemap: /sitemap.xml
 
 # mmedia player config
