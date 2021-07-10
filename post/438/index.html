@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="Number常规类型JS 中不区分int和float，无论是整数还是小数，其类型均为Number，在程序内部，Number类型的实质是一个 64 位的浮点数，因此 JavaScript 所能表示的数值范围为±1.7976931348623157e+308，其最小所能表示的小数为±5e-324，这两个边界值可以分别通过访问 Number 对象的 MAX_VALUE 属性和 MIN_VALUE 属性来">
+    <meta name="description" content="Number常规类型 JS 中不区分int 和float，无论是整数还是小数，其类型均为 Number，在程序内部，Number 类型的实质是一个 64 位的浮点数，因此 JavaScript 所能表示的数值范围为±1.7976931348623157e+308，其最小所能表示的小数为±5e-324，这两个边界值可以分别通过访问 Number 对象的 MAX_VALUE 属性和 MIN_VALUE">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript基本数据类型">
+<meta property="og:title" content="JavaScript 基本数据类型">
 <meta property="og:url" content="https://kylindc.github.io/post/438/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Number常规类型JS 中不区分int和float，无论是整数还是小数，其类型均为Number，在程序内部，Number类型的实质是一个 64 位的浮点数，因此 JavaScript 所能表示的数值范围为±1.7976931348623157e+308，其最小所能表示的小数为±5e-324，这两个边界值可以分别通过访问 Number 对象的 MAX_VALUE 属性和 MIN_VALUE 属性来">
+<meta property="og:site_name" content="Upside Down">
+<meta property="og:description" content="Number常规类型 JS 中不区分int 和float，无论是整数还是小数，其类型均为 Number，在程序内部，Number 类型的实质是一个 64 位的浮点数，因此 JavaScript 所能表示的数值范围为±1.7976931348623157e+308，其最小所能表示的小数为±5e-324，这两个边界值可以分别通过访问 Number 对象的 MAX_VALUE 属性和 MIN_VALUE">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2018-11-20T11:54:52.000Z">
-<meta property="article:modified_time" content="2018-11-20T16:39:23.000Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:published_time" content="2018-11-20T19:54:52.000Z">
+<meta property="article:modified_time" content="2021-07-10T16:41:54.039Z">
+<meta property="article:author" content="KylinDC">
 <meta name="twitter:card" content="summary">
     
     
@@ -36,7 +36,7 @@
       
     
     <!-- title -->
-    <title>JavaScript基本数据类型</title>
+    <title>JavaScript 基本数据类型</title>
     <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
@@ -48,7 +48,9 @@
     
 	<!-- mathjax -->
 	
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Upside Down" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Upside Down" type="application/rss+xml">
+</head>
 
 <body class="max-width mx-auto px3 ltr">
     
@@ -91,21 +93,21 @@
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/post/438/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/438/&text=JavaScript基本数据类型"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/438/&title=JavaScript基本数据类型"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/438/&is_video=false&description=JavaScript基本数据类型"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=JavaScript基本数据类型&body=Check out this article: https://kylindc.github.io/post/438/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/438/&title=JavaScript基本数据类型"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript基本数据类型"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript基本数据类型"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript基本数据类型"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/438/&name=JavaScript基本数据类型&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/438/&t=JavaScript基本数据类型"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/438/&text=JavaScript 基本数据类型"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/438/&title=JavaScript 基本数据类型"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/438/&is_video=false&description=JavaScript 基本数据类型"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=JavaScript 基本数据类型&body=Check out this article: https://kylindc.github.io/post/438/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/438/&title=JavaScript 基本数据类型"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript 基本数据类型"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript 基本数据类型"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript 基本数据类型"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/438/&name=JavaScript 基本数据类型&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/438/&t=JavaScript 基本数据类型"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Number"><span class="toc-number">1.</span> <span class="toc-text">Number</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">常规类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.</span> <span class="toc-text">特殊类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">字符串类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">布尔类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83"><span class="toc-number">3.1.</span> <span class="toc-text">布尔类型比较</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Null-%E7%B1%BB%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">Null 类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Undefined-%E7%B1%BB%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">Undefined 类型</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Number"><span class="toc-number">1.</span> <span class="toc-text">Number</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">常规类型 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.</span> <span class="toc-text">特殊类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">字符串类型 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">布尔类型 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83"><span class="toc-number">3.1.</span> <span class="toc-text">布尔类型比较 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Null-%20%E7%B1%BB%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">Null 类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Undefined-%20%E7%B1%BB%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">Undefined 类型 </span></a></li></ol>
     </div>
   </span>
 </div>
@@ -117,19 +119,19 @@
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        JavaScript基本数据类型
+        JavaScript 基本数据类型
     </h1>
 
 
 
     <div class="meta">
       <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">John Doe</span>
+        <span itemprop="name">KylinDC</span>
       </span>
       
     <div class="postdate">
       
-        <time datetime="2018-11-20T11:54:52.000Z" itemprop="datePublished">2018-11-20</time>
+        <time datetime="2018-11-20T19:54:52.000Z" itemprop="datePublished">2018-11-20</time>
         
       
     </div>
@@ -144,19 +146,19 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2><h3 id="常规类型"><a href="#常规类型" class="headerlink" title="常规类型"></a>常规类型</h3><p>JS 中不区分<code>int</code>和<code>float</code>，无论是整数还是小数，其类型均为<code>Number</code>，在程序内部，<code>Number</code>类型的实质是一个 64 位的浮点数，因此 JavaScript 所能表示的数值范围为<code>±1.7976931348623157e+308</code>，其最小所能表示的小数为<code>±5e-324</code>，这两个边界值可以分别通过访问 Number 对象的 MAX_VALUE 属性和 MIN_VALUE 属性来获取。</p>
+    <h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2><h3 id="常规类型"><a href="# 常规类型" class="headerlink" title="常规类型"></a>常规类型 </h3><p>JS 中不区分<code>int</code> 和<code>float</code>，无论是整数还是小数，其类型均为 <code>Number</code>，在程序内部，<code>Number</code> 类型的实质是一个 64 位的浮点数，因此 JavaScript 所能表示的数值范围为<code>±1.7976931348623157e+308</code>，其最小所能表示的小数为<code>±5e-324</code>，这两个边界值可以分别通过访问 Number 对象的 MAX_VALUE 属性和 MIN_VALUE 属性来获取。</p>
 <p>参考：<a target="_blank" rel="noopener" href="http://blog.shaochuancs.com/javascript-number-range/">JavaScript 实验：数值范围</a></p>
-<h3 id="特殊类型"><a href="#特殊类型" class="headerlink" title="特殊类型"></a>特殊类型</h3><ul>
+<h3 id="特殊类型"><a href="# 特殊类型" class="headerlink" title="特殊类型"></a>特殊类型</h3><ul>
 <li><code>Infinity</code>：正无穷</li>
 <li><code>-Infinity</code>：负无穷</li>
 <li><code>NaN</code>：非数值</li>
 </ul>
-<h2 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h2><p>字符串类型用来表示文本数据，使用单引号或双引号来包裹起来表明此为字符串。</p>
+<h2 id="字符串类型"><a href="# 字符串类型" class="headerlink" title="字符串类型"></a>字符串类型 </h2><p> 字符串类型用来表示文本数据，使用单引号或双引号来包裹起来表明此为字符串。</p>
 <p>字符串一旦创建就不能再次修改，但是可以基于对原始字符串的操作来创建新的字符串。</p>
-<h2 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h2><p>布尔类型的值只有两种：<code>true</code>和<code>false</code>。</p>
+<h2 id="布尔类型"><a href="# 布尔类型" class="headerlink" title="布尔类型"></a>布尔类型 </h2><p> 布尔类型的值只有两种：<code>true</code>和<code>false</code>。</p>
 <p>null、undefined 在条件判断是都为<code>false</code>，其他值都为<code>true</code>，包括 0、-0、false、NaN、、或者空字符串（””）。</p>
-<h3 id="布尔类型比较"><a href="#布尔类型比较" class="headerlink" title="布尔类型比较"></a>布尔类型比较</h3><h2 id="Null-类型"><a href="#Null-类型" class="headerlink" title="Null 类型"></a>Null 类型</h2><p><code>null</code>是缺少的标识，指示变量未指向任何对象，可以将<code>null</code>理解为尚未创建的对象。注意使用<code>typeof null</code>时会返回<code>object</code>，这属于历时遗留因素。</p>
-<h2 id="Undefined-类型"><a href="#Undefined-类型" class="headerlink" title="Undefined 类型"></a>Undefined 类型</h2><p>一个没有被赋值的变量的类型是 undefined。如果方法或者是语句中操作的变量没有被赋值，则会返回 undefined。</p>
+<h3 id="布尔类型比较"><a href="# 布尔类型比较" class="headerlink" title="布尔类型比较"></a>布尔类型比较 </h3><h2 id="Null- 类型"><a href="#Null- 类型" class="headerlink" title="Null 类型"></a>Null 类型</h2><p><code>null</code> 是缺少的标识，指示变量未指向任何对象，可以将 <code>null</code> 理解为尚未创建的对象。注意使用 <code>typeof null</code> 时会返回<code>object</code>，这属于历时遗留因素。</p>
+<h2 id="Undefined- 类型"><a href="#Undefined- 类型" class="headerlink" title="Undefined 类型"></a>Undefined 类型 </h2><p> 一个没有被赋值的变量的类型是 undefined。如果方法或者是语句中操作的变量没有被赋值，则会返回 undefined。</p>
 
   </div>
 </article>
@@ -182,22 +184,22 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Number"><span class="toc-number">1.</span> <span class="toc-text">Number</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">常规类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.</span> <span class="toc-text">特殊类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">字符串类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">布尔类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83"><span class="toc-number">3.1.</span> <span class="toc-text">布尔类型比较</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Null-%E7%B1%BB%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">Null 类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Undefined-%E7%B1%BB%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">Undefined 类型</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Number"><span class="toc-number">1.</span> <span class="toc-text">Number</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">常规类型 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.</span> <span class="toc-text">特殊类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">字符串类型 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">布尔类型 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83"><span class="toc-number">3.1.</span> <span class="toc-text">布尔类型比较 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Null-%20%E7%B1%BB%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">Null 类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Undefined-%20%E7%B1%BB%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">Undefined 类型 </span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/post/438/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/438/&text=JavaScript基本数据类型"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/438/&title=JavaScript基本数据类型"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/438/&is_video=false&description=JavaScript基本数据类型"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=JavaScript基本数据类型&body=Check out this article: https://kylindc.github.io/post/438/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/438/&title=JavaScript基本数据类型"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript基本数据类型"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript基本数据类型"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript基本数据类型"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/438/&name=JavaScript基本数据类型&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/438/&t=JavaScript基本数据类型"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/438/&text=JavaScript 基本数据类型"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/438/&title=JavaScript 基本数据类型"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/438/&is_video=false&description=JavaScript 基本数据类型"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=JavaScript 基本数据类型&body=Check out this article: https://kylindc.github.io/post/438/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/438/&title=JavaScript 基本数据类型"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript 基本数据类型"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript 基本数据类型"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/438/&title=JavaScript 基本数据类型"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/438/&name=JavaScript 基本数据类型&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/438/&t=JavaScript 基本数据类型"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -219,7 +221,7 @@
     
     
     2016-2021
-    John Doe
+    KylinDC
   </div>
   <div class="footer-right">
     <nav>

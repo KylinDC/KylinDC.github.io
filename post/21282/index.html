@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="事务的概念数据库事务是指单个逻辑工作单元执行的一系列操作，要么完全执行要么完全不执行。 事务的 ACID 四个特性 原子性：事务包含的操作要么全部成功，要么全部失败，不会存在部分成功。 一致性：事务执行前后数据库都会处于一致的状态，即没有破坏数据库的完整性约束。 隔离性：数据库进行事务并发操作时，多个事务之间相互隔离，不会有所干扰。 持久性：事务一旦被提交之后，将会对数据库中的数据产生永久性的影响">
+    <meta name="description" content="事务的概念  数据库事务是指单个逻辑工作单元执行的一系列操作，要么完全执行要么完全不执行。 事务的 ACID 四个特性 原子性：事务包含的操作要么全部成功，要么全部失败，不会存在部分成功。 一致性：事务执行前后数据库都会处于一致的状态，即没有破坏数据库的完整性约束。 隔离性：数据库进行事务并发操作时，多个事务之间相互隔离，不会有所干扰。 持久性：事务一旦被提交之后，将会对数据库中的数据产生永久性的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL中的事务">
+<meta property="og:title" content="MySQL 中的事务">
 <meta property="og:url" content="https://kylindc.github.io/post/21282/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="事务的概念数据库事务是指单个逻辑工作单元执行的一系列操作，要么完全执行要么完全不执行。 事务的 ACID 四个特性 原子性：事务包含的操作要么全部成功，要么全部失败，不会存在部分成功。 一致性：事务执行前后数据库都会处于一致的状态，即没有破坏数据库的完整性约束。 隔离性：数据库进行事务并发操作时，多个事务之间相互隔离，不会有所干扰。 持久性：事务一旦被提交之后，将会对数据库中的数据产生永久性的影响">
+<meta property="og:site_name" content="Upside Down">
+<meta property="og:description" content="事务的概念  数据库事务是指单个逻辑工作单元执行的一系列操作，要么完全执行要么完全不执行。 事务的 ACID 四个特性 原子性：事务包含的操作要么全部成功，要么全部失败，不会存在部分成功。 一致性：事务执行前后数据库都会处于一致的状态，即没有破坏数据库的完整性约束。 隔离性：数据库进行事务并发操作时，多个事务之间相互隔离，不会有所干扰。 持久性：事务一旦被提交之后，将会对数据库中的数据产生永久性的">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2019-05-10T02:22:10.000Z">
-<meta property="article:modified_time" content="2019-05-12T15:42:11.000Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:published_time" content="2019-05-10T10:22:10.000Z">
+<meta property="article:modified_time" content="2021-07-10T16:41:54.039Z">
+<meta property="article:author" content="KylinDC">
 <meta name="twitter:card" content="summary">
     
     
@@ -36,7 +36,7 @@
       
     
     <!-- title -->
-    <title>MySQL中的事务</title>
+    <title>MySQL 中的事务</title>
     <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
@@ -48,7 +48,9 @@
     
 	<!-- mathjax -->
 	
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Upside Down" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Upside Down" type="application/rss+xml">
+</head>
 
 <body class="max-width mx-auto px3 ltr">
     
@@ -91,21 +93,21 @@
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/post/21282/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/21282/&text=MySQL中的事务"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/21282/&title=MySQL中的事务"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/21282/&is_video=false&description=MySQL中的事务"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=MySQL中的事务&body=Check out this article: https://kylindc.github.io/post/21282/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/21282/&title=MySQL中的事务"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL中的事务"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL中的事务"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL中的事务"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/21282/&name=MySQL中的事务&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/21282/&t=MySQL中的事务"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/21282/&text=MySQL 中的事务"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/21282/&title=MySQL 中的事务"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/21282/&is_video=false&description=MySQL 中的事务"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=MySQL 中的事务&body=Check out this article: https://kylindc.github.io/post/21282/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/21282/&title=MySQL 中的事务"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL 中的事务"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL 中的事务"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL 中的事务"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/21282/&name=MySQL 中的事务&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/21282/&t=MySQL 中的事务"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">事务的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84-ACID-%E5%9B%9B%E4%B8%AA%E7%89%B9%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">事务的 ACID 四个特性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">事务的操作命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">3.</span> <span class="toc-text">参考</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">事务的概念 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%20-ACID-%20%E5%9B%9B%E4%B8%AA%E7%89%B9%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">事务的 ACID 四个特性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">事务的操作命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">3.</span> <span class="toc-text">参考</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -117,19 +119,19 @@
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        MySQL中的事务
+        MySQL 中的事务
     </h1>
 
 
 
     <div class="meta">
       <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">John Doe</span>
+        <span itemprop="name">KylinDC</span>
       </span>
       
     <div class="postdate">
       
-        <time datetime="2019-05-10T02:22:10.000Z" itemprop="datePublished">2019-05-10</time>
+        <time datetime="2019-05-10T10:22:10.000Z" itemprop="datePublished">2019-05-10</time>
         
       
     </div>
@@ -144,14 +146,14 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="事务的概念"><a href="#事务的概念" class="headerlink" title="事务的概念"></a>事务的概念</h2><p>数据库事务是指单个逻辑工作单元执行的一系列操作，要么完全执行要么完全不执行。</p>
-<h3 id="事务的-ACID-四个特性"><a href="#事务的-ACID-四个特性" class="headerlink" title="事务的 ACID 四个特性"></a>事务的 ACID 四个特性</h3><ul>
+    <h2 id="事务的概念"><a href="# 事务的概念" class="headerlink" title="事务的概念"></a>事务的概念 </h2><p> 数据库事务是指单个逻辑工作单元执行的一系列操作，要么完全执行要么完全不执行。</p>
+<h3 id="事务的 -ACID- 四个特性"><a href="# 事务的 -ACID- 四个特性" class="headerlink" title="事务的 ACID 四个特性"></a>事务的 ACID 四个特性</h3><ul>
 <li>原子性：事务包含的操作要么全部成功，要么全部失败，不会存在部分成功。</li>
 <li>一致性：事务执行前后数据库都会处于一致的状态，即没有破坏数据库的完整性约束。</li>
 <li>隔离性：数据库进行事务并发操作时，多个事务之间相互隔离，不会有所干扰。</li>
 <li>持久性：事务一旦被提交之后，将会对数据库中的数据产生永久性的影响，即使数据库出现故障也不会丢失。</li>
 </ul>
-<h2 id="事务的操作命令"><a href="#事务的操作命令" class="headerlink" title="事务的操作命令"></a>事务的操作命令</h2><ul>
+<h2 id="事务的操作命令"><a href="# 事务的操作命令" class="headerlink" title="事务的操作命令"></a>事务的操作命令</h2><ul>
 <li>BEGIN/START TRANSACTION：开启一个事务</li>
 <li>COMMIT/COMMIT WORK：提交事务，使得对数据库的修改成为永久性的</li>
 <li>ROLLBACK/ROLLBACK WORK：恢复到上个 COMMIT 或保存点的状态</li>
@@ -160,7 +162,7 @@
 <li>ROLLBACK TO savepoint_name：回滚到特定的保存点</li>
 <li>SET TRANSACTION：用来设置事务的隔离级别</li>
 </ul>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<h2 id="参考"><a href="# 参考" class="headerlink" title="参考"></a>参考</h2><ul>
 <li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/bcc614524024">理解事务 - MySQL 事务处理机制</a></li>
 <li><a target="_blank" rel="noopener" href="https://draveness.me/mysql-transaction">『浅入深出』MySQL 中事务的实现</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.runoob.com/mysql/mysql-transaction.html">菜鸟学院 - MySQL 事务</a></li>
@@ -191,22 +193,22 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">事务的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84-ACID-%E5%9B%9B%E4%B8%AA%E7%89%B9%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">事务的 ACID 四个特性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">事务的操作命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">3.</span> <span class="toc-text">参考</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">事务的概念 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%20-ACID-%20%E5%9B%9B%E4%B8%AA%E7%89%B9%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">事务的 ACID 四个特性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">事务的操作命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">3.</span> <span class="toc-text">参考</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/post/21282/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/21282/&text=MySQL中的事务"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/21282/&title=MySQL中的事务"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/21282/&is_video=false&description=MySQL中的事务"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=MySQL中的事务&body=Check out this article: https://kylindc.github.io/post/21282/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/21282/&title=MySQL中的事务"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL中的事务"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL中的事务"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL中的事务"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/21282/&name=MySQL中的事务&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/21282/&t=MySQL中的事务"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/post/21282/&text=MySQL 中的事务"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/post/21282/&title=MySQL 中的事务"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/post/21282/&is_video=false&description=MySQL 中的事务"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=MySQL 中的事务&body=Check out this article: https://kylindc.github.io/post/21282/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/post/21282/&title=MySQL 中的事务"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL 中的事务"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL 中的事务"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/post/21282/&title=MySQL 中的事务"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/post/21282/&name=MySQL 中的事务&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/post/21282/&t=MySQL 中的事务"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -228,7 +230,7 @@
     
     
     2016-2021
-    John Doe
+    KylinDC
   </div>
   <div class="footer-right">
     <nav>
