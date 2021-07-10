@@ -5,6 +5,7 @@ specifiers:
   hexo-abbrlink: ^2.2.1
   hexo-blog-encrypt: ^3.1.6
   hexo-cli: ^4.3.0
+  hexo-filter-auto-spacing: ^0.2.1
   hexo-generator-archive: ^1.0.0
   hexo-generator-category: ^1.0.0
   hexo-generator-index: ^2.0.0
@@ -24,6 +25,7 @@ dependencies:
   hexo-abbrlink: registry.npmjs.org/hexo-abbrlink/2.2.1
   hexo-blog-encrypt: registry.npmjs.org/hexo-blog-encrypt/3.1.6
   hexo-cli: 4.3.0
+  hexo-filter-auto-spacing: registry.npmjs.org/hexo-filter-auto-spacing/0.2.1
   hexo-generator-archive: 1.0.0
   hexo-generator-category: 1.0.0
   hexo-generator-index: 2.0.0
@@ -1907,6 +1909,14 @@ packages:
     version: 3.1.6
     dev: false
 
+  registry.npmjs.org/hexo-filter-auto-spacing/0.2.1:
+    resolution: {integrity: sha1-LaLzvkNOPek7lGtvbU2+gMtHDb4=, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/hexo-filter-auto-spacing/-/hexo-filter-auto-spacing-0.2.1.tgz}
+    name: hexo-filter-auto-spacing
+    version: 0.2.1
+    dependencies:
+      pangunode: registry.npmjs.org/pangunode/0.1.0
+    dev: false
+
   registry.npmjs.org/hexo-front-matter/1.0.0:
     resolution: {integrity: sha512-Hn8IIzgWWnxYTekrjnA0rxwWMoQHifyrxKMqVibmFaRKf4AQ2V6Xo13Jiso6CDwYfS+OdA41QS5DG1Y+QXA5gw==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/hexo-front-matter/-/hexo-front-matter-1.0.0.tgz}
     name: hexo-front-matter
@@ -2125,6 +2135,12 @@ packages:
     name: object-assign
     version: 4.1.1
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  registry.npmjs.org/pangunode/0.1.0:
+    resolution: {integrity: sha1-mrDkbQ8yJ7UGNRWZrgTjiAz9BR4=, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/pangunode/-/pangunode-0.1.0.tgz}
+    name: pangunode
+    version: 0.1.0
     dev: false
 
   registry.npmjs.org/pascal-case/3.1.2:
