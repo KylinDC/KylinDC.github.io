@@ -8,6 +8,7 @@ specifiers:
   hexo-filter-auto-spacing: ^0.2.1
   hexo-generator-archive: ^1.0.0
   hexo-generator-category: ^1.0.0
+  hexo-generator-feed: ^3.0.0
   hexo-generator-index: ^2.0.0
   hexo-generator-tag: ^1.0.0
   hexo-renderer-ejs: ^1.0.0
@@ -28,6 +29,7 @@ dependencies:
   hexo-filter-auto-spacing: registry.npmjs.org/hexo-filter-auto-spacing/0.2.1
   hexo-generator-archive: 1.0.0
   hexo-generator-category: 1.0.0
+  hexo-generator-feed: registry.npmjs.org/hexo-generator-feed/3.0.0
   hexo-generator-index: 2.0.0
   hexo-generator-tag: 1.0.0
   hexo-renderer-ejs: 1.0.0
@@ -1660,6 +1662,12 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
+  registry.npmjs.org/a-sync-waterfall/1.0.1:
+    resolution: {integrity: sha512-RYTOHHdWipFUliRFMCS4X2Yn2X8M87V/OpSqWzKKOGhzqyUxzyVmhHDH9sAvG+ZuQf/TAOFsLCpMw09I1ufUnA==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/a-sync-waterfall/-/a-sync-waterfall-1.0.1.tgz}
+    name: a-sync-waterfall
+    version: 1.0.1
+    dev: false
+
   registry.npmjs.org/ansi-styles/4.3.0:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz}
     name: ansi-styles
@@ -1691,6 +1699,12 @@ packages:
     version: 1.0.10
     dependencies:
       sprintf-js: registry.npmjs.org/sprintf-js/1.0.3
+    dev: false
+
+  registry.npmjs.org/asap/2.0.6:
+    resolution: {integrity: sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/asap/-/asap-2.0.6.tgz}
+    name: asap
+    version: 2.0.6
     dev: false
 
   registry.npmjs.org/binary-extensions/2.2.0:
@@ -1764,6 +1778,13 @@ packages:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz}
     name: color-name
     version: 1.1.4
+    dev: false
+
+  registry.npmjs.org/commander/5.1.0:
+    resolution: {integrity: sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/commander/-/commander-5.1.0.tgz}
+    name: commander
+    version: 5.1.0
+    engines: {node: '>= 6'}
     dev: false
 
   registry.npmjs.org/copy-to/2.0.1:
@@ -1936,6 +1957,18 @@ packages:
       chokidar: registry.npmjs.org/chokidar/3.5.2
       graceful-fs: registry.npmjs.org/graceful-fs/4.2.6
       hexo-util: registry.npmjs.org/hexo-util/2.5.0
+    dev: false
+
+  registry.npmjs.org/hexo-generator-feed/3.0.0:
+    resolution: {integrity: sha512-Jo35VSRSNeMitS2JmjCq3OHAXXYU4+JIODujHtubdG/NRj2++b3Tgyz9pwTmROx6Yxr2php/hC8og5AGZHh8UQ==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/hexo-generator-feed/-/hexo-generator-feed-3.0.0.tgz}
+    name: hexo-generator-feed
+    version: 3.0.0
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      hexo-util: registry.npmjs.org/hexo-util/2.5.0
+      nunjucks: registry.npmjs.org/nunjucks/3.2.3
+    transitivePeerDependencies:
+      - chokidar
     dev: false
 
   registry.npmjs.org/hexo-log/2.0.0:
@@ -2128,6 +2161,23 @@ packages:
     name: normalize-path
     version: 3.0.0
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  registry.npmjs.org/nunjucks/3.2.3:
+    resolution: {integrity: sha512-psb6xjLj47+fE76JdZwskvwG4MYsQKXUtMsPh6U0YMvmyjRtKRFcxnlXGWglNybtNTNVmGdp94K62/+NjF5FDQ==, registry: https://mirrors.sjtug.sjtu.edu.cn/npm-registry/, tarball: https://registry.npmjs.org/nunjucks/-/nunjucks-3.2.3.tgz}
+    name: nunjucks
+    version: 3.2.3
+    engines: {node: '>= 6.9.0'}
+    hasBin: true
+    peerDependencies:
+      chokidar: ^3.3.0
+    peerDependenciesMeta:
+      chokidar:
+        optional: true
+    dependencies:
+      a-sync-waterfall: registry.npmjs.org/a-sync-waterfall/1.0.1
+      asap: registry.npmjs.org/asap/2.0.6
+      commander: registry.npmjs.org/commander/5.1.0
     dev: false
 
   registry.npmjs.org/object-assign/4.1.1:

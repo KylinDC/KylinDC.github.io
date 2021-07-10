@@ -140,6 +140,24 @@ marked:
   disableNunjucks: false
   descriptionLists: true
 
+feed:
+  enable: true
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss2.xml
+  limit: false
+  hub:
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon:
+  autodiscovery: true
+  template:
+
 # mmedia player config
 mmedia:
   audio:
