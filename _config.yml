@@ -179,6 +179,11 @@ robotstxt:
     - /archives/
   sitemap: /sitemap.xml
 
+search:
+  path: /search.json
+  field: all
+  content: true
+
 # mmedia player config
 mmedia:
   audio:
