@@ -186,7 +186,7 @@ search:
 
 asset_pipeline:
   revisioning:
-    enable: true
+    enable: false
   clean_css:
     enable: true
   uglify_js:
