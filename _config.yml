@@ -177,7 +177,7 @@ robotstxt:
   allow:
     - /
     - /archives/
-  sitemap: /sitemap.xml
+  sitemap: https://kylindc.github.io/sitemap.xml
 
 search:
   path: /search.json
