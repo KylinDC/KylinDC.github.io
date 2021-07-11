@@ -135,7 +135,7 @@ marked:
   postAsset: true
   external_link:
     enable: false
-    exclude: [ ]
+    exclude: []
     nofollow: false
   disableNunjucks: false
   descriptionLists: true
@@ -183,6 +183,18 @@ search:
   path: /search.json
   field: all
   content: true
+
+asset_pipeline:
+  revisioning:
+    enable: true
+  clean_css:
+    enable: true
+  uglify_js:
+    enable: true
+  imagemin:
+    enable: false
+  html_minifier:
+    enable: false
 
 # mmedia player config
 mmedia:

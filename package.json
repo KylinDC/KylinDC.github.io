@@ -41,6 +41,7 @@
   "dependencies": {
     "hexo": "^5.0.0",
     "hexo-abbrlink": "^2.2.1",
+    "hexo-asset-pipeline": "^1.8.0",
     "hexo-blog-encrypt": "^3.1.6",
     "hexo-cli": "^4.3.0",
     "hexo-filter-auto-spacing": "^0.2.1",
