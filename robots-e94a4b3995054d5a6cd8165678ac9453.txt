@@ -7,4 +7,4 @@ Disallow: /rss2.xml
 Disallow: /atom.xml
 Allow: /
 Allow: /archives/
-Sitemap: /sitemap.xml
+Sitemap: https://kylindc.github.io/sitemap.xml
