@@ -3,6 +3,7 @@ title: Java LinkedList用法总结
 abbrlink: 3868
 date: 2019-02-21 20:42:51
 tags:
+  - Java
 ---
 
 ## LinkedList 构造函数
