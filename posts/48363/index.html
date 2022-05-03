@@ -14,7 +14,7 @@
 <meta property="og:description" content="CHAR 与 VARCHAR 的区别  长度上 CHAR 类型使用固定长度进行存储，范围为 0~255，多余长度空间会被以空格补齐，检索是尾部空格会被去除 VARCHAR 类型保存可变的长度字符串，范围为 0~65535，除了实际的长度外，还有一个或两个额外的字节来标识字符串长度，  应用上 CHAR 经常用于保存长度相对固定的值，比如 IP 地址或者 MD5 之类的数据。 VARCHAR 用来保">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-05-05T14:50:00.000Z">
-<meta property="article:modified_time" content="2021-07-11T06:39:51.819Z">
+<meta property="article:modified_time" content="2022-05-03T15:15:31.807Z">
 <meta property="article:author" content="KylinDC">
 <meta name="twitter:card" content="summary">
     
@@ -48,7 +48,7 @@
     
 	<!-- mathjax -->
 	
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Upside Down" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Upside Down" type="application/atom+xml">
 <link rel="alternate" href="/rss2.xml" title="Upside Down" type="application/rss+xml">
 </head>
 
@@ -162,7 +162,7 @@
 <li>JSON 对象：被 <code>&#123;&#125;</code> 框住，由逗号分隔的键值对的列表，键的类型必须为字符串。</li>
 </ul>
 <p>能够储存的类型包括字符串，数字，时间，布尔值。同时，两种类型的还可以嵌套，比如：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">99</span>, &#123;<span class="attr">&quot;id&quot;</span>: <span class="string">&quot;HK500&quot;</span>, <span class="attr">&quot;cost&quot;</span>: <span class="number">75.99</span>&#125;, [<span class="string">&quot;hot&quot;</span>, <span class="string">&quot;cold&quot;</span>]]</span><br><span class="line">&#123;<span class="attr">&quot;k1&quot;</span>: <span class="string">&quot;value&quot;</span>, <span class="attr">&quot;k2&quot;</span>: [<span class="number">10</span>, <span class="number">20</span>]&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span><span class="number">99</span><span class="punctuation">,</span> <span class="punctuation">&#123;</span><span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HK500&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;cost&quot;</span><span class="punctuation">:</span> <span class="number">75.99</span><span class="punctuation">&#125;</span><span class="punctuation">,</span> <span class="punctuation">[</span><span class="string">&quot;hot&quot;</span><span class="punctuation">,</span> <span class="string">&quot;cold&quot;</span><span class="punctuation">]</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;k1&quot;</span><span class="punctuation">:</span> <span class="string">&quot;value&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;k2&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="number">10</span><span class="punctuation">,</span> <span class="number">20</span><span class="punctuation">]</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 
 <p>可以使用 JSON_OBJECT，JSON_ARRAY 来生成 JSON 格式的数据。</p>
 <h2 id="JSON- 值的查询"><a href="#JSON- 值的查询" class="headerlink" title="JSON 值的查询"></a>JSON 值的查询 </h2><p> 使用 <code>JSON_EXTRACT</code> 函数来查询 JSON，第一个参数为要查询的值，第二个参数中使用前导 $ 字符代替要查询的值。JSON_EXTRACT 函数还有别名 -&gt;。</p>
@@ -241,7 +241,7 @@
     Copyright &copy;
     
     
-    2018-2021
+    2018-2022
     KylinDC
   </div>
   <div class="footer-right">

@@ -14,7 +14,7 @@
 <meta property="og:description" content="异常（Exception）与错误（Error）的区别与联系 Error 类与 Exception 类都是继承于 Throwable 类。 Error 类一般是指与虚拟机相关的问题，如系统崩溃，虚拟机错误，内存空间不足，方法调用栈溢出等等。对于这类错误，Java 编译器不去检查他们，对于这类错误导致的程序中断，仅靠程序本身无法恢复和预防。 Exception 类表示程序可以处理的异常，可以捕获且可能">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-01-24T18:53:45.000Z">
-<meta property="article:modified_time" content="2021-07-11T06:39:51.819Z">
+<meta property="article:modified_time" content="2022-05-03T15:15:31.807Z">
 <meta property="article:author" content="KylinDC">
 <meta name="twitter:card" content="summary">
     
@@ -48,7 +48,7 @@
     
 	<!-- mathjax -->
 	
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Upside Down" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Upside Down" type="application/atom+xml">
 <link rel="alternate" href="/rss2.xml" title="Upside Down" type="application/rss+xml">
 </head>
 
@@ -173,12 +173,12 @@
 <li><code>java.lang.ArithmeticException</code>：算术条件异常。譬如：整数除零</li>
 <li><code>java.lang.ArrayStoreException</code>：将错误的类型储存到对象数组里，例如：</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object x[] = <span class="keyword">new</span> String[<span class="number">3</span>];</span><br><span class="line">x[<span class="number">0</span>] = <span class="keyword">new</span> Integer(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object x[] = <span class="keyword">new</span> <span class="title class_">String</span>[<span class="number">3</span>];</span><br><span class="line">x[<span class="number">0</span>] = <span class="keyword">new</span> <span class="title class_">Integer</span>(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><code>java.lang.ClassCastException</code>：强制类型转换异常，例如：</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object x = <span class="keyword">new</span> Integer(<span class="number">0</span>);</span><br><span class="line">System.out.println((String)x);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Object</span> <span class="variable">x</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Integer</span>(<span class="number">0</span>);</span><br><span class="line">System.out.println((String)x);</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><code>java.lang.IndexOutOfBoundsException</code>：索引越界</li>
@@ -253,7 +253,7 @@
     Copyright &copy;
     
     
-    2018-2021
+    2018-2022
     KylinDC
   </div>
   <div class="footer-right">
