@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="项目改造背景及挑战  在我们经历的各种遗留系统改造之旅中，使用绞杀者模式来改造一个巨大的单体服务是一种被广泛采用和验证为行之有效的一种手段，在应用传统的绞杀者模式时，采用逐步替换的方式将遗留系统中某一独立的部分抽取出来进行改造，最后通过反向代理等方式将流量倒入到新的服务中。 但是在我们的案例中，即将被改造的领域服务正是客户的核心业务所在，客户强烈的希望在整个改造的过程中，不对现有正在运行的系统造成">
+    <meta name="description" content="项目改造背景及挑战  在我们经历的各种遗留系统改造之旅中，使用绞杀者模式来改造一个巨大的单体服务，是一种被广泛采用且验证行之有效的手段，在应用传统的绞杀者模式时，通常采用逐步替换的方式，将遗留系统中某一独立的部分抽取出来进行改造，最后通过反向代理等方式，将流量倒入到新的服务中。 但是在我们的案例中，被改造的领域服务是客户的核心业务，客户强烈希望在整个改造过程中，不要对现有正在运行的系统造成影响，所">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用 CDC 模式来支撑遗留系统改造">
 <meta property="og:url" content="https://kylindc.github.io/posts/22112/index.html">
 <meta property="og:site_name" content="Upside Down">
-<meta property="og:description" content="项目改造背景及挑战  在我们经历的各种遗留系统改造之旅中，使用绞杀者模式来改造一个巨大的单体服务是一种被广泛采用和验证为行之有效的一种手段，在应用传统的绞杀者模式时，采用逐步替换的方式将遗留系统中某一独立的部分抽取出来进行改造，最后通过反向代理等方式将流量倒入到新的服务中。 但是在我们的案例中，即将被改造的领域服务正是客户的核心业务所在，客户强烈的希望在整个改造的过程中，不对现有正在运行的系统造成">
+<meta property="og:description" content="项目改造背景及挑战  在我们经历的各种遗留系统改造之旅中，使用绞杀者模式来改造一个巨大的单体服务，是一种被广泛采用且验证行之有效的手段，在应用传统的绞杀者模式时，通常采用逐步替换的方式，将遗留系统中某一独立的部分抽取出来进行改造，最后通过反向代理等方式，将流量倒入到新的服务中。 但是在我们的案例中，被改造的领域服务是客户的核心业务，客户强烈希望在整个改造过程中，不要对现有正在运行的系统造成影响，所">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://kylindc.github.io/posts/22112/%E6%96%B0%E8%80%81%E5%B9%B6%E8%A1%8C%E6%A8%A1%E5%BC%8F.png">
 <meta property="og:image" content="https://kylindc.github.io/posts/22112/%E9%80%9A%E8%BF%87Debezium%E6%9D%A5%E5%AE%8C%E6%88%90%E6%96%B0%E8%80%81%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%9E%E6%8E%A5.png">
@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://kylindc.github.io/posts/22112/%E4%B8%89%E4%B8%AA%E9%98%B6%E6%AE%B5.png">
 <meta property="og:image" content="https://kylindc.github.io/posts/22112/%E6%9B%B4%E5%A4%9A%E7%BB%86%E8%8A%82.png">
 <meta property="article:published_time" content="2022-05-03T23:35:19.000Z">
-<meta property="article:modified_time" content="2022-05-03T16:23:49.988Z">
+<meta property="article:modified_time" content="2022-06-27T08:58:41.461Z">
 <meta property="article:author" content="KylinDC">
 <meta property="article:tag" content="遗留系统改造">
 <meta property="article:tag" content="架构">
@@ -67,21 +67,21 @@
       <div id="header-post">
   <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" "Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="/archives/">Archives</a></li>
-         
-          <li><a href="/tags/">Tag</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Archives</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
       </ul>
     </span>
     <br/>
@@ -89,10 +89,10 @@
       <ul>
         
         
-        <li><a class="icon" aria-label="Next post " href="/posts/6340/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Next post" href="/posts/6340/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
-        <li><a class="icon" aria-label="Back to top " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" aria-label="Share post " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
       </ul>
       <span id="i-prev" class="info" style="display:none;">Previous post</span>
       <span id="i-next" class="info" style="display:none;">Next post</span>
@@ -161,23 +161,23 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="项目改造背景及挑战"><a href="# 项目改造背景及挑战" class="headerlink" title="项目改造背景及挑战"></a>项目改造背景及挑战 </h2><p> 在我们经历的各种遗留系统改造之旅中，使用绞杀者模式来改造一个巨大的单体服务是一种被广泛采用和验证为行之有效的一种手段，在应用传统的绞杀者模式时，采用逐步替换的方式将遗留系统中某一独立的部分抽取出来进行改造，最后通过反向代理等方式将流量倒入到新的服务中。</p>
-<p>但是在我们的案例中，即将被改造的领域服务正是客户的核心业务所在，客户强烈的希望在整个改造的过程中，不对现有正在运行的系统造成影响，所以仅仅采用绞杀者模式来完成整个改造是不够的，我们还需要采用新老并行模式来完成我们整个的迁移。</p>
+    <h2 id="项目改造背景及挑战"><a href="# 项目改造背景及挑战" class="headerlink" title="项目改造背景及挑战"></a>项目改造背景及挑战 </h2><p> 在我们经历的各种遗留系统改造之旅中，使用绞杀者模式来改造一个巨大的单体服务，是一种被广泛采用且验证行之有效的手段，在应用传统的绞杀者模式时，通常采用逐步替换的方式，将遗留系统中某一独立的部分抽取出来进行改造，最后通过反向代理等方式，将流量倒入到新的服务中。</p>
+<p>但是在我们的案例中，被改造的领域服务是客户的核心业务，客户强烈希望在整个改造过程中，不要对现有正在运行的系统造成影响，所以仅仅采用绞杀者模式是不够的，我们还需要采用新老并行模式来完成整个迁移改造。</p>
 <blockquote>
 <p>当使用并行运行时，我们不是调用新旧实现的其中之一，而是同时调用二者，以允许我们比较其结果以确保它们是等效的。尽管调用了两种实现，但在任何给定的时间内，只有一个实现的结果是正确的。一般而言，在不断校验并相信我们的新实现之前，我们认为旧实现的结果是正确的。 Monolith To Microservices</p>
 </blockquote>
-<p>通过新老并行模式，原有的系统不会受到影响，可以继续提供服务，待新的服务完成迁移并通过验证之后，再将流量迁移到新的系统。采用新老并行模式可以以增量的模式进行迁移改造，并且在出现问题的时候能够轻松的回滚，确保核心业务的安全。（<a target="_blank" rel="noopener" href="https://engineering.zalando.com/posts/2021/11/parallel-run.html">https://engineering.zalando.com/posts/2021/11/parallel-run.html</a>)</p>
+<p>通过新老并行模式，原有的系统不会受到影响，可以继续提供服务，待新的服务完成迁移并通过验证之后，再将流量迁移到新的系统。采用新老并行模式可以以增量的模式进行迁移改造，并且在出现问题的时候能够轻松回滚，确保核心业务的安全。具体介绍可以参考 <a target="_blank" rel="noopener" href="https://engineering.zalando.com/posts/2021/11/parallel-run.html">zalando 的工程实践</a>。</p>
 <p><img src="/posts/22112/%E6%96%B0%E8%80%81%E5%B9%B6%E8%A1%8C%E6%A8%A1%E5%BC%8F.png" alt="新老并行模式" loading="lazy"></p>
-<p>在新老并行模式运行的过程中，为了达到使新服务能够完全平行替代旧服务，需要将旧服务里面的新产生的变化及时同步到新的服务里面来（对于遗留数据只需要一次性的迁移即可）。对于新的服务，在各种因素以及客户业务需求的影响下，我们选择了 Event Sourcing 作为基本架构来构建我们新的领域服务。Event Sourcing 是一种通过记录一系列的领域事件来完成对系统状态的持久化。</p>
-<p>鉴于新服务中持久化的都是一系列的领域事件，所以是很难将遗留系统中产生的变化直接持久化到新服务中的，最好的方式是通过调取新服务中暴露出来的 API，由新服务通过 Command 产生 Event，然后再存储到 Event Store 中。</p>
-<p>同时遗留单体系统中的代码已经非常庞大并且复杂到难以修改，任何对于遗留系统的代码修改都需要经过繁复的测试和严格的 Code Review，同时也会增加交付开发人员的认知负担，并且还会给现有系统带来一定的风险，而这也是客户强烈不希望的。</p>
-<p>基于以上背景，我们可以发现，通过修改遗留系统代码的方式来完成新老两个系统之间数据的同步 Effort 是比较大的，而且会引入一定的风险。</p>
-<p>以上种种限制使得我们选择了 CDC（Change data capture）模式来完成我们对遗留系统数据的捕捉与迁移。<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Change_data_capture">https://en.wikipedia.org/wiki/Change_data_capture</a></p>
-<h2 id="使用 -CDC- 模式来完成新老数据同步"><a href="# 使用 -CDC- 模式来完成新老数据同步" class="headerlink" title="使用 CDC 模式来完成新老数据同步"></a>使用 CDC 模式来完成新老数据同步 </h2><h3 id="什么是 -CDC- 模式和 -Debezium"><a href="# 什么是 -CDC- 模式和 -Debezium" class="headerlink" title="什么是 CDC 模式和 Debezium"></a> 什么是 CDC 模式和 Debezium</h3><p>CDC 模式是一种对变化的数据进行监控并捕获以便其他服务也能够响应这些变化的模式。对于监控数据库的变化而言，Debezium 是 CDC 模式的一个非常成熟的实现。当使用 Debezium 来连接 MySQL 时，Debezium 会读取 MySQL 的 binary log (binlog)获取到数据库产生的变化。同时，Debezium 还是一个 Kafka connect，通过配置，能够将数据库产生的变化推送到特定的 Kakfa 的 Topic 中。</p>
-<p>通过 Debezium，我们可以捕获到所有遗留系统数据库产生的变化，并将其推送到 Kafaka 特定的 Topic 中去，只要新服务能够响应这些变化，就可以将旧系统中数据产生的变化同步到新系统里来。</p>
+<p>在新老并行模式运行过程中，为了达到使新服务能够完全平行替代旧服务，需要将旧服务里新产生的变化，及时同步到新服务里来（对于遗留数据只需要一次性的迁移即可）。在各种因素以及客户业务需求的影响下，我们选择了 Event Sourcing 作为基本架构来构建我们新领域服务。</p>
+<p>鉴于新服务中持久化的都是一系列的领域事件，所以很难将遗留系统中产生的变化直接持久化到新服务中，最好的方式是通过调用新服务提供的 API，由新服务通过 Command 产生 Event，然后再存储到 Event Store 中，完成持久化。</p>
+<p>同时遗留单体系统中的代码仓库已经非常庞大，并且复杂到难以修改，任何对于遗留系统的代码修改都需要经过繁复的测试和严格的 Code Review，同时也会增加交付开发人员的认知负担，并且还会给现有系统带来一定的风险。</p>
+<p>基于以上背景，我们发现，通过修改遗留系统代码的方式来完成新老两个系统之间数据的同步代价是比较大的，而且会引入一定的风险。</p>
+<p>以上种种限制使得我们选择了 CDC（Change data capture）模式来完成我们对遗留系统数据的捕捉与迁移。</p>
+<h2 id="使用 -CDC- 模式来完成新老数据同步"><a href="# 使用 -CDC- 模式来完成新老数据同步" class="headerlink" title="使用 CDC 模式来完成新老数据同步"></a>使用 CDC 模式来完成新老数据同步 </h2><h3 id="什么是 -CDC- 模式和 -Debezium"><a href="# 什么是 -CDC- 模式和 -Debezium" class="headerlink" title="什么是 CDC 模式和 Debezium"></a> 什么是 CDC 模式和 Debezium</h3><p>CDC 模式是一种对变化的数据进行监控并捕获，以便其他服务也能够响应这些变化的模式。对于监控数据库的变化而言，Debezium 是 CDC 模式的一个非常成熟的实现。当使用 Debezium 来连接 MySQL 时，Debezium 会读取 MySQL 的 binary log (binlog) 获取到数据库产生的变化。同时，Debezium 还是一个 Kafka connect，通过配置，能够将数据库产生的变化推送到特定的 Kakfa Topic 中。</p>
+<p>通过 Debezium，我们便可以捕获到所有遗留系统数据库产生的变化，并将其推送到 Kafaka 特定的 Topic 中去，只要新服务能够响应这些变化，就可以将旧系统中数据产生的变化同步到新系统里去。</p>
 <p><img src="/posts/22112/%E9%80%9A%E8%BF%87Debezium%E6%9D%A5%E5%AE%8C%E6%88%90%E6%96%B0%E8%80%81%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%9E%E6%8E%A5.png" alt="通过 Debezium 来完成新老系统的连接" loading="lazy"></p>
-<p>但目前而言，新服务是无法直接响应这些遗留系统数据库的变化的，原因在于新服务接受的是有业务含义的 Command，而不仅仅是一些数据库的变化。但其根本原因在于，我们捕获到的数据库的变化只是数据库行级别变化的数据，而缺失了特定的业务含义，所以我们也无法直接利用这些数据与我们新的服务连接起来。</p>
-<p>将这些捕获到的数据库的变化赋予业务含义，并将其转换为特定的 Command，这是我们面临的下一个挑战。</p>
+<p>但目前而言，新服务是无法直接响应这些遗留系统数据库的变化的，原因是新服务接受的是有业务含义的 Command，而不仅仅是一些数据库的变化。但根本原因在于，我们捕获到的数据库变化只是数据库行级别的变化，缺失了特定的业务含义，所以我们也无法直接利用这些数据与我们的新服务连接起来。</p>
+<p>将这些捕获到的数据库变化赋予业务含义，并将其转换为特定的 Command，这是我们面临的下一个挑战。</p>
 <h3 id="从 -CDC- 到 -Command"><a href="# 从 -CDC- 到 -Command" class="headerlink" title="从 CDC 到 Command"></a>从 CDC 到 Command</h3><p>要完成这个挑战，就需要深入细节了。为了方便说明，我在这里准备了一个非常简单的例子。</p>
 <p>还是以我们非常熟悉的电商领域的商品项举例，假设对于一个 Product 的聚合根，在 Product 这个聚合根包含有一个 Photo 的聚合，他们之间的关系在遗留系统数据库中的 ERD 关系如图所示：</p>
 <p><img src="/posts/22112/ERD.png" loading="lazy"></p>
@@ -292,17 +292,17 @@
   <div class="footer-right">
     <nav>
       <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="/archives/">Archives</a></li>
-         
-          <li><a href="/tags/">Tag</a></li>
-         
-          <li><a href="/search/">Search</a></li>
-        
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Archives</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
       </ul>
     </nav>
   </div>
@@ -371,6 +371,7 @@
 
 <!-- Disqus Comments -->
 
+<!-- utterances Comments -->
 
 </body>
 </html>
