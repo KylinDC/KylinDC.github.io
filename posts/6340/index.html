@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="什么是行为参数化  假设现在有两个需求，分别是打印如下所示的加法表和乘法表： 12345678910111213141 + 1 &#x3D; 21 + 2 &#x3D; 3	2 + 2 &#x3D; 41 + 3 &#x3D; 4	2 + 3 &#x3D; 5	3 + 3 &#x3D; 61 + 4 &#x3D; 5	2 + 4 &#x3D; 6	3 + 4 &#x3D; 7	4 + 4 &#x3D; 8......----------------------------1 * 1 &#x3D; 11 *">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 8 的变化之行为参数化——Lambda 表达式">
+<meta property="og:url" content="https://kylindc.github.io/posts/6340/index.html">
+<meta property="og:site_name" content="Upside Down">
+<meta property="og:description" content="什么是行为参数化  假设现在有两个需求，分别是打印如下所示的加法表和乘法表： 12345678910111213141 + 1 &#x3D; 21 + 2 &#x3D; 3	2 + 2 &#x3D; 41 + 3 &#x3D; 4	2 + 3 &#x3D; 5	3 + 3 &#x3D; 61 + 4 &#x3D; 5	2 + 4 &#x3D; 6	3 + 4 &#x3D; 7	4 + 4 &#x3D; 8......----------------------------1 * 1 &#x3D; 11 *">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-07T14:34:26.000Z">
+<meta property="article:modified_time" content="2023-07-01T14:39:10.950Z">
+<meta property="article:author" content="KylinDC">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="编程">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Java 8 的变化之行为参数化——Lambda 表达式</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Upside Down" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Upside Down" type="application/rss+xml">
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Archives</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/posts/22112/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/posts/27311/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/posts/6340/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/posts/6340/&text=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/posts/6340/&title=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/posts/6340/&is_video=false&description=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Java 8 的变化之行为参数化——Lambda 表达式&body=Check out this article: https://kylindc.github.io/posts/6340/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/posts/6340/&title=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/posts/6340/&title=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/posts/6340/&title=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/posts/6340/&title=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/posts/6340/&name=Java 8 的变化之行为参数化——Lambda 表达式&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/posts/6340/&t=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96"><span class="toc-number">1.</span> <span class="toc-text">什么是行为参数化 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%BA%E5%A4%B4%E7%AD%89%E5%85%AC%E6%B0%91"><span class="toc-number">1.0.1.</span> <span class="toc-text">函数作为头等公民 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%9B%E8%A1%8C%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">为什么要进行行为参数化 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java-8%20%E4%B8%AD%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96"><span class="toc-number">3.</span> <span class="toc-text">Java 8 中如何实现行为参数化 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-8%20%E4%B9%8B%E5%89%8D%E7%9A%84%20Java%20%E5%A6%82%E4%BD%95%E5%B0%86%E8%A1%8C%E4%B8%BA%E4%BC%A0%E9%80%92%E7%BB%99%E6%96%B9%E6%B3%95"><span class="toc-number">3.1.</span> <span class="toc-text">Java 8 之前的 Java 如何将行为传递给方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E5%AE%9E%E7%8E%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E6%8E%A5%E5%8F%A3"><span class="toc-number">3.1.1.</span> <span class="toc-text">通过实现不同的接口 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-number">3.1.2.</span> <span class="toc-text">通过匿名内部类 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-8%20%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-number">3.2.</span> <span class="toc-text">Java 8 的实现方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">4.</span> <span class="toc-text">什么是 Lambda 表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-number">4.0.1.</span> <span class="toc-text">Lambda 表达式的语法 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">5.</span> <span class="toc-text">函数式接口 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">5.1.</span> <span class="toc-text">常见的内置函数式接口 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%A7%8B%E7%B1%BB%E5%9E%8B%E7%89%B9%E5%8C%96"><span class="toc-number">5.1.1.</span> <span class="toc-text">原始类型特化 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">6.</span> <span class="toc-text">Lambda 表达式的类型 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5"><span class="toc-number">6.1.</span> <span class="toc-text">Lambda 表达式的类型检查</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E7%9A%84%20void%20%E5%85%BC%E5%AE%B9%E8%A7%84%E5%88%99"><span class="toc-number">6.1.1.</span> <span class="toc-text">特殊的 void 兼容规则 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E6%96%AD%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%82%E6%95%B0%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">6.2.</span> <span class="toc-text">推断 Lambda 表达式参数的类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%BF%E7%94%A8%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F"><span class="toc-number">6.3.</span> <span class="toc-text">Lambda 表达式使用局部变量 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E5%90%88%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">7.</span> <span class="toc-text">组合 Lambda 表达式 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Comparator%20%E7%BB%84%E5%90%88%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">7.1.</span> <span class="toc-text">Comparator组合 Lambda 表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Predicate%20%E7%BB%84%E5%90%88%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">7.2.</span> <span class="toc-text">Predicate组合 Lambda 表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Function%20%E7%BB%84%E5%90%88%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">7.3.</span> <span class="toc-text">Function组合 Lambda 表达式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E5%BC%95%E7%94%A8"><span class="toc-number">8.</span> <span class="toc-text">方法引用 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E5%BC%95%E7%94%A8%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-number">8.1.</span> <span class="toc-text">方法引用的语法 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B"><span class="toc-number">8.2.</span> <span class="toc-text">方法引用类型</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Java 8 的变化之行为参数化——Lambda 表达式
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">KylinDC</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-12-07T14:34:26.000Z" itemprop="datePublished">2019-12-07</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Java/" rel="tag">Java</a>, <a class="tag-link-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="什么是行为参数化"><a href="# 什么是行为参数化" class="headerlink" title="什么是行为参数化"></a>什么是行为参数化 </h2><p> 假设现在有两个需求，分别是打印如下所示的加法表和乘法表：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1 + 1 = 2</span><br><span class="line">1 + 2 = 3	2 + 2 = 4</span><br><span class="line">1 + 3 = 4	2 + 3 = 5	3 + 3 = 6</span><br><span class="line">1 + 4 = 5	2 + 4 = 6	3 + 4 = 7	4 + 4 = 8</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line">----------------------------</span><br><span class="line"></span><br><span class="line">1 * 1 = 1</span><br><span class="line">1 * 2 = 2	2 * 2 = 4</span><br><span class="line">1 * 3 = 3	2 * 3 = 6	3 * 3 = 9</span><br><span class="line">1 * 4 = 4	2 * 4 = 8	3 * 4 = 12	4 * 4 = 16</span><br><span class="line">......</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在这两个运算表中，需要展示的格式是一样的，不同的地方有两点：</p>
+<ul>
+<li>运算符</li>
+<li>运算逻辑</li>
+</ul>
+<p>如果只使用一个方法来生成这样两个运算表格，则需要将运算符和运算逻辑都作为参数传递这个方法。其中运算符可以视为一个字符串，是一种几乎所有编程语言都内置原生支持的一种类型。但是运算逻辑则不同，只有将函数视为头等公民的编程语言才能将行为即函数作为实参进行传递。</p>
+<h4 id="函数作为头等公民"><a href="# 函数作为头等公民" class="headerlink" title="函数作为头等公民"></a>函数作为头等公民 </h4><p> 在一些程序语言中，函数视为头等公民，这意味着，函数可以作为别的函数的参数、函数的返回值，赋值给变量或存储在数据结构中。使用函数作为实参和返回值的函数被称为高阶函数。更多可以信息可以参考 <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A4%B4%E7%AD%89%E5%87%BD%E6%95%B0"> 头等函数 - 维基百科</a>。</p>
+<p>JavaScript 是一种内置将函数视为头等公民的语言，如果用 JavaScript 来实现上述打印加法表和乘法表的需求，只需要将乘法与加法定义为变量再作为实参传递给生成表的函数就行了，完整代码如下所示：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">multiplication</span> = (<span class="params">a, b</span>) =&gt; a * b;</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">addition</span> = (<span class="params">a, b</span>) =&gt; a + b;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">generateOperationTable</span> = (<span class="params">limit, operationSymbol, operation</span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt;= limit; i++) &#123;</span><br><span class="line">        <span class="keyword">let</span> lineResult = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">1</span>; j &lt;= i; j++) &#123;</span><br><span class="line">            lineResult += <span class="string">`<span class="subst">$&#123;j&#125;</span> <span class="subst">$&#123;operationSymbol&#125;</span> <span class="subst">$&#123;i&#125;</span> = <span class="subst">$&#123;operation(i, j)&#125;</span>\t`</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        result += lineResult + <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> multiplicationTable = <span class="title function_">generateOperationTable</span>(<span class="number">9</span>, <span class="string">&#x27;*&#x27;</span>, multiplication);</span><br><span class="line"><span class="keyword">const</span> additionTable = <span class="title function_">generateOperationTable</span>(<span class="number">9</span>, <span class="string">&#x27;+&#x27;</span>, addition);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(multiplicationTable);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(additionTable);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>行为参数化，就是一个方法接受多个不同的行为作为参数，并且在内部使用它们，完成不同的行为。</p>
+<h2 id="为什么要进行行为参数化"><a href="# 为什么要进行行为参数化" class="headerlink" title="为什么要进行行为参数化"></a>为什么要进行行为参数化 </h2><p> 从上面的例子中可以看出，将行为即函数视为一个普通变量后，可以提高抽象能力，<br>减少重复代码，使代码的表达能力更强，也更易于理解。</p>
+<p>以下对比将展现更多行为参数在 Java 中体现出来的好处。</p>
+<h2 id="Java-8 中如何实现行为参数化"><a href="#Java-8 中如何实现行为参数化" class="headerlink" title="Java 8 中如何实现行为参数化"></a>Java 8 中如何实现行为参数化 </h2><h3 id="Java-8 之前的 Java 如何将行为传递给方法"><a href="#Java-8 之前的 Java 如何将行为传递给方法" class="headerlink" title="Java 8 之前的 Java 如何将行为传递给方法"></a>Java 8 之前的 Java 如何将行为传递给方法</h3><p>Java 是一门<strong> 面向对象 </strong> 的、<strong>静态类型 </strong> 语言，所以在将行为传递给一个方法前，这个行为必定有着特定的类型，而且为一个实例。于是有以下不同的方式来实现效果。</p>
+<h4 id="通过实现不同的接口"><a href="# 通过实现不同的接口" class="headerlink" title="通过实现不同的接口"></a>通过实现不同的接口 </h4><p> 在生成运算表的方法中，可以同时传入加法与乘法两种运算操作，所以这两种操作必须为同一类型。于是有了 <code>Arithmetic</code> 接口：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">Arithmetic</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">calculate</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>通过对 <code>Arithmetic</code> 接口的不同实现，可以将加法与乘法两种行为包裹在不同的类中：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Addition</span> <span class="keyword">implements</span> <span class="title class_">Arithmetic</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">calculate</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Multiplication</span> <span class="keyword">implements</span> <span class="title class_">Arithmetic</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">calculate</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a * b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在生成操作表的方法中，即可以传入不同 <code>Arithmetic</code> 类型的实例来实现将行为传递进方法内部。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">printOperationTableByImplInterface</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">String</span> <span class="variable">additionTable</span> <span class="operator">=</span> genOperationTable(<span class="number">9</span>, <span class="string">&quot;+&quot;</span>, <span class="keyword">new</span> <span class="title class_">Addition</span>());</span><br><span class="line">    <span class="type">String</span> <span class="variable">multiplicationTable</span> <span class="operator">=</span> genOperationTable(<span class="number">9</span>, <span class="string">&quot;+&quot;</span>, <span class="keyword">new</span> <span class="title class_">Multiplication</span>());</span><br><span class="line"></span><br><span class="line">    System.out.print(additionTable);</span><br><span class="line">    System.out.print(multiplicationTable);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这是生成运算表的方法本身：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title function_">genOperationTable</span><span class="params">(</span></span><br><span class="line"><span class="params">            <span class="type">int</span> limit, String operationSymbol, Arithmetic operation)</span> &#123;</span><br><span class="line">    <span class="type">StringBuilder</span> <span class="variable">result</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= limit; i++) &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">rowResult</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span>; j &lt;= i; j++) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">answer</span> <span class="operator">=</span> operation.calculate(i, j);</span><br><span class="line">            rowResult += String.format(<span class="string">&quot;%d %s %d = %d\t&quot;</span>, j, operationSymbol, i, answer);</span><br><span class="line">        &#125;</span><br><span class="line">        result.append(rowResult).append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result.toString();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="通过匿名内部类"><a href="# 通过匿名内部类" class="headerlink" title="通过匿名内部类"></a>通过匿名内部类 </h4><p> 上述方式中，需要实现声明一个类，然后再实例化。但是在 Java 中，可以通过匿名内部类来同时声明和实例化一个类，可以稍微简化一下代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">printOperationTableByInnerClass</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">String</span> <span class="variable">additionTable</span> <span class="operator">=</span></span><br><span class="line">            genOperationTable(</span><br><span class="line">                    <span class="number">9</span>,</span><br><span class="line">                    <span class="string">&quot;+&quot;</span>,</span><br><span class="line">                    <span class="keyword">new</span> <span class="title class_">Arithmetic</span>() &#123;</span><br><span class="line">                        <span class="meta">@Override</span></span><br><span class="line">                        <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">calculate</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">                            <span class="keyword">return</span> a + b;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="type">String</span> <span class="variable">multiplicationTable</span> <span class="operator">=</span></span><br><span class="line">            genOperationTable(</span><br><span class="line">                    <span class="number">9</span>,</span><br><span class="line">                    <span class="string">&quot;+&quot;</span>,</span><br><span class="line">                    <span class="keyword">new</span> <span class="title class_">Arithmetic</span>() &#123;</span><br><span class="line">                        <span class="meta">@Override</span></span><br><span class="line">                        <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">calculate</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">                            <span class="keyword">return</span> a * b;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;);</span><br><span class="line"></span><br><span class="line">    System.out.print(additionTable);</span><br><span class="line">    System.out.print(multiplicationTable);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Java-8 的实现方式"><a href="#Java-8 的实现方式" class="headerlink" title="Java 8 的实现方式"></a>Java 8 的实现方式</h3><p>Java 8 中引入 Lambda 表达式（匿名函数），其可以看作是单纯的一个行为，只需将其传递给方法体，则可直接实现行为参数化。相比于 Java 8 之前的 Java 版本，使用 Lambda 表达式可以极大程度地精简代码。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">printOperationTableByLambda</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">String</span> <span class="variable">additionTable</span> <span class="operator">=</span> genOperationTable(<span class="number">9</span>, <span class="string">&quot;+&quot;</span>, (a, b) -&gt; a + b);</span><br><span class="line">    <span class="type">String</span> <span class="variable">multiplicationTable</span> <span class="operator">=</span> genOperationTable(<span class="number">9</span>, <span class="string">&quot;+&quot;</span>, (a, b) -&gt; a * b);</span><br><span class="line"></span><br><span class="line">    System.out.print(additionTable);</span><br><span class="line">    System.out.print(multiplicationTable);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="什么是 Lambda 表达式"><a href="# 什么是 Lambda 表达式" class="headerlink" title="什么是 Lambda 表达式"></a>什么是 Lambda 表达式</h2><p>Lambda 表达式是匿名函数的一种表现形式，具有以下几个特点：</p>
+<ul>
+<li>匿名：可以不像普通方法一样具有一个明确的名称</li>
+<li>函数：不像普通方法一样属于某个特定的类，但是和方法类似，其也具有参数列表、函数主体、返回类型，还有可能抛出特定的异常。</li>
+<li>传递：可以像参数一样传递给方法或者是储存在变量中</li>
+</ul>
+<h4 id="Lambda 表达式的语法"><a href="#Lambda 表达式的语法" class="headerlink" title="Lambda 表达式的语法"></a>Lambda 表达式的语法 </h4><p> 一个普通的 Lambda 表达式应当包括：</p>
+<ul>
+<li>参数列表：<ul>
+<li>用 <code>()</code> 包裹起来</li>
+<li>可以不显示指定参数的类型</li>
+<li>只有一个参数时可以省略<code>()</code></li>
+</ul>
+</li>
+<li>箭头：<code>-&gt;</code>，将参数列表和函数主体相分割开来</li>
+<li>函数主体：<ul>
+<li>函数主体只有一句时可以省略显式的 <code>return</code> 语句，默认将会运算后的值作为返回值</li>
+<li>函数主体有多句时，需要使用 <code>&#123;&#125;</code> 将函数主体包裹起来，且显式的指定 <code>return</code> 语句</li>
+</ul>
+</li>
+</ul>
+<p>Lambda 表达式并没有破坏 Java 原有设计，Java 8 同样还是一门 <strong> 面向对象 </strong> 的、<strong>静态类型 </strong> 语言。实际上，Lambda 表达式以内联的形式为一种称为 <strong> 函数式接口 </strong> 的特殊接口中的 <strong> 抽象方法 </strong> 提供了实现，并且将整个表达式作为该函数式接口的一个 <strong> 具体实现 </strong> 的<strong>实例</strong>。</p>
+<p>Lambda 表达式可以被赋给一个变量，或者传递给一个接受函数式接口作为参数的方法中，当然 Lambda 表达式的签名需要和函数式接口的抽象方法一样。</p>
+<h2 id="函数式接口"><a href="# 函数式接口" class="headerlink" title="函数式接口"></a>函数式接口 </h2><p> 函数式接口是一种只定义了 <strong> 一个抽象方法 </strong> 的特殊接口。像上述的 <code>Arithmetic</code> 接口，就是一个函数式接口。</p>
+<p>在函数式接口上可以使用 <code>@FunctionalInterface</code> 注解来显式表明此接口为一个函数式接口，如果加了注解但却不满足函数式接口的定义，编译器将会返回一个错误。</p>
+<p>值得注意的是，在 Java 8 中，接口可以拥有默认方法，即实现类没有实现该方法时，将会有默认的实现。即在 Java 8 中，接口可以有完整的方法体。即便接口有多个默认方法，只要其只有一个抽象方法，其仍然为函数式接口。</p>
+<h3 id="常见的内置函数式接口"><a href="# 常见的内置函数式接口" class="headerlink" title="常见的内置函数式接口"></a>常见的内置函数式接口 </h3><p> 以下表格总结了常见的 Java 8 中内置的函数式接口：</p>
+<table>
+<thead>
+<tr>
+<th>函数式接口</th>
+<th>函数描述符</th>
+<th>抽象方法名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Predicate<T></td>
+<td>T -&gt; boolean</td>
+<td>test</td>
+</tr>
+<tr>
+<td>Consumer<T></td>
+<td>T -&gt; void</td>
+<td>accept</td>
+</tr>
+<tr>
+<td>Supplier<T></td>
+<td>() -&gt; T</td>
+<td>get</td>
+</tr>
+<tr>
+<td>Function&lt;T, R&gt;</td>
+<td>T -&gt; R</td>
+<td>apply</td>
+</tr>
+<tr>
+<td>UnaryOperator<T></td>
+<td>T -&gt; T</td>
+<td>apply</td>
+</tr>
+<tr>
+<td>BinaryOperator<T></td>
+<td>(T,T) -&gt; T</td>
+<td>apply</td>
+</tr>
+<tr>
+<td>BiPredicate&lt;L, R&gt;</td>
+<td>(L, R) -&gt; boolean</td>
+<td>test</td>
+</tr>
+<tr>
+<td>BiConsumer&lt;T, U&gt;</td>
+<td>() -&gt; void</td>
+<td>accept</td>
+</tr>
+<tr>
+<td>BiFunction&lt;T, U, R&gt;</td>
+<td>(T,U) -&gt; R</td>
+<td>apply</td>
+</tr>
+</tbody></table>
+<p>函数描述符描述了这些函数式接口实例的签名，使用这些函数式接口的实例需要使用其对应的抽象方法。</p>
+<p>例如：</p>
+<ul>
+<li><code>Predicate&lt;String&gt; isLongThanFive = s -&gt; s.length() &gt; 5;</code></li>
+<li><code>isLongerThanFice.test(sampleString)</code></li>
+<li><code>Consumer&lt;String&gt; print = (String s) -&gt; System.out.println(s);</code></li>
+<li><code>print.accept(sampleString)</code></li>
+<li><code>BiFunction&lt;Integer, Integer, Integer&gt; sum = (Integer a, Integer b) -&gt; a + b;</code></li>
+<li><code>sum.apply(a, b)</code></li>
+</ul>
+<p>由于 Lambda 表达式还是遵循了 Java 原有的设计思想，所以内置的函数式接口还是有一些局限性，比如无法使用两个以上的参数作为 Lambda 表达式的入参，此时可以使用自定义函数式接口，或者使用第三方的包。</p>
+<h4 id="原始类型特化"><a href="# 原始类型特化" class="headerlink" title="原始类型特化"></a>原始类型特化 </h4><p> 内置函数式接口中的泛型只能绑定到引用类型上，但是在使用时经常会使用基本类型，此时 Java 内部会自动进行装箱和拆箱操作，将基本类型与对应的引用类型进行相互转换。但拆装箱操作也会带来额外的性能消耗，所以 Java 8 还内置了一些原始类型特化的函数式接口来在输入与输出的时候避免拆装箱操作。</p>
+<p>一般来说，针对输入类型为基本类型的函数式接口的名称前都要加上对应的基本类型前缀，如 <code>IntPredicate</code>、<code>DoubleConsumer</code>、<code>Function</code> 接口还有针对输出参数类型的变种：<code>ToIntFunction&lt;T&gt;</code>、<code>IntToDoubleFunction</code>等等。</p>
+<p>例如：</p>
+<ul>
+<li><code>IntPredicate isLargeThanFive = i -&gt; i &gt; 5;</code></li>
+</ul>
+<h2 id="Lambda 表达式的类型"><a href="#Lambda 表达式的类型" class="headerlink" title="Lambda 表达式的类型"></a>Lambda 表达式的类型 </h2><h3 id="Lambda 表达式的类型检查"><a href="#Lambda 表达式的类型检查" class="headerlink" title="Lambda 表达式的类型检查"></a>Lambda 表达式的类型检查</h3><p>Lambda 表达式的<strong> 实际类型 </strong> 是从使用 Lambda 表达式的上下文中所推断出来的。上下文（比如，接受它传递的方法的参数，或接受它的值的全局变量）中 Lambda 表达式需要的类型被称为 <strong> 目标类型</strong>。</p>
+<p>可以从赋值的上下文、方法调用的上下文（参数和返回值）以及类型转换的上下文中获得 Lambda 表达式的目标类型。</p>
+<p>只要 Lambda 表达式的参数类型能够符合目标类型中抽象方法的参数定义，也就是方法签名能够兼容，那么此类型检查就能通过，该 Lambda 表达式也就能应用于此上下文中。</p>
+<p>有了目标类型的概念，同一个 Lambda 表达式就可以与不同的函数式接口相联系起来，同一个 Lambda 表达式可以用于多个不同的函数式接口中的上下文中，即使这些函数式接口并没有 <code>is</code> 或<code>like</code>等关系。</p>
+<p>所以上例中加法和乘法的 Lambda 表达式既可以是一个 <code>Arithmetic</code> 类型，也可以是一个 <code>BiFunction</code> 类型，实际类型需要根据上下文而定。</p>
+<h4 id="特殊的 void 兼容规则"><a href="# 特殊的 void 兼容规则" class="headerlink" title="特殊的 void 兼容规则"></a>特殊的 <code>void</code> 兼容规则 </h4><p> 如果 Lambda 表达式的主体是一个语句，在参数列表兼容的前提下，即便其有特定的返回值，其也和返回 <code>void</code> 的函数描述符兼容。</p>
+<p>例如，List 添加元素后会返回一个布尔值，但是其也可以被 <code>Consumer</code> 类型的函数式接口所接受。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; strings = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">Predicate&lt;String&gt; adder = s -&gt; strings.add(s);</span><br><span class="line">Consumer&lt;String&gt; anotherAdder = s -&gt; strings.add(s);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="推断 Lambda 表达式参数的类型"><a href="# 推断 Lambda 表达式参数的类型" class="headerlink" title="推断 Lambda 表达式参数的类型"></a>推断 Lambda 表达式参数的类型</h3><p>Java 编译器能够从上下文（目标类型）中推断出用什么函数式接口来配合 Lambda 表达式，所以其也能推断出 Lambda 表达式的参数类型，可以在 Lambda 表达式语法中省略参数类型标注。</p>
+<h3 id="Lambda 表达式使用局部变量"><a href="#Lambda 表达式使用局部变量" class="headerlink" title="Lambda 表达式使用局部变量"></a>Lambda 表达式使用局部变量 </h3><p>Lambda 表达式可以在主体中使用类中的静态变量和实例变量，但是使用方法内的局部变量时，该局部变量必须显示的声明为<code>final</code> 类型，或者事实上为 <code>final</code> 类型（声明后没有被重新赋值）。</p>
+<h2 id="组合 Lambda 表达式"><a href="# 组合 Lambda 表达式" class="headerlink" title="组合 Lambda 表达式"></a>组合 Lambda 表达式 </h2><p> 可以将多个简单的 Lambda 表达式组合成复杂的表达式，比如可以将多个 <code>Predicate</code> 的结果进行布尔运算，组合成一个更大的<code>Predicate</code>。</p>
+<p>函数式接口中的默认方法为这种组合提供了实现。</p>
+<h3 id="Comparator 组合 Lambda 表达式"><a href="#Comparator 组合 Lambda 表达式" class="headerlink" title="Comparator 组合 Lambda 表达式"></a><code>Comparator</code>组合 Lambda 表达式</h3><ul>
+<li><code>.reversed()</code>：逆序</li>
+<li><code>.thenComparing()</code>：第一个比较参数相同时，继续进行比较</li>
+</ul>
+<h3 id="Predicate 组合 Lambda 表达式"><a href="#Predicate 组合 Lambda 表达式" class="headerlink" title="Predicate 组合 Lambda 表达式"></a><code>Predicate</code>组合 Lambda 表达式</h3><ul>
+<li><code>.negate()</code>：非</li>
+<li><code>.and()</code>：与</li>
+<li><code>.or()</code>：或</li>
+</ul>
+<h3 id="Function 组合 Lambda 表达式"><a href="#Function 组合 Lambda 表达式" class="headerlink" title="Function 组合 Lambda 表达式"></a><code>Function</code>组合 Lambda 表达式</h3><ul>
+<li><code>.andThen()</code>：返回一个函数，先执行一个函数，再将结果应用另一个函数</li>
+<li><code>.compose()</code>：返回一个函数，先执行另一个函数，再将结果应用此函数</li>
+</ul>
+<p>例如:<code>h = f.andThen(g)</code> &#x3D;&#x3D; <code>g(f(x))</code>，而<code>h = f.compose(g)</code> &#x3D;&#x3D; <code>f(g(x))</code></p>
+<h2 id="方法引用"><a href="# 方法引用" class="headerlink" title="方法引用"></a>方法引用 </h2><p> 使用方法引用可以将现有方法像 Lambda 表达式一样进行传递，使得代码更自然和易读。</p>
+<h3 id="方法引用的语法"><a href="# 方法引用的语法" class="headerlink" title="方法引用的语法"></a>方法引用的语法 </h3><p> 目标引用放在 <code>::</code> 之前，方法的名称放在后面。例如 <code>Integer::sum</code>，就是调用了<code>Integer</code> 类中的静态方法<code>sum</code>。</p>
+<h3 id="方法引用类型"><a href="# 方法引用类型" class="headerlink" title="方法引用类型"></a>方法引用类型</h3><ul>
+<li>静态方法引用：例如<code>Integer::parseInt</code>、<code>Consumer&lt;String&gt; print = System.out::println;</code></li>
+<li>使用类型实例本身的实例方法引用：例如获得某个 <code>String</code> 类型实例的长度，<code>String::length</code></li>
+<li>使用其他类型实例的实例方法引用：例如调用一个已经存在的外部对象中的方法，<code>expr::instanceMethod</code></li>
+<li>构造函数引用：与静态方法引用类似，使用 <code>ClassName::new</code> 来使用构造函数引用，如果构造函数参数个数超过两个，可以使用指定义的函数式接口来作为构造函数引用的类型</li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Archives</a></li>
+         
+          <li><a href="/tags/">Tag</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96"><span class="toc-number">1.</span> <span class="toc-text">什么是行为参数化 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%BA%E5%A4%B4%E7%AD%89%E5%85%AC%E6%B0%91"><span class="toc-number">1.0.1.</span> <span class="toc-text">函数作为头等公民 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%9B%E8%A1%8C%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">为什么要进行行为参数化 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java-8%20%E4%B8%AD%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96"><span class="toc-number">3.</span> <span class="toc-text">Java 8 中如何实现行为参数化 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-8%20%E4%B9%8B%E5%89%8D%E7%9A%84%20Java%20%E5%A6%82%E4%BD%95%E5%B0%86%E8%A1%8C%E4%B8%BA%E4%BC%A0%E9%80%92%E7%BB%99%E6%96%B9%E6%B3%95"><span class="toc-number">3.1.</span> <span class="toc-text">Java 8 之前的 Java 如何将行为传递给方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E5%AE%9E%E7%8E%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E6%8E%A5%E5%8F%A3"><span class="toc-number">3.1.1.</span> <span class="toc-text">通过实现不同的接口 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-number">3.1.2.</span> <span class="toc-text">通过匿名内部类 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-8%20%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-number">3.2.</span> <span class="toc-text">Java 8 的实现方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">4.</span> <span class="toc-text">什么是 Lambda 表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-number">4.0.1.</span> <span class="toc-text">Lambda 表达式的语法 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">5.</span> <span class="toc-text">函数式接口 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">5.1.</span> <span class="toc-text">常见的内置函数式接口 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%A7%8B%E7%B1%BB%E5%9E%8B%E7%89%B9%E5%8C%96"><span class="toc-number">5.1.1.</span> <span class="toc-text">原始类型特化 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">6.</span> <span class="toc-text">Lambda 表达式的类型 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5"><span class="toc-number">6.1.</span> <span class="toc-text">Lambda 表达式的类型检查</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E7%9A%84%20void%20%E5%85%BC%E5%AE%B9%E8%A7%84%E5%88%99"><span class="toc-number">6.1.1.</span> <span class="toc-text">特殊的 void 兼容规则 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E6%96%AD%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%82%E6%95%B0%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">6.2.</span> <span class="toc-text">推断 Lambda 表达式参数的类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%BF%E7%94%A8%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F"><span class="toc-number">6.3.</span> <span class="toc-text">Lambda 表达式使用局部变量 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E5%90%88%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">7.</span> <span class="toc-text">组合 Lambda 表达式 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Comparator%20%E7%BB%84%E5%90%88%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">7.1.</span> <span class="toc-text">Comparator组合 Lambda 表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Predicate%20%E7%BB%84%E5%90%88%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">7.2.</span> <span class="toc-text">Predicate组合 Lambda 表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Function%20%E7%BB%84%E5%90%88%20Lambda%20%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">7.3.</span> <span class="toc-text">Function组合 Lambda 表达式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E5%BC%95%E7%94%A8"><span class="toc-number">8.</span> <span class="toc-text">方法引用 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E5%BC%95%E7%94%A8%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-number">8.1.</span> <span class="toc-text">方法引用的语法 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B"><span class="toc-number">8.2.</span> <span class="toc-text">方法引用类型</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/posts/6340/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/posts/6340/&text=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/posts/6340/&title=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/posts/6340/&is_video=false&description=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Java 8 的变化之行为参数化——Lambda 表达式&body=Check out this article: https://kylindc.github.io/posts/6340/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/posts/6340/&title=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/posts/6340/&title=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/posts/6340/&title=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/posts/6340/&title=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/posts/6340/&name=Java 8 的变化之行为参数化——Lambda 表达式&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/posts/6340/&t=Java 8 的变化之行为参数化——Lambda 表达式"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2018-2023
+    KylinDC
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Archives</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99034573-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-99034573-1');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

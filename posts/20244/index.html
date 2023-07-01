@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="坑多水深  不可变的原始值与可变的对象引用  理解 JavaScript：不可变的原始值与可变的对象引用  让人犯晕的 JavaScript 变量赋值 基本字符串和字符串对象的区别  字符串字面量 (通过单引号或双引号定义) 和 直接调用 String 方法 (没有通过 new 生成字符串对象实例) 的字符串都是基本字符串。JavaScript 会自动将基本字符串转换为字符串对象，只有将基本字符串">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript 学习笔记">
+<meta property="og:url" content="https://kylindc.github.io/posts/20244/index.html">
+<meta property="og:site_name" content="Upside Down">
+<meta property="og:description" content="坑多水深  不可变的原始值与可变的对象引用  理解 JavaScript：不可变的原始值与可变的对象引用  让人犯晕的 JavaScript 变量赋值 基本字符串和字符串对象的区别  字符串字面量 (通过单引号或双引号定义) 和 直接调用 String 方法 (没有通过 new 生成字符串对象实例) 的字符串都是基本字符串。JavaScript 会自动将基本字符串转换为字符串对象，只有将基本字符串">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-11-22T12:40:58.000Z">
+<meta property="article:modified_time" content="2023-07-01T14:39:10.950Z">
+<meta property="article:author" content="KylinDC">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>JavaScript 学习笔记</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Upside Down" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Upside Down" type="application/rss+xml">
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Archives</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/posts/63313/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/posts/12102/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/posts/20244/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/posts/20244/&text=JavaScript 学习笔记"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/posts/20244/&title=JavaScript 学习笔记"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/posts/20244/&is_video=false&description=JavaScript 学习笔记"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=JavaScript 学习笔记&body=Check out this article: https://kylindc.github.io/posts/20244/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/posts/20244/&title=JavaScript 学习笔记"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/posts/20244/&title=JavaScript 学习笔记"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/posts/20244/&title=JavaScript 学习笔记"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/posts/20244/&title=JavaScript 学习笔记"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/posts/20244/&name=JavaScript 学习笔记&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/posts/20244/&t=JavaScript 学习笔记"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%91%E5%A4%9A%E6%B0%B4%E6%B7%B1"><span class="toc-number">1.</span> <span class="toc-text">坑多水深 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%8F%AF%E5%8F%98%E7%9A%84%E5%8E%9F%E5%A7%8B%E5%80%BC%E4%B8%8E%E5%8F%AF%E5%8F%98%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%BC%95%E7%94%A8"><span class="toc-number">1.1.</span> <span class="toc-text"> 不可变的原始值与可变的对象引用 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.2.</span> <span class="toc-text">基本字符串和字符串对象的区别 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%85%E6%8B%B7%E8%B4%9D"><span class="toc-number">1.3.</span> <span class="toc-text">浅拷贝 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.</span> <span class="toc-text">块级作用域 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.1.</span> <span class="toc-text"> 什么是块级作用域 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#var-%20%E5%A3%B0%E6%98%8E%E5%92%8C%20-let-%20%E5%A3%B0%E6%98%8E%EF%BC%8Cconst-%20%E5%A3%B0%E6%98%8E%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.2.</span> <span class="toc-text">var 声明和 let 声明，const 声明的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%B4%E6%97%B6%E6%80%A7%E6%AD%BB%E5%8C%BA"><span class="toc-number">2.3.</span> <span class="toc-text">临时性死区 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">3.</span> <span class="toc-text">字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#indexOf"><span class="toc-number">3.1.</span> <span class="toc-text">indexOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lastIndexOf"><span class="toc-number">3.2.</span> <span class="toc-text">lastIndexOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#slice"><span class="toc-number">3.3.</span> <span class="toc-text">slice()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#split"><span class="toc-number">3.4.</span> <span class="toc-text">split()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toLowerCase-amp-toUpperCase"><span class="toc-number">3.5.</span> <span class="toc-text">toLowerCase() &amp; toUpperCase()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#replace"><span class="toc-number">3.6.</span> <span class="toc-text">replace()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#substr"><span class="toc-number">3.7.</span> <span class="toc-text">substr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#includes"><span class="toc-number">3.8.</span> <span class="toc-text">includes()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#startsWith"><span class="toc-number">3.9.</span> <span class="toc-text">startsWith()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#trim"><span class="toc-number">3.10.</span> <span class="toc-text">trim()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#valueOf-NaN"><span class="toc-number">3.11.</span> <span class="toc-text">valueOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#charAt-charCodeAt-str"><span class="toc-number">3.12.</span> <span class="toc-text">charAt() charCodeAt() str[]</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">4.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#toString-NaN"><span class="toc-number">4.1.</span> <span class="toc-text">toString()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#join"><span class="toc-number">4.2.</span> <span class="toc-text">join()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#push-pop-shift-unshift"><span class="toc-number">4.3.</span> <span class="toc-text">push() pop() shift() unshift()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#slice-1"><span class="toc-number">4.4.</span> <span class="toc-text">slice()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#splice"><span class="toc-number">4.5.</span> <span class="toc-text">splice()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E8%AE%BF%E9%97%AE"><span class="toc-number">4.6.</span> <span class="toc-text">数组的访问 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-%20%E7%9A%84%E6%9E%84%E5%BB%BA"><span class="toc-number">4.7.</span> <span class="toc-text">Array 的构建 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#new-Array"><span class="toc-number">4.7.1.</span> <span class="toc-text">new Array()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Array-of-amp-Array"><span class="toc-number">4.7.2.</span> <span class="toc-text">Array.of() &amp; Array()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Array-from"><span class="toc-number">4.7.3.</span> <span class="toc-text">Array.from()</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-concat-arr1-arr2-%E2%80%A6"><span class="toc-number">4.8.</span> <span class="toc-text">Array.concat(arr1, arr2, …)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#indexOf-amp-lastIndexOf"><span class="toc-number">4.9.</span> <span class="toc-text">indexOf() &amp; lastIndexOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#includes-1"><span class="toc-number">4.10.</span> <span class="toc-text">includes()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-forEach"><span class="toc-number">4.11.</span> <span class="toc-text">Array.forEach()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#reverse"><span class="toc-number">4.12.</span> <span class="toc-text">reverse()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sort"><span class="toc-number">4.13.</span> <span class="toc-text">sort()</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        JavaScript 学习笔记
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">KylinDC</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2018-11-22T12:40:58.000Z" itemprop="datePublished">2018-11-22</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="坑多水深"><a href="# 坑多水深" class="headerlink" title="坑多水深"></a>坑多水深 </h2><h3 id="不可变的原始值与可变的对象引用"><a href="# 不可变的原始值与可变的对象引用" class="headerlink" title="不可变的原始值与可变的对象引用"></a> 不可变的原始值与可变的对象引用 </h3><p><a target="_blank" rel="noopener" href="http://laichuanfeng.com/study/javascript-immutable-primitive-values-and-mutable-object-references/"> 理解 JavaScript：不可变的原始值与可变的对象引用 </a><br><a target="_blank" rel="noopener" href="http://hellobug.github.io/blog/javascript-variable-assignment/"> 让人犯晕的 JavaScript 变量赋值</a></p>
+<h3 id="基本字符串和字符串对象的区别"><a href="# 基本字符串和字符串对象的区别" class="headerlink" title="基本字符串和字符串对象的区别"></a><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String#%E5%9F%BA%E6%9C%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8C%BA%E5%88%AB">基本字符串和字符串对象的区别 </a></h3><p> 字符串字面量 (通过单引号或双引号定义) 和 直接调用 String 方法 (没有通过 new 生成字符串对象实例) 的字符串都是基本字符串。JavaScript 会自动将基本字符串转换为字符串对象，只有将基本字符串转化为字符串对象之后才可以使用字符串对象的方法。当基本字符串需要调用一个字符串对象才有的方法或者查询值的时候(基本字符串是没有这些方法的)，JavaScript 会自动将基本字符串转化为字符串对象并且调用相应的方法或者执行查询。</p>
+<h3 id="浅拷贝"><a href="# 浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝 </h3><p> 例如 Array 的 concat 方法：<br>concat 方法不会改变 this 或任何作为参数提供的数组，而是返回一个浅拷贝，它包含与原始数组相结合的相同元素的副本。 原始数组的元素将复制到新数组中，如下所示：</p>
+<ul>
+<li>对象引用（而不是实际对象）：concat 将对象引用复制到新数组中。 原始数组和新数组都引用相同的对象。 也就是说，如果引用的对象被修改，则更改对于新数组和原始数组都是可见的。 这包括也是数组的数组参数的元素。</li>
+<li>数据类型如字符串，数字和布尔（不是 String，Number 和 Boolean 对象）：concat 将字符串和数字的值复制到新数组中。</li>
+</ul>
+<h2 id="块级作用域"><a href="# 块级作用域" class="headerlink" title="块级作用域"></a>块级作用域 </h2><h3 id="什么是块级作用域"><a href="# 什么是块级作用域" class="headerlink" title="什么是块级作用域"></a> 什么是块级作用域 </h3><p> 块级作用域即 <code>&#123;&#125;</code> 内的作用域，但是在 for 判断语句中，for 后面的内容也属于块级作用域，块级作用域的声明有 let 和 const 两种。外层作用域无法读取内层作用域的变量。</p>
+<p>ES6 中，明确运行在块级作用域中声明函数（例如在 try…catch…中），同时还规定，在块级作用域中，函数声明的行为类似 let, 在块级作用域之外不可引用。ES6 中，函数声明会提升到函数作用域的头部。</p>
+<h3 id="var- 声明和 -let- 声明，const- 声明的区别"><a href="#var- 声明和 -let- 声明，const- 声明的区别" class="headerlink" title="var 声明和 let 声明，const 声明的区别"></a>var 声明和 let 声明，const 声明的区别</h3><p>var 作用于函数作用域，可以重复声明，在作用域运行的初期就会被声明变量，但是不会被赋值，这被称为变量提升，此时内层变量有可能会覆盖外层变量。</p>
+<p>let const 作用于块级作用域，在同一作用域内不能重复声明，即内层变量可以声明同名外层变量，声明的变量不会覆盖上级同名的变量。无变量提升，存在临时死区。</p>
+<p>const 声明的同时需要赋值，且不能重复赋值，如果声明的是对象的话，可以修改对象或者数组的内容，若需定义的对象或者数组的内容也不变化，可以使用 object.freeze(arr)进行冻结。冻结指的是不能向这个对象或数组添加新的属性，不能修改已有属性的值，不能删除已有属性。</p>
+<p>同时注意 <strong> 不能在函数内部重新声明参数</strong>：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">function func(arg) &#123; // 报错 let arg; &#125; function func(arg) &#123; // 不报错 &#123; let</span><br><span class="line">arg; &#125; &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="临时性死区"><a href="# 临时性死区" class="headerlink" title="临时性死区"></a>临时性死区 </h3><p> 若块作用域中存在 let 和 const 指令，则它们声明的变量，从一开始就形成了封闭作用域，它所声明的变量就绑定到这个区域，不再受外部的影响。使用 let 命令声明变量之前，该变量都是不可用的（不可获取，不可使用等），这称为“临时性死区”。凡是在声明之前就使用这些变量，就会报错。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var i= 6;</span><br><span class="line">if (i &gt; 5) &#123;</span><br><span class="line">    i = 3; // 报错</span><br><span class="line">    let i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="字符串"><a href="# 字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="indexOf"><a href="#indexOf" class="headerlink" title="indexOf()"></a>indexOf()</h3><p>str.indexOf(searchValue[, fromIndex])：返回调用 String 对象中第一次出现的指定值的索引，开始在 fromIndex 进行搜索，区分大小写。如果未找到该值，则返回 -1。</p>
+<p>奇怪的技巧：使用 indexOf()来统计字符串中字母出现的次数。在下例中，设置了 count 来记录字母 e 在字符串 str 中出现的次数：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;To be, or not to be, that is the question.&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.<span class="title function_">indexOf</span>(<span class="string">&quot;e&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (pos !== -<span class="number">1</span>) &#123;</span><br><span class="line">  count++;</span><br><span class="line">  pos = str.<span class="title function_">indexOf</span>(<span class="string">&quot;e&quot;</span>, pos + <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(count); <span class="comment">// displays 4</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="lastIndexOf"><a href="#lastIndexOf" class="headerlink" title="lastIndexOf()"></a>lastIndexOf()</h3><p>str.lastIndexOf(searchValue[, fromIndex]): 返回指定值在调用该方法的字符串中 <strong> 最后出现的位置 </strong>，如果没找到则返回 -1。从该字符串的<strong> 后面向前查找</strong>，从 fromIndex 处开始。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;canal&quot;.lastIndexOf(&quot;a&quot;)   // returns 3</span><br><span class="line">&quot;canal&quot;.lastIndexOf(&quot;a&quot;,2) // returns 1</span><br><span class="line">&quot;canal&quot;.lastIndexOf(&quot;a&quot;,0) // returns -1</span><br></pre></td></tr></table></figure>
+
+<h3 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h3><p>str.slice(beginSlice[, endSlice])：方法提取一个字符串的一部分，不修改原字符串，并返回一新的字符串。</p>
+<p>slice() 提取的新字符串包括 beginSlice 但 <strong> 不包括 endSlice</strong>。</p>
+<p>若参数中有负值时，会被当做 sourceLength + beginSlice&#x2F;endSlice 看待，即最后一个字符的索引为<code>-1</code>。endSlice 值为空时，默认索引到字符串末尾。</p>
+<h3 id="split"><a href="#split" class="headerlink" title="split()"></a>split()</h3><p>str.split([separator[, limit]]): 方法使用指定的分隔符字符串将一个 String 对象分割成 <strong> 字符串数组</strong>，以将字符串分隔为子字符串，以确定每个拆分的位置。separator 将会被删除，limit 表示返回的数量限制。若 separator&#x3D;””, 则返回每一个字符。</p>
+<h3 id="toLowerCase-amp-toUpperCase"><a href="#toLowerCase-amp-toUpperCase" class="headerlink" title="toLowerCase() &amp; toUpperCase()"></a>toLowerCase() &amp; toUpperCase()</h3><p>转换大小写，皆返回新的字符串。</p>
+<h3 id="replace"><a href="#replace" class="headerlink" title="replace()"></a>replace()</h3><p>str.replace(substr, newSubStr)，注意是返回新的字符串，原字符串不会变化</p>
+<h3 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h3><p>str.substr(start[, length])：在字符串中抽取从 start 下标开始的指定数目的字符。其返回值为一个字符串，包含从 str 的 start（包括 start 所指的字符）处开始的 length 个字符。如果没有指定 length，那么返回的字符串包含从 start 到 stringObject 的结尾的字符。另外如果 start 为负数，则表示从字符串尾部开始算起。</p>
+<h3 id="includes"><a href="#includes" class="headerlink" title="includes()"></a>includes()</h3><p>str.includes(searchString[, position]): 要在此字符串中搜索的字符串。position 可选, 从当前字符串的哪个索引位置开始搜寻子字符串，默认值为 0。如果当前字符串包含被搜寻的字符串，就返回 true；否则返回 false。</p>
+<h3 id="startsWith"><a href="#startsWith" class="headerlink" title="startsWith()"></a>startsWith()</h3><p>str.startsWith(searchString [, position]): 判断字符串的起始位置是否匹配其他字符串中的字符。<br>str.endsWith(searchString [, position]):</p>
+<h3 id="trim"><a href="#trim" class="headerlink" title="trim()"></a>trim()</h3><p>trim() 方法会从一个字符串的两端删除空白字符。在这个上下文中的空白字符是所有的空白字符 (space, tab, no-break space 等) 以及所有行终止符字符（如 LF，CR）。</p>
+<h3 id="valueOf-NaN"><a href="#valueOf-NaN" class="headerlink" title="valueOf()"></a>valueOf()</h3><p>valueOf() 方法返回一个 String 对象的原始值（primitive value）。</p>
+<p>使用 String() 方法将其它对象转化为字符串可以被认为是一种更加安全的做法，虽然该方法底层使用的也是 toString() 方法，但是针对 null&#x2F;undefined&#x2F;symbols，String() 方法会有特殊的处理</p>
+<h3 id="charAt-charCodeAt-str"><a href="#charAt-charCodeAt-str" class="headerlink" title="charAt() charCodeAt() str[]"></a>charAt() charCodeAt() str[]</h3><p>str.charAt(index) 返回 index 位置的字符，str[index] 也可以返回 index 位置的字符。 str.charCodeAt(index) 返回 index 位置字符的 Unicode 编码。</p>
+<p>index 均不可以为赋值。</p>
+<h2 id="数组"><a href="# 数组" class="headerlink" title="数组"></a>数组</h2><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a339893df4aa">js 数组方法全面总结</a></p>
+<h3 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString()"></a>toString()</h3><p>arr.toString(): 对于数组对象，toString 方法连接数组并返回一个字符串，其中包含 <strong> 用逗号分隔 </strong> 的每个数组元素。当一个数组被作为文本值或者进行字符串连接操作时，将会自动调用其 toString 方法。</p>
+<h3 id="join"><a href="#join" class="headerlink" title="join()"></a>join()</h3><p>arr.join(“separator”): 如果省略()，数组元素用逗号分隔。默认为 “,”。如果 separator 是空字符串(“”)，则所有元素之间都没有任何字符。如果 arr.length 为 0，则返回空字符串。如果元素是 undefined 或者 null， 则会转化成空字符串。</p>
+<p>join()方法不会改变原数组。</p>
+<h3 id="push-pop-shift-unshift"><a href="#push-pop-shift-unshift" class="headerlink" title="push() pop() shift() unshift()"></a>push() pop() shift() unshift()</h3><p>皆为修改原数组，删除元素时，会返回元素。</p>
+<h3 id="slice-1"><a href="#slice-1" class="headerlink" title="slice()"></a>slice()</h3><p>arr.slice([begin], [end])，<strong>不修改元数组</strong>，返回一个浅复制原数组中额元素的一个新数组。原数组的元素会按照下述规则拷贝：</p>
+<ul>
+<li>如果该元素是个对象引用 （不是实际的对象），例如 Object()对象，slice 会拷贝这个对象引用到新的数组里。两个对象引用都引用了同一个对象。如果被引用的对象发生改变，则新的和原来的数组中的这个元素也会发生改变。</li>
+<li>对于字符串、数字及布尔值来说（不是 String、Number 或者 Boolean 对象），slice 会拷贝这些值到新的数组里。在别的数组里修改这些字符串或数字或是布尔值，将不会影响另一个数组。</li>
+</ul>
+<h3 id="splice"><a href="#splice" class="headerlink" title="splice()"></a>splice()</h3><p>array.splice(start[, deleteCount[, item1[, item2[, …]]]]): 从 start 位置开始，删除 deleteCount 个数量的元素，然后将后面的 item* 填入 start 位置。返回被删除的元素。</p>
+<p>注意这个方法 <strong> 会对原数组进行修改</strong>。</p>
+<h3 id="数组的访问"><a href="# 数组的访问" class="headerlink" title="数组的访问"></a>数组的访问 </h3><p> 虽然数组的元素可以看作是数组对象的属性，但是却不能用 <code>.</code> 操作符来访问元素。并不是 JavaScript 数组有什么特殊之处，而是因为在 JavaScript 中，以数字开头的属性不能用点号引用，必须用方括号。比如，如果一个对象有一个名为 3d 的属性，那么只能用方括号来引用它。下面是具体的例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var years = [1950, 1960, 1970, 1980, 1990, 2000, 2010];</span><br><span class="line">console.log(years.0);   // 语法错误</span><br><span class="line">console.log(years[0]);  // √</span><br><span class="line"></span><br><span class="line">renderer.3d.setTexture(model, &#x27;character.png&#x27;);     // 语法错误</span><br><span class="line">renderer[&#x27;3d&#x27;].setTexture(model, &#x27;character.png&#x27;);  // √</span><br></pre></td></tr></table></figure>
+
+<h3 id="Array- 的构建"><a href="#Array- 的构建" class="headerlink" title="Array 的构建"></a>Array 的构建 </h3><h4 id="new-Array"><a href="#new-Array" class="headerlink" title="new Array()"></a>new Array()</h4><p> 构建新的数组对象</p>
+<h4 id="Array-of-amp-Array"><a href="#Array-of-amp-Array" class="headerlink" title="Array.of() &amp; Array()"></a>Array.of() &amp; Array()</h4><p>Array.of() 方法创建一个具有可变数量参数的新数组实例，而不考虑参数的数量或类型。</p>
+<p>Array.of() 和 Array() 构造函数之间的区别在于处理整数参数：Array.of(7) 创建一个具有单个元素 7 的数组，而 Array(7) 创建一个长度为 7 的空数组（注意：这是指一个有 7 个空位的数组，而不是由 7 个 undefined 组成的数组）。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Array.of(7);       // [7]</span><br><span class="line">Array.of(1, 2, 3); // [1, 2, 3]</span><br><span class="line"></span><br><span class="line">Array(7);          // [, , , , , ,]</span><br><span class="line">Array(1, 2, 3);    // [1, 2, 3]</span><br></pre></td></tr></table></figure>
+
+<h4 id="Array-from"><a href="#Array-from" class="headerlink" title="Array.from()"></a>Array.from()</h4><p>Array.from(arrayLike[, mapFn[, thisArg]])：arrayLike<br>想要转换成数组的伪数组对象或可迭代对象。mapFn (可选参数)<br>如果指定了该参数，新数组中的每个元素会执行该回调函数。thisArg (可选参数)可选参数，执行回调函数 mapFn 时 this 对象。</p>
+<p>Array.from() 可以通过以下方式来创建数组对象：</p>
+<ul>
+<li>伪数组对象（拥有一个 length 属性和若干索引属性的任意对象）</li>
+<li>可迭代对象（可以获取对象中的元素, 如 Map 和 Set 等）</li>
+</ul>
+<p>数组去重合并:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function combine()&#123;</span><br><span class="line">    let arr = [].concat.apply([], arguments);  // 没有去重复的新数组</span><br><span class="line">    return Array.from(new Set(arr));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var m = [1, 2, 2], n = [2,3,3];</span><br><span class="line">console.log(combine(m,n));   //[1, 2, 3]</span><br></pre></td></tr></table></figure>
+
+<h3 id="Array-concat-arr1-arr2-…"><a href="#Array-concat-arr1-arr2-…" class="headerlink" title="Array.concat(arr1, arr2, …)"></a>Array.concat(arr1, arr2, …)</h3><p>可以同时连接多个数组，不修改原数组，所以 <code>[].concat(arr1, arr2)</code> 和<code>arr1.concat(arr2)</code>的效果是一样的。</p>
+<p>只是浅拷贝，会保留元素的引用。</p>
+<h3 id="indexOf-amp-lastIndexOf"><a href="#indexOf-amp-lastIndexOf" class="headerlink" title="indexOf() &amp; lastIndexOf()"></a>indexOf() &amp; lastIndexOf()</h3><p>与 String 的 indexOf() &amp; lastIndexOf()方法一致</p>
+<h3 id="includes-1"><a href="#includes-1" class="headerlink" title="includes()"></a>includes()</h3><p>arr.includes(searchElement, fromIndex)：返回 true of false</p>
+<h3 id="Array-forEach"><a href="#Array-forEach" class="headerlink" title="Array.forEach()"></a>Array.forEach()</h3><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">Array.prototype.forEach()</a><br>forEach() 方法对数组的每个元素执行一次提供的函数。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var array = [&quot;ab&quot;, &#x27;cd&#x27;];</span><br><span class="line">let firstLetterUpperCase = [];</span><br><span class="line">array.forEach(function(item) &#123;</span><br><span class="line">  firstLetterUpperCase.push(item[0].toUpperCase())</span><br><span class="line">&#125;);</span><br><span class="line">console.log(firstLetterUpperCase);</span><br></pre></td></tr></table></figure>
+
+<h3 id="reverse"><a href="#reverse" class="headerlink" title="reverse()"></a>reverse()</h3><p>arr.reverse() 颠倒数组元素的顺序，修改原数组</p>
+<p>颠倒字符串的顺序</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let str = &quot;abcdefg&quot;;</span><br><span class="line">console.log(Array.from(str).reverse().join(&quot;&quot;)); //gfedcba</span><br><span class="line">// console.log(str.split(&quot;&quot;).reverse().join(&quot;&quot;)); //gfedcba   或者可以这样写</span><br></pre></td></tr></table></figure>
+
+<h3 id="sort"><a href="#sort" class="headerlink" title="sort()"></a>sort()</h3><p>arr.sort([compareFunction]): compareFunction 为可选参数，用来指定按某种顺序进行排列的函数。如果省略，元素按照 <strong> 转换为的字符串 </strong> 的各个字符的 Unicode 位点进行排序。返回排序后的数组。请注意，数组已原地排序，并且不进行复制。<br>比较函数的格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function compare(a, b) &#123;</span><br><span class="line">  if (a &lt; b) &#123;           // 按某种排序标准进行比较, a 小于 b</span><br><span class="line">    return -1;</span><br><span class="line">  &#125;</span><br><span class="line">  else if (a &gt; b) &#123;</span><br><span class="line">    return 1;</span><br><span class="line">  &#125;</span><br><span class="line">  // a must be equal to b</span><br><span class="line">  return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Archives</a></li>
+         
+          <li><a href="/tags/">Tag</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%91%E5%A4%9A%E6%B0%B4%E6%B7%B1"><span class="toc-number">1.</span> <span class="toc-text">坑多水深 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%8F%AF%E5%8F%98%E7%9A%84%E5%8E%9F%E5%A7%8B%E5%80%BC%E4%B8%8E%E5%8F%AF%E5%8F%98%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%BC%95%E7%94%A8"><span class="toc-number">1.1.</span> <span class="toc-text"> 不可变的原始值与可变的对象引用 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.2.</span> <span class="toc-text">基本字符串和字符串对象的区别 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%85%E6%8B%B7%E8%B4%9D"><span class="toc-number">1.3.</span> <span class="toc-text">浅拷贝 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.</span> <span class="toc-text">块级作用域 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.1.</span> <span class="toc-text"> 什么是块级作用域 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#var-%20%E5%A3%B0%E6%98%8E%E5%92%8C%20-let-%20%E5%A3%B0%E6%98%8E%EF%BC%8Cconst-%20%E5%A3%B0%E6%98%8E%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.2.</span> <span class="toc-text">var 声明和 let 声明，const 声明的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%B4%E6%97%B6%E6%80%A7%E6%AD%BB%E5%8C%BA"><span class="toc-number">2.3.</span> <span class="toc-text">临时性死区 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">3.</span> <span class="toc-text">字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#indexOf"><span class="toc-number">3.1.</span> <span class="toc-text">indexOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lastIndexOf"><span class="toc-number">3.2.</span> <span class="toc-text">lastIndexOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#slice"><span class="toc-number">3.3.</span> <span class="toc-text">slice()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#split"><span class="toc-number">3.4.</span> <span class="toc-text">split()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toLowerCase-amp-toUpperCase"><span class="toc-number">3.5.</span> <span class="toc-text">toLowerCase() &amp; toUpperCase()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#replace"><span class="toc-number">3.6.</span> <span class="toc-text">replace()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#substr"><span class="toc-number">3.7.</span> <span class="toc-text">substr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#includes"><span class="toc-number">3.8.</span> <span class="toc-text">includes()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#startsWith"><span class="toc-number">3.9.</span> <span class="toc-text">startsWith()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#trim"><span class="toc-number">3.10.</span> <span class="toc-text">trim()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#valueOf-NaN"><span class="toc-number">3.11.</span> <span class="toc-text">valueOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#charAt-charCodeAt-str"><span class="toc-number">3.12.</span> <span class="toc-text">charAt() charCodeAt() str[]</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">4.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#toString-NaN"><span class="toc-number">4.1.</span> <span class="toc-text">toString()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#join"><span class="toc-number">4.2.</span> <span class="toc-text">join()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#push-pop-shift-unshift"><span class="toc-number">4.3.</span> <span class="toc-text">push() pop() shift() unshift()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#slice-1"><span class="toc-number">4.4.</span> <span class="toc-text">slice()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#splice"><span class="toc-number">4.5.</span> <span class="toc-text">splice()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E8%AE%BF%E9%97%AE"><span class="toc-number">4.6.</span> <span class="toc-text">数组的访问 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-%20%E7%9A%84%E6%9E%84%E5%BB%BA"><span class="toc-number">4.7.</span> <span class="toc-text">Array 的构建 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#new-Array"><span class="toc-number">4.7.1.</span> <span class="toc-text">new Array()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Array-of-amp-Array"><span class="toc-number">4.7.2.</span> <span class="toc-text">Array.of() &amp; Array()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Array-from"><span class="toc-number">4.7.3.</span> <span class="toc-text">Array.from()</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-concat-arr1-arr2-%E2%80%A6"><span class="toc-number">4.8.</span> <span class="toc-text">Array.concat(arr1, arr2, …)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#indexOf-amp-lastIndexOf"><span class="toc-number">4.9.</span> <span class="toc-text">indexOf() &amp; lastIndexOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#includes-1"><span class="toc-number">4.10.</span> <span class="toc-text">includes()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-forEach"><span class="toc-number">4.11.</span> <span class="toc-text">Array.forEach()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#reverse"><span class="toc-number">4.12.</span> <span class="toc-text">reverse()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sort"><span class="toc-number">4.13.</span> <span class="toc-text">sort()</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/posts/20244/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/posts/20244/&text=JavaScript 学习笔记"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/posts/20244/&title=JavaScript 学习笔记"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/posts/20244/&is_video=false&description=JavaScript 学习笔记"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=JavaScript 学习笔记&body=Check out this article: https://kylindc.github.io/posts/20244/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/posts/20244/&title=JavaScript 学习笔记"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/posts/20244/&title=JavaScript 学习笔记"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/posts/20244/&title=JavaScript 学习笔记"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/posts/20244/&title=JavaScript 学习笔记"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/posts/20244/&name=JavaScript 学习笔记&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/posts/20244/&t=JavaScript 学习笔记"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2018-2023
+    KylinDC
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Archives</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99034573-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-99034573-1');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

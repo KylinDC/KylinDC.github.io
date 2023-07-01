@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Commit message 格式化 参考 如何写好 git commit message  每次提交，Commit message 都包括两个核心部分：标题 和 内容。 12345&lt; 类型 &gt;(可选): &lt; 主题 &gt;2&#x2F;&#x2F; 空一行3&lt; 内容 &gt;  其中，标题 是必需的，内容无需过多描述的话，正文内容部分可以省略。 不管是哪一个部分，任何一行都不得超过 72 个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git 学习笔记">
+<meta property="og:url" content="https://kylindc.github.io/posts/8520/index.html">
+<meta property="og:site_name" content="Upside Down">
+<meta property="og:description" content="Commit message 格式化 参考 如何写好 git commit message  每次提交，Commit message 都包括两个核心部分：标题 和 内容。 12345&lt; 类型 &gt;(可选): &lt; 主题 &gt;2&#x2F;&#x2F; 空一行3&lt; 内容 &gt;  其中，标题 是必需的，内容无需过多描述的话，正文内容部分可以省略。 不管是哪一个部分，任何一行都不得超过 72 个">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-11-21T22:05:27.000Z">
+<meta property="article:modified_time" content="2023-07-01T14:39:10.906Z">
+<meta property="article:author" content="KylinDC">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Git 学习笔记</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Upside Down" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Upside Down" type="application/rss+xml">
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Archives</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/posts/12102/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/posts/438/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/posts/8520/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/posts/8520/&text=Git 学习笔记"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/posts/8520/&title=Git 学习笔记"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/posts/8520/&is_video=false&description=Git 学习笔记"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Git 学习笔记&body=Check out this article: https://kylindc.github.io/posts/8520/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/posts/8520/&title=Git 学习笔记"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/posts/8520/&title=Git 学习笔记"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/posts/8520/&title=Git 学习笔记"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/posts/8520/&title=Git 学习笔记"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/posts/8520/&name=Git 学习笔记&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/posts/8520/&t=Git 学习笔记"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Commit-message-%20%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-number">1.</span> <span class="toc-text">Commit message 格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#commit-%20%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">commit 标题 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.1.</span> <span class="toc-text">标题类型 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E4%B8%BB%E9%A2%98"><span class="toc-number">1.1.2.</span> <span class="toc-text">标题主题 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#commit-%20%E5%86%85%E5%AE%B9"><span class="toc-number">1.2.</span> <span class="toc-text">commit 内容 </span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Git 学习笔记
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">KylinDC</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2018-11-21T22:05:27.000Z" itemprop="datePublished">2018-11-21</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="Commit-message- 格式化"><a href="#Commit-message- 格式化" class="headerlink" title="Commit message 格式化"></a>Commit message 格式化</h2><blockquote>
+<p>参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/deng-cc/p/6322122.html">如何写好 git commit message</a></p>
+</blockquote>
+<p>每次提交，Commit message 都包括两个核心部分：标题 和 内容。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt; 类型 &gt;(可选): &lt; 主题 &gt;</span><br><span class="line">2</span><br><span class="line">// 空一行</span><br><span class="line">3</span><br><span class="line">&lt; 内容 &gt;</span><br></pre></td></tr></table></figure>
+
+<p>其中，标题 是必需的，内容无需过多描述的话，正文内容部分可以省略。</p>
+<p>不管是哪一个部分，任何一行都不得超过 72 个字符（或 100 个字符）。这是为了避免自动换行影响美观。</p>
+<h3 id="commit- 标题"><a href="#commit- 标题" class="headerlink" title="commit 标题"></a>commit 标题 </h3><p> 标题部分只有一行，包括字段：类型 和 主题。</p>
+<p>标题限制总字数在 50 个字符以内，以保证容易阅读。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">feat: init LearnGit.git</span><br><span class="line">I got a wrong-style git commit, so I init a .git for learning</span><br><span class="line">how to write a git commit message in right way.</span><br><span class="line">And the last line just write here for a simple test,</span><br><span class="line">it&#x27;s useless acturally.</span><br></pre></td></tr></table></figure>
+
+<h4 id="标题类型"><a href="# 标题类型" class="headerlink" title="标题类型"></a>标题类型 </h4><p><code> 类型 </code> 用于说明 commit 的类别，只允许使用下面 7 个标识。</p>
+<ul>
+<li>init：项目初始化（用于项目初始化或其他某种行为的开始描述，不影响代码）</li>
+<li>feat：新功能（feature）</li>
+<li>add: 增加</li>
+<li>fix：修补 bug</li>
+<li>docs：文档（documentation）</li>
+<li>opt：优化和改善，比如弹窗进行确认提示等相关的，不会改动逻辑和具体功能等</li>
+<li>style： 格式（不影响代码运行的变动）</li>
+<li>refactor：重构（即不是新增功能，也不是修改 bug 的代码变动）</li>
+<li>test：增加测试</li>
+<li>save：单纯地保存记录</li>
+<li>other：用于难以分类的类别（不建议使用，但一些如删除不必要的文件，更新.ignore 之类的可以使用）</li>
+</ul>
+<p>（可选）类型后面可以加上括号，括号内填写主要变动的范围，比如按功能模块分，某模块；或按项目三层架构模式分，分数据层、控制层之类的。 #：表示模块</p>
+<ul>
+<li>#student –&gt; 表示 学生模块 （具体的模块开头字母小写，驼峰命名）</li>
+<li>#ALL –&gt; 表示 所有模块 （特殊含义如 ALL 表所有，MOST 表大部分，用大写字母表示）</li>
+<li>#MOST –&gt; 表示 大部分模块</li>
+</ul>
+<p>e.g. feat(#student): 新增添加学生的功能 —— 表示 student 模块新增功能，功能是添加学生</p>
+<h4 id="标题主题"><a href="# 标题主题" class="headerlink" title="标题主题"></a>标题主题 </h4><p> 主题 是 commit 目的的简短描述，不超过 50 个字符。</p>
+<ul>
+<li>以动词开头，使用第一人称现在时，比如 change，而不是 changed 或 changes</li>
+<li>第一个字母小写</li>
+<li>结尾不加句号（.）</li>
+</ul>
+<h3 id="commit- 内容"><a href="#commit- 内容" class="headerlink" title="commit 内容"></a>commit 内容 </h3><p> 内容部分是对本次 commit 的详细描述，可以分成多行，正文在 72 个字符处换行。</p>
+<p>使用正文解释是什么 (what) 和为什么(why)，而不是如何做，以及与以前行为的对比。</p>
+<p>于是可以这样写：<br>balabala : balabala</p>
+<p>what:<br>balabala</p>
+<p>why:<br>balabala</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Archives</a></li>
+         
+          <li><a href="/tags/">Tag</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Commit-message-%20%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-number">1.</span> <span class="toc-text">Commit message 格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#commit-%20%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">commit 标题 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.1.</span> <span class="toc-text">标题类型 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E4%B8%BB%E9%A2%98"><span class="toc-number">1.1.2.</span> <span class="toc-text">标题主题 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#commit-%20%E5%86%85%E5%AE%B9"><span class="toc-number">1.2.</span> <span class="toc-text">commit 内容 </span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://kylindc.github.io/posts/8520/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/posts/8520/&text=Git 学习笔记"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/posts/8520/&title=Git 学习笔记"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/posts/8520/&is_video=false&description=Git 学习笔记"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Git 学习笔记&body=Check out this article: https://kylindc.github.io/posts/8520/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/posts/8520/&title=Git 学习笔记"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/posts/8520/&title=Git 学习笔记"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/posts/8520/&title=Git 学习笔记"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://kylindc.github.io/posts/8520/&title=Git 学习笔记"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://kylindc.github.io/posts/8520/&name=Git 学习笔记&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://kylindc.github.io/posts/8520/&t=Git 学习笔记"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2018-2023
+    KylinDC
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Archives</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99034573-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-99034573-1');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
