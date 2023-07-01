@@ -14,7 +14,7 @@
 <meta property="og:description" content="插入图片  为了方便文章插图管理，首先在 _config.yml 中将 post_asset_folder 设为 true 后， 1post_asset_folder: true  Hexo 会在以后的新建文章时就会自动在与文章同一文件夹下新建与文章同名的文件夹，将文章的所有插图发在此文件夹里，就使用相对路径引用图片资源了。 1![](image.jpg)  不过这只是 Markdown 的引用方">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2017-08-12T18:08:43.000Z">
-<meta property="article:modified_time" content="2023-07-01T15:41:43.663Z">
+<meta property="article:modified_time" content="2023-07-01T15:56:00.552Z">
 <meta property="article:author" content="KylinDC">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -38,6 +38,21 @@
     
     <!-- title -->
     <title>Hexo 折腾手记其三：多媒体及互联网资源插入博客</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99034573-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-99034573-1');
+  </script>
+
+
+    <!-- Umami Analytics -->
+
+
     <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
@@ -56,9 +71,9 @@
 <body class="max-width mx-auto px3 ltr">
     
       <div id="header-post">
-  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -79,13 +94,13 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" aria-label="Previous post" href="/posts/16014/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Previous post" href="/posts/16014/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
-        <li><a class="icon" aria-label="Next post" href="/posts/31930/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Next post" href="/posts/31930/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
-        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
       </ul>
       <span id="i-prev" class="info" style="display:none;">Previous post</span>
       <span id="i-next" class="info" style="display:none;">Next post</span>
@@ -99,7 +114,7 @@
   <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/posts/53723/&text=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/posts/53723/&title=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
   <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/posts/53723/&is_video=false&description=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Hexo 折腾手记其三：多媒体及互联网资源插入博客&body=Check out this article: https://kylindc.github.io/posts/53723/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Hexo 折腾手记其三：多媒体及互联网资源插入博客&body=Check out this article: https://kylindc.github.io/posts/53723/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
   <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/posts/53723/&title=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
   <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/posts/53723/&title=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/posts/53723/&title=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
@@ -109,32 +124,35 @@
 </ul>
 
     </div>
-    <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="toc-number">1.</span> <span class="toc-text">插入图片 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="toc-number">2.</span> <span class="toc-text">插入视频 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-HTML5-video-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">2.1.</span> <span class="toc-text"> 使用 HTML5 video 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-HTML5-iframe-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">2.2.</span> <span class="toc-text">使用 HTML5 iframe 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%20-hexo-dplayer-%20%E6%8F%92%E4%BB%B6%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="toc-number">2.3.</span> <span class="toc-text">通过 hexo-dplayer 插件插入视频 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">2.4.</span> <span class="toc-text">视频格式注意事项 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91"><span class="toc-number">3.</span> <span class="toc-text">插入音频 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%20-HTML5-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">3.1.</span> <span class="toc-text"> 可以通过 HTML5 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%20-hexo-aplayer-%20%E6%8F%92%E4%BB%B6%E6%8F%92%E5%85%A5"><span class="toc-number">3.2.</span> <span class="toc-text">通过 hexo-aplayer 插件插入 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9F%B3%E9%A2%91%E7%9A%84%E6%A0%BC%E5%BC%8F%E9%99%90%E5%88%B6"><span class="toc-number">3.3.</span> <span class="toc-text">音频的格式限制 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E4%BA%92%E8%81%94%E7%BD%91%E8%B5%84%E6%BA%90"><span class="toc-number">4.</span> <span class="toc-text">插入互联网资源 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20B%20%E7%AB%99%E5%A4%96%E9%93%BE"><span class="toc-number">4.1.</span> <span class="toc-text"> 插入 B 站外链 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%AD%8C%E6%9B%B2%E6%88%96%E6%AD%8C%E5%8D%95%E5%A4%96%E9%93%BE"><span class="toc-number">4.2.</span> <span class="toc-text">插入网易云音乐歌曲或歌单外链 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20-YouTube"><span class="toc-number">4.3.</span> <span class="toc-text">插入 YouTube</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%8E%A8%E6%96%87"><span class="toc-number">4.4.</span> <span class="toc-text">插入推文 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A8%E7%89%B9%E6%8F%90%E4%BE%9B%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">4.4.1.</span> <span class="toc-text"> 推特提供的方式 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo-Twitter-%20%E6%8F%92%E4%BB%B6%E6%96%B9%E5%BC%8F"><span class="toc-number">4.4.2.</span> <span class="toc-text">Hexo-Twitter 插件方式 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20-Instagram"><span class="toc-number">4.5.</span> <span class="toc-text">插入 Instagram</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-Instagram-%20%E6%8F%90%E4%BE%9B%E7%9A%84%E5%86%85%E5%B5%8C"><span class="toc-number">4.5.1.</span> <span class="toc-text">使用 Instagram 提供的内嵌 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-Hexo-Instagram-%20%E6%8F%92%E4%BB%B6"><span class="toc-number">4.5.2.</span> <span class="toc-text">使用 Hexo-Instagram 插件 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">5.</span> <span class="toc-text">总结及注意事项 </span></a></li></ol>
-    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="toc-number">1.</span> <span class="toc-text">插入图片 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="toc-number">2.</span> <span class="toc-text">插入视频 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-HTML5-video-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">2.1.</span> <span class="toc-text"> 使用 HTML5 video 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-HTML5-iframe-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">2.2.</span> <span class="toc-text">使用 HTML5 iframe 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%20-hexo-dplayer-%20%E6%8F%92%E4%BB%B6%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="toc-number">2.3.</span> <span class="toc-text">通过 hexo-dplayer 插件插入视频 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">2.4.</span> <span class="toc-text">视频格式注意事项 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91"><span class="toc-number">3.</span> <span class="toc-text">插入音频 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%20-HTML5-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">3.1.</span> <span class="toc-text"> 可以通过 HTML5 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%20-hexo-aplayer-%20%E6%8F%92%E4%BB%B6%E6%8F%92%E5%85%A5"><span class="toc-number">3.2.</span> <span class="toc-text">通过 hexo-aplayer 插件插入 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9F%B3%E9%A2%91%E7%9A%84%E6%A0%BC%E5%BC%8F%E9%99%90%E5%88%B6"><span class="toc-number">3.3.</span> <span class="toc-text">音频的格式限制 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E4%BA%92%E8%81%94%E7%BD%91%E8%B5%84%E6%BA%90"><span class="toc-number">4.</span> <span class="toc-text">插入互联网资源 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20B%20%E7%AB%99%E5%A4%96%E9%93%BE"><span class="toc-number">4.1.</span> <span class="toc-text"> 插入 B 站外链 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%AD%8C%E6%9B%B2%E6%88%96%E6%AD%8C%E5%8D%95%E5%A4%96%E9%93%BE"><span class="toc-number">4.2.</span> <span class="toc-text">插入网易云音乐歌曲或歌单外链 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20-YouTube"><span class="toc-number">4.3.</span> <span class="toc-text">插入 YouTube</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%8E%A8%E6%96%87"><span class="toc-number">4.4.</span> <span class="toc-text">插入推文 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A8%E7%89%B9%E6%8F%90%E4%BE%9B%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">4.4.1.</span> <span class="toc-text"> 推特提供的方式 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo-Twitter-%20%E6%8F%92%E4%BB%B6%E6%96%B9%E5%BC%8F"><span class="toc-number">4.4.2.</span> <span class="toc-text">Hexo-Twitter 插件方式 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20-Instagram"><span class="toc-number">4.5.</span> <span class="toc-text">插入 Instagram</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-Instagram-%20%E6%8F%90%E4%BE%9B%E7%9A%84%E5%86%85%E5%B5%8C"><span class="toc-number">4.5.1.</span> <span class="toc-text">使用 Instagram 提供的内嵌 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-Hexo-Instagram-%20%E6%8F%92%E4%BB%B6"><span class="toc-number">4.5.2.</span> <span class="toc-text">使用 Hexo-Instagram 插件 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">5.</span> <span class="toc-text">总结及注意事项 </span></a></li></ol>
+      </div>
+    
   </span>
 </div>
 
     
-    <div class="content index py4">
+    <div class="content index py4 ">
         
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     
-    <h1 class="posttitle" itemprop="name headline">
+    <h1 class="posttitle p-name" itemprop="name headline">
         Hexo 折腾手记其三：多媒体及互联网资源插入博客
     </h1>
 
 
 
     <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">KylinDC</span>
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">KylinDC</span>
       </span>
       
     <div class="postdate">
       
-        <time datetime="2017-08-12T18:08:43.000Z" itemprop="datePublished">2017-08-12</time>
+        <time datetime="2017-08-12T18:08:43.000Z" class="dt-published" itemprop="datePublished">2017-08-12</time>
         
       
     </div>
@@ -144,8 +162,8 @@
 
       
     <div class="article-tag">
-        <i class="fas fa-tag"></i>
-        <a class="tag-link-link" href="/tags/Hexo/" rel="tag">Hexo</a>
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Hexo/" rel="tag">Hexo</a>
     </div>
 
 
@@ -153,7 +171,7 @@
   </header>
   
 
-  <div class="content" itemprop="articleBody">
+  <div class="content e-content" itemprop="articleBody">
     <h2 id="插入图片"><a href="# 插入图片" class="headerlink" title="插入图片"></a>插入图片 </h2><p> 为了方便文章插图管理，首先在 <code>_config.yml</code> 中将 <code>post_asset_folder</code> 设为 <code>true</code> 后，</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
@@ -179,7 +197,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mmedia &quot;dplayer&quot; &quot;url=example.mp4&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>效果如下：</p>
-<script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-thJvTQAfJiwMjWoa"></div><script> var thJvTQAfJiwMjWoa_options = JSON.parse('{\"video\":{\"url\":\"example.mp4\"}}'); thJvTQAfJiwMjWoa_options.container = document.getElementById("mmedia-thJvTQAfJiwMjWoa"); const dp_thJvTQAfJiwMjWoa = new DPlayer(thJvTQAfJiwMjWoa_options); </script>
+<script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script><div id="mmedia-rVMikjORdJTtAMDp"></div><script> var rVMikjORdJTtAMDp_options = JSON.parse('{\"video\":{\"url\":\"example.mp4\"}}'); rVMikjORdJTtAMDp_options.container = document.getElementById("mmedia-rVMikjORdJTtAMDp"); const dp_rVMikjORdJTtAMDp = new DPlayer(rVMikjORdJTtAMDp_options); </script>
 
 <p>这种方式使用起来最快捷、最方便，而且功能也很强大。</p>
 <h3 id="视频格式注意事项"><a href="# 视频格式注意事项" class="headerlink" title="视频格式注意事项"></a>视频格式注意事项 </h3><p> 并非所有的视频格式都被浏览器所支持，以下表格参考<a target="_blank" rel="noopener" href="http://www.w3school.com.cn/html5/html_5_video.asp">W3cshool</a>:</p>
@@ -228,7 +246,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mmedia &quot;aplayer&quot; title author url %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>使用效果如下：</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><div id="mmedia-pdxrxeqJcIFysUqE"></div><script> var pdxrxeqJcIFysUqE_options = JSON.parse('{\"audio\":[{}]}'); pdxrxeqJcIFysUqE_options.container = document.getElementById("mmedia-pdxrxeqJcIFysUqE"); const ap_pdxrxeqJcIFysUqE = new APlayer(pdxrxeqJcIFysUqE_options); </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><div id="mmedia-QMdoONJsLlggwuYp"></div><script> var QMdoONJsLlggwuYp_options = JSON.parse('{\"audio\":[{}]}'); QMdoONJsLlggwuYp_options.container = document.getElementById("mmedia-QMdoONJsLlggwuYp"); const ap_QMdoONJsLlggwuYp = new APlayer(QMdoONJsLlggwuYp_options); </script>
 
 <h3 id="音频的格式限制"><a href="# 音频的格式限制" class="headerlink" title="音频的格式限制"></a>音频的格式限制 </h3><p> 同样，浏览器对音频也有严重的格式限制，具体参考 <a target="_blank" rel="noopener" href="http://www.w3school.com.cn/html5/html_5_audio.asp">W3school</a> 如下：</p>
 <table>
@@ -335,23 +353,26 @@
 
     <div id="nav-footer" style="display: none">
       <ul>
-         
+        
           <li><a href="/">Home</a></li>
-         
+        
           <li><a href="/about/">About</a></li>
-         
+        
           <li><a href="/archives/">Archives</a></li>
-         
+        
           <li><a href="/tags/">Tag</a></li>
-         
+        
           <li><a href="/search/">Search</a></li>
         
       </ul>
     </div>
 
-    <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="toc-number">1.</span> <span class="toc-text">插入图片 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="toc-number">2.</span> <span class="toc-text">插入视频 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-HTML5-video-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">2.1.</span> <span class="toc-text"> 使用 HTML5 video 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-HTML5-iframe-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">2.2.</span> <span class="toc-text">使用 HTML5 iframe 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%20-hexo-dplayer-%20%E6%8F%92%E4%BB%B6%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="toc-number">2.3.</span> <span class="toc-text">通过 hexo-dplayer 插件插入视频 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">2.4.</span> <span class="toc-text">视频格式注意事项 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91"><span class="toc-number">3.</span> <span class="toc-text">插入音频 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%20-HTML5-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">3.1.</span> <span class="toc-text"> 可以通过 HTML5 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%20-hexo-aplayer-%20%E6%8F%92%E4%BB%B6%E6%8F%92%E5%85%A5"><span class="toc-number">3.2.</span> <span class="toc-text">通过 hexo-aplayer 插件插入 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9F%B3%E9%A2%91%E7%9A%84%E6%A0%BC%E5%BC%8F%E9%99%90%E5%88%B6"><span class="toc-number">3.3.</span> <span class="toc-text">音频的格式限制 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E4%BA%92%E8%81%94%E7%BD%91%E8%B5%84%E6%BA%90"><span class="toc-number">4.</span> <span class="toc-text">插入互联网资源 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20B%20%E7%AB%99%E5%A4%96%E9%93%BE"><span class="toc-number">4.1.</span> <span class="toc-text"> 插入 B 站外链 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%AD%8C%E6%9B%B2%E6%88%96%E6%AD%8C%E5%8D%95%E5%A4%96%E9%93%BE"><span class="toc-number">4.2.</span> <span class="toc-text">插入网易云音乐歌曲或歌单外链 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20-YouTube"><span class="toc-number">4.3.</span> <span class="toc-text">插入 YouTube</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%8E%A8%E6%96%87"><span class="toc-number">4.4.</span> <span class="toc-text">插入推文 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A8%E7%89%B9%E6%8F%90%E4%BE%9B%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">4.4.1.</span> <span class="toc-text"> 推特提供的方式 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo-Twitter-%20%E6%8F%92%E4%BB%B6%E6%96%B9%E5%BC%8F"><span class="toc-number">4.4.2.</span> <span class="toc-text">Hexo-Twitter 插件方式 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20-Instagram"><span class="toc-number">4.5.</span> <span class="toc-text">插入 Instagram</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-Instagram-%20%E6%8F%90%E4%BE%9B%E7%9A%84%E5%86%85%E5%B5%8C"><span class="toc-number">4.5.1.</span> <span class="toc-text">使用 Instagram 提供的内嵌 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-Hexo-Instagram-%20%E6%8F%92%E4%BB%B6"><span class="toc-number">4.5.2.</span> <span class="toc-text">使用 Hexo-Instagram 插件 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">5.</span> <span class="toc-text">总结及注意事项 </span></a></li></ol>
-    </div>
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="toc-number">1.</span> <span class="toc-text">插入图片 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="toc-number">2.</span> <span class="toc-text">插入视频 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-HTML5-video-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">2.1.</span> <span class="toc-text"> 使用 HTML5 video 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-HTML5-iframe-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">2.2.</span> <span class="toc-text">使用 HTML5 iframe 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%20-hexo-dplayer-%20%E6%8F%92%E4%BB%B6%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="toc-number">2.3.</span> <span class="toc-text">通过 hexo-dplayer 插件插入视频 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">2.4.</span> <span class="toc-text">视频格式注意事项 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91"><span class="toc-number">3.</span> <span class="toc-text">插入音频 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%20-HTML5-%20%E6%A0%87%E7%AD%BE%E6%8F%92%E5%85%A5"><span class="toc-number">3.1.</span> <span class="toc-text"> 可以通过 HTML5 标签插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%20-hexo-aplayer-%20%E6%8F%92%E4%BB%B6%E6%8F%92%E5%85%A5"><span class="toc-number">3.2.</span> <span class="toc-text">通过 hexo-aplayer 插件插入 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9F%B3%E9%A2%91%E7%9A%84%E6%A0%BC%E5%BC%8F%E9%99%90%E5%88%B6"><span class="toc-number">3.3.</span> <span class="toc-text">音频的格式限制 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E4%BA%92%E8%81%94%E7%BD%91%E8%B5%84%E6%BA%90"><span class="toc-number">4.</span> <span class="toc-text">插入互联网资源 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20B%20%E7%AB%99%E5%A4%96%E9%93%BE"><span class="toc-number">4.1.</span> <span class="toc-text"> 插入 B 站外链 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%AD%8C%E6%9B%B2%E6%88%96%E6%AD%8C%E5%8D%95%E5%A4%96%E9%93%BE"><span class="toc-number">4.2.</span> <span class="toc-text">插入网易云音乐歌曲或歌单外链 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20-YouTube"><span class="toc-number">4.3.</span> <span class="toc-text">插入 YouTube</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%8E%A8%E6%96%87"><span class="toc-number">4.4.</span> <span class="toc-text">插入推文 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A8%E7%89%B9%E6%8F%90%E4%BE%9B%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">4.4.1.</span> <span class="toc-text"> 推特提供的方式 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo-Twitter-%20%E6%8F%92%E4%BB%B6%E6%96%B9%E5%BC%8F"><span class="toc-number">4.4.2.</span> <span class="toc-text">Hexo-Twitter 插件方式 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%20-Instagram"><span class="toc-number">4.5.</span> <span class="toc-text">插入 Instagram</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-Instagram-%20%E6%8F%90%E4%BE%9B%E7%9A%84%E5%86%85%E5%B5%8C"><span class="toc-number">4.5.1.</span> <span class="toc-text">使用 Instagram 提供的内嵌 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-Hexo-Instagram-%20%E6%8F%92%E4%BB%B6"><span class="toc-number">4.5.2.</span> <span class="toc-text">使用 Hexo-Instagram 插件 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">5.</span> <span class="toc-text">总结及注意事项 </span></a></li></ol>
+      </div>
+    
 
     <div id="share-footer" style="display: none">
       <ul>
@@ -359,7 +380,7 @@
   <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://kylindc.github.io/posts/53723/&text=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://kylindc.github.io/posts/53723/&title=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kylindc.github.io/posts/53723/&is_video=false&description=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Hexo 折腾手记其三：多媒体及互联网资源插入博客&body=Check out this article: https://kylindc.github.io/posts/53723/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Hexo 折腾手记其三：多媒体及互联网资源插入博客&body=Check out this article: https://kylindc.github.io/posts/53723/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://kylindc.github.io/posts/53723/&title=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://kylindc.github.io/posts/53723/&title=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://kylindc.github.io/posts/53723/&title=Hexo 折腾手记其三：多媒体及互联网资源插入博客"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
@@ -371,10 +392,12 @@
     </div>
 
     <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
   </div>
@@ -413,12 +436,12 @@
 
 
 
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
 
 
     <!-- jquery -->
- 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 
 
 
@@ -426,14 +449,14 @@
 <!-- clipboard -->
 
   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
   
   <script type="text/javascript">
   $(function() {
     // copy-btn HTML
     var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
-    btn += '<i class="far fa-clone"></i>';
-    btn += '</span>'; 
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
     // mount it!
     $(".highlight table").before(btn);
     var clip = new ClipboardJS('.btn-copy', {
@@ -453,21 +476,9 @@
 
 <!-- search -->
 
-<!-- Google Analytics -->
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99034573-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-99034573-1');
-    </script>
-
 <!-- Baidu Analytics -->
 
 <!-- Cloudflare Analytics -->
-
-<!-- Umami Analytics -->
 
 <!-- Disqus Comments -->
 
