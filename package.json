@@ -39,6 +39,7 @@
     "singleQuote": true,
     "printWidth": 120
   },
+  "packageManager": "^pnpm@8.6.5",
   "dependencies": {
     "hexo": "^5.4.2",
     "hexo-abbrlink": "^2.2.1",
