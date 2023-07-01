@@ -44,8 +44,8 @@
     "hexo": "^5.4.2",
     "hexo-abbrlink": "^2.2.1",
     "hexo-asset-pipeline": "^1.8.0",
-    "hexo-blog-encrypt": "^3.1.6",
-    "hexo-cli": "^4.3.0",
+    "hexo-blog-encrypt": "^3.1.9",
+    "hexo-cli": "^4.3.1",
     "hexo-filter-auto-spacing": "^0.2.1",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
@@ -57,15 +57,15 @@
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^5.0.0",
-    "hexo-renderer-stylus": "^2.0.1",
+    "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
     "hexo-tag-mmedia": "^1.1.7",
     "hexo-theme-landscape": "^0.0.3"
   },
   "devDependencies": {
     "husky": "^7.0.4",
-    "lint-staged": "^12.4.1",
-    "prettier": "^2.6.2"
+    "lint-staged": "^12.5.0",
+    "prettier": "^2.8.8"
   },
   "lint-staged": {
     "*.{js,css,md}": "prettier --write"
